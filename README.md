@@ -6,17 +6,15 @@ O sistema está sendo desenvolvido a partir de um projeto de pesquisa do curso S
 
 ### Versão atual
 
+Em fase de análise de requisitos.
+
 ### Histórico de versões
 
-## Requisitos
+Consulte o arquivo [CHANGELOG.md](CHANGELOG.md)
 
 ## Instalação
 
-**Via Composer**
-
-**Instalação manual**
-
-### Passo a passo
+Para consultar os requisitos do sistema e o passo a passo para instalação, consulte o arquivo [INSTALL.md](INSTALL.md)
 
 ## Funcionalidades
 
