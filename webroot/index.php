@@ -26,7 +26,7 @@ if (php_sapi_name() === 'cli-server') {
 }
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use App\Application;
+use Enutri\Application;
 use Cake\Http\Server;
 
 // Bind your application to the server.
