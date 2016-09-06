@@ -3,4 +3,5 @@
 /tmp/*
 /logs/*
 /vendor/nbproject
+nbproject
 composer.phar
