@@ -26,7 +26,7 @@
           page. However, you can choose any other skin. Make sure you
           apply the skin class to the body tag so the changes take effect.
     -->
-    <?= $this->Html->css('../adminlte/dist/css/skins/skin-blue.min.css') ?>
+    <?= $this->Html->css('../adminlte/dist/css/skins/skin-red-light.min.css') ?>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,7 +55,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition sidebar-collapse skin-red-light sidebar-mini">
 <div class="wrapper">
 
     <!-- Main Header -->

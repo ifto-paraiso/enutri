@@ -10,10 +10,13 @@ namespace Enutri\Controller;
 
 use Enutri\Controller\AppController;
 
-class LayoutTestController extends AppController
+/**
+ * Exibição da documentação dos elementos da interface com o usuário
+ * 
+ */
+class UiController extends AppController
 {
-    public function index()
-    {
-        
-    }
+    public function index(){}
+    
+    public function icon(){}
 }
