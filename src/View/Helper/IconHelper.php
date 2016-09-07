@@ -51,7 +51,7 @@ class IconHelper extends Helper
     public function make($class, $options = [])
     {
         if (isset($this->aliases[$class])) {
-            $defaultClass = $this->aliases[$class];
+            $class = $this->aliases[$class];
         }
         
         $defaultOptions = [

@@ -14,8 +14,7 @@ $this->assign('content-description', 'IconHelper');
                 </h3>
             </div>
             <div class="box-body">
-                <?= $this->Icon->make('glyphicon glyphicon-adjust') ?>
-                <i class="glyphicon glyphicon-adjust"></i>
+                <?= $this->Icon->make('cadastrar') ?>
             </div>
         </div>
     </div>

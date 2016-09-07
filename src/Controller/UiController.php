@@ -19,4 +19,6 @@ class UiController extends AppController
     public function index(){}
     
     public function icon(){}
+    
+    public function button(){}
 }
