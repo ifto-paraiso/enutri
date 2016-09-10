@@ -136,13 +136,13 @@ class ButtonHelper extends Helper
         unset($options['url']);
         
         // Configura a propriedade 'flat' do botão...
-        if (false !== $options['flat']) {
+        if (false !== (bool) $options['flat']) {
             $classes[] = 'btn-flat';
         }
         unset($options['flat']);
         
         // Configura a propriedade 'block' do botão...
-        if (false !== $options['block']) {
+        if (false !== (bool) $options['block']) {
             $classes[] = 'btn-block';
         }
         unset($options['block']);
@@ -152,10 +152,10 @@ class ButtonHelper extends Helper
         if (null !== $options['icon']) {
             $icon = $this->Icon->make($options['icon']);
         }
-        if (!$options['iconLeft']) {
-            $text = sprintf('%s %s', $text, $icon);
-        } else {
+        if (true === (bool) $options['iconLeft']) {
             $text = sprintf('%s %s', $icon, $text);
+        } else {
+            $text = sprintf('%s %s', $text, $icon);
         }
         unset($options['icon']);
         unset($options['iconLeft']);
@@ -183,9 +183,10 @@ class ButtonHelper extends Helper
         return $this->Html->tag('button', $text, $options);
     }
     
-    public function submit($text = 'Salvar', $options = [])
+    public function submit($options = [])
     {
         $defaultOptions = [
+            'text'  => 'Salvar',
             'type'  => 'submit',
             'icon'  => 'salvar',
             'style' => 'primary',
@@ -202,19 +203,17 @@ class ButtonHelper extends Helper
      * 
      * @param array $params  Parâmetros
      * Chaves:
-     * [0]  Texto do botão
-     * [1]  Array com as opções do botão
+     * [0]  Array com as opções do botão
      * 
      * @return string HTML do botão
      */
     public function __call($method, $params)
     {
-        $text    = isset($params[0]) ? $params[0] : '';
-        $options = isset($params[1]) ? $params[1] : [];
+        $options = is_array($params[0]) ? $params[0] : [];
         
         if (array_key_exists($method, $this->styles)) {
             $options['style'] = $method;
-            return $this->make($text, $options);
+            return $this->make($options);
         }
     }
 }

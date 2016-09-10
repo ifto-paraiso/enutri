@@ -71,6 +71,9 @@ $this->assign('content-description', 'ButtonHelper');
                         ),
                     ]])
                 ?>
+                <h3>Chamada dinâmica</h3>
+                <pre>$this->Button->success(['text' => 'Prosseguir...']);</pre>
+                <?=   $this->Button->success(['text' => 'Prosseguir...']) ?>
             </div>
         </div>
     </div>
