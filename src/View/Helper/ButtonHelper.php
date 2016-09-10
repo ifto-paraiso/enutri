@@ -72,6 +72,7 @@ class ButtonHelper extends Helper
      * @param type $options
      * As chaves não reservadas serão inseridas como atributo/valor da tag
      * Chaves reservadas:
+     * 'text'     Texto apresentado no botão
      * 'size'     Tamanos pré definidos (normal, large, small, xsmall)
      * 'style'    Estilos pré definidos (default, primary, succcess, etc...)
      * 'url       Href do botão  
@@ -83,7 +84,7 @@ class ButtonHelper extends Helper
      * 
      * @return
      */
-    public function make($text, $options)
+    public function make($options)
     {
         /**
          * Opções default do botão
@@ -91,6 +92,7 @@ class ButtonHelper extends Helper
          * @var array
          */
         $defaultOptions = [
+            'text'     => '',
             'class'    => '',
             'size'     => 'normal',
             'style'    => 'default',
@@ -111,6 +113,10 @@ class ButtonHelper extends Helper
          * @var string
          */
         $classes = ['btn'];
+        
+        // Configura o texto apresentado no botão
+        $text = $options['text'];
+        unset($options['text']);
         
         // Configura o tamanho do botão...
         if (!array_key_exists($options['size'], $this->sizes)) {
