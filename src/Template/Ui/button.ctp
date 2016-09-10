@@ -43,6 +43,34 @@ $this->assign('content-description', 'ButtonHelper');
                         ],
                     ]);
                 ?>
+                <h3>
+                    Toolbar
+                </h3>
+                <?=
+                    $this->Toolbar->make(['groups' => [
+                        array(
+                            'buttons' => [
+                                array(
+                                    'text' => 'Opção 1.1',
+                                    'icon' => 'centralizacao',
+                                ),
+                                array(
+                                    'text' => 'Opção 1.2',
+                                ),
+                            ],
+                        ),
+                        array(
+                            'buttons' => [
+                                array(
+                                    'text' => 'Opção 2.1',
+                                ),
+                                array(
+                                    'text' => 'Opção 2.2',
+                                )
+                            ],
+                        ),
+                    ]])
+                ?>
             </div>
         </div>
     </div>
