@@ -66,10 +66,9 @@ class ButtonHelper extends Helper
     ];
     
     /**
+     * Constroi o botão
      * 
-     * @param type $text
-     * 
-     * @param type $options
+     * @param array $options
      * As chaves não reservadas serão inseridas como atributo/valor da tag
      * Chaves reservadas:
      * 'text'     Texto apresentado no botão
