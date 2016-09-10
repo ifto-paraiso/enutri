@@ -37,5 +37,7 @@ class AppView extends View
     public function initialize()
     {
         $this->loadHelper('Icon');
+        $this->loadHelper('Button');
+        $this->loadHelper('ButtonGroup');
     }
 }

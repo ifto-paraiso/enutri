@@ -13,24 +13,36 @@ $this->assign('content-description', 'ButtonHelper');
                     ButtonHelper
                 </h3>
                 <div class="box-tools">
-                    <?= $this->Button->default('Ação voltar', ['icon' => 'voltar']) ?>
+                    <?= $this->Button->default(['icon' => 'voltar', 'text' => 'Voltar']) ?>
                     <div class="btn-group">
-                        <?= $this->Button->default('Cadastrar', ['icon' => 'cadastrar']) ?>
-                        <?= $this->Button->default('Cadastrar', ['icon' => 'cadastrar']) ?>
-                        <?= $this->Button->default('Cadastrar', ['icon' => 'cadastrar']) ?>
+                        <?= $this->Button->default(['icon' => 'cadastrar', 'text' => 'Cadastrar']) ?>
+                        <?= $this->Button->default(['icon' => 'cadastrar', 'text' => 'Cadastrar']) ?>
+                        <?= $this->Button->default(['icon' => 'cadastrar', 'text' => 'Cadastrar']) ?>
                     </div>
                 </div>
             </div>
             <div class="box-body">
-                <?= $this->Button->default('Cadastrar', ['icon' => 'cadastrar']) ?>
+                <?= $this->Button->default(['icon' => 'voltar', 'text' => 'Voltar']) ?>
+                <div class="btn-group">
+                    <?= $this->Button->default(['icon' => 'cadastrar', 'text' => 'Cadastrar']) ?>
+                    <?= $this->Button->default(['icon' => 'cadastrar', 'text' => 'Cadastrar']) ?>
+                    <?= $this->Button->default(['icon' => 'cadastrar', 'text' => 'Cadastrar']) ?>
+                </div>
                 <br /><br />
-                <?= $this->Button->olive('Editar', ['icon' => 'editar', 'flat' => true]) ?>
-                <br /><br />
-                <?= $this->Button->olive('Editar', ['icon' => 'excluir', 'tag' => 'button']) ?>
-                <br /><br />
-                <?= $this->Button->olive('Editar', ['icon' => 'cancelar', 'block' => true]) ?>
-                <br /><br />
-                <?= $this->Button->submit() ?>
+                <?=
+                    $this->ButtonGroup->make([
+                        'buttons' => [
+                            array(
+                                'text' => 'Botão 1',
+                                'icon' => 'voltar',
+                            ),
+                            array(
+                                'text' => 'Botão 2',
+                                'icon' => 'cadastrar',
+                            )
+                        ],
+                    ]);
+                ?>
             </div>
         </div>
     </div>
