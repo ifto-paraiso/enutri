@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-QG2IRhpNj0sFhzKyudqWdg" name="requisitos_identificar_refinar,_sVwUQIv8Eea9K-5vLV5Vkw" guid="-QG2IRhpNj0sFhzKyudqWdg">
+  <sections xmi:id="_beLuUI_aEea4GYIP2O4Dgw" name="Obter informações" guid="_beLuUI_aEea4GYIP2O4Dgw">
+    <sectionDescription>Realizar reuniões com todos os envolvidos, observar o ambiente e estudar os processos do negócio.</sectionDescription>
+  </sections>
+  <sections xmi:id="_t6gfsI_aEea4GYIP2O4Dgw" name="Identificar e capturar os termos do domínio" guid="_t6gfsI_aEea4GYIP2O4Dgw"/>
+  <sections xmi:id="_d8QiUIwAEea9K-5vLV5Vkw" name="Identificar os requisitos funcionais" guid="_d8QiUIwAEea9K-5vLV5Vkw"/>
+  <sections xmi:id="_fHNSgIwAEea9K-5vLV5Vkw" name="Identificar os requisitos não funcionais" guid="_fHNSgIwAEea9K-5vLV5Vkw"/>
+  <sections xmi:id="_gLKp4IwAEea9K-5vLV5Vkw" name="Identificar os requisitos normativos" guid="_gLKp4IwAEea9K-5vLV5Vkw"/>
+  <sections xmi:id="_CXHt0I_bEea4GYIP2O4Dgw" name="Identificar e capturar os Casos de Uso e Atores" guid="_CXHt0I_bEea4GYIP2O4Dgw"/>
+  <sections xmi:id="_hDDUIIwAEea9K-5vLV5Vkw" name="Obter consenso" guid="_hDDUIIwAEea9K-5vLV5Vkw"/>
+  <sections xmi:id="_hqZA8IwAEea9K-5vLV5Vkw" name="Atualizar a Visão" guid="_hqZA8IwAEea9K-5vLV5Vkw">
+    <sectionDescription>Atualizar a Visão do produto.</sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

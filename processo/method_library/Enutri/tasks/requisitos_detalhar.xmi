@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-0Kr-gLUwfvjkvjcVY7Nudg" name=",_wvvyAI_bEea4GYIP2O4Dgw" guid="-0Kr-gLUwfvjkvjcVY7Nudg">
+  <sections xmi:id="_6er8gI_bEea4GYIP2O4Dgw" name="Datalhar os casos de uso e cenários" guid="_6er8gI_bEea4GYIP2O4Dgw">
+    <sectionDescription>Elaborar os casos de uso expandidos para detalhar os requisitos</sectionDescription>
+  </sections>
+  <sections xmi:id="_G-u8sI_cEea4GYIP2O4Dgw" name="Atualizar o Modelo de Casos de Uso" guid="_G-u8sI_cEea4GYIP2O4Dgw">
+    <sectionDescription>Melhorar o Modelo de Casos de Uso baseado nas melhorias identificadas.</sectionDescription>
+  </sections>
+  <sections xmi:id="_MGkZMI_cEea4GYIP2O4Dgw" name="Obter consenso" guid="_MGkZMI_cEea4GYIP2O4Dgw">
+    <sectionDescription>Apresentar o desenvolvimento a todos os envolvidos a fim de assegurar a consistência com a visão do produto, avaliar a&#xD;
+qualidade e identificar mudanças necessárias.</sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

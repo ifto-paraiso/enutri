@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-HwDVOYlw16OPA1QgHdXz_g" name="codificar,_y9qGoIAaEeasuNwaWkn8fg" guid="-HwDVOYlw16OPA1QgHdXz_g">
+  <sections xmi:id="_68U6oJFjEeanrp-HoE7FZQ" name="Codificar" guid="_68U6oJFjEeanrp-HoE7FZQ"/>
+  <sections xmi:id="_6HIYAJFjEeanrp-HoE7FZQ" name="Refatorar o código" guid="_6HIYAJFjEeanrp-HoE7FZQ"/>
+  <sections xmi:id="_8RCloJF1Eeanrp-HoE7FZQ" name="Documentar o código" guid="_8RCloJF1Eeanrp-HoE7FZQ"/>
+</org.eclipse.epf.uma:TaskDescription>

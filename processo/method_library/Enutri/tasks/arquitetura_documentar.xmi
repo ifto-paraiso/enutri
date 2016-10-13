@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-1FedhLrVsn8J2eBUfCNpqg" name=",_F8ctQJFxEeanrp-HoE7FZQ" guid="-1FedhLrVsn8J2eBUfCNpqg">
+  <sections xmi:id="_8E1ScJFxEeanrp-HoE7FZQ" name="Modelar camadas arquiteturais" guid="_8E1ScJFxEeanrp-HoE7FZQ"/>
+  <sections xmi:id="_-h5KwJFxEeanrp-HoE7FZQ" name="Modelar elementos arquiteturais" guid="_-h5KwJFxEeanrp-HoE7FZQ"/>
+  <sections xmi:id="__iRCoJFxEeanrp-HoE7FZQ" name="Modelar relacionamentos entre os elementos" guid="__iRCoJFxEeanrp-HoE7FZQ"/>
+</org.eclipse.epf.uma:TaskDescription>

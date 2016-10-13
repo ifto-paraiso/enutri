@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_rpQC8X9sEeaF1pjERfVvAA" guid="_rpQC8X9sEeaF1pjERfVvAA">
+    <resourceDescriptors xmi:id="_rpQC8n9sEeaF1pjERfVvAA" id="-gyNgq0S6PGOc65IvjCZF5g" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_tSJ6cH9sEeaF1pjERfVvAA" id="-YlMdpp384hfI-mwiOAR77g" uri="content.xmi"/>
+    <resourceDescriptors xmi:id="_jt1CkI_VEea4GYIP2O4Dgw" id="-Or4Q-072Xd5Xqv6I5leWIQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_rnKYQH9sEeaF1pjERfVvAA" name="iteracao_planejar_gerenciar" guid="_rnKYQH9sEeaF1pjERfVvAA">
+    <methodElementProperty xmi:id="_rnKYQn9sEeaF1pjERfVvAA" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_v7Iu4H9sEeaF1pjERfVvAA" name="me_edited" value="true"/>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_bGBdAH9zEeaF1pjERfVvAA" name="cronograma_gerenciar" guid="_bGBdAH9zEeaF1pjERfVvAA" presentationName="Gerenciar o cronograma" superActivities="_sQS00H9sEeaF1pjERfVvAA" mandatoryInput="_bGBdAH9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA" output="_bGBdAH9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA" performedPrimarilyBy="_bGBdAH9zEeaF1pjERfVvAA_tJIyQH91EeaF1pjERfVvAA">
+      <methodElementProperty xmi:id="_bGeI8H9zEeaF1pjERfVvAA" name="me_references" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;me_references udtList=&quot;&quot;/>"/>
+      <Task href="uma://_hVC6IH9qEeakyew3j8_LfQ#_YSzugH9zEeaF1pjERfVvAA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_b_2A8H9zEeaF1pjERfVvAA" name="iteracao_avaliar" guid="_b_2A8H9zEeaF1pjERfVvAA" presentationName="Avaliar a iteração" superActivities="_sQS00H9sEeaF1pjERfVvAA" linkToPredecessor="_TVYNcY_VEea4GYIP2O4Dgw">
+      <methodElementProperty xmi:id="_cAuxwH9zEeaF1pjERfVvAA" name="me_references" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;me_references udtList=&quot;&quot;/>"/>
+      <Task href="uma://_hVC6IH9qEeakyew3j8_LfQ#_UkykoH9zEeaF1pjERfVvAA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_b__K4H9zEeaF1pjERfVvAA" name="iteracao_planejar" guid="_b__K4H9zEeaF1pjERfVvAA" presentationName="Planejar a iteração" superActivities="_sQS00H9sEeaF1pjERfVvAA" mandatoryInput="_b__K4H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA _b__K4H9zEeaF1pjERfVvAA_8h4CYH9rEeaF1pjERfVvAA" output="_b__K4H9zEeaF1pjERfVvAA_0fZYEIwAEea9K-5vLV5Vkw">
+      <methodElementProperty xmi:id="_cA4iwH9zEeaF1pjERfVvAA" name="me_references" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;me_references udtList=&quot;&quot;/>"/>
+      <Task href="uma://_hVC6IH9qEeakyew3j8_LfQ#_SVrBsH9zEeaF1pjERfVvAA"/>
+      <selectedSteps href="uma://-KOoYzNTdrn_tO32QW1Y6ow#_qRFxAIwAEea9K-5vLV5Vkw"/>
+      <selectedSteps href="uma://-KOoYzNTdrn_tO32QW1Y6ow#_tKUA4IwAEea9K-5vLV5Vkw"/>
+      <selectedSteps href="uma://-KOoYzNTdrn_tO32QW1Y6ow#_xdYYkIwAEea9K-5vLV5Vkw"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_b__K4H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA" name="projeto_plano" guid="_b__K4H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA" presentationName="Plano do Projeto" briefDescription="Este artefato registra todas as informações necessárias para gerenciar o projeto. Sua principal parte consiste em um plano genérico, contendo as fases e os marcos do projeto." isPlanned="false" superActivities="_sQS00H9sEeaF1pjERfVvAA">
+      <methodElementProperty xmi:id="_K_eSco_VEea4GYIP2O4Dgw" name="descriptor_createdByReference" value="true"/>
+      <methodElementProperty xmi:id="_LC5Z4Y_VEea4GYIP2O4Dgw" name="me_references" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;me_references udtList=&quot;&quot;/>"/>
+      <presentation xmi:id="-Or4Q-072Xd5Xqv6I5leWIQ" href="uma://-gyNgq0S6PGOc65IvjCZF5g#-Or4Q-072Xd5Xqv6I5leWIQ"/>
+      <WorkProduct href="uma://_hVC6IH9qEeakyew3j8_LfQ#_46j9cH9rEeaF1pjERfVvAA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_b__K4H9zEeaF1pjERfVvAA_8h4CYH9rEeaF1pjERfVvAA" name="visao" guid="_b__K4H9zEeaF1pjERfVvAA_8h4CYH9rEeaF1pjERfVvAA" presentationName="Visão" isPlanned="false" superActivities="_sQS00H9sEeaF1pjERfVvAA">
+      <methodElementProperty xmi:id="_K_eSdY_VEea4GYIP2O4Dgw" name="descriptor_createdByReference" value="true"/>
+      <methodElementProperty xmi:id="_LCme8I_VEea4GYIP2O4Dgw" name="me_references" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;me_references udtList=&quot;&quot;/>"/>
+      <WorkProduct href="uma://_hVC6IH9qEeakyew3j8_LfQ#_8h4CYH9rEeaF1pjERfVvAA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_b__K4H9zEeaF1pjERfVvAA_0fZYEIwAEea9K-5vLV5Vkw" name="iteracao_plano" guid="_b__K4H9zEeaF1pjERfVvAA_0fZYEIwAEea9K-5vLV5Vkw" presentationName="Plano de Iteração" isPlanned="false" superActivities="_sQS00H9sEeaF1pjERfVvAA">
+      <methodElementProperty xmi:id="_K_eSeI_VEea4GYIP2O4Dgw" name="descriptor_createdByReference" value="true"/>
+      <methodElementProperty xmi:id="_LC5Z4I_VEea4GYIP2O4Dgw" name="me_references" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;me_references udtList=&quot;&quot;/>"/>
+      <WorkProduct href="uma://_hVC6IH9qEeakyew3j8_LfQ#_0fZYEIwAEea9K-5vLV5Vkw"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_bGBdAH9zEeaF1pjERfVvAA_tJIyQH91EeaF1pjERfVvAA" name="desenvolvedor" guid="_bGBdAH9zEeaF1pjERfVvAA_tJIyQH91EeaF1pjERfVvAA" presentationName="Desenvolvedor" isPlanned="false" superActivities="_sQS00H9sEeaF1pjERfVvAA" modifies="_bGBdAH9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA">
+      <methodElementProperty xmi:id="_LC5Z5I_VEea4GYIP2O4Dgw" name="descriptor_createdByReference" value="true"/>
+      <methodElementProperty xmi:id="_LDDK4I_VEea4GYIP2O4Dgw" name="me_references" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;me_references udtList=&quot;&quot;/>"/>
+      <Role href="uma://_hVC6IH9qEeakyew3j8_LfQ#_tJIyQH91EeaF1pjERfVvAA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_bGBdAH9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA" name="cronograma" guid="_bGBdAH9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA" presentationName="Cronograma" isPlanned="false" superActivities="_sQS00H9sEeaF1pjERfVvAA">
+      <methodElementProperty xmi:id="_LC5Z54_VEea4GYIP2O4Dgw" name="descriptor_createdByReference" value="true"/>
+      <methodElementProperty xmi:id="_LDDK4Y_VEea4GYIP2O4Dgw" name="me_references" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;me_references udtList=&quot;&quot;/>"/>
+      <WorkProduct href="uma://_hVC6IH9qEeakyew3j8_LfQ#_LWnMkH9tEeaF1pjERfVvAA"/>
+    </processElements>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_TVYNcY_VEea4GYIP2O4Dgw" guid="_TVYNcY_VEea4GYIP2O4Dgw" pred="_b__K4H9zEeaF1pjERfVvAA"/>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_sQS00H9sEeaF1pjERfVvAA" name="iteracao_planejar_gerenciar" guid="_sQS00H9sEeaF1pjERfVvAA" presentationName="Planejar e gerenciar a iteração" breakdownElements="_b__K4H9zEeaF1pjERfVvAA _bGBdAH9zEeaF1pjERfVvAA _b_2A8H9zEeaF1pjERfVvAA _b__K4H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA _b__K4H9zEeaF1pjERfVvAA_8h4CYH9rEeaF1pjERfVvAA _b__K4H9zEeaF1pjERfVvAA_0fZYEIwAEea9K-5vLV5Vkw _bGBdAH9zEeaF1pjERfVvAA_tJIyQH91EeaF1pjERfVvAA _bGBdAH9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA">
+      <presentation xmi:id="-YlMdpp384hfI-mwiOAR77g" href="uma://-gyNgq0S6PGOc65IvjCZF5g#-YlMdpp384hfI-mwiOAR77g"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

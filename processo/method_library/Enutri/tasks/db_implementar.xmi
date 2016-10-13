@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-uq5_AW6lpN47W_TNj0oY8A" name=",_ILfCcH9vEeaF1pjERfVvAA" guid="-uq5_AW6lpN47W_TNj0oY8A">
+  <sections xmi:id="_BE3TIH9xEeaF1pjERfVvAA" name="Converter o modelo lógico em modelo físico" guid="_BE3TIH9xEeaF1pjERfVvAA"/>
+  <sections xmi:id="_DUDukH9xEeaF1pjERfVvAA" name="Popular a base de dados" guid="_DUDukH9xEeaF1pjERfVvAA"/>
+</org.eclipse.epf.uma:TaskDescription>

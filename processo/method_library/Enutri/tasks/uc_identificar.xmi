@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-y9Wj8RIXBJaQJhrmjF2qmw" name=",_SdpecIAiEeasuNwaWkn8fg" guid="-y9Wj8RIXBJaQJhrmjF2qmw">
+  <sections xmi:id="_AezBUIAkEeasuNwaWkn8fg" name="Identificar atores" guid="_AezBUIAkEeasuNwaWkn8fg"/>
+  <sections xmi:id="_BimnsIAkEeasuNwaWkn8fg" name="Identificar os Casos de Uso" guid="_BimnsIAkEeasuNwaWkn8fg"/>
+  <sections xmi:id="_QQpwgIAkEeasuNwaWkn8fg" name="Modelar o diagrama de Casos de Uso" guid="_QQpwgIAkEeasuNwaWkn8fg"/>
+  <sections xmi:id="_L4p1gIAkEeasuNwaWkn8fg" name="Obter consenso" guid="_L4p1gIAkEeasuNwaWkn8fg">
+    <sectionDescription>Conduza uma revisão dos requisitos junto aos &lt;a class=&quot;elementLinkWithUserText&quot; href=&quot;./resources/stakeholder_9FFD4106.html?proc=_0uyGoMlgEdmt3adZL5Dmdw&amp;amp;path=_0uyGoMlgEdmt3adZL5Dmdw,_xupMvxOKEduCNqgZdt_OaA,_0okw8clgEdmt3adZL5Dmdw,_dTa6gMAYEdqX-s4mWhkyqQ&quot; guid=&quot;_dTa6gMAYEdqX-s4mWhkyqQ&quot;>Stakeholders&lt;/a> e a equipe de desenvolvimento para assegurar consistência com a &lt;a class=&quot;elementLink&quot; href=&quot;./resources/vision_2E71B03C.html?proc=_0uyGoMlgEdmt3adZL5Dmdw&amp;amp;path=_0uyGoMlgEdmt3adZL5Dmdw,_xupMvxOKEduCNqgZdt_OaA,_0okw8clgEdmt3adZL5Dmdw,_0WVxcMlgEdmt3adZL5Dmdw&quot; guid=&quot;_0WVxcMlgEdmt3adZL5Dmdw&quot;>Visão&lt;/a>, verificar a qualidade e identificar qualquer mudança necessária.</sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:TaskDescription>

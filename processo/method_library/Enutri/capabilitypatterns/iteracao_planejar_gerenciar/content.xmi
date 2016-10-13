@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-gyNgq0S6PGOc65IvjCZF5g" name="Gerenciar a Iteração,_rnKYQX9sEeaF1pjERfVvAA" guid="-gyNgq0S6PGOc65IvjCZF5g"/>
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-YlMdpp384hfI-mwiOAR77g" name="Avaliar a Iteração,_sQS00H9sEeaF1pjERfVvAA" guid="-YlMdpp384hfI-mwiOAR77g"/>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-Or4Q-072Xd5Xqv6I5leWIQ" name="projeto_plano,_b__K4H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA" guid="-Or4Q-072Xd5Xqv6I5leWIQ">
+    <refinedDescription>&lt;p>&#xD;
+    &lt;span style=&quot;FONT-SIZE: 10pt; mso-bidi-font-family: Arial&quot;>Este artefato define os parâmetros para o acompanhamento do&#xD;
+    progresso do projeto e especifica os objetivos de alto nível das iterações e seus marcos. Descreve também como o&#xD;
+    projeto está organizado e quais papéis são executados por quem.&lt;/span>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;span style=&quot;FONT-SIZE: 10pt; mso-bidi-font-family: Arial&quot;>O gerente de projeto é responsável por desenvolver o plano&#xD;
+    de projeto, trabalhando em conjunto com o resto da equipe. O plano de projeto permite que os Stakeholders e os outros&#xD;
+    membros da equipe tenham uma panorâmica do projeto e uma idéia de que quando esperar um determinado nível de&#xD;
+    funcionalidade. Ele também é usado para registrar as lições aprendidas no projeto.&lt;/span>&#xD;
+&lt;/p></refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+</xmi:XMI>
