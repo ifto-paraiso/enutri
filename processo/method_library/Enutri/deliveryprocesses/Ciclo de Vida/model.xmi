@@ -68,7 +68,12 @@
             <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_sQS00H9sEeaF1pjERfVvAA"/>
           </processElements>
         </childPackages>
-        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_Mf1B8X9uEeaF1pjERfVvAA" name="Planejamento da construção" guid="_Mf1B8X9uEeaF1pjERfVvAA" presentationName="Planejamento da construção [Ed+1..Ee]" superActivities="_H--0UX9rEeakyew3j8_LfQ" isRepeatable="true" linkToPredecessor="_brBYIIwDEea9K-5vLV5Vkw" breakdownElements="_PXQiEX9uEeaF1pjERfVvAA"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_qpsFsJF7EeaYzNAH-C6Rkg" name="backlog_manter" guid="_qpsFsJF7EeaYzNAH-C6Rkg">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_qpsFsZF7EeaYzNAH-C6Rkg" name="backlog_manter" guid="_qpsFsZF7EeaYzNAH-C6Rkg" superActivities="_Mf1B8X9uEeaF1pjERfVvAA" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_qjMtUIwDEea9K-5vLV5Vkw#_qjMtUYwDEea9K-5vLV5Vkw"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_Mf1B8X9uEeaF1pjERfVvAA" name="Planejamento da construção" guid="_Mf1B8X9uEeaF1pjERfVvAA" presentationName="Planejamento da construção [Ed+1..Ee]" superActivities="_H--0UX9rEeakyew3j8_LfQ" isRepeatable="true" linkToPredecessor="_brBYIIwDEea9K-5vLV5Vkw" breakdownElements="_PXQiEX9uEeaF1pjERfVvAA _qpsFsZF7EeaYzNAH-C6Rkg"/>
         <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_brBYIIwDEea9K-5vLV5Vkw" guid="_brBYIIwDEea9K-5vLV5Vkw" pred="_h1Z_wX9rEeaF1pjERfVvAA"/>
       </childPackages>
       <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_H--0UX9rEeakyew3j8_LfQ" name="Elaboração" guid="_H--0UX9rEeakyew3j8_LfQ" presentationName="Elaboração" briefDescription="Fase de Elaboração" superActivities="_xLjf0X9qEeakyew3j8_LfQ" linkToPredecessor="_mSJaYX93EeaF1pjERfVvAA" breakdownElements="_VMILEX9rEeaF1pjERfVvAA _qLncwX9rEeaF1pjERfVvAA _odo4AX9rEeaF1pjERfVvAA _h1Z_wX9rEeaF1pjERfVvAA _Mf1B8X9uEeaF1pjERfVvAA"/>

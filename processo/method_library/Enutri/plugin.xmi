@@ -7,7 +7,6 @@
     <subManagers xmi:id="_D1UhMH90EeaF1pjERfVvAA" href="uma://_DzO2gH90EeaF1pjERfVvAA#_D1UhMH90EeaF1pjERfVvAA"/>
     <subManagers xmi:id="_bbkZwX90EeaF1pjERfVvAA" href="uma://_baFMAH90EeaF1pjERfVvAA#_bbkZwX90EeaF1pjERfVvAA"/>
     <subManagers xmi:id="_UyyUYYAjEeasuNwaWkn8fg" href="uma://_UwspsIAjEeasuNwaWkn8fg#_UyyUYYAjEeasuNwaWkn8fg"/>
-    <subManagers xmi:id="_2tCw0Iv_Eea9K-5vLV5Vkw" href="uma://_2n81cIv_Eea9K-5vLV5Vkw#_2tCw0Iv_Eea9K-5vLV5Vkw"/>
     <subManagers xmi:id="_qlInAYwDEea9K-5vLV5Vkw" href="uma://_qjMtUIwDEea9K-5vLV5Vkw#_qlInAYwDEea9K-5vLV5Vkw"/>
     <subManagers xmi:id="_3i0VQJFwEeanrp-HoE7FZQ" href="uma://_3fPc0JFwEeanrp-HoE7FZQ#_3i0VQJFwEeanrp-HoE7FZQ"/>
     <subManagers xmi:id="_qUvfgZFyEeanrp-HoE7FZQ" href="uma://_qRA2EJFyEeanrp-HoE7FZQ#_qUvfgZFyEeanrp-HoE7FZQ"/>
@@ -23,7 +22,6 @@
     <resourceDescriptors xmi:id="_UxcQkIAjEeasuNwaWkn8fg" id="_UwspsIAjEeasuNwaWkn8fg" uri="capabilitypatterns/requisitos_identificar_refinar/model.xmi"/>
     <resourceDescriptors xmi:id="_xeQaUIAjEeasuNwaWkn8fg" id="-y9Wj8RIXBJaQJhrmjF2qmw" uri="tasks/uc_identificar.xmi"/>
     <resourceDescriptors xmi:id="_y806cYvyEeaojuFrSEQLzQ" id="-gS86Us9o6WgKb_JTYrV3Ew" uri="workproducts/projeto_plano.xmi"/>
-    <resourceDescriptors xmi:id="_2otqcIv_Eea9K-5vLV5Vkw" id="_2n81cIv_Eea9K-5vLV5Vkw" uri="capabilitypatterns/backlog_elaborar/model.xmi"/>
     <resourceDescriptors xmi:id="_jFIgoIwAEea9K-5vLV5Vkw" id="-QG2IRhpNj0sFhzKyudqWdg" uri="tasks/requisitos_encontrar_descrever.xmi"/>
     <resourceDescriptors xmi:id="_uPAYEIwAEea9K-5vLV5Vkw" id="-KOoYzNTdrn_tO32QW1Y6ow" uri="tasks/iteracao_planejar.xmi"/>
     <resourceDescriptors xmi:id="_qjzKQIwDEea9K-5vLV5Vkw" id="_qjMtUIwDEea9K-5vLV5Vkw" uri="capabilitypatterns/backlog_manter/model.xmi"/>
@@ -319,7 +317,6 @@
           <methodElementProperty xmi:id="_na8PcX9sEeaF1pjERfVvAA" name="pkg_loadCheck" value="true"/>
           <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_rnKYQH9sEeaF1pjERfVvAA" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_rnKYQH9sEeaF1pjERfVvAA"/>
           <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_82PTYH9sEeaF1pjERfVvAA" href="uma://_82PTYH9sEeaF1pjERfVvAA#_82PTYH9sEeaF1pjERfVvAA"/>
-          <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_2n81cIv_Eea9K-5vLV5Vkw" href="uma://_2n81cIv_Eea9K-5vLV5Vkw#_2n81cIv_Eea9K-5vLV5Vkw"/>
           <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_qjMtUIwDEea9K-5vLV5Vkw" href="uma://_qjMtUIwDEea9K-5vLV5Vkw#_qjMtUIwDEea9K-5vLV5Vkw"/>
         </childPackages>
         <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_OVk4EH9tEeaF1pjERfVvAA" name="Testes" guid="_OVk4EH9tEeaF1pjERfVvAA">
