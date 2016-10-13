@@ -69,8 +69,8 @@
 <td class="sectionTableSingleCell" colspan="2" align="left">
 <p></p>
 <img border="0" diagramType="Activity" id="diagram_Activity" src="./../../Enutri/deliveryprocesses/resources/Desenvolver a Interface com o Usu&aacute;rio_F1256DDF_Activity.jpeg" alt="Activity diagram: Desenvolver a Interface com o Usu&aacute;rio" title="Activity diagram: Desenvolver a Interface com o Usu&aacute;rio" usemap="#Activity_ui_desenvolver"><map name="Activity_ui_desenvolver">
-<area href="./../../Enutri/capabilitypatterns/ui_projetar_D2A3A41C.html" relpath=",_w9ZZEJFzEeanrp-HoE7FZQ" alt="Projetar a Interface com o Usu&aacute;rio" title="Projetar a Interface com o Usu&aacute;rio" coords="30, 85, 195, 134" shape="rect" guid="_w9ZZEJFzEeanrp-HoE7FZQ"></area>
-<area href="./../../Enutri/capabilitypatterns/Implementar_CE74332B.html" relpath=",_eG3GAJF1Eeanrp-HoE7FZQ" alt="Implementar" title="Implementar" coords="85, 170, 142, 219" shape="rect" guid="_eG3GAJF1Eeanrp-HoE7FZQ"></area>
+<area href="./../../Enutri/capabilitypatterns/ui_projetar_D2A3A41C.html" relpath=",_w9ZZEJFzEeanrp-HoE7FZQ" alt="Projetar a Interface com o Usu&aacute;rio" title="Projetar a Interface com o Usu&aacute;rio" coords="30, 90, 195, 139" shape="rect" guid="_w9ZZEJFzEeanrp-HoE7FZQ"></area>
+<area href="./../../Enutri/capabilitypatterns/implementar_B5239C5F.html" relpath=",_ulae8JF8EeaYzNAH-C6Rkg" alt="Implementar" title="Implementar" coords="85, 175, 142, 224" shape="rect" guid="_ulae8JF8EeaYzNAH-C6Rkg"></area>
 </map>
 </td>
 </tr>
@@ -98,7 +98,7 @@ columns: [
 ["teams", "Team"]],
 rows: [
 		
-{id: "a3fd4d99", parentId: "", relPath: ",_w9ZZEJFzEeanrp-HoE7FZQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
+{id: "a06a80ac", parentId: "", relPath: ",_w9ZZEJFzEeanrp-HoE7FZQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
 	index: "42", prefix: "", name: "ui_projetar", title: "Projetar a Interface com o Usuário", url: "./../../Enutri/capabilitypatterns/ui_projetar_D2A3A41C.html", 
 	predecessors: "", info: "", type: "Task Descriptor", 
 	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
@@ -107,11 +107,47 @@ rows: [
 	
 		
 		
-{id: "a49d4e28", parentId: "", relPath: ",_eG3GAJF1Eeanrp-HoE7FZQ", isSuppressed: "", indentSize: 0, hasChildren:false, 
-	index: "43", prefix: "", name: "Implementar", title: "Implementar", url: "./../../Enutri/capabilitypatterns/Implementar_CE74332B.html", 
+{id: "a8e10062", parentId: "", relPath: ",_ulae8JF8EeaYzNAH-C6Rkg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "43", prefix: "", name: "implementar", title: "Implementar", url: "./../../Enutri/capabilitypatterns/implementar_B5239C5F.html", 
 	predecessors: "42", info: "", type: "Capability Pattern", 
 	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
-	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "f35d7a1c", parentId: "a8e10062", relPath: ",_ulae8JF8EeaYzNAH-C6Rkg,__0oywJF2Eea9fr2SbR6M-g", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "44", prefix: "", name: "teste_escrever", title: "Escrever Teste", url: "./../../Enutri/capabilitypatterns/teste_escrever_E4FB045F.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2bd1823", parentId: "a8e10062", relPath: ",_ulae8JF8EeaYzNAH-C6Rkg,_AaLv0JF3Eea9fr2SbR6M-g", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "45", prefix: "", name: "testar", title: "Testar Implementação", url: "./../../Enutri/capabilitypatterns/testar_4BDC62D6.html", 
+	predecessors: "44,46", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9fc662d6", parentId: "a8e10062", relPath: ",_ulae8JF8EeaYzNAH-C6Rkg,_BUc_sJF3Eea9fr2SbR6M-g", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "46", prefix: "", name: "codificar", title: "Escrever Código", url: "./../../Enutri/capabilitypatterns/codificar_2A043B8.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "4f69611d", parentId: "a8e10062", relPath: ",_ulae8JF8EeaYzNAH-C6Rkg,_COQ8kJF3Eea9fr2SbR6M-g", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "47", prefix: "", name: "integrar", title: "Integrar Código", url: "./../../Enutri/capabilitypatterns/integrar_7AAB3544.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
 	steps: []},
 	
 		
