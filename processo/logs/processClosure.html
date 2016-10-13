@@ -1,0 +1,83 @@
+<table>
+<tr><td><b>Element</b></td><td><b>Referenced By</b></td></tr>
+<tr><td>DeliveryProcess:Ciclo de Vida</td><td></td></tr>
+<tr><td>Phase:Concepção</td><td>DeliveryProcess:Ciclo de Vida/Phase:Concepção</td></tr>
+<tr><td>Iteration:Iteração única [I1]</td><td>DeliveryProcess:Ciclo de Vida/Phase:Concepção/Iteration:Iteração única [I1]</td></tr>
+<tr><td>CapabilityPattern:iteracao_gerenciar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Concepção/Iteration:Iteração única [I1]/CapabilityPattern:iteracao_gerenciar</td></tr>
+<tr><td>Task:iteracao_planejar</td><td>CapabilityPattern:iteracao_planejar_gerenciar/TaskDescriptor:iteracao_planejar</td></tr>
+<tr><td>Role:desenvolvedor</td><td>CapabilityPattern:iteracao_planejar_gerenciar/RoleDescriptor:desenvolvedor</td></tr>
+<tr><td>Role:stakeholder</td><td>CapabilityPattern:iteracao_planejar_gerenciar/RoleDescriptor:stakeholder</td></tr>
+<tr><td>Artifact:cronograma</td><td>CapabilityPattern:iteracao_planejar_gerenciar/WorkProductDescriptor:cronograma</td></tr>
+<tr><td>Artifact:projeto_plano</td><td>CapabilityPattern:iteracao_planejar_gerenciar/WorkProductDescriptor:projeto_plano</td></tr>
+<tr><td>Artifact:visao</td><td>CapabilityPattern:iteracao_planejar_gerenciar/WorkProductDescriptor:visao</td></tr>
+<tr><td>Artifact:iteracao_plano</td><td>CapabilityPattern:iteracao_planejar_gerenciar/WorkProductDescriptor:iteracao_plano</td></tr>
+<tr><td>Task:tempo_gerenciar</td><td>CapabilityPattern:iteracao_planejar_gerenciar/TaskDescriptor:tempo_gerenciar</td></tr>
+<tr><td>Task:iteracao_avaliar</td><td>CapabilityPattern:iteracao_planejar_gerenciar/TaskDescriptor:iteracao_avaliar</td></tr>
+<tr><td>CapabilityPattern:projeto_iniciar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Concepção/Iteration:Iteração única [I1]/CapabilityPattern:projeto_iniciar</td></tr>
+<tr><td>Task:projeto_planejar</td><td>CapabilityPattern:projeto_iniciar/TaskDescriptor:projeto_planejar</td></tr>
+<tr><td>Artifact:glossario</td><td>CapabilityPattern:projeto_iniciar/WorkProductDescriptor:glossario</td></tr>
+<tr><td>Task:visao_definir</td><td>CapabilityPattern:projeto_iniciar/TaskDescriptor:visao_definir</td></tr>
+<tr><td>CapabilityPattern:requisitos_identificar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Concepção/Iteration:Iteração única [I1]/CapabilityPattern:requisitos_identificar</td></tr>
+<tr><td>Task:requisitos_encontrar_descrever</td><td>CapabilityPattern:requisitos_identificar_refinar/TaskDescriptor:requisitos_encontrar_descrever</td></tr>
+<tr><td>Artifact:uc_modelo</td><td>CapabilityPattern:requisitos_identificar_refinar/WorkProductDescriptor:uc_modelo</td></tr>
+<tr><td>Task:requisitos_detalhar</td><td>CapabilityPattern:requisitos_identificar_refinar/TaskDescriptor:requisitos_detalhar</td></tr>
+<tr><td>Milestone:Marcos dos objetivos</td><td>DeliveryProcess:Ciclo de Vida/Milestone:Marcos dos objetivos</td></tr>
+<tr><td>Phase:Elaboração</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração</td></tr>
+<tr><td>Iteration:Elaboração </td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Elaboração </td></tr>
+<tr><td>CapabilityPattern:iteracao_planejar_gerenciar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Elaboração /CapabilityPattern:iteracao_planejar_gerenciar</td></tr>
+<tr><td>CapabilityPattern:requisitos_identificar_refinar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Elaboração /CapabilityPattern:requisitos_identificar_refinar</td></tr>
+<tr><td>Iteration:Projeto da arquitetura [E]</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Projeto da arquitetura [E]</td></tr>
+<tr><td>CapabilityPattern:iteracao_planejar_gerenciar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Projeto da arquitetura [E]/CapabilityPattern:iteracao_planejar_gerenciar</td></tr>
+<tr><td>Iteration:Projeto do banco de dados [E]</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Projeto do banco de dados [E]</td></tr>
+<tr><td>CapabilityPattern:iteracao_planejar_gerenciar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Projeto do banco de dados [E]/CapabilityPattern:iteracao_planejar_gerenciar</td></tr>
+<tr><td>CapabilityPattern:db_modelar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Projeto do banco de dados [E]/CapabilityPattern:db_modelar</td></tr>
+<tr><td>Task:db_modelar</td><td>CapabilityPattern:db_modelar/TaskDescriptor:db_modelar</td></tr>
+<tr><td>Artifact:db_er</td><td>CapabilityPattern:db_modelar/WorkProductDescriptor:db_er</td></tr>
+<tr><td>CapabilityPattern:db_projetar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Projeto do banco de dados [E]/CapabilityPattern:db_projetar</td></tr>
+<tr><td>CapabilityPattern:db_implementar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Projeto do banco de dados [E]/CapabilityPattern:db_implementar</td></tr>
+<tr><td>Task:db_implementar</td><td>CapabilityPattern:db_implementar/TaskDescriptor:db_implementar</td></tr>
+<tr><td>Artifact:db_logico</td><td>CapabilityPattern:db_implementar/WorkProductDescriptor:db_logico</td></tr>
+<tr><td>Deliverable:db_testes</td><td>CapabilityPattern:db_implementar/WorkProductDescriptor:db_testes</td></tr>
+<tr><td>Iteration:Projeto da Interface com o usuário [E]</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Projeto da Interface com o usuário [E]</td></tr>
+<tr><td>CapabilityPattern:iteracao_planejar_gerenciar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Projeto da Interface com o usuário [E]/CapabilityPattern:iteracao_planejar_gerenciar</td></tr>
+<tr><td>Iteration:Planejamento da construção</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Planejamento da construção</td></tr>
+<tr><td>CapabilityPattern:iteracao_planejar_gerenciar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Elaboração/Iteration:Planejamento da construção/CapabilityPattern:iteracao_planejar_gerenciar</td></tr>
+<tr><td>Milestone:Marco da Arquitetura</td><td>DeliveryProcess:Ciclo de Vida/Milestone:Marco da Arquitetura</td></tr>
+<tr><td>Phase:Construção</td><td>DeliveryProcess:Ciclo de Vida/Phase:Construção</td></tr>
+<tr><td>Iteration:Iteração de construção [...n]</td><td>DeliveryProcess:Ciclo de Vida/Phase:Construção/Iteration:Iteração de construção [...n]</td></tr>
+<tr><td>CapabilityPattern:iteracao_planejar_gerenciar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Construção/Iteration:Iteração de construção [...n]/CapabilityPattern:iteracao_planejar_gerenciar</td></tr>
+<tr><td>CapabilityPattern:uc_implementar</td><td>DeliveryProcess:Ciclo de Vida/Phase:Construção/Iteration:Iteração de construção [...n]/CapabilityPattern:uc_implementar</td></tr>
+<tr><td>Task:uc_teste_modelar</td><td>CapabilityPattern:uc_implementar/TaskDescriptor:uc_teste_modelar</td></tr>
+<tr><td>Artifact:teste_script</td><td>CapabilityPattern:uc_implementar/WorkProductDescriptor:teste_script</td></tr>
+<tr><td>Task:uc_testar</td><td>CapabilityPattern:uc_implementar/TaskDescriptor:uc_testar</td></tr>
+<tr><td>Deliverable:branch_teste</td><td>CapabilityPattern:uc_implementar/WorkProductDescriptor:branch_teste</td></tr>
+<tr><td>Task:uc_implementar</td><td>CapabilityPattern:uc_implementar/TaskDescriptor:uc_implementar</td></tr>
+<tr><td>Task:uc_integrar</td><td>CapabilityPattern:uc_implementar/TaskDescriptor:uc_integrar</td></tr>
+<tr><td>Deliverable:branch_master</td><td>CapabilityPattern:uc_implementar/WorkProductDescriptor:branch_master</td></tr>
+<tr><td>CapabilityPattern:backlog_manter</td><td>DeliveryProcess:Ciclo de Vida/Phase:Construção/Iteration:Iteração de construção [...n]/CapabilityPattern:backlog_manter</td></tr>
+<tr><td>Task:backlog_manter</td><td>CapabilityPattern:backlog_manter/TaskDescriptor:backlog_manter</td></tr>
+<tr><td>Artifact:backlog</td><td>CapabilityPattern:backlog_manter/WorkProductDescriptor:backlog</td></tr>
+<tr><td>Milestone:Marco da capacidade operacional inicial</td><td>DeliveryProcess:Ciclo de Vida/Milestone:Marco da capacidade operacional inicial</td></tr>
+<tr><td>Phase:Transição</td><td>DeliveryProcess:Ciclo de Vida/Phase:Transição</td></tr>
+<tr><td>Iteration:Implantar o sistema [T1]</td><td>DeliveryProcess:Ciclo de Vida/Phase:Transição/Iteration:Implantar o sistema [T1]</td></tr>
+<tr><td>Iteration:Treinamento [T2]</td><td>DeliveryProcess:Ciclo de Vida/Phase:Transição/Iteration:Treinamento [T2]</td></tr>
+<tr><td>Milestone:Marco da liberação do produto</td><td>DeliveryProcess:Ciclo de Vida/Milestone:Marco da liberação do produto</td></tr>
+<tr><td>Discipline:projeto_gestao</td><td>Task:iteracao_planejar</td></tr>
+<tr><td>Domain:projeto_gestao</td><td>Artifact:cronograma</td></tr>
+<tr><td>WorkProductType:documento</td><td>Artifact:cronograma</td></tr>
+<tr><td>Domain:requisitos</td><td>Artifact:glossario</td></tr>
+<tr><td>Discipline:analise</td><td>Task:visao_definir</td></tr>
+<tr><td>Discipline:requisitos</td><td>Task:requisitos_encontrar_descrever</td></tr>
+<tr><td>Domain:analise</td><td>Artifact:db_er</td></tr>
+<tr><td>WorkProductType:diagrama</td><td>Artifact:db_er</td></tr>
+<tr><td>Discipline:implementacao</td><td>Task:db_implementar</td></tr>
+<tr><td>Domain:design</td><td>Artifact:db_logico</td></tr>
+<tr><td>Domain:implementacao</td><td>Deliverable:db_testes</td></tr>
+<tr><td>WorkProductType:db</td><td>Deliverable:db_testes</td></tr>
+<tr><td>Discipline:design</td><td>Task:uc_teste_modelar</td></tr>
+<tr><td>Discipline:testes</td><td>Task:uc_teste_modelar</td></tr>
+<tr><td>WorkProductType:repositorio</td><td>Deliverable:branch_teste</td></tr>
+<tr><td>Checklist:codigo_refatoracao</td><td>Task:uc_implementar</td></tr>
+<tr><td>ToolMentor:codigo_implementacao</td><td>Task:uc_implementar</td></tr>
+<tr><td>Discipline:implantacao</td><td>Task:uc_integrar</td></tr>
+</table>
