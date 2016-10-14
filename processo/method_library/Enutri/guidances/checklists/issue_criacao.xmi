@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-ws1nQwoOrv49G72TNg3Z8w" name=",_0AYgIJH7EeaTtrSaGcBIqQ" guid="-ws1nQwoOrv49G72TNg3Z8w">
+  <sections xmi:id="_HReWUJH8EeaTtrSaGcBIqQ" name="Verificar duplicidade" guid="_HReWUJH8EeaTtrSaGcBIqQ">
+    <sectionDescription>Verificar se a issue a ser criada já existe. Caso exista, interromper o processo de abertura.</sectionDescription>
+  </sections>
+  <sections xmi:id="_7hGDEJH8EeaTtrSaGcBIqQ" name="Adicionar nota no quadro &quot;A Fazer&quot; do backlog" guid="_7hGDEJH8EeaTtrSaGcBIqQ">
+    <sectionDescription>Inserir uma nova nota no quadro &quot;A Fazer&quot; do backlog. Informar a descrição do item do backlog.</sectionDescription>
+  </sections>
+  <sections xmi:id="_BRIIAJH9EeaTtrSaGcBIqQ" name="Converter nota para Issue" guid="_BRIIAJH9EeaTtrSaGcBIqQ"/>
+  <sections xmi:id="_Zm7qsJH8EeaTtrSaGcBIqQ" name="Editar a nova issue" guid="_Zm7qsJH8EeaTtrSaGcBIqQ">
+    <sectionDescription>&lt;p>&#xD;
+    Acrescentar as informações adicionais da nova issue&amp;nbsp;e atribuir um rótulo. Os rótulos devem seguir o seguinte guia:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - bug: Falha ou defeito no sistema;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - duplicate: Issue duplicada (se a duplicidade for identificada após a abertura);&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - enhancement: Proposta de implementação de alguma funcionalidade ou melhoria;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - invalid: Issue descartada;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>

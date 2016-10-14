@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-GliMrYL1kogEPvFk1e1CuA" name="backlog_manter,_v2J0sIwDEea9K-5vLV5Vkw" guid="-GliMrYL1kogEPvFk1e1CuA">
-  <sections xmi:id="_jQYbAJFpEeanrp-HoE7FZQ" name="New Step" guid="_jQYbAJFpEeanrp-HoE7FZQ">
-    <sectionDescription>asdfasdf [[netbeans]]</sectionDescription>
-  </sections>
+  <sections xmi:id="_jQYbAJFpEeanrp-HoE7FZQ" name="Identificar novas issues" guid="_jQYbAJFpEeanrp-HoE7FZQ"/>
+  <sections xmi:id="_taQWIJH6EeaTtrSaGcBIqQ" name="Priorizar issues a serem resolvidas" guid="_taQWIJH6EeaTtrSaGcBIqQ"/>
+  <sections xmi:id="_-kfNgJH6EeaTtrSaGcBIqQ" name="Marcar issues resolvidas ou a serem resolvidas" guid="_-kfNgJH6EeaTtrSaGcBIqQ"/>
 </org.eclipse.epf.uma:TaskDescription>

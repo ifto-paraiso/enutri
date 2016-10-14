@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-F6yDEBhlEspj01Ub6MS6Ug" name=",_g3ntQJIAEeaZX8zzGmsLzg" guid="-F6yDEBhlEspj01Ub6MS6Ug">
+  <sections xmi:id="_JYZ-4JICEeaZX8zzGmsLzg" name="Apresentar a implementação em ambiente de testes" guid="_JYZ-4JICEeaZX8zzGmsLzg"/>
+  <sections xmi:id="_P_TaYJICEeaZX8zzGmsLzg" name="Realizar testes de aceitação" guid="_P_TaYJICEeaZX8zzGmsLzg"/>
+  <sections xmi:id="_RIKf4JICEeaZX8zzGmsLzg" name="Obter consenso" guid="_RIKf4JICEeaZX8zzGmsLzg"/>
+  <purpose>Verificar com todos os envolvidos a aceitação de uma implememtação</purpose>
+</org.eclipse.epf.uma:TaskDescription>

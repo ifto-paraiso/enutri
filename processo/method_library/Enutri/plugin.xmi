@@ -5,7 +5,6 @@
     <subManagers xmi:id="_rpQC8X9sEeaF1pjERfVvAA" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_rpQC8X9sEeaF1pjERfVvAA"/>
     <subManagers xmi:id="_834SIX9sEeaF1pjERfVvAA" href="uma://_82PTYH9sEeaF1pjERfVvAA#_834SIX9sEeaF1pjERfVvAA"/>
     <subManagers xmi:id="_D1UhMH90EeaF1pjERfVvAA" href="uma://_DzO2gH90EeaF1pjERfVvAA#_D1UhMH90EeaF1pjERfVvAA"/>
-    <subManagers xmi:id="_bbkZwX90EeaF1pjERfVvAA" href="uma://_baFMAH90EeaF1pjERfVvAA#_bbkZwX90EeaF1pjERfVvAA"/>
     <subManagers xmi:id="_UyyUYYAjEeasuNwaWkn8fg" href="uma://_UwspsIAjEeasuNwaWkn8fg#_UyyUYYAjEeasuNwaWkn8fg"/>
     <subManagers xmi:id="_qlInAYwDEea9K-5vLV5Vkw" href="uma://_qjMtUIwDEea9K-5vLV5Vkw#_qlInAYwDEea9K-5vLV5Vkw"/>
     <subManagers xmi:id="_3i0VQJFwEeanrp-HoE7FZQ" href="uma://_3fPc0JFwEeanrp-HoE7FZQ#_3i0VQJFwEeanrp-HoE7FZQ"/>
@@ -17,7 +16,6 @@
     <resourceDescriptors xmi:id="_82i1YH9sEeaF1pjERfVvAA" id="_82PTYH9sEeaF1pjERfVvAA" uri="capabilitypatterns/projeto_iniciar/model.xmi"/>
     <resourceDescriptors xmi:id="_ECjMQH9xEeaF1pjERfVvAA" id="-uq5_AW6lpN47W_TNj0oY8A" uri="tasks/db_implementar.xmi"/>
     <resourceDescriptors xmi:id="_DzYngX90EeaF1pjERfVvAA" id="_DzO2gH90EeaF1pjERfVvAA" uri="capabilitypatterns/ui_projetar/model.xmi"/>
-    <resourceDescriptors xmi:id="_baOV8H90EeaF1pjERfVvAA" id="_baFMAH90EeaF1pjERfVvAA" uri="capabilitypatterns/db_modelar/model.xmi"/>
     <resourceDescriptors xmi:id="_IZIpYIAeEeasuNwaWkn8fg" id="-sLSe23dlDnHGVutKCtO7jg" uri="tasks/db_modelar.xmi"/>
     <resourceDescriptors xmi:id="_UxcQkIAjEeasuNwaWkn8fg" id="_UwspsIAjEeasuNwaWkn8fg" uri="capabilitypatterns/requisitos_identificar_refinar/model.xmi"/>
     <resourceDescriptors xmi:id="_xeQaUIAjEeasuNwaWkn8fg" id="-y9Wj8RIXBJaQJhrmjF2qmw" uri="tasks/uc_identificar.xmi"/>
@@ -39,6 +37,10 @@
     <resourceDescriptors xmi:id="_f0cUEJFzEeanrp-HoE7FZQ" id="_fz_oIJFzEeanrp-HoE7FZQ" uri="capabilitypatterns/ui_desenvolver/model.xmi"/>
     <resourceDescriptors xmi:id="_IjrRYJF1Eeanrp-HoE7FZQ" id="_IjOlcJF1Eeanrp-HoE7FZQ" uri="capabilitypatterns/Implementar/model.xmi"/>
     <resourceDescriptors xmi:id="_24ORYJF2Eea9fr2SbR6M-g" id="_23LvkJF2Eea9fr2SbR6M-g" uri="capabilitypatterns/Implementar/model.xmi"/>
+    <resourceDescriptors xmi:id="_0BR4AJH7EeaTtrSaGcBIqQ" id="-VuMfr-0IADytHXF2nAON3g" uri="workproducts/backlog.xmi"/>
+    <resourceDescriptors xmi:id="_MZ5osJH8EeaTtrSaGcBIqQ" id="-ws1nQwoOrv49G72TNg3Z8w" uri="guidances/checklists/issue_criacao.xmi"/>
+    <resourceDescriptors xmi:id="_IecRAJICEeaZX8zzGmsLzg" id="-F6yDEBhlEspj01Ub6MS6Ug" uri="tasks/homologar.xmi"/>
+    <resourceDescriptors xmi:id="_qbm6EJICEeaZX8zzGmsLzg" id="--KkjvWlCIqG2Y8xaFidOgA" uri="tasks/integrar.xmi"/>
   </org.eclipse.epf.uma.resourcemanager:ResourceManager>
   <org.eclipse.epf.uma:MethodPlugin xmi:id="_hVC6IH9qEeakyew3j8_LfQ" name="Enutri" guid="_hVC6IH9qEeakyew3j8_LfQ" authors="Renato Uchôa Brandão">
     <methodElementProperty xmi:id="_hVMrIX9qEeakyew3j8_LfQ" name="plugin_synFree" value="true"/>
@@ -51,7 +53,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Domain" xmi:id="_xHPZ8JFlEeanrp-HoE7FZQ" name="requisitos" guid="_xHPZ8JFlEeanrp-HoE7FZQ" presentationName="Requisitos" workProducts="_lNOREIAkEeasuNwaWkn8fg">
             <methodElementProperty xmi:id="_05F68JFlEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Domain" xmi:id="_3eFnQJFlEeanrp-HoE7FZQ" name="design" guid="_3eFnQJFlEeanrp-HoE7FZQ" presentationName="Design" workProducts="_OaEzAH9sEeaF1pjERfVvAA _ZPttsJFxEeanrp-HoE7FZQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Domain" xmi:id="_3eFnQJFlEeanrp-HoE7FZQ" name="design" guid="_3eFnQJFlEeanrp-HoE7FZQ" presentationName="Design" workProducts="_OaEzAH9sEeaF1pjERfVvAA _ZPttsJFxEeanrp-HoE7FZQ _jZn0IJH5EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_4S1d8JFlEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Domain" xmi:id="_5E07kJFlEeanrp-HoE7FZQ" name="implantacao" guid="_5E07kJFlEeanrp-HoE7FZQ" presentationName="Implantação">
@@ -71,7 +73,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_oMViEH9qEeakyew3j8_LfQ" name="requisitos" guid="_oMViEH9qEeakyew3j8_LfQ" presentationName="Requisitos" tasks="_sVwUQIv8Eea9K-5vLV5Vkw _SdpecIAiEeasuNwaWkn8fg">
             <methodElementProperty xmi:id="_rwK1MH9qEeakyew3j8_LfQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_eQRvUH9vEeaF1pjERfVvAA" name="analise" guid="_eQRvUH9vEeaF1pjERfVvAA" presentationName="Análise" tasks="_BG8CAIvuEeaxV7u7ViJ4Og _fn-TUH91EeaF1pjERfVvAA _Wtt_YIv9Eea9K-5vLV5Vkw _oEEt8IAaEeasuNwaWkn8fg">
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_eQRvUH9vEeaF1pjERfVvAA" name="analise" guid="_eQRvUH9vEeaF1pjERfVvAA" presentationName="Análise" tasks="_BG8CAIvuEeaxV7u7ViJ4Og _Wtt_YIv9Eea9K-5vLV5Vkw _oEEt8IAaEeasuNwaWkn8fg _fn-TUH91EeaF1pjERfVvAA">
             <methodElementProperty xmi:id="_gZNxwH9vEeaF1pjERfVvAA" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_hEzFYH9vEeaF1pjERfVvAA" name="design" guid="_hEzFYH9vEeaF1pjERfVvAA" presentationName="Design" tasks="_i3SH8H91EeaF1pjERfVvAA _ek8TkH92EeaF1pjERfVvAA _oEEt8IAaEeasuNwaWkn8fg _F8ctQJFxEeanrp-HoE7FZQ">
@@ -83,7 +85,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_kM--UH9vEeaF1pjERfVvAA" name="testes" guid="_kM--UH9vEeaF1pjERfVvAA" presentationName="Testes" tasks="_3fKi8IAaEeasuNwaWkn8fg _oEEt8IAaEeasuNwaWkn8fg">
             <methodElementProperty xmi:id="_k1XM8H9vEeaF1pjERfVvAA" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_lVOYwH9vEeaF1pjERfVvAA" name="implantacao" guid="_lVOYwH9vEeaF1pjERfVvAA" presentationName="Implantação" tasks="_7nMIQIAaEeasuNwaWkn8fg _5figoJFwEeanrp-HoE7FZQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_lVOYwH9vEeaF1pjERfVvAA" name="implantacao" guid="_lVOYwH9vEeaF1pjERfVvAA" presentationName="Implantação" tasks="_7nMIQIAaEeasuNwaWkn8fg _5figoJFwEeanrp-HoE7FZQ _g3ntQJIAEeaZX8zzGmsLzg">
             <methodElementProperty xmi:id="_mMgmEH9vEeaF1pjERfVvAA" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_nQlSMH9vEeaF1pjERfVvAA" name="projeto_gestao" guid="_nQlSMH9vEeaF1pjERfVvAA" presentationName="Gestão do Projeto" tasks="_1D-NIIvyEeaojuFrSEQLzQ _BG8CAIvuEeaxV7u7ViJ4Og _YSzugH9zEeaF1pjERfVvAA _UkykoH9zEeaF1pjERfVvAA _SVrBsH9zEeaF1pjERfVvAA _v2J0sIwDEea9K-5vLV5Vkw">
@@ -98,7 +100,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:WorkProductType" xmi:id="_iUFHoJFlEeanrp-HoE7FZQ" name="diagrama" guid="_iUFHoJFlEeanrp-HoE7FZQ" presentationName="Diagrama" workProducts="_WXnRUH9sEeaF1pjERfVvAA _OaEzAH9sEeaF1pjERfVvAA _ZPttsJFxEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_kBmZYJFlEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:WorkProductType" xmi:id="_nAP70JFlEeanrp-HoE7FZQ" name="documento" guid="_nAP70JFlEeanrp-HoE7FZQ" presentationName="Documento" workProducts="_A0OZoH9yEeaF1pjERfVvAA _LWnMkH9tEeaF1pjERfVvAA _lNOREIAkEeasuNwaWkn8fg _0fZYEIwAEea9K-5vLV5Vkw">
+          <contentElements xsi:type="org.eclipse.epf.uma:WorkProductType" xmi:id="_nAP70JFlEeanrp-HoE7FZQ" name="documento" guid="_nAP70JFlEeanrp-HoE7FZQ" presentationName="Documento" workProducts="_A0OZoH9yEeaF1pjERfVvAA _LWnMkH9tEeaF1pjERfVvAA _lNOREIAkEeasuNwaWkn8fg _0fZYEIwAEea9K-5vLV5Vkw _jZn0IJH5EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_oMGD4JFlEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:WorkProductType" xmi:id="_bOJxUJFmEeanrp-HoE7FZQ" name="db" guid="_bOJxUJFmEeanrp-HoE7FZQ" presentationName="Banco de Dados" workProducts="_YF0ucJFmEeanrp-HoE7FZQ _A-ILQH9sEeaF1pjERfVvAA">
@@ -106,16 +108,16 @@
           </contentElements>
         </childPackages>
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_hVC6J39qEeakyew3j8_LfQ" name="Tools" guid="_hVC6J39qEeakyew3j8_LfQ">
-          <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_dl8SoJFnEeanrp-HoE7FZQ" name="git" guid="_dl8SoJFnEeanrp-HoE7FZQ" presentationName="GIT" toolMentors="_bV8hwJFuEeanrp-HoE7FZQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_dl8SoJFnEeanrp-HoE7FZQ" name="git" guid="_dl8SoJFnEeanrp-HoE7FZQ" presentationName="GIT" toolMentors="_bV8hwJFuEeanrp-HoE7FZQ _YrpZEJH6EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_ODjGUJFoEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_FOCeMJFoEeanrp-HoE7FZQ" name="github_repositorio" guid="_FOCeMJFoEeanrp-HoE7FZQ" presentationName="Repositório GitHub" toolMentors="_bV8hwJFuEeanrp-HoE7FZQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_FOCeMJFoEeanrp-HoE7FZQ" name="github_repositorio" guid="_FOCeMJFoEeanrp-HoE7FZQ" presentationName="Repositório GitHub" toolMentors="_bV8hwJFuEeanrp-HoE7FZQ _YrpZEJH6EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_J36zYJFoEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_KpidkJFoEeanrp-HoE7FZQ" name="github_wiki" guid="_KpidkJFoEeanrp-HoE7FZQ" presentationName="Wiki do GitHub">
+          <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_KpidkJFoEeanrp-HoE7FZQ" name="github_wiki" guid="_KpidkJFoEeanrp-HoE7FZQ" presentationName="Wiki do GitHub" toolMentors="_uLrogJH5EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_NbAfoJFoEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_PJ1Y8JFoEeanrp-HoE7FZQ" name="github_kanbam" guid="_PJ1Y8JFoEeanrp-HoE7FZQ" presentationName="Kanbam do GitHub">
+          <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_PJ1Y8JFoEeanrp-HoE7FZQ" name="github_kanbam" guid="_PJ1Y8JFoEeanrp-HoE7FZQ" presentationName="GitHub Kanbam" toolMentors="_M0jZ0JH7EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_qBk3cJFoEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_5Tb38JFoEeanrp-HoE7FZQ" name="mysql_workbench" guid="_5Tb38JFoEeanrp-HoE7FZQ" presentationName="MySQL Workbench" toolMentors="_9UECgJFtEeanrp-HoE7FZQ">
@@ -132,6 +134,9 @@
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_PHxUsJFuEeanrp-HoE7FZQ" name="mysql_server" guid="_PHxUsJFuEeanrp-HoE7FZQ" presentationName="MySQL Server" toolMentors="_9UECgJFtEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_QsWs4JFuEeanrp-HoE7FZQ" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Tool" xmi:id="_GB6oYJH7EeaTtrSaGcBIqQ" name="github_issues" guid="_GB6oYJH7EeaTtrSaGcBIqQ" presentationName="GitHub Issues" toolMentors="_M0jZ0JH7EeaTtrSaGcBIqQ">
+            <methodElementProperty xmi:id="_HgpQMJH7EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
           </contentElements>
         </childPackages>
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_hVC6KH9qEeakyew3j8_LfQ" name="StandardCategories" guid="_hVC6KH9qEeakyew3j8_LfQ"/>
@@ -167,18 +172,19 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_LWnMkH9tEeaF1pjERfVvAA" name="cronograma" guid="_LWnMkH9tEeaF1pjERfVvAA" presentationName="Cronograma">
             <methodElementProperty xmi:id="_MXbwYH9tEeaF1pjERfVvAA" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_ILfCcH9vEeaF1pjERfVvAA" name="db_implementar" guid="_ILfCcH9vEeaF1pjERfVvAA" presentationName="Implementar o Banco de Dados" mandatoryInput="_OaEzAH9sEeaF1pjERfVvAA" output="_A-ILQH9sEeaF1pjERfVvAA">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_ILfCcH9vEeaF1pjERfVvAA" name="db_implementar" guid="_ILfCcH9vEeaF1pjERfVvAA" presentationName="Implementar o Banco de Dados" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_OaEzAH9sEeaF1pjERfVvAA" output="_A-ILQH9sEeaF1pjERfVvAA" toolMentors="_9UECgJFtEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_MLpFMH9vEeaF1pjERfVvAA" name="me_edited" value="true"/>
             <presentation xmi:id="-uq5_AW6lpN47W_TNj0oY8A" href="uma://-uq5_AW6lpN47W_TNj0oY8A#-uq5_AW6lpN47W_TNj0oY8A"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_A0OZoH9yEeaF1pjERfVvAA" name="backlog" guid="_A0OZoH9yEeaF1pjERfVvAA" presentationName="Backlog">
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_A0OZoH9yEeaF1pjERfVvAA" name="backlog" guid="_A0OZoH9yEeaF1pjERfVvAA" presentationName="Backlog" briefDescription="Relação priorizada de issues a serem resolvidas" checklists="_0AYgIJH7EeaTtrSaGcBIqQ" toolMentors="_M0jZ0JH7EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_CNxmgH9yEeaF1pjERfVvAA" name="me_edited" value="true"/>
+            <presentation xmi:id="-VuMfr-0IADytHXF2nAON3g" href="uma://-VuMfr-0IADytHXF2nAON3g#-VuMfr-0IADytHXF2nAON3g"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_SVrBsH9zEeaF1pjERfVvAA" name="iteracao_planejar" guid="_SVrBsH9zEeaF1pjERfVvAA" presentationName="Planejar a iteração" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" mandatoryInput="_46j9cH9rEeaF1pjERfVvAA _LWnMkH9tEeaF1pjERfVvAA" output="_0fZYEIwAEea9K-5vLV5Vkw" optionalInput="_8h4CYH9rEeaF1pjERfVvAA">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_SVrBsH9zEeaF1pjERfVvAA" name="iteracao_planejar" guid="_SVrBsH9zEeaF1pjERfVvAA" presentationName="Planejar a iteração" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" mandatoryInput="_46j9cH9rEeaF1pjERfVvAA _LWnMkH9tEeaF1pjERfVvAA" output="_0fZYEIwAEea9K-5vLV5Vkw" optionalInput="_8h4CYH9rEeaF1pjERfVvAA" toolMentors="_uLrogJH5EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_UEZNUH9zEeaF1pjERfVvAA" name="me_edited" value="true"/>
             <presentation xmi:id="-KOoYzNTdrn_tO32QW1Y6ow" href="uma://-KOoYzNTdrn_tO32QW1Y6ow#-KOoYzNTdrn_tO32QW1Y6ow"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_UkykoH9zEeaF1pjERfVvAA" name="iteracao_avaliar" guid="_UkykoH9zEeaF1pjERfVvAA" presentationName="Avaliar a iteração" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" output="_0fZYEIwAEea9K-5vLV5Vkw _46j9cH9rEeaF1pjERfVvAA">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_UkykoH9zEeaF1pjERfVvAA" name="iteracao_avaliar" guid="_UkykoH9zEeaF1pjERfVvAA" presentationName="Avaliar a iteração" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" output="_0fZYEIwAEea9K-5vLV5Vkw _46j9cH9rEeaF1pjERfVvAA" toolMentors="_uLrogJH5EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_WcJu4H9zEeaF1pjERfVvAA" name="me_edited" value="true"/>
             <presentation xmi:id="-nZyrh1XqEafEEed-wTjvqA" href="uma://-nZyrh1XqEafEEed-wTjvqA#-nZyrh1XqEafEEed-wTjvqA"/>
           </contentElements>
@@ -186,11 +192,11 @@
             <methodElementProperty xmi:id="_Z-_jgH9zEeaF1pjERfVvAA" name="me_edited" value="true"/>
             <presentation xmi:id="-UJg9RSRUL9iH4OScNrR-1w" href="uma://-UJg9RSRUL9iH4OScNrR-1w#-UJg9RSRUL9iH4OScNrR-1w"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_fn-TUH91EeaF1pjERfVvAA" name="db_modelar" guid="_fn-TUH91EeaF1pjERfVvAA" presentationName="Modelar o Banco de Dados" briefDescription="Identificação das entidades e seus relacionamentos necessários para o projeto do banco de dados da aplicação." performedBy="_tJIyQH91EeaF1pjERfVvAA" output="_WXnRUH9sEeaF1pjERfVvAA" additionallyPerformedBy="_qlUKoH91EeaF1pjERfVvAA">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_fn-TUH91EeaF1pjERfVvAA" name="db_modelar" guid="_fn-TUH91EeaF1pjERfVvAA" presentationName="Modelar o Banco de Dados" briefDescription="Identificação das entidades e seus relacionamentos necessários para o projeto do banco de dados da aplicação." performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_9QgD4IAkEeasuNwaWkn8fg _NbRz8IAmEeasuNwaWkn8fg" output="_WXnRUH9sEeaF1pjERfVvAA" additionallyPerformedBy="_qlUKoH91EeaF1pjERfVvAA" optionalInput="_8h4CYH9rEeaF1pjERfVvAA" toolMentors="_9UECgJFtEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_h7WEIH91EeaF1pjERfVvAA" name="me_edited" value="true"/>
             <presentation xmi:id="-sLSe23dlDnHGVutKCtO7jg" href="uma://-sLSe23dlDnHGVutKCtO7jg#-sLSe23dlDnHGVutKCtO7jg"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_i3SH8H91EeaF1pjERfVvAA" name="db_projetar" guid="_i3SH8H91EeaF1pjERfVvAA" presentationName="Projetar o Banco de Dados" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_WXnRUH9sEeaF1pjERfVvAA" output="_OaEzAH9sEeaF1pjERfVvAA">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_i3SH8H91EeaF1pjERfVvAA" name="db_projetar" guid="_i3SH8H91EeaF1pjERfVvAA" presentationName="Projetar o Banco de Dados" briefDescription="Converter o modelo de Entidades e Relacionamentos em Modelo Lógico do Banco de Dados" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_WXnRUH9sEeaF1pjERfVvAA" output="_OaEzAH9sEeaF1pjERfVvAA" toolMentors="_9UECgJFtEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_kf5EgH91EeaF1pjERfVvAA" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Role" xmi:id="_qlUKoH91EeaF1pjERfVvAA" name="stakeholder" guid="_qlUKoH91EeaF1pjERfVvAA" presentationName="Stakeholder">
@@ -205,7 +211,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_oEEt8IAaEeasuNwaWkn8fg" name="teste_escrever" guid="_oEEt8IAaEeasuNwaWkn8fg" presentationName="Escrever Teste" output="_WpIPIIAcEeasuNwaWkn8fg">
             <methodElementProperty xmi:id="_wlTvMIAaEeasuNwaWkn8fg" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_y9qGoIAaEeasuNwaWkn8fg" name="codificar" guid="_y9qGoIAaEeasuNwaWkn8fg" presentationName="Escrever Código" briefDescription="Escrever o código necessário para a implementação da funcionalidade descrita no caso de uso." checklists="_A9YeIJFkEeanrp-HoE7FZQ" mandatoryInput="_JNd7QIAcEeasuNwaWkn8fg" output="_JNd7QIAcEeasuNwaWkn8fg" toolMentors="_U81ncJFqEeanrp-HoE7FZQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_y9qGoIAaEeasuNwaWkn8fg" name="codificar" guid="_y9qGoIAaEeasuNwaWkn8fg" presentationName="Escrever Código" briefDescription="Implementar " checklists="_A9YeIJFkEeanrp-HoE7FZQ" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_JNd7QIAcEeasuNwaWkn8fg _A0OZoH9yEeaF1pjERfVvAA _A-ILQH9sEeaF1pjERfVvAA" output="_JNd7QIAcEeasuNwaWkn8fg" optionalInput="_jZn0IJH5EeaTtrSaGcBIqQ _ZPttsJFxEeanrp-HoE7FZQ _OaEzAH9sEeaF1pjERfVvAA _8h4CYH9rEeaF1pjERfVvAA" toolMentors="_U81ncJFqEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_2LvMMIAaEeasuNwaWkn8fg" name="me_edited" value="true"/>
             <presentation xmi:id="-HwDVOYlw16OPA1QgHdXz_g" href="uma://-HwDVOYlw16OPA1QgHdXz_g#-HwDVOYlw16OPA1QgHdXz_g"/>
           </contentElements>
@@ -214,6 +220,7 @@
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_7nMIQIAaEeasuNwaWkn8fg" name="integrar" guid="_7nMIQIAaEeasuNwaWkn8fg" presentationName="Integrar Código" briefDescription="Integrar o código do ambiente de testes ao ambiente de produção" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_JNd7QIAcEeasuNwaWkn8fg" output="_GcmmIH9sEeaF1pjERfVvAA">
             <methodElementProperty xmi:id="__3I6gIAaEeasuNwaWkn8fg" name="me_edited" value="true"/>
+            <presentation xmi:id="--KkjvWlCIqG2Y8xaFidOgA" href="uma://--KkjvWlCIqG2Y8xaFidOgA#--KkjvWlCIqG2Y8xaFidOgA"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Deliverable" xmi:id="_JNd7QIAcEeasuNwaWkn8fg" name="branch_teste" guid="_JNd7QIAcEeasuNwaWkn8fg" presentationName="Repositório de Testes">
             <methodElementProperty xmi:id="_SuK1cIAcEeasuNwaWkn8fg" name="me_edited" value="true"/>
@@ -237,7 +244,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_BG8CAIvuEeaxV7u7ViJ4Og" name="visao_definir" guid="_BG8CAIvuEeaxV7u7ViJ4Og" presentationName="Definir a Visão" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" output="_8h4CYH9rEeaF1pjERfVvAA" optionalInput="_46j9cH9rEeaF1pjERfVvAA">
             <methodElementProperty xmi:id="_EUimcIvuEeaxV7u7ViJ4Og" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_1D-NIIvyEeaojuFrSEQLzQ" name="projeto_planejar" guid="_1D-NIIvyEeaojuFrSEQLzQ" presentationName="Planejar o Projeto" briefDescription="Esta tarefa descreve um acordo inicial sobre como o projeto vai entregar o Visão do produto. O plano de projeto resultante fornece uma visão geral resumida do projeto." performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" mandatoryInput="_lNOREIAkEeasuNwaWkn8fg" output="_46j9cH9rEeaF1pjERfVvAA _lNOREIAkEeasuNwaWkn8fg">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_1D-NIIvyEeaojuFrSEQLzQ" name="projeto_planejar" guid="_1D-NIIvyEeaojuFrSEQLzQ" presentationName="Planejar o Projeto" briefDescription="Esta tarefa descreve um acordo inicial sobre como o projeto vai entregar o Visão do produto. O plano de projeto resultante fornece uma visão geral resumida do projeto." performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" mandatoryInput="_lNOREIAkEeasuNwaWkn8fg" output="_46j9cH9rEeaF1pjERfVvAA _lNOREIAkEeasuNwaWkn8fg" toolMentors="_uLrogJH5EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_3mGLoIvyEeaojuFrSEQLzQ" name="me_edited" value="true"/>
             <presentation xmi:id="-j_EHjmkXBvi-G4Q55rDnOQ" href="uma://-j_EHjmkXBvi-G4Q55rDnOQ#-j_EHjmkXBvi-G4Q55rDnOQ"/>
           </contentElements>
@@ -251,7 +258,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_0fZYEIwAEea9K-5vLV5Vkw" name="iteracao_plano" guid="_0fZYEIwAEea9K-5vLV5Vkw" presentationName="Plano de Iteração">
             <methodElementProperty xmi:id="_2RirIIwAEea9K-5vLV5Vkw" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_v2J0sIwDEea9K-5vLV5Vkw" name="backlog_manter" guid="_v2J0sIwDEea9K-5vLV5Vkw" presentationName="Manter o Backlog" mandatoryInput="_A0OZoH9yEeaF1pjERfVvAA" output="_A0OZoH9yEeaF1pjERfVvAA">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_v2J0sIwDEea9K-5vLV5Vkw" name="backlog_manter" guid="_v2J0sIwDEea9K-5vLV5Vkw" presentationName="Manter o Backlog" checklists="_0AYgIJH7EeaTtrSaGcBIqQ" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_A0OZoH9yEeaF1pjERfVvAA" output="_A0OZoH9yEeaF1pjERfVvAA" optionalInput="_LWnMkH9tEeaF1pjERfVvAA _0fZYEIwAEea9K-5vLV5Vkw _46j9cH9rEeaF1pjERfVvAA" toolMentors="_M0jZ0JH7EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_xppLkIwDEea9K-5vLV5Vkw" name="me_edited" value="true"/>
             <presentation xmi:id="-GliMrYL1kogEPvFk1e1CuA" href="uma://-GliMrYL1kogEPvFk1e1CuA#-GliMrYL1kogEPvFk1e1CuA"/>
           </contentElements>
@@ -278,11 +285,11 @@
           <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_bV8hwJFuEeanrp-HoE7FZQ" name="codigo_versionamento" guid="_bV8hwJFuEeanrp-HoE7FZQ" presentationName="Versionamento de Código">
             <methodElementProperty xmi:id="_dQb4gJFuEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_5figoJFwEeanrp-HoE7FZQ" name="arquitetura_implementar" guid="_5figoJFwEeanrp-HoE7FZQ" presentationName="Implementar a arquitetura" performedBy="_tJIyQH91EeaF1pjERfVvAA" output="_GcmmIH9sEeaF1pjERfVvAA">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_5figoJFwEeanrp-HoE7FZQ" name="arquitetura_implementar" guid="_5figoJFwEeanrp-HoE7FZQ" presentationName="Implementar a arquitetura" briefDescription="Disponibilizar em produção a arquitetura do sistema" performedBy="_tJIyQH91EeaF1pjERfVvAA" output="_GcmmIH9sEeaF1pjERfVvAA" optionalInput="_jZn0IJH5EeaTtrSaGcBIqQ _8h4CYH9rEeaF1pjERfVvAA" toolMentors="_U81ncJFqEeanrp-HoE7FZQ _bV8hwJFuEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_9m_eMJFwEeanrp-HoE7FZQ" name="me_edited" value="true"/>
             <presentation xmi:id="-NqdFI0gM_H5XhsXTjAu_UQ" href="uma://-NqdFI0gM_H5XhsXTjAu_UQ#-NqdFI0gM_H5XhsXTjAu_UQ"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_F8ctQJFxEeanrp-HoE7FZQ" name="arquitetura_documentar" guid="_F8ctQJFxEeanrp-HoE7FZQ" presentationName="Documentar a Arquitetura" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_GcmmIH9sEeaF1pjERfVvAA" output="_ZPttsJFxEeanrp-HoE7FZQ" toolMentors="_yNWwoJFpEeanrp-HoE7FZQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_F8ctQJFxEeanrp-HoE7FZQ" name="arquitetura_documentar" guid="_F8ctQJFxEeanrp-HoE7FZQ" presentationName="Documentar a Arquitetura" briefDescription="Elaborar a documentação da arquitetura do sistema" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_GcmmIH9sEeaF1pjERfVvAA" output="_ZPttsJFxEeanrp-HoE7FZQ _jZn0IJH5EeaTtrSaGcBIqQ" optionalInput="_8h4CYH9rEeaF1pjERfVvAA" toolMentors="_yNWwoJFpEeanrp-HoE7FZQ _uLrogJH5EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_IHeaYJFxEeanrp-HoE7FZQ" name="me_edited" value="true"/>
             <presentation xmi:id="-1FedhLrVsn8J2eBUfCNpqg" href="uma://-1FedhLrVsn8J2eBUfCNpqg#-1FedhLrVsn8J2eBUfCNpqg"/>
           </contentElements>
@@ -292,6 +299,26 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_ldfnQJFzEeanrp-HoE7FZQ" name="ui_projetar" guid="_ldfnQJFzEeanrp-HoE7FZQ" presentationName="Projetar a Interface com o Usuário">
             <methodElementProperty xmi:id="_nuojcJFzEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_jZn0IJH5EeaTtrSaGcBIqQ" name="arquitetura_documento" guid="_jZn0IJH5EeaTtrSaGcBIqQ" presentationName="Documento da Arquitetura" toolMentors="_uLrogJH5EeaTtrSaGcBIqQ">
+            <methodElementProperty xmi:id="_mr4PEJH5EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_uLrogJH5EeaTtrSaGcBIqQ" name="documentacao" guid="_uLrogJH5EeaTtrSaGcBIqQ" presentationName="Documentação">
+            <methodElementProperty xmi:id="_zgxd4JH5EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_YrpZEJH6EeaTtrSaGcBIqQ" name="integracao" guid="_YrpZEJH6EeaTtrSaGcBIqQ" presentationName="Integração">
+            <methodElementProperty xmi:id="_Z-8M8JH6EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_M0jZ0JH7EeaTtrSaGcBIqQ" name="backlog_manutencao" guid="_M0jZ0JH7EeaTtrSaGcBIqQ" presentationName="Manutenção do Backlog">
+            <methodElementProperty xmi:id="_PYFGgJH7EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Checklist" xmi:id="_0AYgIJH7EeaTtrSaGcBIqQ" name="issue_criacao" guid="_0AYgIJH7EeaTtrSaGcBIqQ" presentationName="Criando uma nova issue" briefDescription="Lista de verificação para a criação de uma nova issue">
+            <methodElementProperty xmi:id="_3w49UJH7EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
+            <presentation xmi:id="-ws1nQwoOrv49G72TNg3Z8w" href="uma://-ws1nQwoOrv49G72TNg3Z8w#-ws1nQwoOrv49G72TNg3Z8w"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_g3ntQJIAEeaZX8zzGmsLzg" name="homologar" guid="_g3ntQJIAEeaZX8zzGmsLzg" presentationName="Homologar" briefDescription="Validar uma implementação" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" mandatoryInput="_JNd7QIAcEeasuNwaWkn8fg">
+            <methodElementProperty xmi:id="_iIm0AJIAEeaZX8zzGmsLzg" name="me_edited" value="true"/>
+            <presentation xmi:id="-F6yDEBhlEspj01Ub6MS6Ug" href="uma://-F6yDEBhlEspj01Ub6MS6Ug#-F6yDEBhlEspj01Ub6MS6Ug"/>
+          </contentElements>
         </childPackages>
       </childPackages>
       <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_hVC6LX9qEeakyew3j8_LfQ" name="CapabilityPatterns" guid="_hVC6LX9qEeakyew3j8_LfQ">
@@ -299,28 +326,15 @@
           <methodElementProperty xmi:id="_fnm2AX9sEeaF1pjERfVvAA" name="pkg_loadCheck" value="true"/>
           <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_UwspsIAjEeasuNwaWkn8fg" href="uma://_UwspsIAjEeasuNwaWkn8fg#_UwspsIAjEeasuNwaWkn8fg"/>
         </childPackages>
-        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_g-yEUH9sEeaF1pjERfVvAA" name="Análise" guid="_g-yEUH9sEeaF1pjERfVvAA">
-          <methodElementProperty xmi:id="_g-yEUX9sEeaF1pjERfVvAA" name="pkg_loadCheck" value="true"/>
-          <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_baFMAH90EeaF1pjERfVvAA" href="uma://_baFMAH90EeaF1pjERfVvAA#_baFMAH90EeaF1pjERfVvAA"/>
-        </childPackages>
         <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_j_dAAH9sEeaF1pjERfVvAA" name="Design" guid="_j_dAAH9sEeaF1pjERfVvAA">
           <methodElementProperty xmi:id="_j_dAAX9sEeaF1pjERfVvAA" name="pkg_loadCheck" value="true"/>
           <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_DzO2gH90EeaF1pjERfVvAA" href="uma://_DzO2gH90EeaF1pjERfVvAA#_DzO2gH90EeaF1pjERfVvAA"/>
-        </childPackages>
-        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_la8GkH9sEeaF1pjERfVvAA" name="Implementação" guid="_la8GkH9sEeaF1pjERfVvAA">
-          <methodElementProperty xmi:id="_la8GkX9sEeaF1pjERfVvAA" name="pkg_loadCheck" value="true"/>
-        </childPackages>
-        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_mUT-kH9sEeaF1pjERfVvAA" name="Implantação" guid="_mUT-kH9sEeaF1pjERfVvAA">
-          <methodElementProperty xmi:id="_mUT-kX9sEeaF1pjERfVvAA" name="pkg_loadCheck" value="true"/>
         </childPackages>
         <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_na8PcH9sEeaF1pjERfVvAA" name="Gestão do Projeto" guid="_na8PcH9sEeaF1pjERfVvAA">
           <methodElementProperty xmi:id="_na8PcX9sEeaF1pjERfVvAA" name="pkg_loadCheck" value="true"/>
           <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_rnKYQH9sEeaF1pjERfVvAA" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_rnKYQH9sEeaF1pjERfVvAA"/>
           <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_82PTYH9sEeaF1pjERfVvAA" href="uma://_82PTYH9sEeaF1pjERfVvAA#_82PTYH9sEeaF1pjERfVvAA"/>
           <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_qjMtUIwDEea9K-5vLV5Vkw" href="uma://_qjMtUIwDEea9K-5vLV5Vkw#_qjMtUIwDEea9K-5vLV5Vkw"/>
-        </childPackages>
-        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_OVk4EH9tEeaF1pjERfVvAA" name="Testes" guid="_OVk4EH9tEeaF1pjERfVvAA">
-          <methodElementProperty xmi:id="_OVk4EX9tEeaF1pjERfVvAA" name="pkg_loadCheck" value="true"/>
         </childPackages>
         <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_3fPc0JFwEeanrp-HoE7FZQ" href="uma://_3fPc0JFwEeanrp-HoE7FZQ#_3fPc0JFwEeanrp-HoE7FZQ"/>
         <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_qRA2EJFyEeanrp-HoE7FZQ" href="uma://_qRA2EJFyEeanrp-HoE7FZQ#_qRA2EJFyEeanrp-HoE7FZQ"/>

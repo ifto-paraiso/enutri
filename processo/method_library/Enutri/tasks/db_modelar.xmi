@@ -2,5 +2,6 @@
 <org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-sLSe23dlDnHGVutKCtO7jg" name="db_modelar,_fn-TUH91EeaF1pjERfVvAA" guid="-sLSe23dlDnHGVutKCtO7jg" changeDate="2016-09-21T14:09:10.791-0300">
   <sections xmi:id="_Hn9EEIAeEeasuNwaWkn8fg" name="Identificar as entidades" guid="_Hn9EEIAeEeasuNwaWkn8fg"/>
   <sections xmi:id="_sXNaQIAeEeasuNwaWkn8fg" name="Identificar os relacionamentos entre as entidades" guid="_sXNaQIAeEeasuNwaWkn8fg"/>
+  <sections xmi:id="_qehLgJH_EeaTtrSaGcBIqQ" name="Atualizar o modelo de Entidades e Relacionamentos" guid="_qehLgJH_EeaTtrSaGcBIqQ"/>
   <purpose>Identificar&amp;nbsp;as entidades e&amp;nbsp;os relacionamentos necessários para o projeto do banco de dados da aplicação.</purpose>
 </org.eclipse.epf.uma:TaskDescription>

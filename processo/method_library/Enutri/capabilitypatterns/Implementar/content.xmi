@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<org.eclipse.epf.uma:ProcessDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-_XdxwYhZC93GzJqqQMmFuw" name="Implementar,_23LvkZF2Eea9fr2SbR6M-g" guid="-_XdxwYhZC93GzJqqQMmFuw"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma:ProcessDescription xmi:id="-_XdxwYhZC93GzJqqQMmFuw" name="Implementar,_23LvkZF2Eea9fr2SbR6M-g" guid="-_XdxwYhZC93GzJqqQMmFuw"/>
+  <org.eclipse.epf.uma:DescriptorDescription xmi:id="-G_2YLhSctyxvKgob5RF_VQ" name="backlog,_BUc_sJF3Eea9fr2SbR6M-g_A0OZoH9yEeaF1pjERfVvAA" guid="-G_2YLhSctyxvKgob5RF_VQ">
+    <refinedDescription>O Backlog é formado por dois elementos: a lista de issues (GitHub Issues)&amp;nbsp;e o quadro kanbam (GitHub Project)&amp;nbsp;com&#xD;
+a priorização das issues a serem resolvidas, as issues em desenvolvimento e as issues resolvidas.</refinedDescription>
+  </org.eclipse.epf.uma:DescriptorDescription>
+</xmi:XMI>
