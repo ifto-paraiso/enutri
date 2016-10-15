@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.eclipse.epf.diagram.model="http://www.eclipse.org/epf/diagram/1.0.0/diagram.ecore" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Activity xmi:id="_cev1YH9xEeaF1pjERfVvAA" name="Ciclo de Vida">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cev1YX9xEeaF1pjERfVvAA" source="uma_element">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cev1Yn9xEeaF1pjERfVvAA" key="uri" value="uma://_xLjf0H9qEeakyew3j8_LfQ#_xLjf0X9qEeakyew3j8_LfQ"/>
@@ -2790,5 +2790,589 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6GLCQpF7EeaYzNAH-C6Rkg" points="[0, 10, 0, -70]$[-3, 70, -3, -10]"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6GLCQ5F7EeaYzNAH-C6Rkg" id="(0.4594594594594595,0.20408163265306123)"/>
     </edges>
+  </notation:Diagram>
+  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_KgQa4JLKEeaChNCLJwpJ6Q" autoLayout="true">
+    <linkedElement xmi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_xLjf0H9qEeakyew3j8_LfQ#_eLYy0X9wEeaF1pjERfVvAA"/>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:RoleTaskComposite" xmi:id="_KkVpoJLKEeaChNCLJwpJ6Q">
+      <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ_tJIyQH91EeaF1pjERfVvAA"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:RoleNode" xmi:id="_KkVpoZLKEeaChNCLJwpJ6Q" readOnly="true" name="Desenvolvedor">
+        <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ_tJIyQH91EeaF1pjERfVvAA"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_KkVpopLKEeaChNCLJwpJ6Q" readOnly="true" incomingConnections="_KkZUAJLKEeaChNCLJwpJ6Q" name="Planejar o Projeto" index="0">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_KkZUAZLKEeaChNCLJwpJ6Q" target="_KkVpqpLKEeaChNCLJwpJ6Q"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_KkVpo5LKEeaChNCLJwpJ6Q" readOnly="true" name="Definir a Visão" index="1">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_KkZUApLKEeaChNCLJwpJ6Q" target="_KkVprZLKEeaChNCLJwpJ6Q"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:RoleTaskComposite" xmi:id="_KkVppJLKEeaChNCLJwpJ6Q">
+      <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ_qlUKoH91EeaF1pjERfVvAA"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:RoleNode" xmi:id="_KkVppZLKEeaChNCLJwpJ6Q" readOnly="true" name="Stakeholder">
+        <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ_qlUKoH91EeaF1pjERfVvAA"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_KkVpppLKEeaChNCLJwpJ6Q" readOnly="true" incomingConnections="_KkZ7EJLKEeaChNCLJwpJ6Q" name="Planejar o Projeto" index="0">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_KkZ7EZLKEeaChNCLJwpJ6Q" target="_KkVpsZLKEeaChNCLJwpJ6Q"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_KkVpp5LKEeaChNCLJwpJ6Q" readOnly="true" name="Definir a Visão" index="1">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_KkZ7EpLKEeaChNCLJwpJ6Q" target="_KkVptJLKEeaChNCLJwpJ6Q"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_KkVpqJLKEeaChNCLJwpJ6Q" type="1">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ"/>
+      <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_KkZUAJLKEeaChNCLJwpJ6Q" target="_KkVpopLKEeaChNCLJwpJ6Q"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_KkVpqZLKEeaChNCLJwpJ6Q" readOnly="true" name="Glossário" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ_lNOREIAkEeasuNwaWkn8fg"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_KkVpqpLKEeaChNCLJwpJ6Q" incomingConnections="_KkZUAZLKEeaChNCLJwpJ6Q" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_KkVpq5LKEeaChNCLJwpJ6Q" readOnly="true" name="Plano do Projeto" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ_46j9cH9rEeaF1pjERfVvAA"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_KkVprJLKEeaChNCLJwpJ6Q" readOnly="true" name="Glossário" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ_lNOREIAkEeasuNwaWkn8fg"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_KkVprZLKEeaChNCLJwpJ6Q" incomingConnections="_KkZUApLKEeaChNCLJwpJ6Q" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_KkVprpLKEeaChNCLJwpJ6Q" readOnly="true" name="Visão" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ_8h4CYH9rEeaF1pjERfVvAA"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_KkVpr5LKEeaChNCLJwpJ6Q" type="1">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ"/>
+      <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_KkZ7EJLKEeaChNCLJwpJ6Q" target="_KkVpppLKEeaChNCLJwpJ6Q"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_KkVpsJLKEeaChNCLJwpJ6Q" readOnly="true" name="Glossário" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ_lNOREIAkEeasuNwaWkn8fg"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_KkVpsZLKEeaChNCLJwpJ6Q" incomingConnections="_KkZ7EZLKEeaChNCLJwpJ6Q" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_KkVpspLKEeaChNCLJwpJ6Q" readOnly="true" name="Plano do Projeto" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ_46j9cH9rEeaF1pjERfVvAA"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_KkVps5LKEeaChNCLJwpJ6Q" readOnly="true" name="Glossário" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_K0CnMIvzEeaojuFrSEQLzQ_lNOREIAkEeasuNwaWkn8fg"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_KkVptJLKEeaChNCLJwpJ6Q" incomingConnections="_KkZ7EpLKEeaChNCLJwpJ6Q" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_KkVptZLKEeaChNCLJwpJ6Q" readOnly="true" name="Visão" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ_8h4CYH9rEeaF1pjERfVvAA"/>
+      </nodes>
+    </nodes>
+  </org.eclipse.epf.diagram.model:ActivityDetailDiagram>
+  <notation:Diagram xmi:id="_KgSQEJLKEeaChNCLJwpJ6Q" type="ADD" element="_KgQa4JLKEeaChNCLJwpJ6Q" name="projeto_iniciar" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_Kky8oJLKEeaChNCLJwpJ6Q" type="1001" element="_KkVpoJLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_Kmb7YJLKEeaChNCLJwpJ6Q" type="2001" element="_KkVpoZLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_KmdwkJLKEeaChNCLJwpJ6Q" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Kmb7YZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Kmb7YpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Kmb7Y5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Kmb7ZJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kmb7ZZLKEeaChNCLJwpJ6Q" x="40" y="91" width="73"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_KmeXoJLKEeaChNCLJwpJ6Q" type="2002" element="_KkVpopLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_Kmgz4JLKEeaChNCLJwpJ6Q" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_KmeXoZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_KmeXopLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_KmeXo5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_KmeXpJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KmeXpZLKEeaChNCLJwpJ6Q" x="133" y="91" width="84" height="112"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Kmha8JLKEeaChNCLJwpJ6Q" type="2002" element="_KkVpo5LKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_KmiCAJLKEeaChNCLJwpJ6Q" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Kmha8ZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Kmha8pLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Kmha85LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Kmha9JLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kmha9ZLKEeaChNCLJwpJ6Q" x="237" y="91" width="72" height="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Kky8oZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Kky8opLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Kky8o5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Kky8pJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kky8pZLKEeaChNCLJwpJ6Q" x="30" y="81" width="319" height="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Kk1Y4JLKEeaChNCLJwpJ6Q" type="1001" element="_KkVppJLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_KnY9oJLKEeaChNCLJwpJ6Q" type="2001" element="_KkVppZLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_Kn7JIJLKEeaChNCLJwpJ6Q" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_KnaLwJLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_KnaLwZLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_KnaLwpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_KnaLw5LKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KnaLxJLKEeaChNCLJwpJ6Q" x="40" y="404" width="57"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Kn7wMJLKEeaChNCLJwpJ6Q" type="2002" element="_KkVpppLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_Kn8-UJLKEeaChNCLJwpJ6Q" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Kn7wMZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Kn7wMpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Kn7wM5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Kn7wNJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kn7wNZLKEeaChNCLJwpJ6Q" x="117" y="404" width="84" height="112"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Kn8-UZLKEeaChNCLJwpJ6Q" type="2002" element="_KkVpp5LKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_Kn8-V5LKEeaChNCLJwpJ6Q" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Kn8-UpLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Kn8-U5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Kn8-VJLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Kn8-VZLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kn8-VpLKEeaChNCLJwpJ6Q" x="221" y="404" width="72" height="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Kk1Y4ZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Kk1Y4pLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Kk1Y45LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Kk1Y5JLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kk1Y5ZLKEeaChNCLJwpJ6Q" x="30" y="394" width="303" height="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Kk3OEJLKEeaChNCLJwpJ6Q" type="1002" element="_KkVpqJLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_KoJyoJLKEeaChNCLJwpJ6Q" type="2003" element="_KkVpqZLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_KoLn0JLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_KoJyoZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_KoJyopLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_KoJyo5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_KoJypJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KoJypZLKEeaChNCLJwpJ6Q" x="147" y="11" width="57"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Kk3OEZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Kk3OEpLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Kk3OE5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Kk3OFJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kk3OFZLKEeaChNCLJwpJ6Q" x="137" y="1" width="77" height="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Kk6RYJLKEeaChNCLJwpJ6Q" type="1002" element="_KkVpqpLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_KobfcJLKEeaChNCLJwpJ6Q" type="2003" element="_KkVpq5LKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_KocGgJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_KobfcZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_KobfcpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Kobfc5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_KobfdJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KobfdZLKEeaChNCLJwpJ6Q" x="146" y="171" width="59"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_KoctkJLKEeaChNCLJwpJ6Q" type="2003" element="_KkVprJLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_Kod7sJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_KoctkZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_KoctkpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Koctk5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_KoctlJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KoctlZLKEeaChNCLJwpJ6Q" x="146" y="223" width="59"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Kk6RYZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Kk6RYpLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Kk6RY5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Kk6RZJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kk6RZZLKEeaChNCLJwpJ6Q" x="136" y="161" width="79" height="112"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Kl_PcJLKEeaChNCLJwpJ6Q" type="1002" element="_KkVprZLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_KojbQJLKEeaChNCLJwpJ6Q" type="2003" element="_KkVprpLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_Kol3gJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_KojbQZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_KojbQpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_KojbQ5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_KojbRJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KojbRZLKEeaChNCLJwpJ6Q" x="248" y="171" width="50"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Kl_PcZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_KmAdkJLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_KmAdkZLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_KmAdkpLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KmAdk5LKEeaChNCLJwpJ6Q" x="238" y="161" width="70" height="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_KmBrsJLKEeaChNCLJwpJ6Q" type="1002" element="_KkVpr5LKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_Koo60JLKEeaChNCLJwpJ6Q" type="2003" element="_KkVpsJLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_KoqwAJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Koo60ZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Koo60pLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Koo605LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Koo61JLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Koo61ZLKEeaChNCLJwpJ6Q" x="131" y="324" width="57"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_KmBrsZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_KmBrspLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_KmBrs5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_KmBrtJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KmBrtZLKEeaChNCLJwpJ6Q" x="121" y="314" width="77" height="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_KmC50JLKEeaChNCLJwpJ6Q" type="1002" element="_KkVpsZLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_KouaYJLKEeaChNCLJwpJ6Q" type="2003" element="_KkVpspLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_KovogJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_KouaYZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_KouaYpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_KouaY5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_KouaZJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KouaZZLKEeaChNCLJwpJ6Q" x="130" y="484" width="59"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_KowPkJLKEeaChNCLJwpJ6Q" type="2003" element="_KkVps5LKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_KowPlpLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_KowPkZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_KowPkpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_KowPk5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_KowPlJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KowPlZLKEeaChNCLJwpJ6Q" x="130" y="536" width="59"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_KmC50ZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_KmC50pLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_KmC505LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_KmC51JLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KmC51ZLKEeaChNCLJwpJ6Q" x="120" y="474" width="79" height="112"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_KmEH8JLKEeaChNCLJwpJ6Q" type="1002" element="_KkVptJLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_Ko4ycJLKEeaChNCLJwpJ6Q" type="2003" element="_KkVptZLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_Ko6AkJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Ko4ycZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Ko4ycpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Ko5ZgJLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Ko5ZgZLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ko5ZgpLKEeaChNCLJwpJ6Q" x="232" y="484" width="50"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_KmEH8ZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_KmEH8pLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_KmEH85LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_KmEH9JLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KmEH9ZLKEeaChNCLJwpJ6Q" x="222" y="474" width="70" height="60"/>
+    </children>
+    <styles xmi:type="notation:PageStyle" xmi:id="_KgSQEZLKEeaChNCLJwpJ6Q"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_KgSQEpLKEeaChNCLJwpJ6Q"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_KgSQE5LKEeaChNCLJwpJ6Q"/>
+  </notation:Diagram>
+  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_W3_MkJLKEeaChNCLJwpJ6Q" autoLayout="true">
+    <linkedElement xmi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_xLjf0H9qEeakyew3j8_LfQ#_F159EX9tEeaF1pjERfVvAA"/>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:RoleTaskComposite" xmi:id="_W5DjkJLKEeaChNCLJwpJ6Q">
+      <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_tJIyQH91EeaF1pjERfVvAA"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:RoleNode" xmi:id="_W5DjkZLKEeaChNCLJwpJ6Q" readOnly="true" name="Desenvolvedor">
+        <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_tJIyQH91EeaF1pjERfVvAA"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_W5DjkpLKEeaChNCLJwpJ6Q" readOnly="true" incomingConnections="_W5Gm4JLKEeaChNCLJwpJ6Q" name="Planejar a iteração" index="0">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_W5Gm4ZLKEeaChNCLJwpJ6Q" target="_W5EKopLKEeaChNCLJwpJ6Q"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_W5Djk5LKEeaChNCLJwpJ6Q" readOnly="true" incomingConnections="_W5HN8JLKEeaChNCLJwpJ6Q" name="Gerenciar o tempo do projeto" index="1">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_bGBdAH9zEeaF1pjERfVvAA"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_W5HN8ZLKEeaChNCLJwpJ6Q" target="_W5EKp5LKEeaChNCLJwpJ6Q"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_W5DjlJLKEeaChNCLJwpJ6Q" readOnly="true" name="Avaliar a iteração" index="2">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_W5HN8pLKEeaChNCLJwpJ6Q" target="_W5EKqZLKEeaChNCLJwpJ6Q"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:RoleTaskComposite" xmi:id="_W5DjlZLKEeaChNCLJwpJ6Q">
+      <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_qlUKoH91EeaF1pjERfVvAA"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:RoleNode" xmi:id="_W5DjlpLKEeaChNCLJwpJ6Q" readOnly="true" name="Stakeholder">
+        <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_qlUKoH91EeaF1pjERfVvAA"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_W5Djl5LKEeaChNCLJwpJ6Q" readOnly="true" incomingConnections="_W5H1AJLKEeaChNCLJwpJ6Q" name="Planejar a iteração" index="0">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_W5H1AZLKEeaChNCLJwpJ6Q" target="_W5EKr5LKEeaChNCLJwpJ6Q"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_W5DjmJLKEeaChNCLJwpJ6Q" readOnly="true" name="Avaliar a iteração" index="1">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_W5H1ApLKEeaChNCLJwpJ6Q" target="_W5EKsZLKEeaChNCLJwpJ6Q"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_W5DjmZLKEeaChNCLJwpJ6Q" type="1">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA"/>
+      <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_W5Gm4JLKEeaChNCLJwpJ6Q" target="_W5DjkpLKEeaChNCLJwpJ6Q"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKoJLKEeaChNCLJwpJ6Q" readOnly="true" name="Plano do Projeto" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKoZLKEeaChNCLJwpJ6Q" readOnly="true" name="Cronograma" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_W5EKopLKEeaChNCLJwpJ6Q" incomingConnections="_W5Gm4ZLKEeaChNCLJwpJ6Q" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKo5LKEeaChNCLJwpJ6Q" readOnly="true" name="Plano de Iteração" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_0fZYEIwAEea9K-5vLV5Vkw"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_W5EKpJLKEeaChNCLJwpJ6Q" type="1">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_bGBdAH9zEeaF1pjERfVvAA"/>
+      <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_W5HN8JLKEeaChNCLJwpJ6Q" target="_W5Djk5LKEeaChNCLJwpJ6Q"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKpZLKEeaChNCLJwpJ6Q" readOnly="true" name="Cronograma" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKppLKEeaChNCLJwpJ6Q" readOnly="true" name="Plano do Projeto" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_W5EKp5LKEeaChNCLJwpJ6Q" incomingConnections="_W5HN8ZLKEeaChNCLJwpJ6Q" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_bGBdAH9zEeaF1pjERfVvAA"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKqJLKEeaChNCLJwpJ6Q" readOnly="true" name="Cronograma" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_W5EKqZLKEeaChNCLJwpJ6Q" incomingConnections="_W5HN8pLKEeaChNCLJwpJ6Q" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKqpLKEeaChNCLJwpJ6Q" readOnly="true" name="Plano de Iteração" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_0fZYEIwAEea9K-5vLV5Vkw"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKq5LKEeaChNCLJwpJ6Q" readOnly="true" name="Plano do Projeto" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_W5EKrJLKEeaChNCLJwpJ6Q" type="1">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA"/>
+      <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_W5H1AJLKEeaChNCLJwpJ6Q" target="_W5Djl5LKEeaChNCLJwpJ6Q"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKrZLKEeaChNCLJwpJ6Q" readOnly="true" name="Plano do Projeto" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKrpLKEeaChNCLJwpJ6Q" readOnly="true" name="Cronograma" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA_LWnMkH9tEeaF1pjERfVvAA"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_W5EKr5LKEeaChNCLJwpJ6Q" incomingConnections="_W5H1AZLKEeaChNCLJwpJ6Q" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b__K4H9zEeaF1pjERfVvAA"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKsJLKEeaChNCLJwpJ6Q" readOnly="true" name="Plano de Iteração" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_0fZYEIwAEea9K-5vLV5Vkw"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_W5EKsZLKEeaChNCLJwpJ6Q" incomingConnections="_W5H1ApLKEeaChNCLJwpJ6Q" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKspLKEeaChNCLJwpJ6Q" readOnly="true" name="Plano de Iteração" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_0fZYEIwAEea9K-5vLV5Vkw"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_W5EKs5LKEeaChNCLJwpJ6Q" readOnly="true" name="Plano do Projeto" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_46j9cH9rEeaF1pjERfVvAA"/>
+      </nodes>
+    </nodes>
+  </org.eclipse.epf.diagram.model:ActivityDetailDiagram>
+  <notation:Diagram xmi:id="_W3_MkZLKEeaChNCLJwpJ6Q" type="ADD" element="_W3_MkJLKEeaChNCLJwpJ6Q" name="iteracao_gerenciar" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_W5JqMJLKEeaChNCLJwpJ6Q" type="1001" element="_W5DjkJLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W5Y6wJLKEeaChNCLJwpJ6Q" type="2001" element="_W5DjkZLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W5aI4JLKEeaChNCLJwpJ6Q" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W5Y6wZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5Y6wpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W5Y6w5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W5Y6xJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5Y6xZLKEeaChNCLJwpJ6Q" x="40" y="146" width="73"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W5av8JLKEeaChNCLJwpJ6Q" type="2002" element="_W5DjkpLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W5bXAJLKEeaChNCLJwpJ6Q" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W5av8ZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5av8pLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W5av85LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W5av9JLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5av9ZLKEeaChNCLJwpJ6Q" x="133" y="146" width="90" height="67"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W5b-EJLKEeaChNCLJwpJ6Q" type="2002" element="_W5Djk5LKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W5dzQJLKEeaChNCLJwpJ6Q" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W5b-EZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5b-EpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W5b-E5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W5b-FJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5b-FZLKEeaChNCLJwpJ6Q" x="243" y="143" width="93" height="60"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W5eaUJLKEeaChNCLJwpJ6Q" type="2002" element="_W5DjlJLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W5fBYJLKEeaChNCLJwpJ6Q" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W5eaUZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5eaUpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W5eaU5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W5eaVJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5eaVZLKEeaChNCLJwpJ6Q" x="356" y="146" width="86" height="119"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5JqMZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5KRQJLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5K4UJLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5K4UZLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5K4UpLKEeaChNCLJwpJ6Q" x="30" y="133" width="462" height="67"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W5LfYJLKEeaChNCLJwpJ6Q" type="1001" element="_W5DjlZLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W6V9AJLKEeaChNCLJwpJ6Q" type="2001" element="_W5DjlpLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W6XLIJLKEeaChNCLJwpJ6Q" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6V9AZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6V9ApLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6V9A5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6V9BJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6V9BZLKEeaChNCLJwpJ6Q" x="40" y="522" width="57"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W6XyMJLKEeaChNCLJwpJ6Q" type="2002" element="_W5Djl5LKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W6YZQJLKEeaChNCLJwpJ6Q" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6XyMZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6XyMpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6XyM5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6XyNJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6XyNZLKEeaChNCLJwpJ6Q" x="117" y="522" width="90" height="67"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W6ZAUJLKEeaChNCLJwpJ6Q" type="2002" element="_W5DjmJLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W6aOcJLKEeaChNCLJwpJ6Q" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6ZAUZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6ZAUpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6ZAU5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6ZAVJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6ZAVZLKEeaChNCLJwpJ6Q" x="227" y="522" width="86" height="119"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5LfYZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5LfYpLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5LfY5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5LfZJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5LfZZLKEeaChNCLJwpJ6Q" x="30" y="512" width="323" height="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W5MtgJLKEeaChNCLJwpJ6Q" type="1002" element="_W5DjmZLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W6gVEJLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKoJLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W6g8IJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6gVEZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6gVEpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6gVE5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6gVFJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6gVFZLKEeaChNCLJwpJ6Q" x="143" y="11" width="70"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W6g8IZLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKoZLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W6iKQJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6g8IpLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6g8I5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6g8JJLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6g8JZLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6g8JpLKEeaChNCLJwpJ6Q" x="143" y="63" width="70"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5MtgZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5MtgpLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5Mtg5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5MthJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5MthZLKEeaChNCLJwpJ6Q" x="133" y="1" width="90" height="112"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W5N7oJLKEeaChNCLJwpJ6Q" type="1002" element="_W5EKopLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W6lNkJLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKo5LKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W6np0JLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6lNkZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6lNkpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6lNk5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6lNlJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6lNlZLKEeaChNCLJwpJ6Q" x="146" y="230" width="65"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5N7oZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5N7opLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5N7o5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5N7pJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5N7pZLKEeaChNCLJwpJ6Q" x="136" y="220" width="85" height="67"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W5PJwJLKEeaChNCLJwpJ6Q" type="1002" element="_W5EKpJLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W6qtIJLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKpZLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W6rUMJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6qtIZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6qtIpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6qtI5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6qtJJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6qtJZLKEeaChNCLJwpJ6Q" x="254" y="11" width="70"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W6rUMZLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKppLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W6r7QJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6rUMpLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6rUM5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6rUNJLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6rUNZLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6rUNpLKEeaChNCLJwpJ6Q" x="254" y="56" width="70"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5PJwZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5PJwpLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5PJw5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5PJxJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5PJxZLKEeaChNCLJwpJ6Q" x="244" y="1" width="90" height="112"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W5Q-8JLKEeaChNCLJwpJ6Q" type="1002" element="_W5EKp5LKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W6vloJLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKqJLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W6wMsJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6vloZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6vlopLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6vlo5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6vlpJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6vlpZLKEeaChNCLJwpJ6Q" x="254" y="230" width="70"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5Q-8ZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5Q-8pLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5Q-85LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5Q-9JLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5Q-9ZLKEeaChNCLJwpJ6Q" x="244" y="220" width="90" height="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W5RmAJLKEeaChNCLJwpJ6Q" type="1002" element="_W5EKqZLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W6z3EJLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKqpLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W61FMJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W6z3EZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W6z3EpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W6z3E5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W6z3FJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W6z3FZLKEeaChNCLJwpJ6Q" x="367" y="230" width="65"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W62TUJLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKq5LKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W63hcJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W62TUZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W62TUpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W62TU5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W62TVJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W62TVZLKEeaChNCLJwpJ6Q" x="367" y="282" width="65"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5RmAZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5RmApLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5RmA5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5RmBJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5RmBZLKEeaChNCLJwpJ6Q" x="357" y="220" width="85" height="119"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W5SNEJLKEeaChNCLJwpJ6Q" type="1002" element="_W5EKrJLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W68Z8JLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKrZLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W69BAJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W68Z8ZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W68Z8pLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W68Z85LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W68Z9JLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W68Z9ZLKEeaChNCLJwpJ6Q" x="127" y="390" width="70"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W69BAZLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKrpLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W69oEJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W69BApLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W69BA5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W69BBJLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W69BBZLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W69BBpLKEeaChNCLJwpJ6Q" x="127" y="442" width="70"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5SNEZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5SNEpLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5SNE5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5SNFJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5SNFZLKEeaChNCLJwpJ6Q" x="117" y="380" width="90" height="112"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W5TbMJLKEeaChNCLJwpJ6Q" type="1002" element="_W5EKr5LKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W7CgkJLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKsJLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W7DHoJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W7CgkZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W7CgkpLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W7Cgk5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W7CglJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W7CglZLKEeaChNCLJwpJ6Q" x="130" y="602" width="65"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5TbMZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5TbMpLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5TbM5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5TbNJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5TbNZLKEeaChNCLJwpJ6Q" x="120" y="592" width="85" height="67"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W5UpUJLKEeaChNCLJwpJ6Q" type="1002" element="_W5EKsZLKEeaChNCLJwpJ6Q">
+      <children xmi:type="notation:Node" xmi:id="_W7GyAJLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKspLKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W7HZEJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W7GyAZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W7GyApLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W7GyA5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W7GyBJLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W7GyBZLKEeaChNCLJwpJ6Q" x="238" y="602" width="65"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_W7HZEZLKEeaChNCLJwpJ6Q" type="2003" element="_W5EKs5LKEeaChNCLJwpJ6Q">
+        <children xmi:type="notation:Node" xmi:id="_W7IAIJLKEeaChNCLJwpJ6Q" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_W7HZEpLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_W7HZE5LKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_W7HZFJLKEeaChNCLJwpJ6Q"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_W7HZFZLKEeaChNCLJwpJ6Q"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W7HZFpLKEeaChNCLJwpJ6Q" x="238" y="654" width="65"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W5UpUZLKEeaChNCLJwpJ6Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W5UpUpLKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W5UpU5LKEeaChNCLJwpJ6Q"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_W5UpVJLKEeaChNCLJwpJ6Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5UpVZLKEeaChNCLJwpJ6Q" x="228" y="592" width="85" height="119"/>
+    </children>
+    <styles xmi:type="notation:PageStyle" xmi:id="_W3_MkpLKEeaChNCLJwpJ6Q"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_W3_Mk5LKEeaChNCLJwpJ6Q"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_W3_MlJLKEeaChNCLJwpJ6Q"/>
   </notation:Diagram>
 </xmi:XMI>

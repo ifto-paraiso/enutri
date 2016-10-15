@@ -142,7 +142,7 @@
     <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_oVbgwX93EeaF1pjERfVvAA" guid="_oVbgwX93EeaF1pjERfVvAA" pred="_H--0UX9rEeakyew3j8_LfQ"/>
     <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_otRZAX93EeaF1pjERfVvAA" guid="_otRZAX93EeaF1pjERfVvAA" pred="_QgBBQX9rEeaF1pjERfVvAA"/>
     <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_rFIBMX93EeaF1pjERfVvAA" guid="_rFIBMX93EeaF1pjERfVvAA" pred="_RS0-QX9rEeaF1pjERfVvAA"/>
-    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_xLjf0X9qEeakyew3j8_LfQ" name="Ciclo de Vida" guid="_xLjf0X9qEeakyew3j8_LfQ" presentationName="Ciclo de Vida" breakdownElements="_PONbIH9rEeaF1pjERfVvAA _SyYBQH9yEeaF1pjERfVvAA _H--0UX9rEeakyew3j8_LfQ _Fu0SEH93EeaF1pjERfVvAA _QgBBQX9rEeaF1pjERfVvAA _XDEaYH9yEeaF1pjERfVvAA _RS0-QX9rEeaF1pjERfVvAA _ZJU8QH9yEeaF1pjERfVvAA">
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_xLjf0X9qEeakyew3j8_LfQ" name="Ciclo de Vida" guid="_xLjf0X9qEeakyew3j8_LfQ" presentationName="Ciclo de Vida" briefDescription="Ciclo de vida de um processo de desenvolvimento de pequenos projetos de sistemas WEB clássicos (escritos em PHP/MySQL)." breakdownElements="_PONbIH9rEeaF1pjERfVvAA _SyYBQH9yEeaF1pjERfVvAA _H--0UX9rEeakyew3j8_LfQ _Fu0SEH93EeaF1pjERfVvAA _QgBBQX9rEeaF1pjERfVvAA _XDEaYH9yEeaF1pjERfVvAA _RS0-QX9rEeaF1pjERfVvAA _ZJU8QH9yEeaF1pjERfVvAA">
       <presentation xmi:id="-54UtU69kdzOkwbyfwSjcvg" href="uma://-54UtU69kdzOkwbyfwSjcvg#-54UtU69kdzOkwbyfwSjcvg"/>
       <includesPatterns href="uma://_rnKYQH9sEeaF1pjERfVvAA#_sQS00H9sEeaF1pjERfVvAA"/>
       <includesPatterns href="uma://_82PTYH9sEeaF1pjERfVvAA#_82PTYX9sEeaF1pjERfVvAA"/>

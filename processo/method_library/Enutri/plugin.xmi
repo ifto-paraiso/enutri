@@ -41,6 +41,7 @@
     <resourceDescriptors xmi:id="_MZ5osJH8EeaTtrSaGcBIqQ" id="-ws1nQwoOrv49G72TNg3Z8w" uri="guidances/checklists/issue_criacao.xmi"/>
     <resourceDescriptors xmi:id="_IecRAJICEeaZX8zzGmsLzg" id="-F6yDEBhlEspj01Ub6MS6Ug" uri="tasks/homologar.xmi"/>
     <resourceDescriptors xmi:id="_qbm6EJICEeaZX8zzGmsLzg" id="--KkjvWlCIqG2Y8xaFidOgA" uri="tasks/integrar.xmi"/>
+    <resourceDescriptors xmi:id="_PEScMJLJEeaChNCLJwpJ6Q" id="-kDtdtA2R54-0J_7S6d313g" uri="guidances/checklists/codigo_documentacao.xmi"/>
   </org.eclipse.epf.uma.resourcemanager:ResourceManager>
   <org.eclipse.epf.uma:MethodPlugin xmi:id="_hVC6IH9qEeakyew3j8_LfQ" name="Enutri" guid="_hVC6IH9qEeakyew3j8_LfQ" authors="Renato Uchôa Brandão">
     <methodElementProperty xmi:id="_hVMrIX9qEeakyew3j8_LfQ" name="plugin_synFree" value="true"/>
@@ -53,7 +54,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Domain" xmi:id="_xHPZ8JFlEeanrp-HoE7FZQ" name="requisitos" guid="_xHPZ8JFlEeanrp-HoE7FZQ" presentationName="Requisitos" workProducts="_lNOREIAkEeasuNwaWkn8fg">
             <methodElementProperty xmi:id="_05F68JFlEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Domain" xmi:id="_3eFnQJFlEeanrp-HoE7FZQ" name="design" guid="_3eFnQJFlEeanrp-HoE7FZQ" presentationName="Design" workProducts="_OaEzAH9sEeaF1pjERfVvAA _ZPttsJFxEeanrp-HoE7FZQ _jZn0IJH5EeaTtrSaGcBIqQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Domain" xmi:id="_3eFnQJFlEeanrp-HoE7FZQ" name="design" guid="_3eFnQJFlEeanrp-HoE7FZQ" presentationName="Design" workProducts="_OaEzAH9sEeaF1pjERfVvAA _jZn0IJH5EeaTtrSaGcBIqQ _m3ePcJLHEeaChNCLJwpJ6Q">
             <methodElementProperty xmi:id="_4S1d8JFlEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Domain" xmi:id="_5E07kJFlEeanrp-HoE7FZQ" name="implantacao" guid="_5E07kJFlEeanrp-HoE7FZQ" presentationName="Implantação">
@@ -97,7 +98,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:WorkProductType" xmi:id="_H9NhkJFlEeanrp-HoE7FZQ" name="repositorio" guid="_H9NhkJFlEeanrp-HoE7FZQ" presentationName="Repositório de Código" workProducts="_GcmmIH9sEeaF1pjERfVvAA _JNd7QIAcEeasuNwaWkn8fg">
             <methodElementProperty xmi:id="_aGuEoJFlEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:WorkProductType" xmi:id="_iUFHoJFlEeanrp-HoE7FZQ" name="diagrama" guid="_iUFHoJFlEeanrp-HoE7FZQ" presentationName="Diagrama" workProducts="_WXnRUH9sEeaF1pjERfVvAA _OaEzAH9sEeaF1pjERfVvAA _ZPttsJFxEeanrp-HoE7FZQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:WorkProductType" xmi:id="_iUFHoJFlEeanrp-HoE7FZQ" name="diagrama" guid="_iUFHoJFlEeanrp-HoE7FZQ" presentationName="Diagrama" workProducts="_WXnRUH9sEeaF1pjERfVvAA _OaEzAH9sEeaF1pjERfVvAA _m3ePcJLHEeaChNCLJwpJ6Q">
             <methodElementProperty xmi:id="_kBmZYJFlEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:WorkProductType" xmi:id="_nAP70JFlEeanrp-HoE7FZQ" name="documento" guid="_nAP70JFlEeanrp-HoE7FZQ" presentationName="Documento" workProducts="_A0OZoH9yEeaF1pjERfVvAA _LWnMkH9tEeaF1pjERfVvAA _lNOREIAkEeasuNwaWkn8fg _0fZYEIwAEea9K-5vLV5Vkw _jZn0IJH5EeaTtrSaGcBIqQ">
@@ -211,7 +212,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_oEEt8IAaEeasuNwaWkn8fg" name="teste_escrever" guid="_oEEt8IAaEeasuNwaWkn8fg" presentationName="Escrever Teste" output="_WpIPIIAcEeasuNwaWkn8fg">
             <methodElementProperty xmi:id="_wlTvMIAaEeasuNwaWkn8fg" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_y9qGoIAaEeasuNwaWkn8fg" name="codificar" guid="_y9qGoIAaEeasuNwaWkn8fg" presentationName="Escrever Código" briefDescription="Implementar " checklists="_A9YeIJFkEeanrp-HoE7FZQ" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_JNd7QIAcEeasuNwaWkn8fg _A0OZoH9yEeaF1pjERfVvAA _A-ILQH9sEeaF1pjERfVvAA" output="_JNd7QIAcEeasuNwaWkn8fg" optionalInput="_jZn0IJH5EeaTtrSaGcBIqQ _ZPttsJFxEeanrp-HoE7FZQ _OaEzAH9sEeaF1pjERfVvAA _8h4CYH9rEeaF1pjERfVvAA" toolMentors="_U81ncJFqEeanrp-HoE7FZQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_y9qGoIAaEeasuNwaWkn8fg" name="codificar" guid="_y9qGoIAaEeasuNwaWkn8fg" presentationName="Escrever Código" briefDescription="Implementar " checklists="_A9YeIJFkEeanrp-HoE7FZQ _KMRZ0JLIEeaChNCLJwpJ6Q" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_JNd7QIAcEeasuNwaWkn8fg _A0OZoH9yEeaF1pjERfVvAA _A-ILQH9sEeaF1pjERfVvAA _jZn0IJH5EeaTtrSaGcBIqQ _m3ePcJLHEeaChNCLJwpJ6Q" output="_JNd7QIAcEeasuNwaWkn8fg" optionalInput="_OaEzAH9sEeaF1pjERfVvAA _8h4CYH9rEeaF1pjERfVvAA" toolMentors="_U81ncJFqEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_2LvMMIAaEeasuNwaWkn8fg" name="me_edited" value="true"/>
             <presentation xmi:id="-HwDVOYlw16OPA1QgHdXz_g" href="uma://-HwDVOYlw16OPA1QgHdXz_g#-HwDVOYlw16OPA1QgHdXz_g"/>
           </contentElements>
@@ -276,7 +277,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_yNWwoJFpEeanrp-HoE7FZQ" name="uml_modelagem" guid="_yNWwoJFpEeanrp-HoE7FZQ" presentationName="Modelagem UML">
             <methodElementProperty xmi:id="_A2CRQJFqEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_U81ncJFqEeanrp-HoE7FZQ" name="codigo_implementacao" guid="_U81ncJFqEeanrp-HoE7FZQ" presentationName="Implementação de Código">
+          <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_U81ncJFqEeanrp-HoE7FZQ" name="codigo_implementacao" guid="_U81ncJFqEeanrp-HoE7FZQ" presentationName="Implementação de Código" checklists="_KMRZ0JLIEeaChNCLJwpJ6Q _A9YeIJFkEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_dc6yIJFqEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_9UECgJFtEeanrp-HoE7FZQ" name="db_projeto" guid="_9UECgJFtEeanrp-HoE7FZQ" presentationName="Projeto do Banco de Dados">
@@ -285,22 +286,22 @@
           <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_bV8hwJFuEeanrp-HoE7FZQ" name="codigo_versionamento" guid="_bV8hwJFuEeanrp-HoE7FZQ" presentationName="Versionamento de Código">
             <methodElementProperty xmi:id="_dQb4gJFuEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_5figoJFwEeanrp-HoE7FZQ" name="arquitetura_implementar" guid="_5figoJFwEeanrp-HoE7FZQ" presentationName="Implementar a arquitetura" briefDescription="Disponibilizar em produção a arquitetura do sistema" performedBy="_tJIyQH91EeaF1pjERfVvAA" output="_GcmmIH9sEeaF1pjERfVvAA" optionalInput="_jZn0IJH5EeaTtrSaGcBIqQ _8h4CYH9rEeaF1pjERfVvAA" toolMentors="_U81ncJFqEeanrp-HoE7FZQ _bV8hwJFuEeanrp-HoE7FZQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_5figoJFwEeanrp-HoE7FZQ" name="arquitetura_implementar" guid="_5figoJFwEeanrp-HoE7FZQ" presentationName="Implementar a arquitetura" briefDescription="Disponibilizar em produção a arquitetura do sistema" performedBy="_tJIyQH91EeaF1pjERfVvAA" output="_GcmmIH9sEeaF1pjERfVvAA" optionalInput="_jZn0IJH5EeaTtrSaGcBIqQ _8h4CYH9rEeaF1pjERfVvAA _m3ePcJLHEeaChNCLJwpJ6Q" toolMentors="_U81ncJFqEeanrp-HoE7FZQ _bV8hwJFuEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_9m_eMJFwEeanrp-HoE7FZQ" name="me_edited" value="true"/>
             <presentation xmi:id="-NqdFI0gM_H5XhsXTjAu_UQ" href="uma://-NqdFI0gM_H5XhsXTjAu_UQ#-NqdFI0gM_H5XhsXTjAu_UQ"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_F8ctQJFxEeanrp-HoE7FZQ" name="arquitetura_documentar" guid="_F8ctQJFxEeanrp-HoE7FZQ" presentationName="Documentar a Arquitetura" briefDescription="Elaborar a documentação da arquitetura do sistema" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_GcmmIH9sEeaF1pjERfVvAA" output="_ZPttsJFxEeanrp-HoE7FZQ _jZn0IJH5EeaTtrSaGcBIqQ" optionalInput="_8h4CYH9rEeaF1pjERfVvAA" toolMentors="_yNWwoJFpEeanrp-HoE7FZQ _uLrogJH5EeaTtrSaGcBIqQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_F8ctQJFxEeanrp-HoE7FZQ" name="arquitetura_documentar" guid="_F8ctQJFxEeanrp-HoE7FZQ" presentationName="Documentar a Arquitetura" briefDescription="Elaborar a documentação da arquitetura do sistema" performedBy="_tJIyQH91EeaF1pjERfVvAA" mandatoryInput="_GcmmIH9sEeaF1pjERfVvAA" output="_jZn0IJH5EeaTtrSaGcBIqQ _m3ePcJLHEeaChNCLJwpJ6Q" optionalInput="_8h4CYH9rEeaF1pjERfVvAA" toolMentors="_yNWwoJFpEeanrp-HoE7FZQ _uLrogJH5EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_IHeaYJFxEeanrp-HoE7FZQ" name="me_edited" value="true"/>
             <presentation xmi:id="-1FedhLrVsn8J2eBUfCNpqg" href="uma://-1FedhLrVsn8J2eBUfCNpqg#-1FedhLrVsn8J2eBUfCNpqg"/>
-          </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_ZPttsJFxEeanrp-HoE7FZQ" name="arquitetura_modelo" guid="_ZPttsJFxEeanrp-HoE7FZQ" presentationName="Modelo da Arquitetura" toolMentors="_yNWwoJFpEeanrp-HoE7FZQ">
-            <methodElementProperty xmi:id="_a6Qj8JFxEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_ldfnQJFzEeanrp-HoE7FZQ" name="ui_projetar" guid="_ldfnQJFzEeanrp-HoE7FZQ" presentationName="Projetar a Interface com o Usuário">
             <methodElementProperty xmi:id="_nuojcJFzEeanrp-HoE7FZQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_jZn0IJH5EeaTtrSaGcBIqQ" name="arquitetura_documento" guid="_jZn0IJH5EeaTtrSaGcBIqQ" presentationName="Documento da Arquitetura" toolMentors="_uLrogJH5EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_mr4PEJH5EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
+            <containedArtifacts xmi:id="_m3ePcJLHEeaChNCLJwpJ6Q" name="arquitetura_modelo" guid="_m3ePcJLHEeaChNCLJwpJ6Q" presentationName="Modelo da Arquitetura" toolMentors="_yNWwoJFpEeanrp-HoE7FZQ">
+              <methodElementProperty xmi:id="_rFxb4JLHEeaChNCLJwpJ6Q" name="me_edited" value="true"/>
+            </containedArtifacts>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_uLrogJH5EeaTtrSaGcBIqQ" name="documentacao" guid="_uLrogJH5EeaTtrSaGcBIqQ" presentationName="Documentação">
             <methodElementProperty xmi:id="_zgxd4JH5EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
@@ -308,7 +309,7 @@
           <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_YrpZEJH6EeaTtrSaGcBIqQ" name="integracao" guid="_YrpZEJH6EeaTtrSaGcBIqQ" presentationName="Integração">
             <methodElementProperty xmi:id="_Z-8M8JH6EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_M0jZ0JH7EeaTtrSaGcBIqQ" name="backlog_manutencao" guid="_M0jZ0JH7EeaTtrSaGcBIqQ" presentationName="Manutenção do Backlog">
+          <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_M0jZ0JH7EeaTtrSaGcBIqQ" name="backlog_manutencao" guid="_M0jZ0JH7EeaTtrSaGcBIqQ" presentationName="Manutenção do Backlog" checklists="_0AYgIJH7EeaTtrSaGcBIqQ">
             <methodElementProperty xmi:id="_PYFGgJH7EeaTtrSaGcBIqQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Checklist" xmi:id="_0AYgIJH7EeaTtrSaGcBIqQ" name="issue_criacao" guid="_0AYgIJH7EeaTtrSaGcBIqQ" presentationName="Criando uma nova issue" briefDescription="Lista de verificação para a criação de uma nova issue">
@@ -318,6 +319,10 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_g3ntQJIAEeaZX8zzGmsLzg" name="homologar" guid="_g3ntQJIAEeaZX8zzGmsLzg" presentationName="Homologar" briefDescription="Validar uma implementação" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" mandatoryInput="_JNd7QIAcEeasuNwaWkn8fg">
             <methodElementProperty xmi:id="_iIm0AJIAEeaZX8zzGmsLzg" name="me_edited" value="true"/>
             <presentation xmi:id="-F6yDEBhlEspj01Ub6MS6Ug" href="uma://-F6yDEBhlEspj01Ub6MS6Ug#-F6yDEBhlEspj01Ub6MS6Ug"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Checklist" xmi:id="_KMRZ0JLIEeaChNCLJwpJ6Q" name="codigo_documentacao" guid="_KMRZ0JLIEeaChNCLJwpJ6Q" presentationName="Documentação de Código" briefDescription="Lista de verificação de documentação de código">
+            <methodElementProperty xmi:id="_LyV_wJLIEeaChNCLJwpJ6Q" name="me_edited" value="true"/>
+            <presentation xmi:id="-kDtdtA2R54-0J_7S6d313g" href="uma://-kDtdtA2R54-0J_7S6d313g#-kDtdtA2R54-0J_7S6d313g"/>
           </contentElements>
         </childPackages>
       </childPackages>

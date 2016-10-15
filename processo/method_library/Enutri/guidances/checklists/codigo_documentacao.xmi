@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-kDtdtA2R54-0J_7S6d313g" name="new_checklist,_KMRZ0JLIEeaChNCLJwpJ6Q" guid="-kDtdtA2R54-0J_7S6d313g" changeDate="2016-10-15T08:19:57.072-0300">
+  <mainDescription>Esta lista de verificação se aplica a cada arquivo modificado em uma tarefa de codificação.</mainDescription>
+  <sections xmi:id="_zo8hYJLIEeaChNCLJwpJ6Q" name="Documentar classes" guid="_zo8hYJLIEeaChNCLJwpJ6Q">
+    <sectionDescription>&lt;p>&#xD;
+    Descrever:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - Propósito da classe;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - Autoria;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_9wIz0JLIEeaChNCLJwpJ6Q" name="Documentar atributos" guid="_9wIz0JLIEeaChNCLJwpJ6Q">
+    <sectionDescription>&lt;p>&#xD;
+    Descrever:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - Propósito do atributo;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - Tipo do atributo;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_uD8nwJLIEeaChNCLJwpJ6Q" name="Documentar métodos" guid="_uD8nwJLIEeaChNCLJwpJ6Q">
+    <sectionDescription>&lt;p>&#xD;
+    Descrever:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - Propósito do método;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - Parâmetros;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    - Tipo de retorno;&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+</org.eclipse.epf.uma:ContentDescription>
