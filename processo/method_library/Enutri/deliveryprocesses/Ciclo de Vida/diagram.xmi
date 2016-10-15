@@ -2791,7 +2791,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6GLCQ5F7EeaYzNAH-C6Rkg" id="(0.4594594594594595,0.20408163265306123)"/>
     </edges>
   </notation:Diagram>
-  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_KgQa4JLKEeaChNCLJwpJ6Q" autoLayout="true">
+  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_KgQa4JLKEeaChNCLJwpJ6Q">
     <linkedElement xmi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_xLjf0H9qEeakyew3j8_LfQ#_eLYy0X9wEeaF1pjERfVvAA"/>
     <nodes xmi:type="org.eclipse.epf.diagram.model:RoleTaskComposite" xmi:id="_KkVpoJLKEeaChNCLJwpJ6Q">
       <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_82PTYH9sEeaF1pjERfVvAA#_KDnP0IvzEeaojuFrSEQLzQ_tJIyQH91EeaF1pjERfVvAA"/>
@@ -3039,7 +3039,7 @@
     <styles xmi:type="notation:GuideStyle" xmi:id="_KgSQEpLKEeaChNCLJwpJ6Q"/>
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_KgSQE5LKEeaChNCLJwpJ6Q"/>
   </notation:Diagram>
-  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_W3_MkJLKEeaChNCLJwpJ6Q" autoLayout="true">
+  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_W3_MkJLKEeaChNCLJwpJ6Q">
     <linkedElement xmi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_xLjf0H9qEeakyew3j8_LfQ#_F159EX9tEeaF1pjERfVvAA"/>
     <nodes xmi:type="org.eclipse.epf.diagram.model:RoleTaskComposite" xmi:id="_W5DjkJLKEeaChNCLJwpJ6Q">
       <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_rnKYQH9sEeaF1pjERfVvAA#_b_2A8H9zEeaF1pjERfVvAA_tJIyQH91EeaF1pjERfVvAA"/>

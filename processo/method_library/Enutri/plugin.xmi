@@ -71,7 +71,7 @@
           </contentElements>
         </childPackages>
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_hVC6JH9qEeakyew3j8_LfQ" name="Disciplines" guid="_hVC6JH9qEeakyew3j8_LfQ">
-          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_oMViEH9qEeakyew3j8_LfQ" name="requisitos" guid="_oMViEH9qEeakyew3j8_LfQ" presentationName="Requisitos" tasks="_sVwUQIv8Eea9K-5vLV5Vkw _SdpecIAiEeasuNwaWkn8fg">
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_oMViEH9qEeakyew3j8_LfQ" name="requisitos" guid="_oMViEH9qEeakyew3j8_LfQ" presentationName="Requisitos" tasks="_sVwUQIv8Eea9K-5vLV5Vkw _SdpecIAiEeasuNwaWkn8fg _wvvyAI_bEea4GYIP2O4Dgw">
             <methodElementProperty xmi:id="_rwK1MH9qEeakyew3j8_LfQ" name="me_edited" value="true"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_eQRvUH9vEeaF1pjERfVvAA" name="analise" guid="_eQRvUH9vEeaF1pjERfVvAA" presentationName="Análise" tasks="_BG8CAIvuEeaxV7u7ViJ4Og _Wtt_YIv9Eea9K-5vLV5Vkw _oEEt8IAaEeasuNwaWkn8fg _fn-TUH91EeaF1pjERfVvAA">
@@ -249,7 +249,7 @@
             <methodElementProperty xmi:id="_3mGLoIvyEeaojuFrSEQLzQ" name="me_edited" value="true"/>
             <presentation xmi:id="-j_EHjmkXBvi-G4Q55rDnOQ" href="uma://-j_EHjmkXBvi-G4Q55rDnOQ#-j_EHjmkXBvi-G4Q55rDnOQ"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_sVwUQIv8Eea9K-5vLV5Vkw" name="requisitos_encontrar_descrever" guid="_sVwUQIv8Eea9K-5vLV5Vkw" presentationName="Encontrar e descrever os Requisitos" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" mandatoryInput="_8h4CYH9rEeaF1pjERfVvAA" output="_8h4CYH9rEeaF1pjERfVvAA _lNOREIAkEeasuNwaWkn8fg _NbRz8IAmEeasuNwaWkn8fg" optionalInput="_46j9cH9rEeaF1pjERfVvAA">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_sVwUQIv8Eea9K-5vLV5Vkw" name="requisitos_encontrar_descrever" guid="_sVwUQIv8Eea9K-5vLV5Vkw" presentationName="Encontrar e descrever os Requisitos" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" mandatoryInput="_8h4CYH9rEeaF1pjERfVvAA _NbRz8IAmEeasuNwaWkn8fg" output="_8h4CYH9rEeaF1pjERfVvAA _lNOREIAkEeasuNwaWkn8fg _NbRz8IAmEeasuNwaWkn8fg" optionalInput="_46j9cH9rEeaF1pjERfVvAA _lNOREIAkEeasuNwaWkn8fg" toolMentors="_lkjDoJL2Eead86qIMh3Weg">
             <methodElementProperty xmi:id="_uwlX8Iv8Eea9K-5vLV5Vkw" name="me_edited" value="true"/>
             <presentation xmi:id="-QG2IRhpNj0sFhzKyudqWdg" href="uma://-QG2IRhpNj0sFhzKyudqWdg#-QG2IRhpNj0sFhzKyudqWdg"/>
           </contentElements>
@@ -263,7 +263,7 @@
             <methodElementProperty xmi:id="_xppLkIwDEea9K-5vLV5Vkw" name="me_edited" value="true"/>
             <presentation xmi:id="-GliMrYL1kogEPvFk1e1CuA" href="uma://-GliMrYL1kogEPvFk1e1CuA#-GliMrYL1kogEPvFk1e1CuA"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_wvvyAI_bEea4GYIP2O4Dgw" name="requisitos_detalhar" guid="_wvvyAI_bEea4GYIP2O4Dgw" presentationName="Detalhar os Requisitos">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_wvvyAI_bEea4GYIP2O4Dgw" name="requisitos_detalhar" guid="_wvvyAI_bEea4GYIP2O4Dgw" presentationName="Detalhar os Requisitos" performedBy="_tJIyQH91EeaF1pjERfVvAA _qlUKoH91EeaF1pjERfVvAA" mandatoryInput="_NbRz8IAmEeasuNwaWkn8fg _8h4CYH9rEeaF1pjERfVvAA" output="_lNOREIAkEeasuNwaWkn8fg _NbRz8IAmEeasuNwaWkn8fg" optionalInput="_lNOREIAkEeasuNwaWkn8fg" toolMentors="_uLrogJH5EeaTtrSaGcBIqQ _yNWwoJFpEeanrp-HoE7FZQ">
             <methodElementProperty xmi:id="_yruWgI_bEea4GYIP2O4Dgw" name="me_edited" value="true"/>
             <presentation xmi:id="-0Kr-gLUwfvjkvjcVY7Nudg" href="uma://-0Kr-gLUwfvjkvjcVY7Nudg#-0Kr-gLUwfvjkvjcVY7Nudg"/>
           </contentElements>
@@ -323,6 +323,9 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Checklist" xmi:id="_KMRZ0JLIEeaChNCLJwpJ6Q" name="codigo_documentacao" guid="_KMRZ0JLIEeaChNCLJwpJ6Q" presentationName="Documentação de Código" briefDescription="Lista de verificação de documentação de código">
             <methodElementProperty xmi:id="_LyV_wJLIEeaChNCLJwpJ6Q" name="me_edited" value="true"/>
             <presentation xmi:id="-kDtdtA2R54-0J_7S6d313g" href="uma://-kDtdtA2R54-0J_7S6d313g#-kDtdtA2R54-0J_7S6d313g"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:ToolMentor" xmi:id="_lkjDoJL2Eead86qIMh3Weg" name="glossario_atualizacao" guid="_lkjDoJL2Eead86qIMh3Weg" presentationName="Atualização do Glossário" briefDescription="Utilização da ferramenta para manutenção do Glossário">
+            <methodElementProperty xmi:id="_ozlygJL2Eead86qIMh3Weg" name="me_edited" value="true"/>
           </contentElements>
         </childPackages>
       </childPackages>

@@ -1,180 +1,182 @@
-Info: : 1897 mini-second(s) publishing element DeliveryProcess:Ciclo de Vida[Enutri\deliveryprocesses\Ciclo de Vida_4A3B5A07.html]
-Info: DeliveryProcess:Ciclo de Vida: 1933 mini seconds publishing element
-Info: DeliveryProcess:Ciclo de Vida: 3185 mini seconds publishing process specific layout data
-Info: Phase:Concepção: 267 mini seconds publishing element
-Info: Iteration:Iteração única [I1]: 338 mini seconds publishing element
-Info: CapabilityPattern:iteracao_gerenciar: 559 mini seconds publishing element
-Info: Task:iteracao_planejar: 55 mini seconds publishing element
-Info: TaskDescriptor:iteracao_planejar: 65 mini seconds publishing element
-Info: Role:desenvolvedor: 208 mini seconds publishing element
-Info: RoleDescriptor:desenvolvedor: 36 mini seconds publishing element
-Info: Role:stakeholder: 107 mini seconds publishing element
-Info: RoleDescriptor:stakeholder: 27 mini seconds publishing element
-Info: Artifact:cronograma: 64 mini seconds publishing element
-Info: WorkProductDescriptor:cronograma: 29 mini seconds publishing element
-Info: Artifact:projeto_plano: 30 mini seconds publishing element
-Info: WorkProductDescriptor:projeto_plano: 28 mini seconds publishing element
-Info: Artifact:visao: 122 mini seconds publishing element
-Info: WorkProductDescriptor:visao: 18 mini seconds publishing element
-Info: Artifact:iteracao_plano: 26 mini seconds publishing element
-Info: WorkProductDescriptor:iteracao_plano: 25 mini seconds publishing element
-Info: Task:tempo_gerenciar: 46 mini seconds publishing element
-Info: TaskDescriptor:tempo_gerenciar: 30 mini seconds publishing element
-Info: Task:iteracao_avaliar: 253 mini seconds publishing element
-Info: TaskDescriptor:iteracao_avaliar: 45 mini seconds publishing element
+Info: : 7985 mini-second(s) publishing element DeliveryProcess:Ciclo de Vida[Enutri\deliveryprocesses\Ciclo de Vida_4A3B5A07.html]
+Info: DeliveryProcess:Ciclo de Vida: 7985 mini seconds publishing element
+Info: DeliveryProcess:Ciclo de Vida: 4265 mini seconds publishing process specific layout data
+Info: Phase:Concepção: 250 mini seconds publishing element
+Info: Iteration:Iteração de concepção [I1..In]: 282 mini seconds publishing element
+Info: CapabilityPattern:iteracao_gerenciar: 609 mini seconds publishing element
+Info: Task:iteracao_planejar: 500 mini seconds publishing element
+Info: TaskDescriptor:iteracao_planejar: 516 mini seconds publishing element
+Info: : 1828 mini-second(s) publishing element Role:desenvolvedor[Enutri\roles\desenvolvedor_C49D4707.html]
+Info: Role:desenvolvedor: 1828 mini seconds publishing element
+Info: RoleDescriptor:desenvolvedor: 468 mini seconds publishing element
+Info: Role:stakeholder: 125 mini seconds publishing element
+Info: RoleDescriptor:stakeholder: 31 mini seconds publishing element
+Info: Artifact:cronograma: 563 mini seconds publishing element
+Info: WorkProductDescriptor:cronograma: 640 mini seconds publishing element
+Info: Artifact:projeto_plano: 32 mini seconds publishing element
+Info: WorkProductDescriptor:projeto_plano: 31 mini seconds publishing element
+Info: Artifact:visao: 47 mini seconds publishing element
+Info: WorkProductDescriptor:visao: 31 mini seconds publishing element
+Info: Artifact:iteracao_plano: 31 mini seconds publishing element
+Info: WorkProductDescriptor:iteracao_plano: 31 mini seconds publishing element
+Info: Task:tempo_gerenciar: 31 mini seconds publishing element
+Info: TaskDescriptor:tempo_gerenciar: 16 mini seconds publishing element
+Info: Task:iteracao_avaliar: 47 mini seconds publishing element
+Info: TaskDescriptor:iteracao_avaliar: 31 mini seconds publishing element
 Info: CapabilityPattern:projeto_iniciar: 375 mini seconds publishing element
-Info: Task:projeto_planejar: 28 mini seconds publishing element
-Info: TaskDescriptor:projeto_planejar: 30 mini seconds publishing element
-Info: RoleDescriptor:desenvolvedor: 59 mini seconds publishing element
-Info: RoleDescriptor:stakeholder: 36 mini seconds publishing element
-Info: Artifact:glossario: 27 mini seconds publishing element
-Info: WorkProductDescriptor:glossario: 29 mini seconds publishing element
-Info: WorkProductDescriptor:projeto_plano: 22 mini seconds publishing element
-Info: Task:visao_definir: 24 mini seconds publishing element
-Info: TaskDescriptor:visao_definir: 21 mini seconds publishing element
-Info: WorkProductDescriptor:visao: 19 mini seconds publishing element
-Info: CapabilityPattern:requisitos_identificar: 177 mini seconds publishing element
-Info: Task:requisitos_encontrar_descrever: 71 mini seconds publishing element
-Info: TaskDescriptor:requisitos_encontrar_descrever: 48 mini seconds publishing element
-Info: RoleDescriptor:desenvolvedor: 24 mini seconds publishing element
-Info: RoleDescriptor:stakeholder: 25 mini seconds publishing element
-Info: WorkProductDescriptor:visao: 26 mini seconds publishing element
-Info: WorkProductDescriptor:projeto_plano: 17 mini seconds publishing element
-Info: WorkProductDescriptor:glossario: 21 mini seconds publishing element
-Info: Artifact:uc_modelo: 16 mini seconds publishing element
-Info: WorkProductDescriptor:uc_modelo: 23 mini seconds publishing element
-Info: Task:requisitos_detalhar: 25 mini seconds publishing element
-Info: TaskDescriptor:requisitos_detalhar: 24 mini seconds publishing element
-Info: Milestone:Marcos dos objetivos: 17 mini seconds publishing element
-Info: Phase:Elaboração: 451 mini seconds publishing element
-Info: Iteration:Elaboração : 213 mini seconds publishing element
-Info: CapabilityPattern:iteracao_planejar_gerenciar: 246 mini seconds publishing element
-Info: CapabilityPattern:requisitos_identificar_refinar: 209 mini seconds publishing element
-Info: Iteration:Projeto da arquitetura [E]: 202 mini seconds publishing element
-Info: CapabilityPattern:Desenvolver a Arquitetura: 194 mini seconds publishing element
-Info: Task:arquitetura_implementar: 36 mini seconds publishing element
-Info: TaskDescriptor:arquitetura_implementar: 35 mini seconds publishing element
-Info: RoleDescriptor:desenvolvedor: 23 mini seconds publishing element
-Info: Artifact:arquitetura_documento: 71 mini seconds publishing element
-Info: Artifact:arquitetura_modelo: 74 mini seconds publishing element
-Info: WorkProductDescriptor:arquitetura_documento: 32 mini seconds publishing element
-Info: WorkProductDescriptor:arquitetura_modelo: 24 mini seconds publishing element
-Info: WorkProductDescriptor:visao: 25 mini seconds publishing element
-Info: Deliverable:branch_master: 63 mini seconds publishing element
-Info: WorkProductDescriptor:branch_master: 17 mini seconds publishing element
-Info: Task:arquitetura_documentar: 39 mini seconds publishing element
-Info: TaskDescriptor:arquitetura_documentar: 38 mini seconds publishing element
-Info: CapabilityPattern:iteracao_planejar_gerenciar: 244 mini seconds publishing element
-Info: Iteration:Projeto do banco de dados [E]: 219 mini seconds publishing element
-Info: CapabilityPattern:Desenvolver o Banco de Dados: 171 mini seconds publishing element
-Info: Task:db_modelar: 31 mini seconds publishing element
-Info: TaskDescriptor:db_modelar: 37 mini seconds publishing element
-Info: RoleDescriptor:desenvolvedor: 26 mini seconds publishing element
-Info: RoleDescriptor:stakeholder: 14 mini seconds publishing element
-Info: Artifact:uc_especificacao: 12 mini seconds publishing element
-Info: WorkProductDescriptor:uc_especificacao: 18 mini seconds publishing element
-Info: WorkProductDescriptor:uc_modelo: 15 mini seconds publishing element
+Info: Task:projeto_planejar: 15 mini seconds publishing element
+Info: TaskDescriptor:projeto_planejar: 32 mini seconds publishing element
+Info: RoleDescriptor:desenvolvedor: 31 mini seconds publishing element
+Info: RoleDescriptor:stakeholder: 31 mini seconds publishing element
+Info: Artifact:glossario: 31 mini seconds publishing element
+Info: WorkProductDescriptor:glossario: 32 mini seconds publishing element
+Info: WorkProductDescriptor:projeto_plano: 31 mini seconds publishing element
+Info: Task:visao_definir: 16 mini seconds publishing element
+Info: TaskDescriptor:visao_definir: 31 mini seconds publishing element
 Info: WorkProductDescriptor:visao: 15 mini seconds publishing element
-Info: Artifact:db_er: 36 mini seconds publishing element
-Info: WorkProductDescriptor:db_er: 24 mini seconds publishing element
+Info: CapabilityPattern:requisitos_identificar: 219 mini seconds publishing element
+Info: Task:requisitos_encontrar_descrever: 63 mini seconds publishing element
+Info: TaskDescriptor:requisitos_encontrar_descrever: 47 mini seconds publishing element
+Info: RoleDescriptor:desenvolvedor: 15 mini seconds publishing element
+Info: RoleDescriptor:stakeholder: 31 mini seconds publishing element
+Info: Artifact:uc_modelo: 32 mini seconds publishing element
+Info: WorkProductDescriptor:uc_modelo: 47 mini seconds publishing element
+Info: WorkProductDescriptor:visao: 31 mini seconds publishing element
+Info: WorkProductDescriptor:glossario: 31 mini seconds publishing element
+Info: WorkProductDescriptor:projeto_plano: 16 mini seconds publishing element
+Info: Task:requisitos_detalhar: 47 mini seconds publishing element
+Info: TaskDescriptor:requisitos_detalhar: 62 mini seconds publishing element
+Info: Milestone:Marcos dos objetivos: 359 mini seconds publishing element
+Info: Phase:Elaboração: 422 mini seconds publishing element
+Info: Iteration:Análise de Requisitos [E1..Ea]: 266 mini seconds publishing element
+Info: CapabilityPattern:iteracao_planejar_gerenciar: 234 mini seconds publishing element
+Info: CapabilityPattern:requisitos_identificar_refinar: 172 mini seconds publishing element
+Info: Iteration:Arquitetura [Ea+1..Eb]: 219 mini seconds publishing element
+Info: CapabilityPattern:Desenvolver a Arquitetura: 172 mini seconds publishing element
+Info: Task:arquitetura_implementar: 78 mini seconds publishing element
+Info: TaskDescriptor:arquitetura_implementar: 31 mini seconds publishing element
+Info: RoleDescriptor:desenvolvedor: 31 mini seconds publishing element
+Info: Artifact:arquitetura_documento: 32 mini seconds publishing element
+Info: Artifact:arquitetura_modelo: 31 mini seconds publishing element
+Info: WorkProductDescriptor:arquitetura_documento: 31 mini seconds publishing element
+Info: WorkProductDescriptor:arquitetura_modelo: 31 mini seconds publishing element
+Info: WorkProductDescriptor:visao: 16 mini seconds publishing element
+Info: Deliverable:branch_master: 500 mini seconds publishing element
+Info: WorkProductDescriptor:branch_master: 16 mini seconds publishing element
+Info: Task:arquitetura_documentar: 31 mini seconds publishing element
+Info: TaskDescriptor:arquitetura_documentar: 47 mini seconds publishing element
+Info: CapabilityPattern:iteracao_planejar_gerenciar: 281 mini seconds publishing element
+Info: Iteration:Banco de dados [Eb+1..Ec]: 234 mini seconds publishing element
+Info: CapabilityPattern:Desenvolver o Banco de Dados: 188 mini seconds publishing element
+Info: Task:db_modelar: 31 mini seconds publishing element
+Info: TaskDescriptor:db_modelar: 31 mini seconds publishing element
+Info: RoleDescriptor:desenvolvedor: 16 mini seconds publishing element
+Info: RoleDescriptor:stakeholder: 16 mini seconds publishing element
+Info: Artifact:uc_especificacao: 15 mini seconds publishing element
+Info: WorkProductDescriptor:uc_especificacao: 16 mini seconds publishing element
+Info: WorkProductDescriptor:uc_modelo: 15 mini seconds publishing element
+Info: WorkProductDescriptor:visao: 16 mini seconds publishing element
+Info: Artifact:db_er: 15 mini seconds publishing element
+Info: WorkProductDescriptor:db_er: 16 mini seconds publishing element
 Info: Task:db_projetar: 15 mini seconds publishing element
-Info: TaskDescriptor:db_projetar: 23 mini seconds publishing element
-Info: Artifact:db_logico: 62 mini seconds publishing element
-Info: WorkProductDescriptor:db_logico: 21 mini seconds publishing element
-Info: Task:db_implementar: 33 mini seconds publishing element
-Info: TaskDescriptor:db_implementar: 40 mini seconds publishing element
-Info: Deliverable:db_testes: 87 mini seconds publishing element
-Info: WorkProductDescriptor:db_testes: 23 mini seconds publishing element
-Info: CapabilityPattern:iteracao_planejar_gerenciar: 243 mini seconds publishing element
-Info: Iteration:Projeto da Interface com o usuário [E]: 228 mini seconds publishing element
-Info: CapabilityPattern:Desenvolver a Interface com o Usuário: 178 mini seconds publishing element
-Info: Task:ui_projetar: 10 mini seconds publishing element
-Info: TaskDescriptor:ui_projetar: 12 mini seconds publishing element
-Info: CapabilityPattern:implementar: 277 mini seconds publishing element
-Info: Task:teste_escrever: 14 mini seconds publishing element
-Info: TaskDescriptor:teste_escrever: 15 mini seconds publishing element
-Info: Artifact:teste_script: 14 mini seconds publishing element
-Info: WorkProductDescriptor:teste_script: 18 mini seconds publishing element
-Info: Task:testar: 13 mini seconds publishing element
-Info: TaskDescriptor:testar: 16 mini seconds publishing element
-Info: Deliverable:branch_teste: 96 mini seconds publishing element
-Info: WorkProductDescriptor:branch_teste: 23 mini seconds publishing element
-Info: Task:codificar: 33 mini seconds publishing element
-Info: TaskDescriptor:codificar: 33 mini seconds publishing element
-Info: RoleDescriptor:desenvolvedor: 22 mini seconds publishing element
-Info: Artifact:backlog: 64 mini seconds publishing element
-Info: WorkProductDescriptor:backlog: 20 mini seconds publishing element
-Info: WorkProductDescriptor:db_testes: 19 mini seconds publishing element
-Info: WorkProductDescriptor:arquitetura_documento: 29 mini seconds publishing element
-Info: WorkProductDescriptor:arquitetura_modelo: 22 mini seconds publishing element
+Info: TaskDescriptor:db_projetar: 32 mini seconds publishing element
+Info: Artifact:db_logico: 16 mini seconds publishing element
 Info: WorkProductDescriptor:db_logico: 15 mini seconds publishing element
-Info: WorkProductDescriptor:visao: 14 mini seconds publishing element
-Info: Task:homologar: 33 mini seconds publishing element
-Info: TaskDescriptor:homologar: 25 mini seconds publishing element
-Info: RoleDescriptor:stakeholder: 20 mini seconds publishing element
-Info: Task:integrar: 26 mini seconds publishing element
-Info: TaskDescriptor:integrar: 25 mini seconds publishing element
-Info: WorkProductDescriptor:branch_master: 17 mini seconds publishing element
-Info: CapabilityPattern:iteracao_planejar_gerenciar: 255 mini seconds publishing element
-Info: Iteration:Planejamento da construção: 283 mini seconds publishing element
-Info: CapabilityPattern:iteracao_planejar_gerenciar: 341 mini seconds publishing element
-Info: CapabilityPattern:backlog_manter: 212 mini seconds publishing element
-Info: Task:backlog_manter: 65 mini seconds publishing element
-Info: TaskDescriptor:backlog_manter: 34 mini seconds publishing element
-Info: RoleDescriptor:desenvolvedor: 22 mini seconds publishing element
-Info: WorkProductDescriptor:backlog: 50 mini seconds publishing element
+Info: Task:db_implementar: 32 mini seconds publishing element
+Info: TaskDescriptor:db_implementar: 31 mini seconds publishing element
+Info: Deliverable:db_testes: 31 mini seconds publishing element
+Info: WorkProductDescriptor:db_testes: 16 mini seconds publishing element
+Info: CapabilityPattern:iteracao_planejar_gerenciar: 219 mini seconds publishing element
+Info: Iteration:Interface com o usuário [Ec+1..Ed]: 281 mini seconds publishing element
+Info: CapabilityPattern:Desenvolver a Interface com o Usuário: 172 mini seconds publishing element
+Info: Task:ui_projetar: 15 mini seconds publishing element
+Info: TaskDescriptor:ui_projetar: 0 mini seconds publishing element
+Info: CapabilityPattern:implementar: 313 mini seconds publishing element
+Info: Task:teste_escrever: 15 mini seconds publishing element
+Info: TaskDescriptor:teste_escrever: 16 mini seconds publishing element
+Info: Artifact:teste_script: 16 mini seconds publishing element
+Info: WorkProductDescriptor:teste_script: 15 mini seconds publishing element
+Info: Task:testar: 16 mini seconds publishing element
+Info: TaskDescriptor:testar: 31 mini seconds publishing element
+Info: Deliverable:branch_teste: 16 mini seconds publishing element
+Info: WorkProductDescriptor:branch_teste: 31 mini seconds publishing element
+Info: Task:codificar: 47 mini seconds publishing element
+Info: TaskDescriptor:codificar: 47 mini seconds publishing element
+Info: RoleDescriptor:desenvolvedor: 31 mini seconds publishing element
+Info: Artifact:backlog: 16 mini seconds publishing element
+Info: WorkProductDescriptor:backlog: 31 mini seconds publishing element
+Info: WorkProductDescriptor:db_testes: 16 mini seconds publishing element
+Info: WorkProductDescriptor:arquitetura_documento: 15 mini seconds publishing element
+Info: WorkProductDescriptor:arquitetura_modelo: 16 mini seconds publishing element
+Info: WorkProductDescriptor:db_logico: 15 mini seconds publishing element
+Info: WorkProductDescriptor:visao: 16 mini seconds publishing element
+Info: Task:homologar: 31 mini seconds publishing element
+Info: TaskDescriptor:homologar: 16 mini seconds publishing element
+Info: RoleDescriptor:stakeholder: 15 mini seconds publishing element
+Info: Task:integrar: 15 mini seconds publishing element
+Info: TaskDescriptor:integrar: 16 mini seconds publishing element
+Info: WorkProductDescriptor:branch_master: 16 mini seconds publishing element
+Info: CapabilityPattern:iteracao_planejar_gerenciar: 250 mini seconds publishing element
+Info: Iteration:Planejamento da construção [Ed+1..Ee]: 172 mini seconds publishing element
+Info: CapabilityPattern:iteracao_planejar_gerenciar: 234 mini seconds publishing element
+Info: CapabilityPattern:backlog_manter: 94 mini seconds publishing element
+Info: Task:backlog_manter: 31 mini seconds publishing element
+Info: TaskDescriptor:backlog_manter: 31 mini seconds publishing element
+Info: RoleDescriptor:desenvolvedor: 16 mini seconds publishing element
+Info: WorkProductDescriptor:backlog: 31 mini seconds publishing element
 Info: WorkProductDescriptor:cronograma: 16 mini seconds publishing element
-Info: WorkProductDescriptor:iteracao_plano: 26 mini seconds publishing element
-Info: WorkProductDescriptor:projeto_plano: 27 mini seconds publishing element
-Info: Milestone:Marco da Arquitetura: 13 mini seconds publishing element
-Info: Phase:Construção: 216 mini seconds publishing element
-Info: Iteration:Iteração de construção [...n]: 298 mini seconds publishing element
-Info: CapabilityPattern:iteracao_planejar_gerenciar: 245 mini seconds publishing element
-Info: CapabilityPattern:implementar: 244 mini seconds publishing element
-Info: CapabilityPattern:backlog_manter: 110 mini seconds publishing element
-Info: Milestone:Marco da capacidade operacional inicial: 14 mini seconds publishing element
-Info: Phase:Transição: 64 mini seconds publishing element
-Info: Iteration:Implantar o sistema [T1]: 62 mini seconds publishing element
-Info: Iteration:Treinamento [T2]: 60 mini seconds publishing element
-Info: Milestone:Marco da liberação do produto: 14 mini seconds publishing element
-Info: Discipline:projeto_gestao: 16 mini seconds publishing element
-Info: ToolMentor:documentacao: 64 mini seconds publishing element
+Info: WorkProductDescriptor:iteracao_plano: 15 mini seconds publishing element
+Info: WorkProductDescriptor:projeto_plano: 16 mini seconds publishing element
+Info: Milestone:Marco da Arquitetura: 15 mini seconds publishing element
+Info: Phase:Construção: 266 mini seconds publishing element
+Info: Iteration:Iteração de construção [C1..Cn]: 250 mini seconds publishing element
+Info: CapabilityPattern:iteracao_planejar_gerenciar: 234 mini seconds publishing element
+Info: CapabilityPattern:implementar: 203 mini seconds publishing element
+Info: CapabilityPattern:backlog_manter: 93 mini seconds publishing element
+Info: Milestone:Marco da capacidade operacional inicial: 16 mini seconds publishing element
+Info: Phase:Transição: 62 mini seconds publishing element
+Info: Iteration:Implantação do sistema [T1..Ea]: 63 mini seconds publishing element
+Info: Iteration:Treinamento [Ta+1..Eb]: 62 mini seconds publishing element
+Info: Milestone:Marco da liberação do produto: 16 mini seconds publishing element
+Info: Discipline:projeto_gestao: 422 mini seconds publishing element
+Info: ToolMentor:documentacao: 359 mini seconds publishing element
 Info: Domain:projeto_gestao: 16 mini seconds publishing element
-Info: WorkProductType:documento: 19 mini seconds publishing element
-Info: Domain:requisitos: 63 mini seconds publishing element
-Info: Discipline:analise: 44 mini seconds publishing element
-Info: Discipline:requisitos: 33 mini seconds publishing element
-Info: Discipline:implantacao: 152 mini seconds publishing element
-Info: Discipline:implementacao: 12 mini seconds publishing element
-Info: ToolMentor:codigo_implementacao: 55 mini seconds publishing element
-Info: ToolMentor:codigo_versionamento: 14 mini seconds publishing element
-Info: Domain:design: 11 mini seconds publishing element
-Info: WorkProductType:diagrama: 22 mini seconds publishing element
-Info: ToolMentor:uml_modelagem: 49 mini seconds publishing element
-Info: Domain:implementacao: 12 mini seconds publishing element
-Info: WorkProductType:repositorio: 15 mini seconds publishing element
-Info: Discipline:design: 11 mini seconds publishing element
+Info: WorkProductType:documento: 15 mini seconds publishing element
+Info: Domain:requisitos: 16 mini seconds publishing element
+Info: Discipline:analise: 16 mini seconds publishing element
+Info: Discipline:requisitos: 15 mini seconds publishing element
+Info: ToolMentor:glossario_atualizacao: 16 mini seconds publishing element
+Info: ToolMentor:uml_modelagem: 31 mini seconds publishing element
+Info: Discipline:implantacao: 0 mini seconds publishing element
+Info: Discipline:implementacao: 16 mini seconds publishing element
+Info: ToolMentor:codigo_implementacao: 15 mini seconds publishing element
+Info: ToolMentor:codigo_versionamento: 16 mini seconds publishing element
+Info: Domain:design: 16 mini seconds publishing element
+Info: WorkProductType:diagrama: 15 mini seconds publishing element
+Info: Domain:implementacao: 16 mini seconds publishing element
+Info: WorkProductType:repositorio: 16 mini seconds publishing element
+Info: Discipline:design: 15 mini seconds publishing element
 Info: ToolMentor:db_projeto: 16 mini seconds publishing element
-Info: Domain:analise: 10 mini seconds publishing element
-Info: WorkProductType:db: 10 mini seconds publishing element
-Info: Discipline:testes: 10 mini seconds publishing element
-Info: Checklist:codigo_documentacao: 55 mini seconds publishing element
-Info: Checklist:codigo_refatoracao: 121 mini seconds publishing element
-Info: Checklist:issue_criacao: 131 mini seconds publishing element
+Info: Domain:analise: 15 mini seconds publishing element
+Info: WorkProductType:db: 16 mini seconds publishing element
+Info: Discipline:testes: 16 mini seconds publishing element
+Info: Checklist:codigo_documentacao: 390 mini seconds publishing element
+Info: Checklist:codigo_refatoracao: 16 mini seconds publishing element
+Info: Checklist:issue_criacao: 31 mini seconds publishing element
 Info: ToolMentor:backlog_manutencao: 16 mini seconds publishing element
-Info: CustomCategory:Configuration free process view: 23 mini seconds publishing element
-Info: CustomCategory:Tasks: 25 mini seconds publishing element
-Info: CustomCategory:Roles: 13 mini seconds publishing element
-Info: CustomCategory:Work Products: 22 mini seconds publishing element
+Info: CustomCategory:Configuration free process view: 15 mini seconds publishing element
+Info: CustomCategory:Tasks: 16 mini seconds publishing element
+Info: CustomCategory:Roles: 15 mini seconds publishing element
+Info: CustomCategory:Work Products: 16 mini seconds publishing element
 Info: CustomCategory:Guidance: 16 mini seconds publishing element
-Info: CustomCategory:Processes: 16 mini seconds publishing element
-Info: Tool:github_wiki: 18 mini seconds publishing element
-Info: Tool:netbeans: 12 mini seconds publishing element
-Info: Tool:git: 11 mini seconds publishing element
-Info: Tool:github_repositorio: 11 mini seconds publishing element
-Info: Tool:astah: 10 mini seconds publishing element
-Info: Tool:mysql_server: 13 mini seconds publishing element
-Info: Tool:mysql_workbench: 10 mini seconds publishing element
-Info: Tool:github_issues: 10 mini seconds publishing element
-Info: Tool:github_kanbam: 11 mini seconds publishing element
-Info: : Publishing time: 0 minutes 25 seconds
+Info: CustomCategory:Processes: 15 mini seconds publishing element
+Info: Tool:github_wiki: 16 mini seconds publishing element
+Info: Tool:astah: 15 mini seconds publishing element
+Info: Tool:netbeans: 16 mini seconds publishing element
+Info: Tool:git: 16 mini seconds publishing element
+Info: Tool:github_repositorio: 31 mini seconds publishing element
+Info: Tool:mysql_server: 16 mini seconds publishing element
+Info: Tool:mysql_workbench: 0 mini seconds publishing element
+Info: Tool:github_issues: 0 mini seconds publishing element
+Info: Tool:github_kanbam: 16 mini seconds publishing element
+Info: : Publishing time: 0 minutes 33 seconds
