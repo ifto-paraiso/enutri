@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-NqdFI0gM_H5XhsXTjAu_UQ" name=",_5figoJFwEeanrp-HoE7FZQ" guid="-NqdFI0gM_H5XhsXTjAu_UQ">
-  <sections xmi:id="_AHed8JFxEeanrp-HoE7FZQ" name="Determinar metas arquiteturais" guid="_AHed8JFxEeanrp-HoE7FZQ"/>
-  <sections xmi:id="_-ajCEJFwEeanrp-HoE7FZQ" name="Selecionar framework" guid="_-ajCEJFwEeanrp-HoE7FZQ"/>
-  <sections xmi:id="_B-Y8QJFxEeanrp-HoE7FZQ" name="Implantar framework" guid="_B-Y8QJFxEeanrp-HoE7FZQ"/>
-  <sections xmi:id="_WzSVQJF2Eeanrp-HoE7FZQ" name="Configurar a base do sistema" guid="_WzSVQJF2Eeanrp-HoE7FZQ"/>
-</org.eclipse.epf.uma:TaskDescription>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-SYpG_7-L4eBHGMjWSlTJrQ" name="new_checklist,_A9YeIJFkEeanrp-HoE7FZQ" guid="-SYpG_7-L4eBHGMjWSlTJrQ">
-  <sections xmi:id="_EKIG8JFkEeanrp-HoE7FZQ" name="Complexidade ciclomática" guid="_EKIG8JFkEeanrp-HoE7FZQ"/>
-  <sections xmi:id="_IGG0UJFkEeanrp-HoE7FZQ" name="Documentação de classes" guid="_IGG0UJFkEeanrp-HoE7FZQ"/>
-  <sections xmi:id="_Ma0KwJFkEeanrp-HoE7FZQ" name="Documentação de métodos" guid="_Ma0KwJFkEeanrp-HoE7FZQ"/>
-</org.eclipse.epf.uma:ContentDescription>

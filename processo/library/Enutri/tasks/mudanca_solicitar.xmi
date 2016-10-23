@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-jei-Q2uVglp51OmrU3fShQ" name=",_O4S80JYlEeaRb6mrVBIJLA" guid="-jei-Q2uVglp51OmrU3fShQ">
+  <sections xmi:id="_S16B4JYlEeaRb6mrVBIJLA" name="Recolher informações de mudança" guid="_S16B4JYlEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_T2R5wJYlEeaRb6mrVBIJLA" name="Atualizar a lista de tarefas" guid="_T2R5wJYlEeaRb6mrVBIJLA"/>
+</org.eclipse.epf.uma:TaskDescription>

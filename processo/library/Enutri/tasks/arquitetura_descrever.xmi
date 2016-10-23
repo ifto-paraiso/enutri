@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-gYf7h7HxcCzJLBgh-vqtQA" name=",_5pUywJYmEeaRb6mrVBIJLA" guid="-gYf7h7HxcCzJLBgh-vqtQA">
+  <sections xmi:id="_TkzA0JYoEeaRb6mrVBIJLA" name="Identificar as metas arquiteturais" guid="_TkzA0JYoEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_VeY_sJYoEeaRb6mrVBIJLA" name="Identificar os requisitos arquiteturalmente significantes " guid="_VeY_sJYoEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_XJ0mwJYoEeaRb6mrVBIJLA" name="Identificar as restrições na arquitetura  " guid="_XJ0mwJYoEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_Y12qwJYoEeaRb6mrVBIJLA" name="Capturar as decisões arquiteturais " guid="_Y12qwJYoEeaRb6mrVBIJLA"/>
+</org.eclipse.epf.uma:TaskDescription>

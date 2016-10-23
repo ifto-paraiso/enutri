@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-VuMfr-0IADytHXF2nAON3g" name="backlog,_A0OZoH9yEeaF1pjERfVvAA" guid="-VuMfr-0IADytHXF2nAON3g" changeDate="2016-10-14T07:48:06.060-0300">
-  <mainDescription>O Backlog é formado por dois elementos: a lista de issues (GitHub Issues)&amp;nbsp;e o quadro kanbam (GitHub Project)&amp;nbsp;com&#xD;
-a priorização das issues a serem resolvidas, as issues em desenvolvimento e as issues resolvidas.</mainDescription>
-</org.eclipse.epf.uma:ArtifactDescription>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-UJg9RSRUL9iH4OScNrR-1w" name="tempo_gerenciar,_YSzugH9zEeaF1pjERfVvAA" guid="-UJg9RSRUL9iH4OScNrR-1w">
-  <sections xmi:id="_7NPd4I_WEea4GYIP2O4Dgw" name="Atualizar o Cronograma" guid="_7NPd4I_WEea4GYIP2O4Dgw">
-    <sectionDescription>&lt;p>&#xD;
-    Atualizar o Cronograma para representar o tempo estimado e gasto com as tarefas planejadas e executadas.&#xD;
-&lt;/p></sectionDescription>
-  </sections>
-</org.eclipse.epf.uma:TaskDescription>

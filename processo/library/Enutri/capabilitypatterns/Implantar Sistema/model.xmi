@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_ws9fQJYnEeaRb6mrVBIJLA" guid="_ws9fQJYnEeaRb6mrVBIJLA">
+    <resourceDescriptors xmi:id="_ws9fQZYnEeaRb6mrVBIJLA" id="-Z6DoM8fyXk1YVPtOJELQUQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_wpiX0JYnEeaRb6mrVBIJLA" name="Implantar Sistema" guid="_wpiX0JYnEeaRb6mrVBIJLA">
+    <methodElementProperty xmi:id="_wpiX0pYnEeaRb6mrVBIJLA" name="pkg_loadCheck" value="true"/>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_wpiX0ZYnEeaRb6mrVBIJLA" name="Implantar Sistema" guid="_wpiX0ZYnEeaRb6mrVBIJLA" presentationName="Implantar Sistema">
+      <presentation xmi:id="-Z6DoM8fyXk1YVPtOJELQUQ" href="uma://-Z6DoM8fyXk1YVPtOJELQUQ#-Z6DoM8fyXk1YVPtOJELQUQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

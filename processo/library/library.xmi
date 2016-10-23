@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_FnBX0pX7Eea5INDw8_iX4w" guid="_FnBX0pX7Eea5INDw8_iX4w">
+    <subManagers xmi:id="_JZrxIZX7Eea5INDw8_iX4w" href="uma://_JZinMJX7Eea5INDw8_iX4w#_JZrxIZX7Eea5INDw8_iX4w"/>
+    <resourceDescriptors xmi:id="_FnKhwJX7Eea5INDw8_iX4w" id="_FnBX0ZX7Eea5INDw8_iX4w" uri=""/>
+    <resourceDescriptors xmi:id="_JZrxIpX7Eea5INDw8_iX4w" id="_JZinMJX7Eea5INDw8_iX4w" uri="Enutri/plugin.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:MethodLibrary xmi:id="_FnBX0ZX7Eea5INDw8_iX4w" name="EnutriLibrary" guid="_FnBX0ZX7Eea5INDw8_iX4w" briefDescription="Biblioteca de método do processo de desenvolvimento do Enutri">
+    <methodElementProperty xmi:id="_FoglkJX7Eea5INDw8_iX4w" name="library_synFree" value="true"/>
+    <methodPlugins xmi:id="_JZinMJX7Eea5INDw8_iX4w" href="uma://_JZinMJX7Eea5INDw8_iX4w#_JZinMJX7Eea5INDw8_iX4w"/>
+  </org.eclipse.epf.uma:MethodLibrary>
+</xmi:XMI>

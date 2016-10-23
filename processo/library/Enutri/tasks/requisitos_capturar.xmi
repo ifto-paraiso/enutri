@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-ekba1JSHPEB5jtgTJaaPXQ" name=",_D-khkJYiEeaRb6mrVBIJLA" guid="-ekba1JSHPEB5jtgTJaaPXQ">
+  <sections xmi:id="_PcAOMJYiEeaRb6mrVBIJLA" name="Obter informações" guid="_PcAOMJYiEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_QSsloJYiEeaRb6mrVBIJLA" name="Capturar os elementos do domínio" guid="_QSsloJYiEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_R9Fq4JYiEeaRb6mrVBIJLA" name="Identificar os requisitos relevantes" guid="_R9Fq4JYiEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_UBt1EJYiEeaRb6mrVBIJLA" name="Identificar os atores" guid="_UBt1EJYiEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_U01UEJYiEeaRb6mrVBIJLA" name="Identificar os casos de uso" guid="_U01UEJYiEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_WZHKQJYiEeaRb6mrVBIJLA" name="Identificar os requisitos suplementares" guid="_WZHKQJYiEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_X341YJYiEeaRb6mrVBIJLA" name="Obter consenso" guid="_X341YJYiEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_YppcAJfvEeaGraIkjYaOmA" name="Elaborar o Modelo de Domínio" guid="_YppcAJfvEeaGraIkjYaOmA"/>
+</org.eclipse.epf.uma:TaskDescription>

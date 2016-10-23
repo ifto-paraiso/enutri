@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-dpeqG79I1_cWsp5XQM4ztA" name="projeto_planejar,_1wakIJX9Eea5INDw8_iX4w" guid="-dpeqG79I1_cWsp5XQM4ztA">
+  <sections xmi:id="_JtG5EJYfEeaRb6mrVBIJLA" name="Elaborar o Plano do Projeto" guid="_JtG5EJYfEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_NcmpoJYfEeaRb6mrVBIJLA" name="Estabelecer a equipe do projeto" guid="_NcmpoJYfEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_Oxoi4JYfEeaRb6mrVBIJLA" name="Distribuir os papeis" guid="_Oxoi4JYfEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_Dbz6IJYfEeaRb6mrVBIJLA" name="Determinar o tamanho e o escopo do projeto" guid="_Dbz6IJYfEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_E-wTkJYfEeaRb6mrVBIJLA" name="Descrever o ciclo de vida do projeto" guid="_E-wTkJYfEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_SjGpYJYfEeaRb6mrVBIJLA" name="Descrever a metodologia e as ferramentas utilizadas" guid="_SjGpYJYfEeaRb6mrVBIJLA"/>
+</org.eclipse.epf.uma:TaskDescription>

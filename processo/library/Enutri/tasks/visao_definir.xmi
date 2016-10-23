@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Mbvxt1tgdHOKOeNY2RNmtQ" name="visao_definir,_3uGY0JX9Eea5INDw8_iX4w" guid="-Mbvxt1tgdHOKOeNY2RNmtQ">
+  <sections xmi:id="_oUutMJYgEeaRb6mrVBIJLA" name="Identificar os stakeholders" guid="_oUutMJYgEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_rGpbMJYgEeaRb6mrVBIJLA" name="Adquirir consenso sobre o problema a ser resolvido" guid="_rGpbMJYgEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_s_WpQJYgEeaRb6mrVBIJLA" name="Capturar um vocabulário comum" guid="_s_WpQJYgEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_wSIBkJYgEeaRb6mrVBIJLA" name="Obter solicitações dos stakeholders" guid="_wSIBkJYgEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_yLk2gJYgEeaRb6mrVBIJLA" name="Identificar os limites do sistema" guid="_yLk2gJYgEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_0WTBoJYgEeaRb6mrVBIJLA" name="Identificar as restrições do sistema" guid="_0WTBoJYgEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_eOY54JYhEeaRb6mrVBIJLA" name="Definir as características do sistema" guid="_eOY54JYhEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_fW4L8JYhEeaRb6mrVBIJLA" name="Obter consenso" guid="_fW4L8JYhEeaRb6mrVBIJLA"/>
+</org.eclipse.epf.uma:TaskDescription>

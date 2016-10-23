@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-HoL8hnOc_g10CcKvfvrmzg" name="iteracao_planejar,_YExQEJX8Eea5INDw8_iX4w" guid="-HoL8hnOc_g10CcKvfvrmzg" changeDate="2016-10-19T13:28:07.297-0300">
+  <sections xmi:id="_BwUQYJYZEeaEjfH4fvjAEA" name="Criar um novo Plano de Iteração" guid="_BwUQYJYZEeaEjfH4fvjAEA">
+    <sectionDescription>Utilizar o template para criar um novo documento.</sectionDescription>
+  </sections>
+  <sections xmi:id="_dLo9EJYZEeaEjfH4fvjAEA" name="Determinar os objetivos da iteração" guid="_dLo9EJYZEeaEjfH4fvjAEA"/>
+  <sections xmi:id="_ejgH4JYZEeaEjfH4fvjAEA" name="Determinar os critérios de avaliação da iteração" guid="_ejgH4JYZEeaEjfH4fvjAEA"/>
+  <sections xmi:id="_aVSbAJYZEeaEjfH4fvjAEA" name="Definir o cronograma da iteração" guid="_aVSbAJYZEeaEjfH4fvjAEA">
+    <sectionDescription>Informar a data de início e término da iteração.</sectionDescription>
+  </sections>
+  <purpose>Determinar os objetivos de uma iteração, estabelecendo a sua duração e os critérios de avaliação.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

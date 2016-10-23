@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Kw9V2AVgGEcGF3DSo-GgsA" name="new_tool,_sZE7IJYaEeaRb6mrVBIJLA" guid="-Kw9V2AVgGEcGF3DSo-GgsA" changeDate="2016-10-19T13:41:04.175-0300">
+  <mainDescription>&lt;p>&#xD;
+    O GitHub Wiki é um lugar&amp;nbsp;no repositório GitHub onde é possível compartilhar conteúdos de longa duração&#xD;
+    sobre&amp;nbsp;de um&amp;nbsp;projeto,&amp;nbsp;por exemplo:&amp;nbsp;a forma de usá-lo, como ele foi projetado, seus princípios&#xD;
+    fundamentais, e assim por diante.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Com as páginas wiki torna-se possível&amp;nbsp;escrever o conteúdo assim como em qualquer outro lugar no GitHub. O GitHub&#xD;
+    usa o código-fonte aberto biblioteca Markup para converter formatos diferentes em HTML, então você pode optar por&#xD;
+    escrever em Markdown, RST ou qualquer outro formato suportado quando você páginas oficiais wiki.&lt;br />&#xD;
+    &lt;br />&#xD;
+    Wikis podem ser editados diretamente no GitHub, ou você pode trabalhar com um editor de texto offline e simplesmente&#xD;
+    &quot;commitar&quot; as alterações. Wikis são fundamentalmente colaborativas. Por padrão, apenas colaboradores de seu repositório&#xD;
+    podem fazer alterações nas wikis, mas você pode configurar isso para ser habilitado para todos os usuários em&#xD;
+    repositórios públicos.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

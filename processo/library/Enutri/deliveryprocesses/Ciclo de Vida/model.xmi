@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_KoP2AJX7Eea5INDw8_iX4w" guid="_KoP2AJX7Eea5INDw8_iX4w">
+    <resourceDescriptors xmi:id="_KoP2AZX7Eea5INDw8_iX4w" id="-ruGYPJne2gFwQ1SzXnJk2w" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_KljuYJX7Eea5INDw8_iX4w" name="Ciclo de Vida" guid="_KljuYJX7Eea5INDw8_iX4w">
+    <methodElementProperty xmi:id="_KljuYpX7Eea5INDw8_iX4w" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_OuZMAJX7Eea5INDw8_iX4w" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_SWNAMJX7Eea5INDw8_iX4w" name="Elaboração" guid="_SWNAMJX7Eea5INDw8_iX4w">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_9MPHYJX7Eea5INDw8_iX4w" name="Iteração de Elaboração [E1..En]" guid="_9MPHYJX7Eea5INDw8_iX4w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_T8rZUJX8Eea5INDw8_iX4w" name="Gerenciar a Iteração" guid="_T8rZUJX8Eea5INDw8_iX4w">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_T8rZUZX8Eea5INDw8_iX4w" name="Gerenciar a Iteração" guid="_T8rZUZX8Eea5INDw8_iX4w" superActivities="_9MPHYZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_8g_VgJX8Eea5INDw8_iX4w" name="Gerenciar Requisitos" guid="_8g_VgJX8Eea5INDw8_iX4w">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_8g_VgZX8Eea5INDw8_iX4w" name="Gerenciar Requisitos" guid="_8g_VgZX8Eea5INDw8_iX4w" superActivities="_9MPHYZX7Eea5INDw8_iX4w" linkToPredecessor="_avYmwZX9Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_oGyXoJX7Eea5INDw8_iX4w#_oGyXoZX7Eea5INDw8_iX4w"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_avYmwZX9Eea5INDw8_iX4w" guid="_avYmwZX9Eea5INDw8_iX4w" pred="_9S-zIZX8Eea5INDw8_iX4w"/>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_9S-zIJX8Eea5INDw8_iX4w" name="Iniciar o Projeto" guid="_9S-zIJX8Eea5INDw8_iX4w">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_9S-zIZX8Eea5INDw8_iX4w" name="Iniciar o Projeto" guid="_9S-zIZX8Eea5INDw8_iX4w" superActivities="_9MPHYZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_rQEcwJX7Eea5INDw8_iX4w#_rQEcwZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_9-3owJX8Eea5INDw8_iX4w" name="Desenvolver a Arquitetura" guid="_9-3owJX8Eea5INDw8_iX4w">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_9-3owZX8Eea5INDw8_iX4w" name="Desenvolver a Arquitetura" guid="_9-3owZX8Eea5INDw8_iX4w" superActivities="_9MPHYZX7Eea5INDw8_iX4w" linkToPredecessor="_boO6UZX9Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_s8ZbsJX7Eea5INDw8_iX4w#_s8ZbsZX7Eea5INDw8_iX4w"/>
+          </processElements>
+          <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_boO6UZX9Eea5INDw8_iX4w" guid="_boO6UZX9Eea5INDw8_iX4w" pred="_9S-zIZX8Eea5INDw8_iX4w"/>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_9MPHYZX7Eea5INDw8_iX4w" name="Iteração de Elaboração [E1..En]" guid="_9MPHYZX7Eea5INDw8_iX4w" presentationName="Iteração de Elaboração [E1..En]" superActivities="_SWNAMZX7Eea5INDw8_iX4w" isRepeatable="true" breakdownElements="_T8rZUZX8Eea5INDw8_iX4w _9S-zIZX8Eea5INDw8_iX4w _8g_VgZX8Eea5INDw8_iX4w _9-3owZX8Eea5INDw8_iX4w"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_SWNAMZX7Eea5INDw8_iX4w" name="Elaboração" guid="_SWNAMZX7Eea5INDw8_iX4w" presentationName="Concepção" superActivities="_KljuYZX7Eea5INDw8_iX4w" breakdownElements="_9MPHYZX7Eea5INDw8_iX4w"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_TPexkJX7Eea5INDw8_iX4w" name="Concepção" guid="_TPexkJX7Eea5INDw8_iX4w">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_4ATOAJX7Eea5INDw8_iX4w" name="Banco de Dados" guid="_4ATOAJX7Eea5INDw8_iX4w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_A0unUJYYEeaEjfH4fvjAEA" name="Desenvolver o Banco de Dados" guid="_A0unUJYYEeaEjfH4fvjAEA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_A0unUZYYEeaEjfH4fvjAEA" name="Desenvolver o Banco de Dados" guid="_A0unUZYYEeaEjfH4fvjAEA" superActivities="_4ATOAZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_R-z-cJX8Eea5INDw8_iX4w#_R-z-cZX8Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_DWQv8JYYEeaEjfH4fvjAEA" name="Gerenciar a Iteração" guid="_DWQv8JYYEeaEjfH4fvjAEA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_DWQv8ZYYEeaEjfH4fvjAEA" name="Gerenciar a Iteração" guid="_DWQv8ZYYEeaEjfH4fvjAEA" superActivities="_4ATOAZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_XOL8oJYYEeaEjfH4fvjAEA" name="Manter Tarefas Contínuas" guid="_XOL8oJYYEeaEjfH4fvjAEA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_XOL8oZYYEeaEjfH4fvjAEA" name="Manter Tarefas Contínuas" guid="_XOL8oZYYEeaEjfH4fvjAEA" superActivities="_4ATOAZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_4ATOAZX7Eea5INDw8_iX4w" name="Banco de Dados" guid="_4ATOAZX7Eea5INDw8_iX4w" presentationName="Banco de Dados [Ea+1..Eb]" superActivities="_TPexkZX7Eea5INDw8_iX4w" isRepeatable="true" linkToPredecessor="_2tipAJYkEeaRb6mrVBIJLA" breakdownElements="_DWQv8ZYYEeaEjfH4fvjAEA _A0unUZYYEeaEjfH4fvjAEA _XOL8oZYYEeaEjfH4fvjAEA"/>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_2tipAJYkEeaRb6mrVBIJLA" guid="_2tipAJYkEeaRb6mrVBIJLA" pred="_5QfqkZX7Eea5INDw8_iX4w"/>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_5QfqkJX7Eea5INDw8_iX4w" name="Refinamento dos Requisitos" guid="_5QfqkJX7Eea5INDw8_iX4w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_81LBgJYXEeaEjfH4fvjAEA" name="Gerenciar a Iteração" guid="_81LBgJYXEeaEjfH4fvjAEA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_81LBgZYXEeaEjfH4fvjAEA" name="Gerenciar a Iteração" guid="_81LBgZYXEeaEjfH4fvjAEA" superActivities="_5QfqkZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_-jchMJYXEeaEjfH4fvjAEA" name="Gerenciar os Requisitos" guid="_-jchMJYXEeaEjfH4fvjAEA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_-jchMZYXEeaEjfH4fvjAEA" name="Gerenciar os Requisitos" guid="_-jchMZYXEeaEjfH4fvjAEA" superActivities="_5QfqkZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_oGyXoJX7Eea5INDw8_iX4w#_oGyXoZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_WythkJYYEeaEjfH4fvjAEA" name="Manter Tarefas Contínuas" guid="_WythkJYYEeaEjfH4fvjAEA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_WythkZYYEeaEjfH4fvjAEA" name="Manter Tarefas Contínuas" guid="_WythkZYYEeaEjfH4fvjAEA" superActivities="_5QfqkZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_5QfqkZX7Eea5INDw8_iX4w" name="Refinamento dos Requisitos" guid="_5QfqkZX7Eea5INDw8_iX4w" presentationName="Refinamento dos Requisitos [E1..Ea]" superActivities="_TPexkZX7Eea5INDw8_iX4w" isRepeatable="true" breakdownElements="_81LBgZYXEeaEjfH4fvjAEA _-jchMZYXEeaEjfH4fvjAEA _WythkZYYEeaEjfH4fvjAEA"/>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_6iCK8JX7Eea5INDw8_iX4w" name="Interface com o Usuário" guid="_6iCK8JX7Eea5INDw8_iX4w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_AwwIcJYnEeaRb6mrVBIJLA" name="Desenvolver a Interface com o Usuário" guid="_AwwIcJYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_AwwIcZYnEeaRb6mrVBIJLA" name="Desenvolver a Interface com o Usuário" guid="_AwwIcZYnEeaRb6mrVBIJLA" superActivities="_6iCK8ZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://__SrA4JYmEeaRb6mrVBIJLA#__SrA4ZYmEeaRb6mrVBIJLA"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Csus8JYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_Csus8JYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_Csus8ZYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_Csus8ZYnEeaRb6mrVBIJLA" superActivities="_6iCK8ZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Csus8pYnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_Csus8pYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_Csus85YnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_Csus85YnEeaRb6mrVBIJLA" superActivities="_6iCK8ZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_6iCK8ZX7Eea5INDw8_iX4w" name="Interface com o Usuário" guid="_6iCK8ZX7Eea5INDw8_iX4w" presentationName="Interface com o Usuário [Ec+1..Ed]" superActivities="_TPexkZX7Eea5INDw8_iX4w" isRepeatable="true" linkToPredecessor="_4KOpcZYkEeaRb6mrVBIJLA" breakdownElements="_Csus8ZYnEeaRb6mrVBIJLA _AwwIcZYnEeaRb6mrVBIJLA _Csus85YnEeaRb6mrVBIJLA"/>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_4KOpcZYkEeaRb6mrVBIJLA" guid="_4KOpcZYkEeaRb6mrVBIJLA" pred="_25ftQZYXEeaEjfH4fvjAEA"/>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_7tUSUJX7Eea5INDw8_iX4w" name="Planejamento da Construção" guid="_7tUSUJX7Eea5INDw8_iX4w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_HFKs0JYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_HFKs0JYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_HFKs0ZYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_HFKs0ZYnEeaRb6mrVBIJLA" superActivities="_7tUSUZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_HFKs0pYnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_HFKs0pYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_HFKs05YnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_HFKs05YnEeaRb6mrVBIJLA" superActivities="_7tUSUZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_L_R2YJYnEeaRb6mrVBIJLA" name="Planejar a Construção" guid="_L_R2YJYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_L_R2YZYnEeaRb6mrVBIJLA" name="Planejar a Construção" guid="_L_R2YZYnEeaRb6mrVBIJLA" superActivities="_7tUSUZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_IsuggJYnEeaRb6mrVBIJLA#_IsuggZYnEeaRb6mrVBIJLA"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_7tUSUZX7Eea5INDw8_iX4w" name="Planejamento da Construção" guid="_7tUSUZX7Eea5INDw8_iX4w" presentationName="Planejamento da Construção [Ec+1..Ee]" superActivities="_TPexkZX7Eea5INDw8_iX4w" isRepeatable="true" linkToPredecessor="_5LMXMZYkEeaRb6mrVBIJLA" breakdownElements="_HFKs0ZYnEeaRb6mrVBIJLA _L_R2YZYnEeaRb6mrVBIJLA _HFKs05YnEeaRb6mrVBIJLA"/>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_5LMXMZYkEeaRb6mrVBIJLA" guid="_5LMXMZYkEeaRb6mrVBIJLA" pred="_6iCK8ZX7Eea5INDw8_iX4w"/>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_25ftQJYXEeaEjfH4fvjAEA" name="Arquitetura" guid="_25ftQJYXEeaEjfH4fvjAEA">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_953a4JYmEeaRb6mrVBIJLA" name="Desenvolver a Arquitetura" guid="_953a4JYmEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_953a4ZYmEeaRb6mrVBIJLA" name="Desenvolver a Arquitetura" guid="_953a4ZYmEeaRb6mrVBIJLA" superActivities="_25ftQZYXEeaEjfH4fvjAEA" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_xSExwJYXEeaEjfH4fvjAEA#_xSExwZYXEeaEjfH4fvjAEA"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Dc2iUJYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_Dc2iUJYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_Dc2iUZYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_Dc2iUZYnEeaRb6mrVBIJLA" superActivities="_25ftQZYXEeaEjfH4fvjAEA" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Dc2iUpYnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_Dc2iUpYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_Dc2iU5YnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_Dc2iU5YnEeaRb6mrVBIJLA" superActivities="_25ftQZYXEeaEjfH4fvjAEA" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_25ftQZYXEeaEjfH4fvjAEA" name="Arquitetura" guid="_25ftQZYXEeaEjfH4fvjAEA" presentationName="Arquitetura [Eb+1..Ec]" superActivities="_TPexkZX7Eea5INDw8_iX4w" isRepeatable="true" linkToPredecessor="_3P0PoZYkEeaRb6mrVBIJLA" breakdownElements="_Dc2iUZYnEeaRb6mrVBIJLA _953a4ZYmEeaRb6mrVBIJLA _Dc2iU5YnEeaRb6mrVBIJLA"/>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_3P0PoZYkEeaRb6mrVBIJLA" guid="_3P0PoZYkEeaRb6mrVBIJLA" pred="_4ATOAZX7Eea5INDw8_iX4w"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_TPexkZX7Eea5INDw8_iX4w" name="Concepção" guid="_TPexkZX7Eea5INDw8_iX4w" presentationName="Elaboração" superActivities="_KljuYZX7Eea5INDw8_iX4w" linkToPredecessor="_waPAQZYWEeaEjfH4fvjAEA" breakdownElements="_5QfqkZX7Eea5INDw8_iX4w _4ATOAZX7Eea5INDw8_iX4w _25ftQZYXEeaEjfH4fvjAEA _6iCK8ZX7Eea5INDw8_iX4w _7tUSUZX7Eea5INDw8_iX4w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_waPAQZYWEeaEjfH4fvjAEA" guid="_waPAQZYWEeaEjfH4fvjAEA" pred="_lRGugJX8Eea5INDw8_iX4w"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_T3pk0JX7Eea5INDw8_iX4w" name="Construção" guid="_T3pk0JX7Eea5INDw8_iX4w">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_dNIGcJX7Eea5INDw8_iX4w" name="Iteração de Construção [C1..Cn]" guid="_dNIGcJX7Eea5INDw8_iX4w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Q0obwJYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_Q0obwJYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_Q0obwZYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_Q0obwZYnEeaRb6mrVBIJLA" superActivities="_dNIGcZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_OkY3cJYnEeaRb6mrVBIJLA" name="Desenvolver Incremento" guid="_OkY3cJYnEeaRb6mrVBIJLA">
+          <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Q0obwpYnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_Q0obwpYnEeaRb6mrVBIJLA">
+            <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_Q0obw5YnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_Q0obw5YnEeaRb6mrVBIJLA" superActivities="_OkY3cZYnEeaRb6mrVBIJLA" variabilityType="extends">
+              <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+            </processElements>
+          </childPackages>
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_OkY3cZYnEeaRb6mrVBIJLA" name="Desenvolver Incremento" guid="_OkY3cZYnEeaRb6mrVBIJLA" superActivities="_dNIGcZX7Eea5INDw8_iX4w" variabilityType="extends" breakdownElements="_Q0obw5YnEeaRb6mrVBIJLA">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_wgUOYJX7Eea5INDw8_iX4w#_wgUOYZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_1o_1UJfxEeaGraIkjYaOmA" name="Realizar Tarefas Contínuas" guid="_1o_1UJfxEeaGraIkjYaOmA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_1o_1UZfxEeaGraIkjYaOmA" name="Realizar Tarefas Contínuas" guid="_1o_1UZfxEeaGraIkjYaOmA" superActivities="_dNIGcZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_dNIGcZX7Eea5INDw8_iX4w" name="Iteração de Construção [C1..Cn]" guid="_dNIGcZX7Eea5INDw8_iX4w" presentationName="Iteração de Construção [C1..Cn]" superActivities="_T3pk0ZX7Eea5INDw8_iX4w" isRepeatable="true" breakdownElements="_Q0obwZYnEeaRb6mrVBIJLA _OkY3cZYnEeaRb6mrVBIJLA _1o_1UZfxEeaGraIkjYaOmA"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_T3pk0ZX7Eea5INDw8_iX4w" name="Construção" guid="_T3pk0ZX7Eea5INDw8_iX4w" presentationName="Construção" superActivities="_KljuYZX7Eea5INDw8_iX4w" linkToPredecessor="_6hPsgZYWEeaEjfH4fvjAEA" breakdownElements="_dNIGcZX7Eea5INDw8_iX4w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_6hPsgZYWEeaEjfH4fvjAEA" guid="_6hPsgZYWEeaEjfH4fvjAEA" pred="_mktrcJX8Eea5INDw8_iX4w"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_U11rYJX7Eea5INDw8_iX4w" name="Transição" guid="_U11rYJX7Eea5INDw8_iX4w">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_WVEpgJX7Eea5INDw8_iX4w" name="Implantação" guid="_WVEpgJX7Eea5INDw8_iX4w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_x0pgEJYnEeaRb6mrVBIJLA" name="Implantar Sistema" guid="_x0pgEJYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_x0pgEZYnEeaRb6mrVBIJLA" name="Implantar Sistema" guid="_x0pgEZYnEeaRb6mrVBIJLA" superActivities="_WVEpgZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_wpiX0JYnEeaRb6mrVBIJLA#_wpiX0ZYnEeaRb6mrVBIJLA"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_yzrUIJYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_yzrUIJYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_yzrUIZYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_yzrUIZYnEeaRb6mrVBIJLA" superActivities="_WVEpgZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_yzrUIpYnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_yzrUIpYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_yzrUI5YnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_yzrUI5YnEeaRb6mrVBIJLA" superActivities="_WVEpgZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_WVEpgZX7Eea5INDw8_iX4w" name="Implantação" guid="_WVEpgZX7Eea5INDw8_iX4w" presentationName="Implantação [T1..Ta]" superActivities="_U11rYZX7Eea5INDw8_iX4w" isRepeatable="true" breakdownElements="_yzrUIZYnEeaRb6mrVBIJLA _x0pgEZYnEeaRb6mrVBIJLA _yzrUI5YnEeaRb6mrVBIJLA"/>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_XkzzEJX7Eea5INDw8_iX4w" name="Treinamento" guid="_XkzzEJX7Eea5INDw8_iX4w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_6VlmYJYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_6VlmYJYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_6VlmYZYnEeaRb6mrVBIJLA" name="Planejar e Gerenciar a Iteração" guid="_6VlmYZYnEeaRb6mrVBIJLA" superActivities="_XkzzEZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_6VlmYpYnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_6VlmYpYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_6VlmY5YnEeaRb6mrVBIJLA" name="Realizar Tarefas Contínuas" guid="_6VlmY5YnEeaRb6mrVBIJLA" superActivities="_XkzzEZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+          </processElements>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_6VlmZJYnEeaRb6mrVBIJLA" name="Treinar Usuários" guid="_6VlmZJYnEeaRb6mrVBIJLA">
+          <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_6VlmZZYnEeaRb6mrVBIJLA" name="Treinar Usuários" guid="_6VlmZZYnEeaRb6mrVBIJLA" superActivities="_XkzzEZX7Eea5INDw8_iX4w" variabilityType="extends">
+            <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_3sTP8JYnEeaRb6mrVBIJLA#_3sTP8ZYnEeaRb6mrVBIJLA"/>
+          </processElements>
+        </childPackages>
+        <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_XkzzEZX7Eea5INDw8_iX4w" name="Treinamento" guid="_XkzzEZX7Eea5INDw8_iX4w" presentationName="Treinamento [Ta+1..Tb]" superActivities="_U11rYZX7Eea5INDw8_iX4w" isRepeatable="true" breakdownElements="_6VlmYZYnEeaRb6mrVBIJLA _6VlmZZYnEeaRb6mrVBIJLA _6VlmY5YnEeaRb6mrVBIJLA"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_U11rYZX7Eea5INDw8_iX4w" name="Transição" guid="_U11rYZX7Eea5INDw8_iX4w" presentationName="Transição" superActivities="_KljuYZX7Eea5INDw8_iX4w" linkToPredecessor="_7uSHYJYWEeaEjfH4fvjAEA" breakdownElements="_WVEpgZX7Eea5INDw8_iX4w _XkzzEZX7Eea5INDw8_iX4w"/>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_7uSHYJYWEeaEjfH4fvjAEA" guid="_7uSHYJYWEeaEjfH4fvjAEA" pred="_qKbN4JX8Eea5INDw8_iX4w"/>
+    </childPackages>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_lRGugJX8Eea5INDw8_iX4w" name="Marco dos Objetivos" guid="_lRGugJX8Eea5INDw8_iX4w" presentationName="Marco dos Objetivos" superActivities="_KljuYZX7Eea5INDw8_iX4w" linkToPredecessor="_twWz8ZYWEeaEjfH4fvjAEA"/>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_mktrcJX8Eea5INDw8_iX4w" name="Marco da Arquitetura" guid="_mktrcJX8Eea5INDw8_iX4w" presentationName="Marco da Arquitetura" superActivities="_KljuYZX7Eea5INDw8_iX4w" linkToPredecessor="_uqLX4ZYWEeaEjfH4fvjAEA"/>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_qKbN4JX8Eea5INDw8_iX4w" name="Marco da " guid="_qKbN4JX8Eea5INDw8_iX4w" presentationName="Marco da Operação Inicial" superActivities="_KljuYZX7Eea5INDw8_iX4w" linkToPredecessor="_7HFkgJYWEeaEjfH4fvjAEA"/>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_4NF3YJX8Eea5INDw8_iX4w" name="Marco da Liberação do Produto" guid="_4NF3YJX8Eea5INDw8_iX4w" presentationName="Marco da Liberação do Produto" superActivities="_KljuYZX7Eea5INDw8_iX4w" linkToPredecessor="_8BW0YZYWEeaEjfH4fvjAEA"/>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_twWz8ZYWEeaEjfH4fvjAEA" guid="_twWz8ZYWEeaEjfH4fvjAEA" pred="_SWNAMZX7Eea5INDw8_iX4w"/>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_uqLX4ZYWEeaEjfH4fvjAEA" guid="_uqLX4ZYWEeaEjfH4fvjAEA" pred="_TPexkZX7Eea5INDw8_iX4w"/>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_7HFkgJYWEeaEjfH4fvjAEA" guid="_7HFkgJYWEeaEjfH4fvjAEA" pred="_T3pk0ZX7Eea5INDw8_iX4w"/>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_8BW0YZYWEeaEjfH4fvjAEA" guid="_8BW0YZYWEeaEjfH4fvjAEA" pred="_U11rYZX7Eea5INDw8_iX4w"/>
+    <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_liGqQJfxEeaGraIkjYaOmA" name="visao" guid="_liGqQJfxEeaGraIkjYaOmA" presentationName="Visão" isPlanned="false" superActivities="_KljuYZX7Eea5INDw8_iX4w">
+      <WorkProduct href="uma://_JZinMJX7Eea5INDw8_iX4w#_lXgyUJYZEeaEjfH4fvjAEA"/>
+    </processElements>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_KljuYZX7Eea5INDw8_iX4w" name="Ciclo de Vida" guid="_KljuYZX7Eea5INDw8_iX4w" presentationName="Ciclo de Vida do Processo" breakdownElements="_SWNAMZX7Eea5INDw8_iX4w _lRGugJX8Eea5INDw8_iX4w _TPexkZX7Eea5INDw8_iX4w _mktrcJX8Eea5INDw8_iX4w _T3pk0ZX7Eea5INDw8_iX4w _qKbN4JX8Eea5INDw8_iX4w _U11rYZX7Eea5INDw8_iX4w _4NF3YJX8Eea5INDw8_iX4w _liGqQJfxEeaGraIkjYaOmA">
+      <presentation xmi:id="-ruGYPJne2gFwQ1SzXnJk2w" href="uma://-ruGYPJne2gFwQ1SzXnJk2w#-ruGYPJne2gFwQ1SzXnJk2w"/>
+      <includesPatterns href="uma://_kOURQJX7Eea5INDw8_iX4w#_kOURQZX7Eea5INDw8_iX4w"/>
+      <includesPatterns href="uma://_oGyXoJX7Eea5INDw8_iX4w#_oGyXoZX7Eea5INDw8_iX4w"/>
+      <includesPatterns href="uma://_rQEcwJX7Eea5INDw8_iX4w#_rQEcwZX7Eea5INDw8_iX4w"/>
+      <includesPatterns href="uma://_s8ZbsJX7Eea5INDw8_iX4w#_s8ZbsZX7Eea5INDw8_iX4w"/>
+      <includesPatterns href="uma://_R-z-cJX8Eea5INDw8_iX4w#_R-z-cZX8Eea5INDw8_iX4w"/>
+      <includesPatterns href="uma://_Rk5_8JYYEeaEjfH4fvjAEA#_Rk5_8ZYYEeaEjfH4fvjAEA"/>
+      <includesPatterns href="uma://_xSExwJYXEeaEjfH4fvjAEA#_xSExwZYXEeaEjfH4fvjAEA"/>
+      <includesPatterns href="uma://__SrA4JYmEeaRb6mrVBIJLA#__SrA4ZYmEeaRb6mrVBIJLA"/>
+      <includesPatterns href="uma://_IsuggJYnEeaRb6mrVBIJLA#_IsuggZYnEeaRb6mrVBIJLA"/>
+      <includesPatterns href="uma://_wgUOYJX7Eea5INDw8_iX4w#_wgUOYZX7Eea5INDw8_iX4w"/>
+      <includesPatterns href="uma://_wpiX0JYnEeaRb6mrVBIJLA#_wpiX0ZYnEeaRb6mrVBIJLA"/>
+      <includesPatterns href="uma://_3sTP8JYnEeaRb6mrVBIJLA#_3sTP8ZYnEeaRb6mrVBIJLA"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="__XcMIJYmEeaRb6mrVBIJLA" guid="__XcMIJYmEeaRb6mrVBIJLA">
+    <resourceDescriptors xmi:id="__XcMIZYmEeaRb6mrVBIJLA" id="-mXibJTWaGoWfwutG_53w4A" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="__SrA4JYmEeaRb6mrVBIJLA" name="Desenvolver a Interface com o Usuário" guid="__SrA4JYmEeaRb6mrVBIJLA">
+    <methodElementProperty xmi:id="__SrA4pYmEeaRb6mrVBIJLA" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_mLr44JYnEeaRb6mrVBIJLA" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_lwaSIJYnEeaRb6mrVBIJLA" name="Implementar" guid="_lwaSIJYnEeaRb6mrVBIJLA">
+      <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_lw2-EJYnEeaRb6mrVBIJLA" name="Implementar" guid="_lw2-EJYnEeaRb6mrVBIJLA" superActivities="__SrA4ZYmEeaRb6mrVBIJLA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_wgUOYJX7Eea5INDw8_iX4w#_wgUOYZX7Eea5INDw8_iX4w"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="__SrA4ZYmEeaRb6mrVBIJLA" name="Desenvolver a Interface com o Usuário" guid="__SrA4ZYmEeaRb6mrVBIJLA" presentationName="Desenvolver a Interface com o Usuário" breakdownElements="_lw2-EJYnEeaRb6mrVBIJLA">
+      <presentation xmi:id="-mXibJTWaGoWfwutG_53w4A" href="uma://-mXibJTWaGoWfwutG_53w4A#-mXibJTWaGoWfwutG_53w4A"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

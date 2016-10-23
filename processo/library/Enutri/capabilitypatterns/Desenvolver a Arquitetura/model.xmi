@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_xVsGcJYXEeaEjfH4fvjAEA" guid="_xVsGcJYXEeaEjfH4fvjAEA">
+    <resourceDescriptors xmi:id="_xVsGcZYXEeaEjfH4fvjAEA" id="-ZwdJRzc4rljwpxyPbAbLnQ" uri="../Planejar%20a%20Arquitetura/content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_xSExwJYXEeaEjfH4fvjAEA" name="Desenvolver a Arquitetura" guid="_xSExwJYXEeaEjfH4fvjAEA">
+    <methodElementProperty xmi:id="_xSgPkJYXEeaEjfH4fvjAEA" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_jShTYJYnEeaRb6mrVBIJLA" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_ikUwoJYnEeaRb6mrVBIJLA" name="Implementar" guid="_ikUwoJYnEeaRb6mrVBIJLA">
+      <processElements xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_iknrkJYnEeaRb6mrVBIJLA" name="Implementar" guid="_iknrkJYnEeaRb6mrVBIJLA" superActivities="_xSExwZYXEeaEjfH4fvjAEA" variabilityType="extends">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:CapabilityPattern" href="uma://_wgUOYJX7Eea5INDw8_iX4w#_wgUOYZX7Eea5INDw8_iX4w"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_xSExwZYXEeaEjfH4fvjAEA" name="Desenvolver a Arquitetura" guid="_xSExwZYXEeaEjfH4fvjAEA" presentationName="Desenvolver a Arquitetura" breakdownElements="_iknrkJYnEeaRb6mrVBIJLA">
+      <presentation xmi:id="-ZwdJRzc4rljwpxyPbAbLnQ" href="uma://-Dxtfz0YQKpZbKa9vehBoVA#-ZwdJRzc4rljwpxyPbAbLnQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-bu3By5lCxTkiNQSHfVGJQQ" name=",_j3GWcJfwEeaGraIkjYaOmA" guid="-bu3By5lCxTkiNQSHfVGJQQ">
+  <sections xmi:id="_mqg5QJfwEeaGraIkjYaOmA" name="Implementar o modelo físico do banco de dados" guid="_mqg5QJfwEeaGraIkjYaOmA"/>
+  <sections xmi:id="_pSTa4JfwEeaGraIkjYaOmA" name="Popular o banco de dados de testes" guid="_pSTa4JfwEeaGraIkjYaOmA"/>
+</org.eclipse.epf.uma:TaskDescription>

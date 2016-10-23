@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-IV4AVbAZoikgDVYGtLXG5Q" name="iteracao_gerenciar,_aeBmcJX8Eea5INDw8_iX4w" guid="-IV4AVbAZoikgDVYGtLXG5Q">
+  <sections xmi:id="_zr4vgJYcEeaRb6mrVBIJLA" name="Capturar status" guid="_zr4vgJYcEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_0h05AJYcEeaRb6mrVBIJLA" name="Gerenciar o tempo da iteração" guid="_0h05AJYcEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_2NtzEJYcEeaRb6mrVBIJLA" name="Manter a lista de tarefas" guid="_2NtzEJYcEeaRb6mrVBIJLA"/>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-cSNcDY6-TjIIS8UlqzYiwA" name="iteracao_encerrar,_cj678JX8Eea5INDw8_iX4w" guid="-cSNcDY6-TjIIS8UlqzYiwA" changeDate="2016-10-19T14:01:10.750-0300">
+  <sections xmi:id="_o0QpMJYdEeaRb6mrVBIJLA" name="Avaliar os resultados" guid="_o0QpMJYdEeaRb6mrVBIJLA">
+    <sectionDescription>Avaliar os resultados conforme os critérios de avaliação estabelecidos. Atualizar o Plano da Iteração.</sectionDescription>
+  </sections>
+  <sections xmi:id="_qCWM8JYdEeaRb6mrVBIJLA" name="Obter feedback do stakeholder" guid="_qCWM8JYdEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_rpw2sJYdEeaRb6mrVBIJLA" name="Atualizar o cronograma" guid="_rpw2sJYdEeaRb6mrVBIJLA">
+    <sectionDescription>Atualizar o cronograma do projeto.</sectionDescription>
+  </sections>
+  <sections xmi:id="_08BFMJYdEeaRb6mrVBIJLA" name="Encerrar a fase" guid="_08BFMJYdEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_1-U2wJYdEeaRb6mrVBIJLA" name="Encerrar o projeto" guid="_1-U2wJYdEeaRb6mrVBIJLA"/>
+  <purpose>Encerrar uma iteração, avaliando-a conforme os critérios estabelecidos no seu planejamento e verificando a necessidade de&#xD;
+uma nova iteração.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

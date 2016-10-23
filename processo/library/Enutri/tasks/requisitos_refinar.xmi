@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-fA_qMyUCO-ozTLRaqRAbwA" name=",_4jQp8JYjEeaRb6mrVBIJLA" guid="-fA_qMyUCO-ozTLRaqRAbwA">
+  <sections xmi:id="_B7oHgJYkEeaRb6mrVBIJLA" name="Detalhar os casos de uso e cenários" guid="_B7oHgJYkEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_DC__QJYkEeaRb6mrVBIJLA" name="Detalhar os requisitos suplementares" guid="_DC__QJYkEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_EDOtMJYkEeaRb6mrVBIJLA" name="Detalhar a base de conhecimento" guid="_EDOtMJYkEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_F4Dg0JYkEeaRb6mrVBIJLA" name="Atualizar o modelo de casos de uso" guid="_F4Dg0JYkEeaRb6mrVBIJLA"/>
+  <sections xmi:id="_G6z-UJYkEeaRb6mrVBIJLA" name="Obter consenso" guid="_G6z-UJYkEeaRb6mrVBIJLA"/>
+</org.eclipse.epf.uma:TaskDescription>

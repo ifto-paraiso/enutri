@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pt" xml:lang="pt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Gerenciar os Requisitos</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="Gerenciar Requisitos">
+<meta name="uma.presentationName" content="Gerenciar os Requisitos">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_KljuYZX7Eea5INDw8_iX4w&path=_KljuYZX7Eea5INDw8_iX4w,_SWNAMZX7Eea5INDw8_iX4w,_9MPHYZX7Eea5INDw8_iX4w,_8g_VgZX8Eea5INDw8_iX4w';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_8g_VgZX8Eea5INDw8_iX4w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Gerenciar os Requisitos</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../Enutri/deliveryprocesses/Gerenciar Requisitos_D9C9AC9D.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../Enutri/deliveryprocesses/Gerenciar Requisitos_D9C9AC9D.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Team Allocation</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../Enutri/deliveryprocesses/Gerenciar Requisitos_D9C9AC9D.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Team Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Team Breakdown", summary: "Team Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["teams", "Team"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+
+{id: "2fe4b7c9", parentId: "", relPath: ",_znWwoJYjEeaRb6mrVBIJLA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "analista", title: "Analista", url: "./../../Enutri/capabilitypatterns/analista_4D7D1D0B.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2d3c9814", parentId: "2fe4b7c9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "conhecimento", title: "Base de Conhecimento", url: "./../../Enutri/capabilitypatterns/conhecimento_D5064078.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2e38af0d", parentId: "2fe4b7c9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "uc_especificacao", title: "Especificação de Caso de Uso", url: "./../../Enutri/capabilitypatterns/uc_especificacao_13AD4508.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "322643a0", parentId: "2fe4b7c9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "tarefas", title: "Lista de Tarefas", url: "./../../Enutri/capabilitypatterns/tarefas_99982297.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "df65362d", parentId: "2fe4b7c9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "uc_modelo", title: "Modelo de Casos de Uso", url: "./../../Enutri/capabilitypatterns/uc_modelo_D3C7C545.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d7ccd34c", parentId: "2fe4b7c9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dominio", title: "Modelo de Domínio", url: "./../../Enutri/capabilitypatterns/dominio_49DB29.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "31998e9f", parentId: "2fe4b7c9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_suplementares", title: "Requisitos Suplementares", url: "./../../Enutri/capabilitypatterns/requisitos_suplementares_CCFEB96B.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e2f42202", parentId: "2fe4b7c9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_capturar", title: "Capturar e Descrever os Requisitos", url: "./../../Enutri/capabilitypatterns/requisitos_capturar_4C07F615.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "81d5c1f0", parentId: "2fe4b7c9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_refinar", title: "Refinar os Requisitos", url: "./../../Enutri/capabilitypatterns/requisitos_refinar_14904E60.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "39332320", parentId: "", relPath: ",_znprkJYjEeaRb6mrVBIJLA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "arquiteto", title: "Arquiteto", url: "./../../Enutri/capabilitypatterns/arquiteto_D5AF9B11.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "862e45f2", parentId: "39332320", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_capturar", title: "Capturar e Descrever os Requisitos", url: "./../../Enutri/capabilitypatterns/requisitos_capturar_4C07F615.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "33f705a5", parentId: "39332320", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_refinar", title: "Refinar os Requisitos", url: "./../../Enutri/capabilitypatterns/requisitos_refinar_14904E60.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "24a72343", parentId: "", relPath: ",_znprkpYjEeaRb6mrVBIJLA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "desenvolvedor", title: "Desenvolvedor", url: "./../../Enutri/capabilitypatterns/desenvolvedor_CEE68F37.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2c4ac8d1", parentId: "24a72343", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_capturar", title: "Capturar e Descrever os Requisitos", url: "./../../Enutri/capabilitypatterns/requisitos_capturar_4C07F615.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2bcc7bd2", parentId: "24a72343", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_refinar", title: "Refinar os Requisitos", url: "./../../Enutri/capabilitypatterns/requisitos_refinar_14904E60.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "861f53df", parentId: "", relPath: ",_znWwopYjEeaRb6mrVBIJLA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "stakeholder", title: "Stakeholder", url: "./../../Enutri/capabilitypatterns/stakeholder_46B41131.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d5e00c3f", parentId: "861f53df", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "conhecimento", title: "Base de Conhecimento", url: "./../../Enutri/capabilitypatterns/conhecimento_D5064078.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "27abe82b", parentId: "861f53df", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "uc_especificacao", title: "Especificação de Caso de Uso", url: "./../../Enutri/capabilitypatterns/uc_especificacao_13AD4508.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "81dd4298", parentId: "861f53df", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "tarefas", title: "Lista de Tarefas", url: "./../../Enutri/capabilitypatterns/tarefas_99982297.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d957459f", parentId: "861f53df", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "uc_modelo", title: "Modelo de Casos de Uso", url: "./../../Enutri/capabilitypatterns/uc_modelo_D3C7C545.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2f0332a7", parentId: "861f53df", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dominio", title: "Modelo de Domínio", url: "./../../Enutri/capabilitypatterns/dominio_49DB29.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "36e5f87a", parentId: "861f53df", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_suplementares", title: "Requisitos Suplementares", url: "./../../Enutri/capabilitypatterns/requisitos_suplementares_CCFEB96B.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3602a6f7", parentId: "861f53df", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_capturar", title: "Capturar e Descrever os Requisitos", url: "./../../Enutri/capabilitypatterns/requisitos_capturar_4C07F615.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "801794e9", parentId: "861f53df", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "requisitos_refinar", title: "Refinar os Requisitos", url: "./../../Enutri/capabilitypatterns/requisitos_refinar_14904E60.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>
