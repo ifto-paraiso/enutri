@@ -26,8 +26,8 @@
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="Fase de Concep&#xE7;&#xE3;o" note="" work="1071900" start="20161008T000000Z" end="20161025T210000Z" work-start="20161008T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="2" name="Itera&#xE7;&#xE3;o de Concep&#xE7;&#xE3;o [I1]" note="" work="1071900" start="20161008T000000Z" end="20161025T210000Z" work-start="20161008T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="1" name="Fase de Concep&#xE7;&#xE3;o" note="" work="1123200" start="20161008T000000Z" end="20161025T210000Z" work-start="20161008T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Itera&#xE7;&#xE3;o de Concep&#xE7;&#xE3;o [I1]" note="" work="1123200" start="20161008T000000Z" end="20161025T210000Z" work-start="20161008T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <task id="3" name="Planejar e Gerenciar a Itera&#xE7;&#xE3;o" note="" work="367200" start="20161008T000000Z" end="20161025T210000Z" work-start="20161008T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <task id="4" name="Planejar a Itera&#xE7;&#xE3;o" note="" work="21600" start="20161008T000000Z" end="20161008T210000Z" work-start="20161008T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
           <task id="5" name="Gerenciar a Itera&#xE7;&#xE3;o" note="" work="324000" start="20161008T000000Z" end="20161025T210000Z" work-start="20161008T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
@@ -39,18 +39,18 @@
           <task id="8" name="Planejar o Projeto" note="" work="216000" start="20161008T000000Z" end="20161019T210000Z" work-start="20161008T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
           <task id="9" name="Definir a Vis&#xE3;o" note="" work="216000" start="20161008T000000Z" end="20161019T210000Z" work-start="20161008T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
         </task>
-        <task id="10" name="Gerenciar os Requisitos" note="" work="180900" start="20161019T210000Z" end="20161025T153000Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="10" name="Gerenciar os Requisitos" note="" work="216000" start="20161019T210000Z" end="20161025T210000Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="7" type="FS"/>
           </predecessors>
-          <task id="11" name="Capturar e Descrever os Requisitos" note="" work="89100" start="20161019T210000Z" end="20161025T144500Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="12" name="Refinar os Requisitos" note="" work="91800" start="20161019T210000Z" end="20161025T153000Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="11" name="Capturar e Descrever os Requisitos" note="" work="108000" start="20161019T210000Z" end="20161025T210000Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="12" name="Refinar os Requisitos" note="" work="108000" start="20161019T210000Z" end="20161025T210000Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
         </task>
-        <task id="13" name="Planejar a Arquitetura" note="" work="91800" start="20161019T210000Z" end="20161025T153000Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="13" name="Planejar a Arquitetura" note="" work="108000" start="20161019T210000Z" end="20161025T210000Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="7" type="FS"/>
           </predecessors>
-          <task id="14" name="Descrever a Arquitetura" note="" work="91800" start="20161019T210000Z" end="20161025T153000Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="14" name="Descrever a Arquitetura" note="" work="108000" start="20161019T210000Z" end="20161025T210000Z" work-start="20161020T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
         </task>
       </task>
     </task>
@@ -59,35 +59,67 @@
         <predecessor id="1" predecessor-id="1" type="FS"/>
       </predecessors>
     </task>
-    <task id="16" name="Fase de Elabora&#xE7;&#xE3;o" note="" work="518400" start="20161025T210000Z" end="20161122T210000Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="16" name="Fase de Elabora&#xE7;&#xE3;o" note="" work="905400" start="20161025T210000Z" end="20161103T210000Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="15" type="FS"/>
       </predecessors>
+      <task id="17" name="Refinamento dos Requisitos [E1]" note="" work="732600" start="20161025T210000Z" end="20161103T210000Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="18" name="Planejar e Gerenciar a Itera&#xE7;&#xE3;o" note="" work="216000" start="20161025T210000Z" end="20161103T210000Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="19" name="Planejar a Itera&#xE7;&#xE3;o" note="" work="21600" start="20161025T210000Z" end="20161026T210000Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="20" name="Gerenciar a Itera&#xE7;&#xE3;o" note="" work="172800" start="20161025T210000Z" end="20161103T210000Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="21" name="Encerrar a Itera&#xE7;&#xE3;o" note="" work="21600" start="20161103T000000Z" end="20161103T210000Z" work-start="20161103T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="must-start-on" time="20161103T000000Z"/>
+          </task>
+        </task>
+        <task id="22" name="Gerenciar os Requisitos" note="" work="344700" start="20161025T210000Z" end="20161103T210000Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="23" name="Capturar e Descrever os Requisitos" note="" work="172800" start="20161025T210000Z" end="20161103T210000Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="24" name="Refinar os Requisitos" note="" work="171900" start="20161025T210000Z" end="20161103T204500Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+        <task id="25" name="Realizar Tarefas Cont&#xED;nuas" note="" work="171900" start="20161025T210000Z" end="20161103T204500Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="26" name="Solicitar Mudan&#xE7;a" note="" work="171900" start="20161025T210000Z" end="20161103T204500Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+      </task>
+      <task id="27" name="Banco de Dados [E2]" note="" work="22500" start="20161025T210000Z" end="20161027T141500Z" work-start="20161026T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="28" name="Arquitetura [E3]" note="" work="63900" start="20161027T141500Z" end="20161029T210000Z" work-start="20161027T141500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="27" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="29" name="Interface com o Usu&#xE1;rio [E4]" note="" work="64800" start="20161029T210000Z" end="20161102T210000Z" work-start="20161031T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="28" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="30" name="Planejamento da Constru&#xE7;&#xE3;o [E5]" note="" work="21600" start="20161102T210000Z" end="20161103T210000Z" work-start="20161103T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="29" type="FS"/>
+        </predecessors>
+      </task>
     </task>
-    <task id="17" name="Marco da Arquitetura" note="" work="0" start="20161122T210000Z" end="20161122T210000Z" work-start="20161122T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+    <task id="31" name="Marco da Arquitetura" note="" work="0" start="20161103T210000Z" end="20161103T210000Z" work-start="20161103T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="16" type="FS"/>
       </predecessors>
     </task>
-    <task id="18" name="Fase de Constru&#xE7;&#xE3;o" note="" work="1166400" start="20161122T210000Z" end="20170124T210000Z" work-start="20161123T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="32" name="Fase de Constru&#xE7;&#xE3;o" note="" work="1166400" start="20161103T210000Z" end="20170105T210000Z" work-start="20161104T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
-        <predecessor id="1" predecessor-id="17" type="FS"/>
+        <predecessor id="1" predecessor-id="31" type="FS"/>
       </predecessors>
     </task>
-    <task id="19" name="Marco da Capacidade Operacional Inicial" note="" work="0" start="20170124T210000Z" end="20170124T210000Z" work-start="20170124T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+    <task id="33" name="Marco da Capacidade Operacional Inicial" note="" work="0" start="20170105T210000Z" end="20170105T210000Z" work-start="20170105T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
       <predecessors>
-        <predecessor id="1" predecessor-id="18" type="FS"/>
+        <predecessor id="1" predecessor-id="32" type="FS"/>
       </predecessors>
     </task>
-    <task id="20" name="Fase de Transi&#xE7;&#xE3;o" note="" work="129600" start="20170124T210000Z" end="20170131T210000Z" work-start="20170125T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="34" name="Fase de Transi&#xE7;&#xE3;o" note="" work="129600" start="20170116T000000Z" end="20170121T210000Z" work-start="20170116T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="start-no-earlier-than" time="20170116T000000Z"/>
       <predecessors>
-        <predecessor id="1" predecessor-id="19" type="FS"/>
+        <predecessor id="1" predecessor-id="33" type="FS"/>
       </predecessors>
     </task>
-    <task id="21" name="Marco da Libera&#xE7;&#xE3;o do Produto" note="" work="0" start="20170131T210000Z" end="20170131T210000Z" work-start="20170131T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+    <task id="35" name="Marco da Libera&#xE7;&#xE3;o do Produto" note="" work="0" start="20170121T210000Z" end="20170121T210000Z" work-start="20170121T210000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
       <predecessors>
-        <predecessor id="1" predecessor-id="20" type="FS"/>
+        <predecessor id="1" predecessor-id="34" type="FS"/>
       </predecessors>
     </task>
   </tasks>
