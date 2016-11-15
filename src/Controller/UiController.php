@@ -21,4 +21,6 @@ class UiController extends AppController
     public function icon(){}
     
     public function button(){}
+    
+    public function box(){}
 }

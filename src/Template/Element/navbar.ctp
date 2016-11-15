@@ -10,10 +10,10 @@
         
         <ul class="nav navbar-nav">
             <?php
-                echo $this->element('navbar/messages');
-                echo $this->element('navbar/notifications');
-                echo $this->element('navbar/tasks');
-                echo $this->element('navbar/user');
+                //echo $this->element('Navbar/messages');
+                //echo $this->element('Navbar/notifications');
+                //echo $this->element('Navbar/tasks');
+                echo $this->element('Navbar/user');
             ?>
         </ul>
         

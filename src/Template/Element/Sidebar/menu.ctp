@@ -43,6 +43,15 @@
                     Exercícios
                 </a>
             </li>
+            <li>
+                <?=
+                    $this->Html->link(
+                        $this->Icon->make('usuarios') . ' Usuários',
+                        ['controller' => 'usuarios'],
+                        ['escape' => false]
+                    );
+                ?>
+            </li>
         </ul>
     </li>
     <li class="treeview">
@@ -56,6 +65,12 @@
         <ul class="treeview-menu">
             <li>
                 <a href="#">
+                    <i class="fa fa-fw fa-heartbeat"></i>
+                    Nutrientes
+                </a>
+            </li>
+            <li>
+                <a href="#">
                     <i class="fa fa-fw fa-apple"></i>
                     Alimentos
                 </a>
@@ -63,25 +78,13 @@
             <li>
                 <a href="#">
                     <i class="fa fa-fw fa-percent"></i>
+                    Referências
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <?= $this->Icon->make('preparacao') ?>
                     Preparações
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-percent"></i>
-                    Referências Nutricionais
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-heartbeat"></i>
-                    Nutrientes
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-cubes"></i>
-                    Embalagens
                 </a>
             </li>
         </ul>

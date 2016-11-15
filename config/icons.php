@@ -20,7 +20,8 @@ return [
         'uex'           => 'fa fa-fw fa-home',
         'eex'           => 'fa fa-fw fa-building',
         'alimento'      => 'fa fa-fw fa-apple',
-        'preparacao'    => 'fa fa-fw fa-file',
+        'preparacao'    => 'fa fa-fw fa-cutlery',
+        'cardapio'      => 'fa fa-fw fa-cutlery',
         'referencia'    => 'fa fa-fw fa-percent',
         'nutriente'     => 'fa fa-fw fa-heartbeat',
         'embalagem'     => 'fa fa-fw fa-cube',
@@ -28,5 +29,7 @@ return [
         'ajuda'         => 'fa fa-fw fa-file',
         'manual'        => 'fa fa-fw fa-book',
         'sobre'         => 'fa fa-fw fa-file',
+        'usuario'       => 'fa fa-fw fa-user',
+        'usuarios'      => 'fa fa-fw fa-users',
     ],
 ];

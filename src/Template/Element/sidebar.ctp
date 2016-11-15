@@ -4,7 +4,7 @@
         <?php
             //echo $this->element('sidebar/user');
             //echo $this->element('sidebar/search');
-            echo $this->element('sidebar/menu');
+            echo $this->element('Sidebar/menu');
         ?>
     
     </section>
