@@ -1,7 +1,6 @@
-/vendor/*
-/config/app.php
-/tmp/*
-/logs/*
-/vendor/nbproject
-nbproject
+vendor/
+config/app.php
+tmp/
+logs/
+nbproject/
 composer.phar

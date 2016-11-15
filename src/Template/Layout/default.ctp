@@ -55,7 +55,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-red-light sidebar-mini">
+<body class="hold-transition sidebar-mini skin-red-light sidebar-mini">
 <div class="wrapper">
 
     <!-- Main Header -->
