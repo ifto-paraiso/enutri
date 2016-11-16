@@ -1,22 +1,28 @@
 <?php
 
 $this->extend('_ui');
-$this->assign('content-description', 'IconHelper');
+$this->assign('content-description', 'BoxHelper');
+
+echo $this->Box->create();
+
+echo $this->Box->header([
+    'text' => 'Título do header',
+    'icon' => 'usuario',
+    'toolbar' => [
+        'groups' => [
+            array(
+                'buttons' => [
+                    array(
+                        'text' => 'Voltar',
+                    ),
+                ],
+            ),
+        ],
+    ],
+]);
+
+echo $this->Box->body();
+
+echo $this->Box->end();
 
 ?>
-
-<div class="row">
-    <div class="col-lg-12 col-md-12">
-        <div class="box box-default">
-            <div class="box-header with-border">
-                <h3 class="box-title">
-                    Helpers
-                </h3>
-            </div>
-            <div class="box-body">
-                <?= $this->Box->create() ?>
-                <?= $this->Box->end() ?>
-            </div>
-        </div>
-    </div>
-</div>
