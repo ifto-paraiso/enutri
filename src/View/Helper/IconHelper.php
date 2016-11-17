@@ -3,7 +3,6 @@
 namespace Enutri\View\Helper;
 
 use Cake\View\Helper;
-use Cake\Core\Configure;
 
 /**
  * Helper para construção de ícones
@@ -33,11 +32,19 @@ class IconHelper extends Helper
      */
     public function initialize(array $config)
     {
-        Configure::load('icons');
-        
-        $this->aliases   = Configure::read('Icons');
-        
         parent::initialize($config);
+        $defaultConfig = [
+            'aliases' => null,
+        ];
+        $config = array_merge($defaultConfig, $config);
+        if (null !== $config['aliases']) {
+            $this->setAliases($config['aliases']);
+        }
+    }
+    
+    public function setAliases(array $aliases = [])
+    {
+        $this->aliases = $aliases;
     }
        
     /**
@@ -60,7 +67,7 @@ class IconHelper extends Helper
         
         $options = array_merge($defaultOptions, $options);
         
-        $options['class'] = trim("{$options['class']} {$class}");
+        $options['class'] = trim("{$class} {$options['class']}");
         
         return $this->Html->tag('i', '', $options);
     }
