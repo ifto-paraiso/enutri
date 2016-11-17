@@ -14,6 +14,7 @@
 namespace Enutri\View;
 
 use Cake\View\View;
+use Cake\Core\Configure;
 
 /**
  * Application View
@@ -36,7 +37,8 @@ class AppView extends View
      */
     public function initialize()
     {
-        $this->loadHelper('Icon');
+        Configure::load('icons');
+        $this->loadHelper('Icon', ['aliases' => Configure::read('Icons')]);
         $this->loadHelper('Button');
         $this->loadHelper('ButtonGroup');
     }
