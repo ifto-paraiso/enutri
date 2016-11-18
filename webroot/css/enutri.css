@@ -1,0 +1,14 @@
+.box-header i {
+    margin-right: 5px;
+}
+
+table thead tr th.options {
+    text-align: center;
+    width: 140px;
+}
+
+table tbody tr td.options {
+    padding-top:    6px;
+    padding-bottom: 6px;
+    text-align: center;
+}
