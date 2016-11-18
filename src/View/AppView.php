@@ -41,5 +41,6 @@ class AppView extends View
         $this->loadHelper('Icon', ['aliases' => Configure::read('Icons')]);
         $this->loadHelper('Button');
         $this->loadHelper('ButtonGroup');
+        $this->loadHelper('Options');
     }
 }
