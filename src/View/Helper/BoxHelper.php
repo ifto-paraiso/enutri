@@ -67,6 +67,8 @@ class BoxHelper extends Helper
         
         // Configura as classes CSS da Box
         $options['class'] = trim('box ' . $options['class']);
+
+        $this->setBoxOpened(true);
         
         // Constroi e retorna o HTML de abertura do Box
         return $this->Html->tag('div', null, $options);
@@ -133,11 +135,11 @@ class BoxHelper extends Helper
         
         $options['class'] = trim('box-body ' . $options['class']);
         
-        if ($this->bodyOpened === true) {
+        if ($this->isBodyOpened() === true) {
             trigger_error('Corpo da Box já está aberto.', E_USER_WARNING);
         }
         
-        $this->bodyOpened = true;
+        $this->setBodyOpened(true);
         
         return $this->Html->tag('div', null, $options);
     }
@@ -173,7 +175,7 @@ class BoxHelper extends Helper
         $bodyEndHtml = '';
         if ($this->isBodyOpened() === true) {
             $bodyEndHtml .= $this->bodyEnd();
-            $this->bodyOpened = false;
+            $this->setBodyOpened(false);
         }
         return $bodyEndHtml . '</div>';
     }
