@@ -2,6 +2,8 @@
 
 namespace Enutri\Controller;
 
+use Cake\Datasource\Exception\RecordNotFoundException;
+
 class UsuariosController extends AppController
 {
     /**
@@ -23,5 +25,17 @@ class UsuariosController extends AppController
     {
         $usuarios = $this->Usuarios->listar();
         $this->set(compact('usuarios'));
+    }
+    
+    
+    public function visualizar($usuarioId = null)
+    {
+        try {
+            $usuario = $this->Usuarios->localizar($usuarioId);
+            $this->set(compact('usuario'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->danger('Usuário não encontrado.');
+            return $this->redirect(['action' => 'listar']);
+        }
     }
 }
