@@ -8,6 +8,7 @@ class UsuariosTable extends EnutriTable
     {
         parent::initialize($config);
         $this->belongsTo('Grupos');
+        $this->belongsTo('Ufs');
     }
 
     public function listar()
@@ -16,6 +17,16 @@ class UsuariosTable extends EnutriTable
             'contain' => [
                 'Grupos',
             ]
+        ]);
+    }
+    
+    public function localizar($usuarioId)
+    {
+        return $this->get($usuarioId, [
+            'contain' => [
+                'Grupos',
+                'Ufs',
+            ],
         ]);
     }
 }
