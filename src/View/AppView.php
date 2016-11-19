@@ -42,5 +42,6 @@ class AppView extends View
         $this->loadHelper('Button');
         $this->loadHelper('ButtonGroup');
         $this->loadHelper('Options');
+        $this->loadHelper('Form',  ['templates' => 'form']);
     }
 }

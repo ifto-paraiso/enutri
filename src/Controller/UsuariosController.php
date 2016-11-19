@@ -38,4 +38,19 @@ class UsuariosController extends AppController
             return $this->redirect(['action' => 'listar']);
         }
     }
+    
+    public function cadastrar()
+    {
+        $usuario = $this->Usuarios->newEntity();
+        if ($this->request->is(['post', 'put'])) {
+            $this->Usuarios->patchEntity($usuario, $this->request->data);
+        }
+        $this->loadModel('Ufs');
+        $this->loadModel('Grupos');
+        $ufs    = $this->Ufs->getList();
+        $grupos = $this->Grupos->getList();
+        $this->set(compact('ufs'));
+        $this->set(compact('grupos'));
+        $this->set(compact('usuario'));
+    }
 }
