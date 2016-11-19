@@ -1,6 +1,10 @@
+/* Ajustes no Box */
+
 .box-header i {
     margin-right: 5px;
 }
+
+/* Ajustes na toolbar de opções das tabelas */
 
 table thead tr th.options {
     text-align: center;
@@ -11,4 +15,21 @@ table tbody tr td.options {
     padding-top:    6px;
     padding-bottom: 6px;
     text-align: center;
+}
+
+/* Formatação do enutri-data */
+
+.enutri-data {
+    margin-bottom: 15px;
+}
+.enutri-data .enutri-data-key {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.enutri-data .enutri-data-value {
+    background-color: #F0F0F0;
+    border: 1px solid #D2D6DE;
+    min-height: 32px;
+    overflow-x: hidden;
+    padding: 6px 12px;
 }
