@@ -33,3 +33,17 @@ table tbody tr td.options {
     overflow-x: hidden;
     padding: 6px 12px;
 }
+
+/* Ajustes nos forms */
+
+.required label:after {
+    content: '*';
+    color: #DD4B39;
+    font-weight: normal;
+    margin-left: 2px;
+}
+
+.form-group .error-message {
+    color: #DD4B39;
+    font-size: 12px;
+}
