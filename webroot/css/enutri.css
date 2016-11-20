@@ -1,6 +1,6 @@
-/* Ajustes no Box */
+/* Ajustes nos buttons */
 
-.box-header i {
+.btn i {
     margin-right: 5px;
 }
 
@@ -29,7 +29,21 @@ table tbody tr td.options {
 .enutri-data .enutri-data-value {
     background-color: #F0F0F0;
     border: 1px solid #D2D6DE;
-    min-height: 32px;
+    min-height: 34px;
     overflow-x: hidden;
     padding: 6px 12px;
+}
+
+/* Ajustes nos forms */
+
+.required label:after {
+    content: '*';
+    color: #DD4B39;
+    font-weight: normal;
+    margin-left: 2px;
+}
+
+.form-group .error-message {
+    color: #DD4B39;
+    font-size: 12px;
 }

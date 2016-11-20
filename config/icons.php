@@ -37,5 +37,6 @@ return [
         'inserir'       => 'fa fa-fw fa-indent',
         'remover'       => 'fa fa-fw fa-outdent',
         'visualizar'    => 'fa fa-fw fa-info-circle',
+        'salvar'        => 'fa fa-fw fa-check-circle',
     ],
 ];

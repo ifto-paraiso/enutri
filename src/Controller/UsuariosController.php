@@ -38,4 +38,24 @@ class UsuariosController extends AppController
             return $this->redirect(['action' => 'listar']);
         }
     }
+    
+    public function cadastrar()
+    {
+        $usuario = $this->Usuarios->newEntity();
+        if ($this->request->is(['post', 'put'])) {
+            $this->Usuarios->patchEntity($usuario, $this->request->data);
+            if ($this->Usuarios->save($usuario)) {
+                // TODO: [issue #36] Definir mensagem de sucesso de salvamento
+                $this->redirect(['action' => 'visualizar', $usuario->id]);
+            }
+            // TODO: [issue #35] Definir mensagem flash de erro de salvamento
+        }
+        $this->loadModel('Ufs');
+        $this->loadModel('Grupos');
+        $ufs    = $this->Ufs->getList();
+        $grupos = $this->Grupos->getList();
+        $this->set(compact('ufs'));
+        $this->set(compact('grupos'));
+        $this->set(compact('usuario'));
+    }
 }
