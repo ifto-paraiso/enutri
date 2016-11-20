@@ -6,31 +6,31 @@
         <?= $this->Form->input('grupo_id', ['autofocus']) ?>
     </div>
     <div class="col-md-7">
-        <?= $this->Form->input('nome') ?>
+        <?= $this->Form->input('nome', ['label' => 'Nome Completo']) ?>
     </div>
 </div>
 <div class="row">
     <div class="col-md-9">
-        <?= $this->Form->input('email') ?>
+        <?= $this->Form->input('email', ['label' => 'Email']) ?>
     </div>
     <div class="col-md-3">
-        <?= $this->Form->input('crn') ?>
+        <?= $this->Form->input('crn', ['label' => 'CRN']) ?>
     </div>
 </div>
 <div class="row">
     <div class="col-md-8">
-        <?= $this->Form->input('endereco') ?>
+        <?= $this->Form->input('endereco', ['label' => 'Endereço']) ?>
     </div>
     <div class="col-md-4">
-        <?= $this->Form->input('bairro') ?>
+        <?= $this->Form->input('bairro', ['label' => 'Bairro']) ?>
     </div>
 </div>
 <div class="row">
     <div class="col-md-4">
-        <?= $this->Form->input('municipio') ?>
+        <?= $this->Form->input('municipio', ['label' => 'Município']) ?>
     </div>
     <div class="col-md-2">
-        <?= $this->Form->input('uf_id', ['options' => $ufs]) ?>
+        <?= $this->Form->input('uf_id', ['options' => $ufs, 'label' => 'UF']) ?>
     </div>
     <div class="col-md-3">
         <?= $this->Form->input('telefone1', ['label' => 'Telefone']) ?>
