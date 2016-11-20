@@ -38,5 +38,9 @@ return [
         'remover'       => 'fa fa-fw fa-outdent',
         'visualizar'    => 'fa fa-fw fa-info-circle',
         'salvar'        => 'fa fa-fw fa-check-circle',
+        'alert-danger'  => 'fa fa-fw fa-ban',
+        'alert-warning' => 'fa fa-fw fa-warning',
+        'alert-info'    => 'fa fa-fw fa-info',
+        'alert-success' => 'fa fa-fw fa-check',
     ],
 ];

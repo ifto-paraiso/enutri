@@ -34,7 +34,7 @@ class UsuariosController extends AppController
             $usuario = $this->Usuarios->localizar($usuarioId);
             $this->set(compact('usuario'));
         } catch (RecordNotFoundException $e) {
-            $this->Flash->danger('Usuário não encontrado.');
+            $this->Flash->error('Usuário não encontrado.');
             return $this->redirect(['action' => 'listar']);
         }
     }
@@ -45,10 +45,10 @@ class UsuariosController extends AppController
         if ($this->request->is(['post', 'put'])) {
             $this->Usuarios->patchEntity($usuario, $this->request->data);
             if ($this->Usuarios->save($usuario)) {
-                // TODO: [issue #36] Definir mensagem de sucesso de salvamento
-                $this->redirect(['action' => 'visualizar', $usuario->id]);
+                $this->Flash->success('Usuário cadastrado!');
+                return $this->redirect(['action' => 'visualizar', $usuario->id]);
             }
-            // TODO: [issue #35] Definir mensagem flash de erro de salvamento
+            $this->Flash->error('Não foi possível salvar o usuário.');
         }
         $this->loadModel('Ufs');
         $this->loadModel('Grupos');
