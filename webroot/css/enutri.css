@@ -3,6 +3,9 @@
 .btn i {
     margin-right: 5px;
 }
+.btn .caret {
+    margin-left: 5px;
+}
 
 /* Ajustes na toolbar de opções das tabelas */
 

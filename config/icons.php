@@ -42,5 +42,6 @@ return [
         'alert-warning' => 'fa fa-fw fa-warning',
         'alert-info'    => 'fa fa-fw fa-info',
         'alert-success' => 'fa fa-fw fa-check',
+        'senha'         => 'fa fa-fw fa-asterisk',
     ],
 ];

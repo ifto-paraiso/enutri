@@ -13,5 +13,6 @@ class Sanitize
                 $data[$field] = trim($data[$field]);
             }
         }
+        return $data;
     }
 }
