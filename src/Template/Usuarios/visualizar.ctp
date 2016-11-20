@@ -23,15 +23,45 @@ echo $this->Box->header([
             array(
                 'buttons' => [
                     array(
+                        'text' => 'Alterar Senha',
+                        'icon' => 'senha',
+                        'url'  => [
+                            'action' => 'alterar_senha',
+                            h($usuario->id),
+                        ],
+                    )
+                ]
+            ),
+            array(
+                'buttons' => [
+                    array(
                         'text' => 'Editar',
                         'icon' => 'editar',
                         'url'  => ['action' => 'editar', h($usuario->id)],
                     ),
                     array(
-                        'text' => 'Excluir',
-                        'icon' => 'excluir',
-                        'url'  => ['action' => 'excluir', h($usuario->id)],
-                    ),
+                        'title' => 'Mais opções',
+                        'dropdown' => [
+                            'items' => [
+                                array(
+                                    'text' => 'Redefinir Senha',
+                                    'icon' => 'senha',
+                                    'url'  => [
+                                        'action' => 'redefinir_senha',
+                                        h($usuario->id)
+                                    ],
+                                ),
+                                array(
+                                    'text' => 'Excluir',
+                                    'icon' => 'excluir',
+                                    'url'  => [
+                                        'action' => 'excluir',
+                                        h($usuario->id)
+                                    ],
+                                ),
+                            ]
+                        ]
+                    )
                 ]
             )
         ]
