@@ -47,3 +47,10 @@ table tbody tr td.options {
     color: #DD4B39;
     font-size: 12px;
 }
+
+/* Flash */
+
+section .flash {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
