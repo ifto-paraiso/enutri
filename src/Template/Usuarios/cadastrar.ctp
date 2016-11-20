@@ -4,6 +4,9 @@ $this->extend('_usuarios');
 
 $this->assign('content-description', 'Cadastro de Usuário');
 
+$this->Html->addCrumb('Usuários', ['action' => 'listar']);
+$this->Html->addCrumb('Cadastro');
+
 echo $this->Box->create();
 
 echo $this->Box->header([
