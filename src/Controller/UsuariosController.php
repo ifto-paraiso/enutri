@@ -58,4 +58,29 @@ class UsuariosController extends AppController
         $this->set(compact('grupos'));
         $this->set(compact('usuario'));
     }
+    
+    public function editar($usuarioId = null)
+    {
+        try {
+            $usuario = $this->Usuarios->localizar($usuarioId);
+            if ($this->request->is(['post', 'put'])) {
+                $this->Usuarios->patchEntity($usuario, $this->request->data);
+                if ($this->Usuarios->atualizar($usuario)) {
+                    $this->Flash->success('Os dados do usuário foram atualizados.');
+                    return $this->redirect(['action' => 'visualizar', $usuarioId]);
+                }
+                $this->Flash->error('Não foi possível salvar os dados do usuário.');
+            }
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Usuário não encontrado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+        $this->loadModel('Ufs');
+        $this->loadModel('Grupos');
+        $ufs    = $this->Ufs->getList();
+        $grupos = $this->Grupos->getList();
+        $this->set(compact('ufs'));
+        $this->set(compact('grupos'));
+        $this->set(compact('usuario'));
+    }
 }

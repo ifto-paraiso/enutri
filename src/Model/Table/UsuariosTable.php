@@ -5,6 +5,7 @@ namespace Enutri\Model\Table;
 use Cake\Validation\Validator;
 use Cake\Event\Event;
 use Enutri\Model\Util\Sanitize;
+use Enutri\Model\Entity\Usuario;
 use ArrayObject;
 
 class UsuariosTable extends EnutriTable
@@ -83,5 +84,19 @@ class UsuariosTable extends EnutriTable
                 'Ufs',
             ],
         ]);
+    }
+    
+    /**
+     * Atualiza os dados de um usuário
+     * 
+     * @param Usuario $usuario
+     * @return @return \Cake\Datasource\EntityInterface|bool
+     */
+    public function atualizar(Usuario $usuario)
+    {
+        if (property_exists($usuario, 'senha')) {
+            unset($usuario->senha);
+        }
+        return $this->save($usuario);
     }
 }
