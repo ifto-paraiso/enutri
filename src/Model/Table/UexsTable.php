@@ -32,27 +32,12 @@ class UexsTable extends EnutriTable
         ]);
     }
     
-    public function localizar($usuarioId)
+    public function localizar($uexId)
     {
-        return $this->get($usuarioId, [
+        return $this->get($uexId, [
             'contain' => [
-                'Grupos',
                 'Ufs',
             ],
         ]);
-    }
-    
-    /**
-     * Atualiza os dados de um usuário
-     * 
-     * @param Usuario $usuario
-     * @return @return \Cake\Datasource\EntityInterface|bool
-     */
-    public function atualizar(Usuario $usuario)
-    {
-        if (property_exists($usuario, 'senha')) {
-            unset($usuario->senha);
-        }
-        return $this->save($usuario);
     }
 }
