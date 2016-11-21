@@ -83,4 +83,22 @@ class UsuariosController extends AppController
         $this->set(compact('grupos'));
         $this->set(compact('usuario'));
     }
+    
+    public function excluir($usuarioId = null)
+    {
+        try {
+            $usuario = $this->Usuarios->localizar($usuarioId);
+            if ($this->request->is(['post', 'put'])) {
+                if ($this->Usuarios->delete($usuario)) {
+                    $this->Flash->success('O usuário foi excluído do sistema.');
+                    return $this->redirect(['action' => 'listar']);
+                }
+                $this->Flash->error('Ocorreu um erro ao excluir o usuário.');
+            }
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Usuário não encontrado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+        $this->set(compact('usuario'));
+    }
 }
