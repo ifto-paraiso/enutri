@@ -32,10 +32,13 @@
         </a>
         <ul class="treeview-menu">
             <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-home"></i>
-                    Unidades Executoras
-                </a>
+                <?=
+                    $this->Html->link(
+                        $this->Icon->make('uex') . ' Unidades Executoras',
+                        ['controller' => 'uexs'],
+                        ['escape' => false]
+                    );
+                ?>
             </li>
             <li>
                 <a href="#">
