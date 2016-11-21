@@ -27,21 +27,20 @@ class UexsController extends AppController
         $this->set(compact('uexs'));
     }
     
-    /*
-     * // TODO: Descomentar e alterar o restante do código nos próximos incrementos
-     * 
-  
-    public function visualizar($usuarioId = null)
+    public function visualizar($uexId = null)
     {
         try {
-            $usuario = $this->Usuarios->localizar($usuarioId);
-            $this->set(compact('usuario'));
+            $uex = $this->Uexs->localizar($uexId);
+            $this->set(compact('uex'));
         } catch (RecordNotFoundException $e) {
-            $this->Flash->error('Usuário não encontrado.');
+            $this->Flash->error('Unidade Executora não encontrada.');
             return $this->redirect(['action' => 'listar']);
         }
     }
     
+    /*
+     * // TODO: Descomentar e alterar o restante do código nos próximos incrementos
+     * 
     public function cadastrar()
     {
         $usuario = $this->Usuarios->newEntity();
