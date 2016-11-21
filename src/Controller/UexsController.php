@@ -38,29 +38,27 @@ class UexsController extends AppController
         }
     }
     
+    public function cadastrar()
+    {
+        $uex = $this->Uexs->newEntity();
+        if ($this->request->is(['post', 'put'])) {
+            $this->Uexs->patchEntity($uex, $this->request->data);
+            if ($this->Uexs->save($uex)) {
+                $this->Flash->success('Unidade Executora cadastrada!');
+                return $this->redirect(['action' => 'visualizar', $uex->id]);
+            }
+            $this->Flash->error('Não foi possível salvar a Unidade Executora.');
+        }
+        $this->loadModel('Ufs');
+        $ufs = $this->Ufs->getList();
+        $this->set(compact('ufs'));
+        $this->set(compact('uex'));
+    }
+    
+    
     /*
      * // TODO: Descomentar e alterar o restante do código nos próximos incrementos
      * 
-    public function cadastrar()
-    {
-        $usuario = $this->Usuarios->newEntity();
-        if ($this->request->is(['post', 'put'])) {
-            $this->Usuarios->patchEntity($usuario, $this->request->data);
-            if ($this->Usuarios->save($usuario)) {
-                $this->Flash->success('Usuário cadastrado!');
-                return $this->redirect(['action' => 'visualizar', $usuario->id]);
-            }
-            $this->Flash->error('Não foi possível salvar o usuário.');
-        }
-        $this->loadModel('Ufs');
-        $this->loadModel('Grupos');
-        $ufs    = $this->Ufs->getList();
-        $grupos = $this->Grupos->getList();
-        $this->set(compact('ufs'));
-        $this->set(compact('grupos'));
-        $this->set(compact('usuario'));
-    }
-    
     public function editar($usuarioId = null)
     {
         try {
