@@ -78,26 +78,23 @@ class UexsController extends AppController
         $this->set(compact('uex'));
     }
     
-    /*
-     * TODO: Descomentar e alterar o restante do código nos próximos incrementos
-     * 
-    public function excluir($usuarioId = null)
+    public function excluir($uexId = null)
     {
         try {
-            $usuario = $this->Usuarios->localizar($usuarioId);
+            $uex = $this->Uexs->localizar($uexId);
             if ($this->request->is(['post', 'put'])) {
-                if ($this->Usuarios->delete($usuario)) {
-                    $this->Flash->success('O usuário foi excluído do sistema.');
+                if ($this->Uexs->delete($uex)) {
+                    $this->Flash->success('A UEx foi excluída do sistema.');
                     return $this->redirect(['action' => 'listar']);
                 }
-                $this->Flash->error('Ocorreu um erro ao excluir o usuário.');
+                $this->Flash->error('Ocorreu um erro ao excluir a UEx.');
             }
-        } catch (RecordNotFoundException $e) {
-            $this->Flash->error('Usuário não encontrado.');
+            $this->set(compact('uex'));
+        }
+        catch (RecordNotFoundException $e) {
+            $this->Flash->error('UEx não encontrada.');
             return $this->redirect(['action' => 'listar']);
         }
-        $this->set(compact('usuario'));
     }
-     * 
-     */
+    
 }
