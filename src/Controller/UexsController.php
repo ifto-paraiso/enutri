@@ -56,34 +56,31 @@ class UexsController extends AppController
     }
     
     
-    /*
-     * // TODO: Descomentar e alterar o restante do código nos próximos incrementos
-     * 
-    public function editar($usuarioId = null)
+    public function editar($uexId = null)
     {
         try {
-            $usuario = $this->Usuarios->localizar($usuarioId);
+            $uex = $this->Uexs->localizar($uexId);
             if ($this->request->is(['post', 'put'])) {
-                $this->Usuarios->patchEntity($usuario, $this->request->data);
-                if ($this->Usuarios->atualizar($usuario)) {
-                    $this->Flash->success('Os dados do usuário foram atualizados.');
-                    return $this->redirect(['action' => 'visualizar', $usuarioId]);
+                $this->Uexs->patchEntity($uex, $this->request->data);
+                if ($this->Uexs->save($uex)) {
+                    $this->Flash->success('Os dados da UEx foram atualizados.');
+                    return $this->redirect(['action' => 'visualizar', $uexId]);
                 }
-                $this->Flash->error('Não foi possível salvar os dados do usuário.');
+                $this->Flash->error('Não foi possível salvar os dados da UEx.');
             }
         } catch (RecordNotFoundException $e) {
-            $this->Flash->error('Usuário não encontrado.');
+            $this->Flash->error('UEx não encontrada.');
             return $this->redirect(['action' => 'listar']);
         }
         $this->loadModel('Ufs');
-        $this->loadModel('Grupos');
         $ufs    = $this->Ufs->getList();
-        $grupos = $this->Grupos->getList();
         $this->set(compact('ufs'));
-        $this->set(compact('grupos'));
-        $this->set(compact('usuario'));
+        $this->set(compact('uex'));
     }
     
+    /*
+     * TODO: Descomentar e alterar o restante do código nos próximos incrementos
+     * 
     public function excluir($usuarioId = null)
     {
         try {
