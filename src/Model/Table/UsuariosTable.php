@@ -15,6 +15,7 @@ class UsuariosTable extends EnutriTable
         parent::initialize($config);
         $this->belongsTo('Grupos');
         $this->belongsTo('Ufs');
+        $this->hasMany('Lotacoes');
     }
     
     public function validationDefault(Validator $validator)
@@ -82,6 +83,7 @@ class UsuariosTable extends EnutriTable
             'contain' => [
                 'Grupos',
                 'Ufs',
+                'Lotacoes.Uexs'
             ],
         ]);
     }
