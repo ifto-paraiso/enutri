@@ -47,6 +47,17 @@ echo $this->Box->header([
                         'dropdown' => [
                             'items' => [
                                 array(
+                                    'text' => 'Lotar Usuário',
+                                    'icon' => 'inserir',
+                                    'url'  => [
+                                        'action' => 'lotacao_cadastrar',
+                                        h($usuario->id)
+                                    ],
+                                ),
+                                array(
+                                    'type' => 'separator',
+                                ),
+                                array(
                                     'text' => 'Redefinir Senha',
                                     'icon' => 'senha',
                                     'url'  => [
@@ -113,6 +124,55 @@ echo $this->Box->body();
         <?= $this->Data->display('Celular', h($usuario->telefone2)) ?>
     </div>
 </div>
+
+<fieldset>
+    <legend>Lotações</legend>
+    
+    <?php if(count($usuario->lotacoes) < 1): ?>
+
+        <div class="alert alert-info">
+            Usuário não lotado em nenhuma Unidade Executora.
+        </div>
+
+    <?php else: ?>
+    
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>
+                    Unidade Executora
+                </th>
+                <th class="options">
+                    Opções
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($usuario->lotacoes as $lotacao): ?>
+                <tr>
+                    <td>
+                        <?= $lotacao->uex->nome_reduzido ?>
+                    </td>
+                    <td class="options">
+                        <?=
+                            $this->Options->make([
+                                array(
+                                    'url'   => ['action' => 'lotacao-excluir', h($lotacao->id)],
+                                    'icon'  => 'excluir',
+                                    'title' => 'Remover Lotação',
+                                ),
+                            ]);
+                        ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    
+    <?php endif; ?>
+    
+</fieldset>
+
 
 <?php
 
