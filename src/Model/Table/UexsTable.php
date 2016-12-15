@@ -12,6 +12,7 @@ class UexsTable extends EnutriTable
     public function initialize(array $config)
     {
         parent::initialize($config);
+        $this->displayField('nome_reduzido');
         $this->belongsTo('Ufs');
     }
     
@@ -78,5 +79,10 @@ class UexsTable extends EnutriTable
                 'Ufs',
             ],
         ]);
+    }
+    
+    public function getList()
+    {
+        return $this->find('list', ['order' => 'nome'])->toArray();
     }
 }
