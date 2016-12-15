@@ -101,5 +101,24 @@ class ButtonHelperTest extends IntegrationTestCase
                 'url'  => ['controller' => 'foo', 'action' => 'bar', 'xx'],
             ])
         );
+        
+        // Botão com menu dropdown
+        $this->assertEquals(
+            '<a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">Foo<span class="caret"></span></a><ul class="dropdown-menu dropdown-menu-right"><li><a href="#"><i class="icon"></i>dropdown1</a></li><li class="divider"></li></ul>',
+            $this->helper->make([
+                'text' => 'Foo',
+                'dropdown' => [
+                    'items' => [
+                        array(
+                            'text' => 'dropdown1',
+                            'icon' => 'icon',
+                        ),
+                        array(
+                            'type' => 'separator',
+                        ),
+                    ],
+                ],
+            ])
+        );
     }
 }

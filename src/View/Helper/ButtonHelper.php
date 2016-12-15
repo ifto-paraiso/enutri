@@ -18,7 +18,7 @@ class ButtonHelper extends Helper
      * 
      * @var array
      */
-    public $helpers = ['Html', 'Icon'];
+    public $helpers = ['Html', 'Icon', 'Dropdown'];
     
     /**
      * Constroi o botão
@@ -49,6 +49,7 @@ class ButtonHelper extends Helper
             'iconLeft' => true,
             'tag'      => 'link',
             'escape'   => false,
+            'dropdown' => null,
         ];
         
         $options = array_merge($defaultOptions, $options);
@@ -80,14 +81,35 @@ class ButtonHelper extends Helper
         $tag = $options['tag'];
         unset($options['tag']);
         
+        // Configura o menu dropdown do botão
+        $caretHtml    = '';
+        $dropdownHtml = '';
+        if (null !== $options['dropdown']) {
+            $options['class'] = trim('dropdown-toggle ' . $options['class']);
+            $options['data-toggle'] = 'dropdown';
+            $caretHtml = '<span class="caret"></span>';
+            $options['dropdown']['class'] = 'dropdown-menu-right';
+            $dropdownHtml = $this->Dropdown->make($options['dropdown']);
+        }
+        unset($options['dropdown']);
+        
+        $textHtml .= $caretHtml;
+        
         // Constroi e retorna o botão, de acordo com a tag desejada
+        $buttonHtml = '';
         switch ($tag) {
             case 'a':
             case 'link':
-                return $this->makeLink($textHtml, $url, $options);
+                $buttonHtml = $this->makeLink($textHtml, $url, $options);
+                break;
             case 'button':
-                return $this->makeButton($textHtml, $options);
+                $buttonHtml = $this->makeButton($textHtml, $options);
+                break;
         }
+        
+        $buttonHtml .= $dropdownHtml;
+        
+        return $buttonHtml;
     }
     
     protected function makeLink($text, $url, $options)
@@ -111,26 +133,5 @@ class ButtonHelper extends Helper
         ];
         $options = array_merge($defaultOptions, $options);
         return $this->make($text, $options);
-    }
-    
-    /**
-     * Construção do botão utilizando o nome de um estilo pré definido
-     * 
-     * @param string $method Estilo pré definido
-     * 
-     * @param array $params  Parâmetros
-     * Chaves:
-     * [0]  Array com as opções do botão
-     * 
-     * @return string HTML do botão
-     */
-    public function __call($method, $params)
-    {
-        $options = is_array($params[0]) ? $params[0] : [];
-        
-        if (array_key_exists($method, $this->styles)) {
-            $options['style'] = $method;
-            return $this->make($options);
-        }
     }
 }

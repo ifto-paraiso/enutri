@@ -28,12 +28,7 @@
     -->
     <?= $this->Html->css('../adminlte/dist/css/skins/skin-red-light.min.css') ?>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <?= $this->Html->css('enutri') ?>
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -55,7 +50,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition sidebar-mini skin-red-light sidebar-mini">
+<body class="hold-transition sidebar-mini skin-red-light">
 <div class="wrapper">
 
     <!-- Main Header -->
@@ -80,6 +75,7 @@ desired effect
   
   
     <div class="content-wrapper">
+        <?= $this->Flash->render() ?>
         <?= $this->fetch('content') ?>
     </div>
   
