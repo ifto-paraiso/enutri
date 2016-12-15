@@ -8,5 +8,16 @@ class LotacoesTable extends EnutriTable
     {
         parent::initialize($config);
         $this->belongsTo('Uexs');
+        $this->belongsTo('Usuarios');
+    }
+    
+    public function localizar($lotacaoId)
+    {
+        return $this->get($lotacaoId, [
+            'contain' => [
+                'Uexs',
+                'Usuarios',
+            ]
+        ]);
     }
 }

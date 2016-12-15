@@ -101,4 +101,30 @@ class UsuariosController extends AppController
         }
         $this->set(compact('usuario'));
     }
+    
+    /**
+     * Remoção da Lotação de um Usuário
+     * 
+     * @param int $lotacaoId
+     * @return void
+     */
+    public function lotacaoExcluir($lotacaoId = null)
+    {
+        try {
+            $this->loadModel('Lotacoes');
+            $lotacao = $this->Lotacoes->localizar($lotacaoId);
+            if ($this->request->is(['put', 'post'])) {
+                if ($this->Lotacoes->delete($lotacao)) {
+                    $usuarioId = $lotacao->usuario->id;
+                    $this->Flash->success('A lotação foi removida com sucesso!');
+                    return $this->redirect(['action' => 'visualizar', $usuarioId]);
+                }
+                $this->flash->error('Ocorreu um erro ao remover a lotação.');
+            }
+            $this->set(compact('lotacao'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Lotação inválida.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
 }
