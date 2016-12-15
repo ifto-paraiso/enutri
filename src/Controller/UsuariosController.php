@@ -103,6 +103,47 @@ class UsuariosController extends AppController
     }
     
     /**
+     * Realiza a Lotação de um Usuário em uma UEx
+     * 
+     * @param int $usuarioId
+     * @return void
+     */
+    public function lotacaoCadastrar($usuarioId = null)
+    {
+        try {
+            $usuario = $this->Usuarios->localizar($usuarioId);
+            $this->loadModel('Lotacoes');
+            $this->loadModel('Uexs');
+            $uexs = $this->Uexs->getList();
+            foreach ($usuario->lotacoes as $lotacao) {
+                if (array_key_exists($lotacao->uex_id, $uexs)) {
+                    unset($uexs[$lotacao->uex_id]);
+                }
+            }
+            if (count($uexs) < 1) {
+                $this->Flash->warning('O usuário já está lotado em todas as UExs.');
+                return $this->redirect(['action' => 'visualizar', $usuarioId]);
+            }
+            $lotacao = $this->Lotacoes->newEntity();
+            if ($this->request->is(['post', 'put'])) {
+                $uex = $this->Uexs->localizar($this->request->data['uex_id']);
+                $lotacao->usuario_id = $usuarioId;
+                $lotacao->uex_id     = $uex->id;
+                if ($this->Lotacoes->save($lotacao)) {
+                    $this->Flash->success("O usuário foi lotado na UEx {$uex->nome_reduzido}");
+                    return $this->redirect(['action' => 'visualizar', $usuarioId]);
+                }
+            }
+            $this->set(compact('usuario'));
+            $this->set(compact('lotacao'));
+            $this->set(compact('uexs'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Usuário não encontrado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
+    
+    /**
      * Remoção da Lotação de um Usuário
      * 
      * @param int $lotacaoId
