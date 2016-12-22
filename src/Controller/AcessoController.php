@@ -39,4 +39,14 @@ class AcessoController extends AppController
             }
         }
     }
+    
+    /**
+     * Desautenticação do usuário
+     * 
+     * @return void
+     */
+    public function logout()
+    {
+        return $this->redirect($this->Auth->logout());
+    }
 }
