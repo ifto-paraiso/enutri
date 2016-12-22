@@ -43,6 +43,23 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        
+        // Carregamento do componente de autenticação
+        $this->loadComponent('Auth', [
+            'loginAction' => [
+                'controller' => 'Acesso',
+                'action'     => 'login',
+            ],
+            'authenticate' => [
+                'Form' => [
+                    'fields' => [
+                        'username' => 'email',
+                        'password' => 'senha',
+                    ],
+                    'userModel' => 'Usuarios',
+                ],
+            ]
+        ]);
     }
 
     /**
