@@ -25,6 +25,7 @@ return [
         'info'          => 'fa fa-fw fa-info-circle',
         'inserir'       => 'fa fa-fw fa-indent',
         'lista'         => 'fa fa-fw fa-list',
+        'logout'        => 'fa fa-fw fa-power-off',
         'manual'        => 'fa fa-fw fa-book',
         'novo'          => 'fa fa-fw fa-plus',
         'nutriente'     => 'fa fa-fw fa-heartbeat',

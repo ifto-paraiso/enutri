@@ -75,6 +75,7 @@ class AppController extends Controller
             $this->Flash->error('Você não possui permissão para acessar o recurso solicitado.');
             return $this->redirect(['controller' => 'painel']);
         }
+        $this->set(compact('user'));
     }
 
     /**
