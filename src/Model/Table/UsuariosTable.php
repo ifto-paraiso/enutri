@@ -4,6 +4,7 @@ namespace Enutri\Model\Table;
 
 use Cake\Validation\Validator;
 use Cake\Event\Event;
+use Cake\ORM\Query;
 use Enutri\Model\Util\Sanitize;
 use Enutri\Model\Entity\Usuario;
 use ArrayObject;
@@ -100,5 +101,18 @@ class UsuariosTable extends EnutriTable
             unset($usuario->senha);
         }
         return $this->save($usuario);
+    }
+    
+    /**
+     * Acrescenta informações para a busca do componente Auth
+     * 
+     * @param Query $query
+     * @param array $options
+     * @return Query
+     */
+    public function findAuth(Query $query, array $options)
+    {
+        $query->contain(['Grupos']);
+        return $query;
     }
 }
