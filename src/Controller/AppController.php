@@ -43,7 +43,7 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-        
+
         // Carregamento do componente de autenticação
         $this->loadComponent('Auth', [
             'loginAction' => [
@@ -57,9 +57,24 @@ class AppController extends Controller
                         'password' => 'senha',
                     ],
                     'userModel' => 'Usuarios',
+                    'finder'    => 'auth',
                 ],
             ]
         ]);
+
+        // Carregamento do componente de controle de acesso
+        $this->loadComponent('Acl');
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+        $user = $this->Auth->user();
+        $grupo = $user ? $user['grupo']['alias'] : null;
+        if (!$this->Acl->check($this->request->params, $grupo)) {
+            $this->Flash->error('Você não possui permissão para acessar o recurso solicitado.');
+            return $this->redirect(['controller' => 'painel']);
+        }
     }
 
     /**
