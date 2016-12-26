@@ -67,22 +67,13 @@
         </a>
         <ul class="treeview-menu">
             <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-heartbeat"></i>
-                    Nutrientes
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-apple"></i>
-                    Alimentos
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-percent"></i>
-                    Referências
-                </a>
+                <?=
+                    $this->Html->link(
+                        $this->Icon->make('alimento') . ' Alimentos',
+                        ['controller' => 'alimentos'],
+                        ['escape' => false]
+                    );
+                ?>
             </li>
             <li>
                 <a href="#">
