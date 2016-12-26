@@ -73,8 +73,9 @@ class AppController extends Controller
         $grupo = $user ? $user['grupo']['alias'] : null;
         if (!$this->Acl->check($this->request->params, $grupo)) {
             $this->Flash->error('Você não possui permissão para acessar o recurso solicitado.');
-            return $this->redirect(['controller' => 'painel']);
+            return $this->redirect(['controller' => 'acesso', 'action' => 'login']);
         }
+        $this->set(compact('user'));
     }
 
     /**

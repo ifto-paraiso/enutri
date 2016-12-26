@@ -60,21 +60,23 @@ $eexCoord = [
         'eex-coord'  => 'allow',
     ],   
     'Usuarios' => [
-        'index'             => 'allow',
-        'listar'            => 'allow',
-        'cadastrar'         => 'allow',
-        'editar'            => 'allow',
-        'excluir'           => 'allow',
-        'lotacao-cadastrar' => 'allow',
-        'lotacao-excluir'   => 'allow',
-        'redefinir-senha'   => 'allow',
+        'index'            => 'allow',
+        'listar'           => 'allow',
+        'visualizar'       => 'allow',
+        'cadastrar'        => 'allow',
+        'editar'           => 'allow',
+        'excluir'          => 'allow',
+        'lotacaoCadastrar' => 'allow',
+        'lotacaoExcluir'   => 'allow',
+        'redefinirSenha'   => 'allow',
     ],
     'Uexs' => [
-        'index'     => 'allow',
-        'listar'    => 'allow',
-        'cadastrar' => 'allow',
-        'editar'    => 'allow',
-        'excluir'   => 'allow'
+        'index'      => 'allow',
+        'listar'     => 'allow',
+        'visualizar' => 'allow',
+        'cadastrar'  => 'allow',
+        'editar'     => 'allow',
+        'excluir'    => 'allow'
     ]
 ];
 
