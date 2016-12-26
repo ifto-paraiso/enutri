@@ -19,6 +19,9 @@ table tbody tr td.options {
     padding-bottom: 6px;
     text-align: center;
 }
+td.number{
+    text-align: right;
+}
 
 /* Formatação do enutri-data */
 

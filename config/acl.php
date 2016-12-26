@@ -48,7 +48,15 @@ $eexNutri = [
     'Painel' => [
         'eex-assist' => 'deny',
         'eex-nutri'  => 'allow',
-    ],    
+    ],   
+    'Alimentos' => [
+        'index'      => 'allow',
+        'listar'     => 'allow',
+        'visualizar' => 'allow',
+        'cadastrar'  => 'allow',
+        'editar'     => 'allow',
+        'excluir'    => 'allow',
+    ]
 ];
 
 /**
