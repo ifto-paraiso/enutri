@@ -39,6 +39,9 @@ td.number{
     overflow-x: hidden;
     padding: 6px 12px;
 }
+.enutri-data.number .enutri-data-value {
+    text-align: right;
+}
 
 /* Ajustes nos forms */
 
