@@ -196,4 +196,29 @@ class UsuariosController extends AppController
             return $this->redirect(['controller' => 'Painel']);
         }
     }
+    
+    /**
+     * Redefinição da senha de um usuário
+     * 
+     * @param int $usuarioId
+     * @return void
+     */
+    public function redefinirSenha($usuarioId = null)
+    {
+        try {
+            $usuario = $this->Usuarios->localizar($usuarioId);
+            if ($this->request->is(['put', 'post'])) {
+                $this->Usuarios->patchEntity($usuario, $this->request->data);
+                if ($this->Usuarios->alterarSenha($usuario)) {
+                    $this->Flash->success('Senha redefinida com sucesso!');
+                    return $this->redirect(['action' => 'visualizar', h($usuarioId)]);
+                }
+                $this->Flash->error('Ocorreu um erro ao redefinir a senha.');
+            }
+            $this->set(compact('usuario'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Usuário não encontrado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
 }
