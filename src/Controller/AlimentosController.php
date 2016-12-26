@@ -2,6 +2,8 @@
 
 namespace Enutri\Controller;
 
+use Cake\Datasource\Exception\RecordNotFoundException;
+
 class AlimentosController extends AppController
 {
     /**
@@ -23,5 +25,15 @@ class AlimentosController extends AppController
     {
         $alimentos = $this->Alimentos->listar();
         $this->set(compact('alimentos'));
+    }
+    
+    public function visualizar($alimentoId = null)
+    {
+        try {
+            $alimento = $this->Alimentos->localizar($alimentoId);
+            $this->set(compact('alimento'));
+        } catch (RecordNotFoundException $e) {
+            
+        }
     }
 }
