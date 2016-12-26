@@ -168,4 +168,32 @@ class UsuariosController extends AppController
             return $this->redirect(['action' => 'listar']);
         }
     }
+    
+    /**
+     * Alteração da senha do usuário logado
+     * 
+     * @return void
+     */
+    public function alterarSenha()
+    {
+        try {
+            $usuario = $this->Usuarios->localizar($this->Auth->user()['id']);
+            if ($this->request->is(['put', 'post'])) {
+                if (!$usuario->check($this->request->data['senhaAtual'])) {
+                    $this->Flash->error('Senha atual incorreta');
+                } else {
+                    $this->Usuarios->patchEntity($usuario, $this->request->data);
+                    if ($this->Usuarios->alterarSenha($usuario)) {
+                        $this->Flash->success('Senha alterada com sucesso!');
+                    } else {
+                        $this->Flash->error('Ocorreu um erro ao alterar a senha!');
+                    }
+                }
+            }
+            $this->set(compact('usuario'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Ocorreu um erro ao localizar o usuário.');
+            return $this->redirect(['controller' => 'Painel']);
+        }
+    }
 }
