@@ -2,9 +2,11 @@
 
 $this->extend('_usuarios');
 
-$this->assign('content-description', 'Alteração de senha');
+$this->assign('content-description', 'Redefinição de senha');
 
-$this->Html->addCrumb('Alterar senha');
+$this->Html->addCrumb('Usuários', ['action' => 'listar']);
+$this->Html->addCrumb(h($usuario->nome), ['action' => 'visualizar', h($usuario->id)]);
+$this->Html->addCrumb('Redefinir senha');
 
 echo $this->Box->create();
 
@@ -43,10 +45,7 @@ echo $this->Form->create($usuario);
 
 <div class="row">
     <div class="col-md-3">
-        <?= $this->Form->input('senhaAtual', ['label' => 'Senha atual', 'value' => '', 'autofocus', 'type' => 'password']) ?>
-    </div>
-    <div class="col-md-3">
-        <?= $this->Form->input('senha', ['label' => 'Nova senha', 'value' => '', 'type' => 'password']) ?>
+        <?= $this->Form->input('senha', ['autofocus', 'label' => 'Nova senha', 'value' => '', 'type' => 'password']) ?>
     </div>
     <div class="col-md-3">
         <?= $this->Form->input('senha2', ['label' => 'Repita a nova senha', 'value' => '', 'type' => 'password']) ?>
