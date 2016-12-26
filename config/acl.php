@@ -62,6 +62,7 @@ $eexCoord = [
     'Usuarios' => [
         'index'             => 'allow',
         'listar'            => 'allow',
+        'visualizar'        => 'allow',
         'cadastrar'         => 'allow',
         'editar'            => 'allow',
         'excluir'           => 'allow',
@@ -70,11 +71,12 @@ $eexCoord = [
         'redefinir-senha'   => 'allow',
     ],
     'Uexs' => [
-        'index'     => 'allow',
-        'listar'    => 'allow',
-        'cadastrar' => 'allow',
-        'editar'    => 'allow',
-        'excluir'   => 'allow'
+        'index'      => 'allow',
+        'listar'     => 'allow',
+        'visualizar' => 'allow',
+        'cadastrar'  => 'allow',
+        'editar'     => 'allow',
+        'excluir'    => 'allow'
     ]
 ];
 

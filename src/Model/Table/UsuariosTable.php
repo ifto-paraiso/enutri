@@ -34,14 +34,15 @@ class UsuariosTable extends EnutriTable
         $validator->requirePresence('senha2',    'create', 'Repita a senha');
         
         // Dados que não podem ser deixados em branco
-        $validator->notEmpty('grupo_id',  'Informe o Grupo');
-        $validator->notEmpty('nome',      'Informe o nome');
-        $validator->notEmpty('email',     'Informe o email');
-        $validator->notEmpty('endereco',  'Informe o endereço');
-        $validator->notEmpty('municipio', 'Informe o município');
-        $validator->notEmpty('uf_id',     'Informe o estado');
-        $validator->notEmpty('senha',     'Informe a senha');
-        $validator->notEmpty('senha2',    'Repita a senha');
+        $validator->notEmpty('grupo_id',   'Informe o Grupo');
+        $validator->notEmpty('nome',       'Informe o nome');
+        $validator->notEmpty('email',      'Informe o email');
+        $validator->notEmpty('endereco',   'Informe o endereço');
+        $validator->notEmpty('municipio',  'Informe o município');
+        $validator->notEmpty('uf_id',      'Informe o estado');
+        $validator->notEmpty('senhaAtual', 'Informe a senha atual');
+        $validator->notEmpty('senha',      'Informe a senha');
+        $validator->notEmpty('senha2',     'Repita a senha');
         
         // Validações específicas
         $validator->email('email', false, 'Email inválido');
@@ -114,5 +115,10 @@ class UsuariosTable extends EnutriTable
     {
         $query->contain(['Grupos']);
         return $query;
+    }
+    
+    public function alterarSenha(Usuario $usuario)
+    {
+        return $this->save($usuario);
     }
 }

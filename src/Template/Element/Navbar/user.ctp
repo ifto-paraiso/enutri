@@ -15,7 +15,6 @@
                     array(
                         'controller' => 'Usuarios',
                         'action'     => 'alterar-senha',
-                        h($user['id']),
                     ),
                     array(
                         'escape' => false,
