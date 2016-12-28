@@ -223,3 +223,11 @@ if (Configure::read('debug')) {
 }
 
 Plugin::load('Migrations');
+
+/*
+ * Configuração do formato de números decimais
+ */
+Configure::write('numberFormat', [
+    'places' => 2,
+    'locale' => 'pt_BR',
+]);
