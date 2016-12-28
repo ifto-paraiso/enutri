@@ -92,6 +92,9 @@ class AlimentosTable extends EnutriTable
     {
         return $this->find('all', [
             'order' => 'Alimentos.nome ASC',
+            'conditions' => [
+                'Alimentos.deleted' => false,
+            ]
         ]);
     }
     
@@ -107,7 +110,16 @@ class AlimentosTable extends EnutriTable
             'contain' => [
                 'ConsumoMedida',
                 'CompraMedida',
+            ],
+            'conditions' => [
+                'Alimentos.deleted' => false,
             ]
         ]);
+    }
+    
+    public function excluir(Alimento $alimento)
+    {
+        $alimento->deleted = true;
+        return $this->save($alimento);
     }
 }

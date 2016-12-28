@@ -64,6 +64,12 @@ class AlimentosController extends AppController
         $this->set(compact('alimento'));
     }
     
+    /**
+     * Edição das informações de um Alimento
+     * 
+     * @param int $alimentoId
+     * @return void
+     */
     public function editar($alimentoId = null)
     {
         try {
@@ -78,6 +84,24 @@ class AlimentosController extends AppController
             }
             $this->loadModel('Medidas');
             $this->set('medidas', $this->Medidas->getList());
+            $this->set(compact('alimento'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Alimento não encontrado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
+    
+    public function excluir($alimentoId = null)
+    {
+        try {
+            $alimento = $this->Alimentos->localizar($alimentoId);
+            if ($this->request->is(['post', 'put'])) {
+                if ($this->Alimentos->excluir($alimento)) {
+                    $this->Flash->success('O alimento foi excluído com sucesso.');
+                    return $this->redirect(['action' => 'listar']);
+                }
+                $this->Flash->error('Ocorreu um erro ao excluir o alimento.');
+            }
             $this->set(compact('alimento'));
         } catch (RecordNotFoundException $e) {
             $this->Flash->error('Alimento não encontrado.');
