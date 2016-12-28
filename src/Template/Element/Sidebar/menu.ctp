@@ -41,10 +41,13 @@
                 ?>
             </li>
             <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-circle-o-notch"></i>
-                    Exercícios
-                </a>
+                <?=
+                    $this->Html->link(
+                        $this->Icon->make('exercicio') . ' Exercícios',
+                        ['controller' => 'exercicios'],
+                        ['escape' => false]
+                    );
+                ?>
             </li>
             <li>
                 <?=
@@ -74,12 +77,6 @@
                         ['escape' => false]
                     );
                 ?>
-            </li>
-            <li>
-                <a href="#">
-                    <?= $this->Icon->make('preparacao') ?>
-                    Preparações
-                </a>
             </li>
         </ul>
     </li>

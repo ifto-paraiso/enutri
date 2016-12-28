@@ -20,7 +20,7 @@ return [
         'editar'        => 'fa fa-fw fa-pencil',
         'eex'           => 'fa fa-fw fa-building',
         'excluir'       => 'fa fa-fw fa-trash-o',
-        'exercicio'     => 'fa fa-fw fa-file',
+        'exercicio'     => 'fa fa-fw fa-circle-o-notch',
         'form'          => 'fa fa-fw fa-edit',
         'info'          => 'fa fa-fw fa-info-circle',
         'inserir'       => 'fa fa-fw fa-indent',

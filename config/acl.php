@@ -85,6 +85,16 @@ $eexCoord = [
         'cadastrar'  => 'allow',
         'editar'     => 'allow',
         'excluir'    => 'allow'
+    ],
+    'Exercicios' => [
+        'index'               => 'allow',
+        'listar'              => 'allow',
+        'cadastrar'           => 'allow',
+        'visualizar'          => 'allow',
+        'excluir'             => 'allow',
+        'inserirParticipante' => 'allow',
+        'removerParticipante' => 'allow',
+        'editarParticipante'  => 'allow',
     ]
 ];
 
