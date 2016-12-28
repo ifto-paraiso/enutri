@@ -27,12 +27,27 @@ class ExerciciosTable extends EnutriTable
      */
     public function listar(array $options = [])
     {
+        $defaultOptions = [];
+        $options = array_merge_recursive($defaultOptions, $options);
+        return $this->find('all', $options);
+    }
+    
+    /**
+     * Retorna as informações de um Exercício
+     * 
+     * @param int $exercicioId
+     * @param array $options
+     * 
+     * @return \Cake\Datasource\EntityInterface
+     */
+    public function localizar($exercicioId, array $options = [])
+    {
         $defaultOptions = [
             'contain' => [
                 'Participantes.Uexs',
             ],
         ];
         $options = array_merge_recursive($defaultOptions, $options);
-        return $this->find('all', $options);
+        return $this->get($exercicioId, $options);
     }
 }
