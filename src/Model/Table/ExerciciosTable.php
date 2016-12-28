@@ -2,6 +2,11 @@
 
 namespace Enutri\Model\Table;
 
+use ArrayObject;
+use Cake\Validation\Validator;
+use Cake\Event\Event;
+use Enutri\Model\Util\Sanitize;
+
 class ExerciciosTable extends EnutriTable
 {
     /**
@@ -19,6 +24,55 @@ class ExerciciosTable extends EnutriTable
     }
     
     /**
+     * Regras de validação
+     * 
+     * @param Validator $validator
+     * 
+     * @return Validator
+     */
+    public function validationDefault(Validator $validator)
+    {
+        parent::validationDefault($validator);
+        
+        $validator->requirePresence('ano', 'create', 'Informe o ano');
+        $validator->requirePresence('responsavel_nome', 'create', 'Informe o nome do responsável');
+        $validator->requirePresence('responsavel_funcao', 'create', 'Informe a função do responsável');
+        
+        $validator->notEmpty('ano', 'Informe o ano');
+        $validator->notEmpty('responsavel_nome', 'Informe o nome do responsável');
+        $validator->notEmpty('responsavel_funcao', 'Informe a função do responsável');
+        
+        $validator->numeric('ano', 'Ano inválido');
+        $validator->range('ano', [2000, 2100], 'Ano inválido');
+        
+        $validator->add('ano', 'uniqueAno', [
+            'rule' => 'validateUnique',
+            'provider' => 'table',
+            'message' => 'Exerício existente'
+        ]);
+        
+        return $validator;
+    }
+    
+    /**
+     * Operações realizadas antes da validação dos dados
+     * 
+     * @param Event $event
+     * @param ArrayObject $data
+     * @param ArrayObject $options
+     * 
+     * @return void
+     */
+    public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
+    {
+        Sanitize::trimFields($data, [
+            'ano',
+            'responsavel_nome',
+            'responsavel_funcao',
+        ]);
+    }
+    
+    /**
      * Retorna a listagem de Exercícios cadastrados
      * 
      * @param array $options
@@ -27,7 +81,11 @@ class ExerciciosTable extends EnutriTable
      */
     public function listar(array $options = [])
     {
-        $defaultOptions = [];
+        $defaultOptions = [
+            'order' => [
+                'Exercicios.ano ASC',
+            ],
+        ];
         $options = array_merge_recursive($defaultOptions, $options);
         return $this->find('all', $options);
     }

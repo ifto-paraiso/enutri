@@ -44,4 +44,23 @@ class ExerciciosController extends AppController
             return $this->redirect(['action' => 'listar']);
         }
     }
+    
+    /**
+     * Cadastro de novo Exercício
+     * 
+     * @return void
+     */
+    public function cadastrar()
+    {
+        $exercicio = $this->Exercicios->newEntity();
+        if ($this->request->is(['post', 'put'])) {
+            $this->Exercicios->patchEntity($exercicio, $this->request->data);
+            if ($this->Exercicios->save($exercicio)) {
+                $this->Flash->success('Exercício cadastrado com sucesso!');
+                return $this->redirect(['action' => 'visualizar', h($exercicio->id)]);
+            }
+            $this->Flash->error('Não foi possível cadastrar o Exercício.');
+        }
+        $this->set(compact('exercicio'));
+    }
 }
