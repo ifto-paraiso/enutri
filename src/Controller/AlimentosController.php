@@ -38,7 +38,8 @@ class AlimentosController extends AppController
             $alimento = $this->Alimentos->localizar($alimentoId);
             $this->set(compact('alimento'));
         } catch (RecordNotFoundException $e) {
-            
+            $this->Flash->error('Alimento não encontrado.');
+            return $this->redirect(['action' => 'listar']);
         }
     }
     
@@ -61,5 +62,26 @@ class AlimentosController extends AppController
         $this->loadModel('Medidas');
         $this->set('medidas', $this->Medidas->getList());
         $this->set(compact('alimento'));
+    }
+    
+    public function editar($alimentoId = null)
+    {
+        try {
+            $alimento = $this->Alimentos->localizar($alimentoId);
+            if ($this->request->is(['post', 'put'])) {
+                $this->Alimentos->patchEntity($alimento, $this->request->data);
+                if ($this->Alimentos->save($alimento)) {
+                    $this->Flash->success('As informações do alimento foram atualizadas.');
+                    return $this->redirect(['action' => 'visualizar', h($alimento->id)]);
+                }
+                $this->Flash->error('Não foi possível salvar as alterações.');
+            }
+            $this->loadModel('Medidas');
+            $this->set('medidas', $this->Medidas->getList());
+            $this->set(compact('alimento'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Alimento não encontrado.');
+            return $this->redirect(['action' => 'listar']);
+        }
     }
 }

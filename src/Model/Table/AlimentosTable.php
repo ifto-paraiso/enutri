@@ -9,6 +9,11 @@ use ArrayObject;
 
 class AlimentosTable extends EnutriTable
 {
+    /**
+     * Inicialização da classe
+     * 
+     * @param array $config
+     */
     public function initialize(array $config)
     {
         parent::initialize($config);
@@ -54,9 +59,17 @@ class AlimentosTable extends EnutriTable
         return $validator;
     }
     
+    /**
+     * Operações a serem realizadas antes da validação dos dados
+     * 
+     * @param Event $event
+     * @param ArrayObject $data
+     * @param ArrayObject $options
+     */
     public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
     {
         Number::brToFloat($data, [
+            'fator',
             'kcal',
             'cho',
             'ptn',

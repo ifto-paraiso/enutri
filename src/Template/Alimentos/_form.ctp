@@ -2,7 +2,7 @@
 
 $nf = Cake\Core\Configure::read('numberFormat');
 
-echo $this->Form->create($alimento, ['novalidate' => true]);
+echo $this->Form->create($alimento);
 
 ?>
 
@@ -39,6 +39,7 @@ echo $this->Form->create($alimento, ['novalidate' => true]);
             $this->Form->input('fator', [
                 'label' => 'Fator',
                 'type'  => 'text',
+                'value'  => $this->Number->format(h($alimento->fator), $nf),
             ]);
         ?>
     </div>
