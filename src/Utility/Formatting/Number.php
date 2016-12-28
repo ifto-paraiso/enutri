@@ -17,7 +17,7 @@ class Number
      */
     public static function brToFloat($value)
     {
-        return str_replace(['.', ','], [',', '.'], $value);
+        return str_replace(['.', ','], ['', '.'], $value);
     }
     
     /**
