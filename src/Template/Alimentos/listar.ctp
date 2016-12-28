@@ -6,6 +6,8 @@ $this->assign('content-description', 'Lista de alimentos');
 
 $this->Html->addCrumb('Alimentos');
 
+$nf = Cake\Core\Configure::read('numberFormat');
+
 echo $this->Box->create();
 
 echo $this->Box->header([
@@ -65,16 +67,16 @@ echo $this->Box->header([
                     ?>
                 </td>
                 <td class="number">
-                    <?= $this->Number->br(h($alimento->kcal)) ?>
+                    <?= $this->Number->format(h($alimento->kcal), $nf) ?>
                 </td>
                 <td class="number">
-                    <?= $this->Number->br(h($alimento->cho)) ?>
+                    <?= $this->Number->format(h($alimento->cho), $nf) ?>
                 </td>
                 <td class="number">
-                    <?= $this->Number->br(h($alimento->ptn)) ?>
+                    <?= $this->Number->format(h($alimento->ptn), $nf) ?>
                 </td>
                 <td class="number">
-                    <?= $this->Number->br(h($alimento->lip)) ?>
+                    <?= $this->Number->format(h($alimento->lip), $nf) ?>
                 </td>
                 <td class="options">
                     <?=
