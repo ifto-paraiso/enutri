@@ -19,6 +19,9 @@ table tbody tr td.options {
     padding-bottom: 6px;
     text-align: center;
 }
+td.number{
+    text-align: right;
+}
 
 /* Formatação do enutri-data */
 
@@ -36,6 +39,9 @@ table tbody tr td.options {
     overflow-x: hidden;
     padding: 6px 12px;
 }
+.enutri-data.number .enutri-data-value {
+    text-align: right;
+}
 
 /* Ajustes nos forms */
 
@@ -45,10 +51,15 @@ table tbody tr td.options {
     font-weight: normal;
     margin-left: 2px;
 }
-
 .form-group .error-message {
     color: #DD4B39;
     font-size: 12px;
+}
+.number input[type="text"]{
+    text-align: right;
+}
+.number input[type="text"]:focus{
+    text-align: left;
 }
 
 /* Flash */
