@@ -51,10 +51,15 @@ td.number{
     font-weight: normal;
     margin-left: 2px;
 }
-
 .form-group .error-message {
     color: #DD4B39;
     font-size: 12px;
+}
+.number input[type="text"]{
+    text-align: right;
+}
+.number input[type="text"]:focus{
+    text-align: left;
 }
 
 /* Flash */
