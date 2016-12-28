@@ -2,6 +2,8 @@
 
 namespace Enutri\Controller;
 
+use Cake\Datasource\Exception\RecordNotFoundException;
+
 class ExerciciosController extends AppController
 {
     /**
@@ -23,5 +25,23 @@ class ExerciciosController extends AppController
     {
         $exercicios = $this->Exercicios->listar();
         $this->set(compact('exercicios'));
+    }
+    
+    /**
+     * Visualização das informações de um Exercício
+     * 
+     * @param int $exercicioId
+     * 
+     * @return void
+     */
+    public function visualizar($exercicioId = null)
+    {
+        try {
+            $exercicio = $this->Exercicios->localizar($exercicioId);
+            $this->set(compact('exercicio'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Exercício não localizado.');
+            return $this->redirect(['action' => 'listar']);
+        }
     }
 }
