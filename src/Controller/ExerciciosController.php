@@ -169,4 +169,35 @@ class ExerciciosController extends AppController
             return $this->redirect(['action' => 'listar']);
         }
     }
+    
+    /**
+     * Atualização das informações do Participante de um Exercício
+     * 
+     * @param int $participanteId
+     * 
+     * @return void
+     */
+    public function participanteEditar ($participanteId = null)
+    {
+        try {
+            
+            $this->loadModel('Participantes');
+            $participante = $this->Participantes->localizar($participanteId);
+            
+            if ($this->request->is(['post', 'put'])) {
+                $this->Participantes->patchEntity($participante, $this->request->data);
+                if ($this->Participantes->save($participante)) {
+                    $this->Flash->success('As informações do Participante foram atualizadas.');
+                    return $this->redirect(['action' => 'visualizar', h($participante->exercicio->id)]);
+                }
+                $this->Flash->error('Não foi possível salvar as alterações.');
+            }
+            
+            $this->set(compact('participante'));
+                    
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Participante não localizado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
 }

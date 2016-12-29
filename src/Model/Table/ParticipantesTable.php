@@ -60,4 +60,25 @@ class ParticipantesTable extends EnutriTable
             'responsavel_funcao',
         ]);
     }
+    
+    /**
+     * Localiza o Participante com o id especificado
+     * 
+     * @param int $participanteId
+     * @param array $options
+     * 
+     * @return \Cake\Datasource\EntityInterface
+     */
+    public function localizar($participanteId, array $options = [])
+    {
+        $defaultOptions = [
+            'contain' => [
+                'Uexs',
+                'Exercicios',
+            ],
+        ];
+        $options = array_merge_recursive($defaultOptions, $options);
+        
+        return $this->get($participanteId, $options);
+    }
 }
