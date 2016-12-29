@@ -3,13 +3,20 @@
 
 <div class="row">
     <div class="col-md-6">
-        <?=
-            $this->Form->input('uex_id', [
-                'type'    => 'select',
-                'label'   => 'Unidade Executora',
-                'options' => $uexs,
-                'autofocus',
-            ]);
+        <?php
+            if ($this->request->params['action'] === 'participanteInserir') {
+                echo $this->Form->input('uex_id', [
+                    'type'    => 'select',
+                    'label'   => 'Unidade Executora',
+                    'options' => $uexs,
+                    'autofocus',
+                ]);
+            } else {
+                echo $this->Data->display(
+                    'Função do Responsável',
+                    h($participante->uex->nome_reduzido)
+                );
+            }
         ?>
     </div>
 </div>
@@ -19,6 +26,7 @@
         <?=
             $this->Form->input('responsavel_nome', [
                 'label'   => 'Nome do Responsável',
+                'autofocus',
             ]);
         ?>
     </div>

@@ -121,14 +121,14 @@ echo $this->Box->body();
                         <?=
                             $this->Options->make([
                                 array(
-                                    'url'   => ['action' => 'editarParticipante', h($participante->id)],
+                                    'url'   => ['action' => 'participanteEditar', h($participante->id)],
                                     'icon'  => 'editar',
                                     'title' => 'Editar Participante',
                                 ),
                                 array(
-                                    'url'   => ['action' => 'removerParticipante', h($participante->id)],
+                                    'url'   => ['action' => 'participanteRemover', h($participante->id)],
                                     'icon'  => 'excluir',
-                                    'title' => 'Excluir Participante',
+                                    'title' => 'Remover Participante',
                                 )
                             ])
                         ?>
