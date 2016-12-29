@@ -1,5 +1,5 @@
 
-<?= $this->Form->create($exercicio, ['novalidate' => true]) ?>
+<?= $this->Form->create($exercicio) ?>
 
 <div class="row">
     <div class="col-md-2">
