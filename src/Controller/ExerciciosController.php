@@ -89,4 +89,29 @@ class ExerciciosController extends AppController
             return $this->redirect(['action' => 'listar']);
         }
     }
+    
+    /**
+     * Exclusão de Exercício
+     * 
+     * @param int $exercicioId
+     * 
+     * @return void
+     */
+    public function excluir ($exercicioId = null)
+    {
+        try {
+            $exercicio = $this->Exercicios->localizar($exercicioId);
+            if ($this->request->is(['post', 'put'])) {
+                if ($this->Exercicios->delete($exercicio)) {
+                    $this->Flash->success('O Exercício foi excluído do sistema.');
+                    return $this->redirect(['action' => 'listar']);
+                }
+                $this->Flash->error('Não foi possível excluir o Exercício.');
+            }
+            $this->set(compact('exercicio'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Exercício não localizado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
 }
