@@ -200,4 +200,35 @@ class ExerciciosController extends AppController
             return $this->redirect(['action' => 'listar']);
         }
     }
+    
+    /**
+     * Remoção do Participante de um Exercício
+     * 
+     * @param int $participanteId
+     * 
+     * @return void
+     */
+    public function participanteRemover ($participanteId = null)
+    {
+        try {
+            
+            $this->loadModel('Participantes');
+            $participante = $this->Participantes->localizar($participanteId);
+            
+            if ($this->request->is(['post', 'put'])) {
+                $exercicioId = $participante->exercicio_id;
+                if ($this->Participantes->delete($participante)) {
+                    $this->Flash->success('A UEx foi removida do Exercício.');
+                    return $this->redirect(['action' => 'visualizar', h($exercicioId)]);
+                }
+                $this->Flash->error('Não foi possível remover a UEx do Exercício.');
+            }
+            
+            $this->set(compact('participante'));
+                    
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Participante não localizado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
 }
