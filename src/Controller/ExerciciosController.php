@@ -114,4 +114,59 @@ class ExerciciosController extends AppController
             return $this->redirect(['action' => 'listar']);
         }
     }
+    
+    /**
+     * Inclusão de UEx participante de um Exercício
+     * 
+     * @param int $exercicioId
+     * 
+     * @return void
+     */
+    public function participanteInserir ($exercicioId = null)
+    {
+        try {
+            
+            $exercicio = $this->Exercicios->localizar($exercicioId);
+            
+            $this->loadModel('Uexs');
+            $uexs = $this->Uexs->getList();
+            
+            // Remove da lista as UEx que já estão participando do Exercício
+            foreach ($exercicio->participantes as $participante) {
+                if (isset($uexs[$participante->uex_id])) {
+                    unset($uexs[$participante->uex_id]);
+                }
+            }
+            
+            // Verifica se sobrou alguma UEx para ser incluída no Exercício
+            if (count($uexs) < 1) {
+                $this->Flash->warning('Todas as UExs já estão participando do Exercício.');
+                return $this->redirect(['action' => 'visualizar', h($exercicio->id)]);
+            }
+            
+            $this->loadModel('Participantes');
+            $participante = $this->Participantes->newEntity();            
+
+            if ($this->request->is(['post', 'put'])) {
+                
+                $this->Participantes->patchEntity($participante, $this->request->data);
+                $participante->exercicio_id = $exercicio->id;
+                
+                if ($this->Participantes->save($participante)) {
+                    $this->Flash->success('A UEx foi inserida no Exercício.');
+                    return $this->redirect(['action' => 'visualizar', h($exercicio->id)]);
+                }
+                
+                $this->Flash->error('Não foi possível salvar as alterações.');
+            }
+            
+            $this->set(compact('exercicio'));
+            $this->set(compact('uexs'));
+            $this->set(compact('participante'));
+            
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Exercício não localizado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
 }

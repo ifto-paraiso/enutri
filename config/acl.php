@@ -93,9 +93,9 @@ $eexCoord = [
         'visualizar'          => 'allow',
         'editar'              => 'allow',
         'excluir'             => 'allow',
-        'inserirParticipante' => 'allow',
-        'removerParticipante' => 'allow',
-        'editarParticipante'  => 'allow',
+        'participanteInserir' => 'allow',
+        'participanteRemover' => 'allow',
+        'participanteEditar'  => 'allow',
     ]
 ];
 
