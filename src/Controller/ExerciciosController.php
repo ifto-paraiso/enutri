@@ -63,4 +63,30 @@ class ExerciciosController extends AppController
         }
         $this->set(compact('exercicio'));
     }
+    
+    /**
+     * Edição das informações de um Exercício
+     * 
+     * @param int $exercicioId
+     * 
+     * @return void
+     */
+    public function editar ($exercicioId = null)
+    {
+        try {
+            $exercicio = $this->Exercicios->localizar($exercicioId);
+            if ($this->request->is(['post', 'put'])) {
+                $this->Exercicios->patchEntity($exercicio, $this->request->data);
+                if ($this->Exercicios->save($exercicio)) {
+                    $this->Flash->success('As informações do Exercício foram atualizadas.');
+                    return $this->redirect(['action' => 'visualizar', h($exercicio->id)]);
+                }
+                $this->Flash->error('Não foi possível salvar as alterações.');
+            }
+            $this->set(compact('exercicio'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Exercício não localizado.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
 }

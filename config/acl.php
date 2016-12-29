@@ -91,6 +91,7 @@ $eexCoord = [
         'listar'              => 'allow',
         'cadastrar'           => 'allow',
         'visualizar'          => 'allow',
+        'editar'              => 'allow',
         'excluir'             => 'allow',
         'inserirParticipante' => 'allow',
         'removerParticipante' => 'allow',
