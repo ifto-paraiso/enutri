@@ -28,6 +28,14 @@ $usuario = [
 $uexCoord = [
     'Painel' => [
         'uex-coord' => 'allow',
+    ],
+    'Processos' => [
+        'index'         => 'allow',
+        'selecionarUex' => 'allow',
+        'listar'        => 'allow',
+        'visualizar'    => 'allow',
+        'cadastrar'     => 'allow',
+        'excluir'       => 'allow',
     ]
 ];
 
