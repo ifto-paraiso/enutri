@@ -27,6 +27,12 @@ use Cake\Event\Event;
  */
 class AppController extends Controller
 {
+    /**
+     * Usuário atualmente logado no sistema
+     * 
+     * @var \Enutri\Model\Entity\Usuario;
+     */
+    protected $usuarioLogado;
 
     /**
      * Initialization hook method.
@@ -43,7 +49,7 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-
+        
         // Carregamento do componente de autenticação
         $this->loadComponent('Auth', [
             'loginAction' => [
@@ -64,6 +70,12 @@ class AppController extends Controller
 
         // Carregamento do componente de controle de acesso
         $this->loadComponent('Acl');
+        
+        /*
+         * Carrega as informações do usuário que está atualmente logado no
+         * sistema
+         */
+        $this->usuarioLogado = $this->usuarioLogado();
     }
 
     public function beforeFilter(Event $event)
@@ -91,5 +103,15 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+    }
+    
+    protected function usuarioLogado()
+    {
+        $usuario = $this->Auth->user();
+        if ($usuario === null) {
+            return null;
+        }
+        $this->loadModel('Usuarios');
+        return $this->Usuarios->localizar($usuario['id']);
     }
 }
