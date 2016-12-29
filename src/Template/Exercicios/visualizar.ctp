@@ -29,7 +29,7 @@ echo $this->Box->header([
                         'text' => 'Adicionar Participante',
                         'icon' => 'inserir',
                         'url'  => [
-                            'action' => 'inserirParticipante',
+                            'action' => 'participanteInserir',
                             h($exercicio->id),
                         ],
                     ),
