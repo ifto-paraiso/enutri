@@ -114,4 +114,26 @@ class ProcessosController extends AppController
             return $this->redirect(['action' => 'selecionarUex']);
         }
     }
+    
+    public function visualizar ($processoId = null)
+    {
+        try {
+            $processo = $this->Processos->localizar($processoId);
+            
+            /*
+             * Verifica se o usuário logado possui permissão para acessar a
+             * listagem de processos da UEx especificada
+             */
+            if (!$this->usuarioLogado->lotado($processo->participante->uex)) {
+                $this->Flash->error('Você não está lotado nesta UEx.');
+                return $this->redirect(['action' => 'selecionarUex']);
+            }
+            
+            $this->set(compact('processo'));
+            
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Processo inválido.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
 }
