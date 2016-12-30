@@ -29,7 +29,10 @@ echo $this->Box->header([
                         'text'  => 'Cadastrar Processo',
                         'icon'  => 'cadastrar',
                         'class' => 'btn-primary',
-                        'url'   => ['action' => 'cadastrar'],
+                        'url'   => [
+                            'action' => 'cadastrar',
+                            h($uex->id),
+                        ],
                     ),
                 ],
             ),

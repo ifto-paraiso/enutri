@@ -2,7 +2,11 @@
 
 namespace Enutri\Model\Table;
 
+use ArrayObject;
+use Cake\Validation\Validator;
+use Cake\Event\Event;
 use Enutri\Model\Entity\Uex;
+use Enutri\Model\Util\Sanitize;
 
 class ProcessosTable extends EnutriTable
 {
@@ -13,6 +17,27 @@ class ProcessosTable extends EnutriTable
         $this->belongsTo('Participantes');
         $this->hasMany('ProcessoModalidades');
         $this->hasMany('Cardapios');
+    }
+    
+    public function validationDefault(Validator $validator)
+    {
+        parent::validationDefault($validator);
+        
+        $validator->requirePresence('participante_id', 'create', 'Informe o Exercício');
+        $validator->requirePresence('nome',            'create', 'Informe um nome para o Processo');
+        
+        $validator->notEmpty('participante_id', 'Informe o Exercício');
+        $validator->notEmpty('nome',            'Informe um nome para o Processo');
+        
+        return $validator;
+    }
+    
+    public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
+    {
+        Sanitize::trimFields($data, [
+            'nome',
+            'observacoes',
+        ]);
     }
     
     public function listar (Uex $uex = null, array $options = [])
