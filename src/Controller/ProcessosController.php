@@ -115,6 +115,13 @@ class ProcessosController extends AppController
         }
     }
     
+    /**
+     * Visualização das informações do processo especificado
+     * 
+     * @param int $processoId
+     * 
+     * @return void
+     */
     public function visualizar ($processoId = null)
     {
         try {
@@ -125,7 +132,7 @@ class ProcessosController extends AppController
              * listagem de processos da UEx especificada
              */
             if (!$this->usuarioLogado->lotado($processo->participante->uex)) {
-                $this->Flash->error('Você não está lotado nesta UEx.');
+                $this->Flash->error('Selecione uma Unidade Executora válida.');
                 return $this->redirect(['action' => 'selecionarUex']);
             }
             
@@ -133,6 +140,44 @@ class ProcessosController extends AppController
             
         } catch (RecordNotFoundException $e) {
             $this->Flash->error('Processo inválido.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
+    
+    /**
+     * Cadastro de um novo processo para a UEx especificada
+     * 
+     * @param int $uexId
+     * 
+     * @return void
+     */
+    public function cadastrar ($uexId = null)
+    {
+        try {
+            $this->loadModel('Uexs');
+            $uex = $this->Uexs->localizar($uexId);
+            
+            if (!$this->usuarioLogado->lotado($uex)) {
+                $this->Flash->error('Selecione uma Unidade Executora válida.');
+                return $this->redirect(['action' => 'selecionarUex']);
+            }
+            
+            $processo = $this->Processos->newEntity();
+            if ($this->request->is(['post', 'put'])) {
+                $this->Processos->patchEntity($processo, $this->request->data);
+                if ($this->Processos->save($processo)) {
+                    $this->Flash->success('Processo cadastrado com sucesso.');
+                    return $this->redirect(['action' => 'visualizar', h($processo->id)]);
+                }
+                $this->Flash->error('Não foi possível efetuar o cadastro do Processo.');
+            }
+            $this->loadModel('Participantes');
+            $this->set('participantes', $this->Participantes->getList($uex));
+            $this->set(compact('processo'));
+            $this->set(compact('uex'));
+            
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Unidade Executora inválida.');
             return $this->redirect(['action' => 'selecionarUex']);
         }
     }

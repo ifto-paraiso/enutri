@@ -5,6 +5,7 @@ namespace Enutri\Model\Table;
 use ArrayObject;
 use Cake\Validation\Validator;
 use Cake\Event\Event;
+use Enutri\Model\Entity\Uex;
 
 class ParticipantesTable extends EnutriTable
 {
@@ -80,5 +81,27 @@ class ParticipantesTable extends EnutriTable
         $options = array_merge_recursive($defaultOptions, $options);
         
         return $this->get($participanteId, $options);
+    }
+    
+    public function getList (Uex $uex = null, array $options = [])
+    {
+        $defaultOptions = [
+            'contain' => [
+                'Exercicios',
+            ],
+            'order' => [
+                'Exercicios.created DESC',
+            ],
+        ];
+        $options = array_merge_recursive($defaultOptions, $options);
+        if ($uex !== null) {
+            $options['conditions']['Participantes.uex_id'] = $uex->id;
+        }
+        $participantes = $this->find('all', $options);
+        $list = [];
+        foreach ($participantes as $participante) {
+            $list[$participante->id] = $participante->exercicio->ano;
+        }
+        return $list;
     }
 }
