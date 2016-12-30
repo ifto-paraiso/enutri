@@ -71,7 +71,7 @@ echo $this->Box->body();
                 <th>
                     Período
                 </th>
-                <th>
+                <th style="text-align: right;">
                     Público
                 </th>
                 <th class="options">
@@ -100,8 +100,8 @@ echo $this->Box->body();
                     <td>
                         <?php // TODO: #124 Acrescentar o período na listagem de processos  ?>
                     </td>
-                    <td>
-                        <?php // TODO: #123 Acrescentar o público na listagem de processos  ?>
+                    <td class="number">
+                        <?= h($processo->publico)  ?>
                     </td>
                     <td class="options">
                         <?=
