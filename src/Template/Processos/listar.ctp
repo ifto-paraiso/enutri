@@ -59,7 +59,7 @@ echo $this->Box->body();
     <table class="table table-hover">
         <thead>
             <tr>
-                <th>
+                <th style="text-align: center; width: 100px;">
                     Exercício
                 </th>
                 <th>
@@ -68,10 +68,10 @@ echo $this->Box->body();
                 <th>
                     Modalidades
                 </th>
-                <th>
+                <th style="text-align: right; width: 80px;">
                     Período
                 </th>
-                <th style="text-align: right;">
+                <th style="text-align: right; width: 80px;">
                     Público
                 </th>
                 <th class="options">
@@ -82,7 +82,7 @@ echo $this->Box->body();
         <tbody>
             <?php foreach($processos as $processo): ?>
                 <tr>
-                    <td>
+                    <td style="text-align: center;">
                         <?= h($processo->participante->exercicio->ano) ?>
                     </td>
                     <td>
@@ -97,8 +97,8 @@ echo $this->Box->body();
                     <td>
                         <?= h($processo->modalidades) ?>
                     </td>
-                    <td>
-                        <?php // TODO: #124 Acrescentar o período na listagem de processos  ?>
+                    <td class="number">
+                        <?= h($processo->periodoText)  ?>
                     </td>
                     <td class="number">
                         <?= h($processo->publico)  ?>
