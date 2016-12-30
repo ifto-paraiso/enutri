@@ -14,4 +14,13 @@ class Processo extends Entity
         }
         return implode(', ', $modalidades);
     }
+    
+    protected function _getPublico()
+    {
+        $publico = 0;
+        foreach ($this->processo_modalidades as $processoModalidade) {
+            $publico += $processoModalidade->publico;
+        }
+        return $publico;
+    }
 }

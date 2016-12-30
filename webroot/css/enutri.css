@@ -13,14 +13,16 @@ table thead tr th.options {
     text-align: center;
     width: 140px;
 }
-
 table tbody tr td.options {
     padding-top:    6px;
     padding-bottom: 6px;
     text-align: center;
 }
-td.number{
+table .number{
     text-align: right;
+}
+table .options .btn i {
+    margin: 0;
 }
 
 /* Formatação do enutri-data */
