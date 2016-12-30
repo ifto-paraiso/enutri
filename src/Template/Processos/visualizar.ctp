@@ -150,7 +150,7 @@ echo $this->Box->body();
         <?= $this->Data->display('Público', h($processo->publico), ['class' => 'number']) ?>
     </div>
     <div class="col-md-2">
-        <?= $this->Data->display('Período', h('00 dias')) ?>
+        <?= $this->Data->display('Período', h($processo->periodoText)) ?>
     </div>
     <div class="col-md-4">
         <?= $this->Data->display('Observações', h($processo->observacoes)) ?>
