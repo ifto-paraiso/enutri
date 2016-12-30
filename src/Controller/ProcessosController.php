@@ -3,9 +3,26 @@
 namespace Enutri\Controller;
 
 use Cake\Datasource\Exception\RecordNotFoundException;
+use Enutri\Model\Entity\Uex;
 
 class ProcessosController extends AppController
 {
+    /**
+     * Verifica se o usuário logado possui permissão para acessar recursos da
+     * UEx especificada
+     * 
+     * @param Uex $uex
+     * 
+     * @return void
+     */
+    protected function verificarPermissao(Uex $uex)
+    {
+        if (!$this->usuarioLogado->lotado($uex)) {
+            $this->Flash->error('Selecione uma UEx válida.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
+
     /**
      * Action default do controller
      * 
@@ -93,14 +110,7 @@ class ProcessosController extends AppController
             $this->loadModel('Uexs');
             $uex = $this->Uexs->localizar($uexId);
             
-            /*
-             * Verifica se o usuário logado possui permissão para acessar a
-             * listagem de processos da UEx especificada
-             */
-            if (!$this->usuarioLogado->lotado($uex)) {
-                $this->Flash->error('Você não está lotado nesta UEx.');
-                return $this->redirect(['action' => 'selecionarUex']);
-            }
+            $this->verificarPermissao($uex);
             
             /*
              * Obtém a lista de processos e envia os dados para a view
@@ -127,14 +137,7 @@ class ProcessosController extends AppController
         try {
             $processo = $this->Processos->localizar($processoId);
             
-            /*
-             * Verifica se o usuário logado possui permissão para acessar a
-             * listagem de processos da UEx especificada
-             */
-            if (!$this->usuarioLogado->lotado($processo->participante->uex)) {
-                $this->Flash->error('Selecione uma Unidade Executora válida.');
-                return $this->redirect(['action' => 'selecionarUex']);
-            }
+            $this->verificarPermissao($processo->participante->uex);
             
             $this->set(compact('processo'));
             
@@ -157,10 +160,7 @@ class ProcessosController extends AppController
             $this->loadModel('Uexs');
             $uex = $this->Uexs->localizar($uexId);
             
-            if (!$this->usuarioLogado->lotado($uex)) {
-                $this->Flash->error('Selecione uma Unidade Executora válida.');
-                return $this->redirect(['action' => 'selecionarUex']);
-            }
+            $this->verificarPermissao($uex);
             
             $processo = $this->Processos->newEntity();
             if ($this->request->is(['post', 'put'])) {
@@ -178,6 +178,26 @@ class ProcessosController extends AppController
             
         } catch (RecordNotFoundException $e) {
             $this->Flash->error('Unidade Executora inválida.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
+    
+    public function excluir ($processoId = null)
+    {
+        try {
+            $processo = $this->Processos->localizar($processoId);
+            $this->verificarPermissao($processo->participante->uex);
+            if ($this->request->is(['post', 'put'])) {
+                $uexId = $processo->participante->uex->id;
+                if ($this->Processos->delete($processo)) {
+                    $this->Flash->success('Processo excluído com sucesso.');
+                    return $this->redirect(['action' => 'listar', $uexId]);
+                }
+                $this->Flash->error('Não foi possível excluir o processo.');
+            }
+            $this->set(compact('processo'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Processo inválido.');
             return $this->redirect(['action' => 'selecionarUex']);
         }
     }

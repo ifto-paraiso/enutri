@@ -61,4 +61,14 @@ class Processo extends Entity
         $periodo = $this->periodo;
         return sprintf('%d %s', $periodo, $periodo == 1 ? 'dia' : 'dias');
     }
+    
+    /**
+     * Retorna o nome do processo seguido do ano do exercício
+     * 
+     * @return string
+     */
+    protected function _getNomeFull ()
+    {
+        return sprintf('%s (%s)', $this->nome, $this->participante->exercicio->ano);
+    }
 }
