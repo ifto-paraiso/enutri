@@ -241,4 +241,73 @@ class ProcessosController extends AppController
             return $this->redirect(['action' => 'selecionarUex']);
         }
     }
+    
+    /**
+     * Inserção de uma modalidade de ensino no processo especificado
+     * 
+     * @param int $processoId
+     * 
+     * @return void
+     */
+    public function modalidadeInserir ($processoId = null)
+    {
+        try {
+            
+            /*
+             * Localiza o processo e verifica se o usuário possui permissão
+             * para acessá-lo
+             */
+            $processo = $this->Processos->localizar($processoId);
+            $this->verificarPermissao($processo->participante->uex);
+            
+            /*
+             * Constroi a lista de modalidade de ensino, removendo as
+             * modalidades que já estão incluídas no processo
+             */
+            $this->loadModel('Modalidades');
+            $modalidades = $this->Modalidades->getList();
+            foreach ($processo->processo_modalidades as $processoModalidade) {
+                if (isset($modalidades[$processoModalidade->modalidade_id])) {
+                    unset($modalidades[$processoModalidade->modalidade_id]);
+                }
+            }
+            
+            /*
+             * Verifica se existe alguma modalidade a ser incluída no processo.
+             * Se não houver nenhuma, informa ao usuário que todas as 
+             * modalidades já estão incluídas
+             */
+            if (count($modalidades) < 1) {
+                $this->Flash->warning('O processo já atende todas as modalidades de ensino.');
+                return $this->redirect(['action' => 'visualizar', $processo->id]);
+            }
+            
+            /*
+             * Cria e salva a modalidade no processo, caso o usuário tenha
+             * submetido o formulário
+             */
+            $this->loadModel('ProcessoModalidades');
+            $processoModalidade = $this->ProcessoModalidades->newEntity();
+            if ($this->request->is(['post', 'put'])) {
+                $this->ProcessoModalidades->patchEntity($processoModalidade, $this->request->data);
+                $processoModalidade->processo_id = $processo->id;
+                if ($this->ProcessoModalidades->save($processoModalidade)) {
+                    $this->Flash->success('A modalidade de ensino foi inserida no processo.');
+                    return $this->redirect(['action' => 'visualizar', $processo->id]);
+                }
+                $this->Flash->error('Não foi possível inserir a modalidade no processo.');
+            }
+            
+            /*
+             * Envia as informações para a view
+             */
+            $this->set(compact('processo'));
+            $this->set(compact('processoModalidade'));
+            $this->set(compact('modalidades'));
+            
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Processo inválido.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
 }
