@@ -162,6 +162,13 @@ class ProcessosController extends AppController
             
             $this->verificarPermissao($uex);
             
+            $this->loadModel('Participantes');
+            $participantes = $this->Participantes->getList($uex);
+            if (count($participantes) < 1) {
+                $this->Flash->warning('Esta UEx não está participando de nenhum exercício.');
+                return $this->redirect(['action' => 'listar', h($uex->id)]);
+            }
+            
             $processo = $this->Processos->newEntity();
             if ($this->request->is(['post', 'put'])) {
                 $this->Processos->patchEntity($processo, $this->request->data);
@@ -171,8 +178,7 @@ class ProcessosController extends AppController
                 }
                 $this->Flash->error('Não foi possível efetuar o cadastro do Processo.');
             }
-            $this->loadModel('Participantes');
-            $this->set('participantes', $this->Participantes->getList($uex));
+            $this->set(compact('participantes'));
             $this->set(compact('processo'));
             $this->set(compact('uex'));
             
