@@ -176,11 +176,12 @@ require_once '_processo_info.ctp';
                                 ),
                                 array(
                                     'url'   => [
-                                        'action' => 'modalidadeExcluir',
+                                        'action' => 'modalidadeRemover',
                                         h($processoModalidade->id)
                                     ],
                                     'icon'  => 'excluir',
                                     'title' => 'Excluir Modalidade do Processo',
+                                    'confirm' => sprintf('Deseja remover a modalidade "%s" deste processo?', h($processoModalidade->modalidade->nome)),
                                 )
                             ]);
                         ?>

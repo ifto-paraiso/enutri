@@ -310,4 +310,30 @@ class ProcessosController extends AppController
             return $this->redirect(['action' => 'selecionarUex']);
         }
     }
+    
+    /**
+     * Exclusão da modalidade de ensino de um processo
+     * 
+     * @param id $processoModalidadeId
+     * 
+     * @return void
+     */
+    public function modalidadeRemover($processoModalidadeId = null)
+    {
+        try {
+            $this->loadModel('ProcessoModalidades');
+            $processoModalidade = $this->ProcessoModalidades->localizar($processoModalidadeId);
+            $this->verificarPermissao($processoModalidade->processo->participante->uex);
+            $processoId = $processoModalidade->processo_id;
+            if ($this->ProcessoModalidades->delete($processoModalidade)) {
+                $this->Flash->success('A modalidade foi removida deste processo.');
+            } else {
+                $this->Flash->error('Não foi possível remover a modalidade deste processo.');
+            }
+            return $this->redirect(['action' => 'visualizar', $processoId]);
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Processo inválido.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
 }

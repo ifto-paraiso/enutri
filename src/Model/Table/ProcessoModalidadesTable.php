@@ -16,6 +16,7 @@ class ProcessoModalidadesTable extends EnutriTable
         parent::initialize($config);
         
         $this->belongsTo('Modalidades');
+        $this->belongsTo('Processos');
     }
     
     /**
@@ -40,5 +41,16 @@ class ProcessoModalidadesTable extends EnutriTable
         $validator->range('publico', [1, 100000], 'Valor inválido');
         
         return $validator;
+    }
+    
+    public function localizar($processoModalidadeId, array $options = [])
+    {
+        $defaultOptions = [
+            'contain' => [
+                'Processos.Participantes.Uexs',
+            ],
+        ];
+        $options = array_merge_recursive($defaultOptions, $options);
+        return $this->get($processoModalidadeId, $options);
     }
 }
