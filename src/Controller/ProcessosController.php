@@ -182,6 +182,13 @@ class ProcessosController extends AppController
         }
     }
     
+    /**
+     * Exclusão do processo especificado
+     * 
+     * @param type $processoId
+     * 
+     * @return void
+     */
     public function excluir ($processoId = null)
     {
         try {
@@ -194,6 +201,33 @@ class ProcessosController extends AppController
                     return $this->redirect(['action' => 'listar', $uexId]);
                 }
                 $this->Flash->error('Não foi possível excluir o processo.');
+            }
+            $this->set(compact('processo'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Processo inválido.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
+    
+    /**
+     * Edição das informações do processo especificado
+     * 
+     * @param int $processoId
+     * 
+     * @return void
+     */
+    public function editar ($processoId = null)
+    {
+        try {
+            $processo = $this->Processos->localizar($processoId);
+            $this->verificarPermissao($processo->participante->uex);
+            if ($this->request->is(['post', 'put'])) {
+                $this->Processos->patchEntity($processo, $this->request->data);
+                if ($this->Processos->save($processo)) {
+                    $this->Flash->success('As informações do processo foram atualizadas.');
+                    return $this->redirect(['action' => 'visualizar', $processo->id]);
+                }
+                $this->Flash->error('Não foi possível salvar as alterações.');
             }
             $this->set(compact('processo'));
         } catch (RecordNotFoundException $e) {

@@ -35,6 +35,7 @@ $uexCoord = [
         'listar'        => 'allow',
         'visualizar'    => 'allow',
         'cadastrar'     => 'allow',
+        'editar'        => 'allow',
         'excluir'       => 'allow',
     ]
 ];
