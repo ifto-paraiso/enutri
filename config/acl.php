@@ -30,13 +30,16 @@ $uexCoord = [
         'uex-coord' => 'allow',
     ],
     'Processos' => [
-        'index'         => 'allow',
-        'selecionarUex' => 'allow',
-        'listar'        => 'allow',
-        'visualizar'    => 'allow',
-        'cadastrar'     => 'allow',
-        'editar'        => 'allow',
-        'excluir'       => 'allow',
+        'index'             => 'allow',
+        'selecionarUex'     => 'allow',
+        'listar'            => 'allow',
+        'visualizar'        => 'allow',
+        'cadastrar'         => 'allow',
+        'editar'            => 'allow',
+        'excluir'           => 'allow',
+        'modalidadeInserir' => 'allow',
+        'modalidadeEditar'  => 'allow',
+        'modalidadeRemover' => 'allow',
     ]
 ];
 
