@@ -132,70 +132,79 @@ require_once '_processo_info.ctp';
 
 ?>
 
-<table class="table table-hover table-bordered">
-    <thead>
-        <tr>
-            <th>
-                Modalidades de Ensino
-            </th>
-            <th style="width: 80px; text-align: right;">
-                Público
-            </th>
-            <th class="options">
-                Opções
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach($processo->processo_modalidades as $processoModalidade): ?>
-            <tr>
-                <td>
-                    <?= h($processoModalidade->modalidade->nome) ?>
-                </td>
-                <td class="number">
-                    <?= h($processoModalidade->publico) ?>
-                </td>
-                <td class="options">
-                    <?=
-                        $this->Options->make([
-                            array(
-                                'url'   => [
-                                    'action' => 'modalidadeEditar',
-                                    h($processoModalidade->id)
-                                ],
-                                'icon'  => 'editar',
-                                'title' => 'Editar Modalidade do Processo',
-                            ),
-                            array(
-                                'url'   => [
-                                    'action' => 'modalidadeExcluir',
-                                    h($processoModalidade->id)
-                                ],
-                                'icon'  => 'excluir',
-                                'title' => 'Excluir Modalidade do Processo',
-                            )
-                        ]);
-                    ?>
-                </td>
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
-    <tfoot>
-        <tr>
-            <th>
-                Público Total do Processo
-            </th>
-            <th class="number">
-                <?= h($processo->publico) ?>
-            </th>
-            <th>
-                
-            </th>
-        </tr>
-    </tfoot>
-</table>
+<?php if (count($processo->processo_modalidades) < 1): ?>
 
-<br />
+    <div class="alert alert-info">
+        Nenhuma modalidade de ensino neste processo.
+    </div>
+    
+<?php else: ?>
+
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    Modalidades de Ensino
+                </th>
+                <th style="width: 80px; text-align: right;">
+                    Público
+                </th>
+                <th class="options">
+                    Opções
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($processo->processo_modalidades as $processoModalidade): ?>
+                <tr>
+                    <td>
+                        <?= h($processoModalidade->modalidade->nome) ?>
+                    </td>
+                    <td class="number">
+                        <?= h($processoModalidade->publico) ?>
+                    </td>
+                    <td class="options">
+                        <?=
+                            $this->Options->make([
+                                array(
+                                    'url'   => [
+                                        'action' => 'modalidadeEditar',
+                                        h($processoModalidade->id)
+                                    ],
+                                    'icon'  => 'editar',
+                                    'title' => 'Editar Modalidade do Processo',
+                                ),
+                                array(
+                                    'url'   => [
+                                        'action' => 'modalidadeExcluir',
+                                        h($processoModalidade->id)
+                                    ],
+                                    'icon'  => 'excluir',
+                                    'title' => 'Excluir Modalidade do Processo',
+                                )
+                            ]);
+                        ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>
+                    Público Total do Processo
+                </th>
+                <th class="number">
+                    <?= h($processo->publico) ?>
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    <br />
+    
+<?php endif; ?>
 
 <fieldset>
     <legend>
