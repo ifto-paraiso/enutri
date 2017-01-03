@@ -48,6 +48,10 @@ class ProcessoModalidadesTable extends EnutriTable
         $defaultOptions = [
             'contain' => [
                 'Processos.Participantes.Uexs',
+                'Processos.Participantes.Exercicios',
+                'Processos.ProcessoModalidades.Modalidades',
+                'Processos.Cardapios.Atendimentos',
+                'Modalidades',
             ],
         ];
         $options = array_merge_recursive($defaultOptions, $options);
