@@ -312,6 +312,34 @@ class ProcessosController extends AppController
     }
     
     /**
+     * Edição da modalidade de ensino de um processo
+     * 
+     * @param int $processoModalidadeId
+     * 
+     * @return void
+     */
+    public function modalidadeEditar ($processoModalidadeId = null)
+    {
+        try {
+            $this->loadModel('ProcessoModalidades');
+            $processoModalidade = $this->ProcessoModalidades->localizar($processoModalidadeId);
+            $this->verificarPermissao($processoModalidade->processo->participante->uex);
+            if ($this->request->is(['post', 'put'])) {
+                $this->ProcessoModalidades->patchEntity($processoModalidade, $this->request->data);
+                if ($this->ProcessoModalidades->save($processoModalidade)) {
+                    $this->Flash->success('As alterações foram salvas com sucesso.');
+                    return $this->redirect(['action' => 'visualizar', $processoModalidade->processo->id]);
+                }
+                $this->Flash->error('Não foi possível salvar as alterações.');
+            }
+            $this->set(compact('processoModalidade'));
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Processo inválido.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
+    
+    /**
      * Exclusão da modalidade de ensino de um processo
      * 
      * @param id $processoModalidadeId
