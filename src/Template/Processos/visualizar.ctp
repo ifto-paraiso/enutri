@@ -260,8 +260,7 @@ require_once '_processo_info.ctp';
                             ?>
                         </td>
                         <td style="text-align: center;">
-                            <?php printf('%1d', $cardapio->frequencia) ?>
-                            <?= $cardapio->frequencia == 1 ? 'vez' : 'vezes' ?>
+                            <?= h($cardapio->frequenciaFull) ?>
                         </td>
                         <td class="options">
                             <?=
