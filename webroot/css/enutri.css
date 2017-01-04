@@ -9,20 +9,32 @@
 
 /* Ajustes na toolbar de opções das tabelas */
 
-table thead tr th.options {
+table thead tr th.options,
+table thead tr th.options-compact{
     text-align: center;
     width: 140px;
 }
-table tbody tr td.options {
+table tbody tr td.options,
+table tbody tr td.options-compact{
     padding-top:    6px;
     padding-bottom: 6px;
     text-align: center;
+}
+.options-compact{
+    width: 70px !important;
 }
 table .number{
     text-align: right;
 }
 table .options .btn i {
     margin: 0;
+}
+table .medida{
+    display: inline-block;
+    line-height: 1;
+    padding: 0;
+    text-align: left;
+    width: 25px;
 }
 
 /* Formatação do enutri-data */

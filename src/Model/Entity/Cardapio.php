@@ -12,6 +12,24 @@ use Cake\ORM\Entity;
 class Cardapio extends Entity
 {
     /**
+     * Siglas dos nutrientes
+     * 
+     * @var array
+     */
+    private $_nutrientes = [
+        'kcal',
+        'cho',
+        'ptn',
+        'lip',
+        'ca',
+        'fe',
+        'mg',
+        'zn',
+        'vita',
+        'vitc',
+    ];
+    
+    /**
      * Obtém a frequência do cardápio
      * 
      * @return int
@@ -36,5 +54,36 @@ class Cardapio extends Entity
             default:
                 return sprintf('%d vezes', $this->frequencia);
         }
+    }
+    
+    /**
+     * Obtém um array com a relação de nutrientes e suas respectivas quantidades
+     * no cardápio
+     * 
+     * @return array
+     */
+    protected function _getNutrientes ()
+    {
+        $nutrientes = [];
+        foreach ($this->_nutrientes as $nutrienteSigla) {
+            $nutrientes[$nutrienteSigla] = $this->nutriente($nutrienteSigla);
+        }
+        return $nutrientes;
+    }
+    
+    /**
+     * Obtém a quantidade do nutriente especificado
+     * 
+     * @param string $nutriente Sigla do nutriente
+     * 
+     * @return float
+     */
+    public function nutriente ($nutriente)
+    {
+        $total = 0;
+        foreach ($this->ingredientes as $ingrediente) {
+            $total += $ingrediente->alimento->{$nutriente};
+        }
+        return $total;
     }
 }

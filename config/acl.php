@@ -40,7 +40,17 @@ $uexCoord = [
         'modalidadeInserir' => 'allow',
         'modalidadeEditar'  => 'allow',
         'modalidadeRemover' => 'allow',
-    ]
+    ],
+    'Cardapios' => [
+        'visualizar'         => 'allow',
+        'cadastrar'          => 'allow',
+        'editar'             => 'allow',
+        'excluir'            => 'allow',
+        'ingredientesEditar' => 'allow',
+        'ingredienteRemover' => 'allow',
+        'atendimentosEditar' => 'allow',
+        'atendimentoRemover' => 'allow',
+    ],
 ];
 
 /**
