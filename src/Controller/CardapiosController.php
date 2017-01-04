@@ -176,4 +176,36 @@ class CardapiosController extends AppController
             ]);
         }
     }
+    
+    /**
+     * Remoção do atendimento especificado
+     * Obs: Remoção sem solicitação de confirmação
+     * 
+     * @param int $atendimentoId
+     */
+    public function atendimentoRemover ($atendimentoId = null)
+    {
+        try {
+            $this->loadModel('Atendimentos');
+            $atendimento = $this->Atendimentos->localizar($atendimentoId);
+            $this->verificarPermissao($atendimento->cardapio->processo->participante->uex);
+            $cardapioId = $atendimento->cardapio->id;
+            if ($this->Atendimentos->delete($atendimento)) {
+                $this->Flash->success('A data de atendimento foi removida do cardápio.');
+                return $this->redirect([
+                    'action' => 'visualizar',
+                    $cardapioId,
+                ]);
+            } else {
+                $this->Flash->error('Não foi possível excluir a data de atendimento.');
+                return $this->redirect(['action' => 'visualizar', $atendimento->cardapio->id]);
+            }
+        } catch (RecordNotFoundException $ex) {
+            $this->Flash->error('Cardápio inválido.');
+            return $this->redirect([
+                'controller' => 'Processos',
+                'action' => 'selecionarUex',
+            ]);
+        }
+    }
 }
