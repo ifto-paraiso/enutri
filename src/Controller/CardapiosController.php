@@ -144,4 +144,36 @@ class CardapiosController extends AppController
             ]);
         }
     }
+    
+    /**
+     * Remoção do ingrediente especificado
+     * Obs: Remoção sem solicitação de confirmação
+     * 
+     * @param int $ingredienteId
+     */
+    public function ingredienteRemover ($ingredienteId = null)
+    {
+        try {
+            $this->loadModel('Ingredientes');
+            $ingrediente = $this->Ingredientes->localizar($ingredienteId);
+            $this->verificarPermissao($ingrediente->cardapio->processo->participante->uex);
+            $cardapioId = $ingrediente->cardapio->id;
+            if ($this->Ingredientes->delete($ingrediente)) {
+                $this->Flash->success('O ingrediente foi removido do cardápio.');
+                return $this->redirect([
+                    'action' => 'visualizar',
+                    $cardapioId,
+                ]);
+            } else {
+                $this->Flash->error('Não foi possível excluir o ingrediente.');
+                return $this->redirect(['action' => 'visualizar', $ingrediente->cardapio->id]);
+            }
+        } catch (RecordNotFoundException $ex) {
+            $this->Flash->error('Cardápio inválido.');
+            return $this->redirect([
+                'controller' => 'Processos',
+                'action' => 'selecionarUex',
+            ]);
+        }
+    }
 }
