@@ -40,7 +40,8 @@ echo $this->Box->header([
                         'icon'  => 'cadastrar',
                         'url'   => [
                             'controller' => 'Cardapios',
-                            'action' => 'cadastrar'
+                            'action' => 'cadastrar',
+                            h($processo->id),
                         ],
                     ),
                     array(

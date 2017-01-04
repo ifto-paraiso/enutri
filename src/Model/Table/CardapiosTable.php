@@ -2,6 +2,8 @@
 
 namespace Enutri\Model\Table;
 
+use Cake\Validation\Validator;
+
 class CardapiosTable extends EnutriTable
 {
     /**
@@ -19,6 +21,34 @@ class CardapiosTable extends EnutriTable
         $this->hasMany('Ingredientes');
     }
     
+    /**
+     * Regras de validação default
+     * 
+     * @param  \Cake\Validation\Validator $validator
+     * 
+     * @return \Cake\Validation\Validator
+     */
+    public function validationDefault(Validator $validator)
+    {
+        parent::validationDefault($validator);
+        
+        $validator->requirePresence('cardapio_tipo_id', 'create', 'Informe o tipo do cardápio');
+        $validator->requirePresence('nome', 'create', 'Informe um nome para o cardápio');
+        
+        $validator->notEmpty('cardapio_tipo_id', 'Informe o tipo do cardápio');
+        $validator->notEmpty('nome',             'Informe um nome para o cardápio');
+        
+        return $validator;
+    }
+    
+    /**
+     * Localiza o cardápio com o id especificado
+     * 
+     * @param int   $cardapioId
+     * @param array $options
+     * 
+     * @return \Cake\Datasource\EntityInterface
+     */
     public function localizar ($cardapioId, array $options = [])
     {
         $defaultOptions = [
