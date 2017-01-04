@@ -72,7 +72,7 @@ echo $this->Box->header([
                         'url' => [
                             'action' => 'ingredientesEditar',
                             h($cardapio->id),
-                        ], 
+                        ],
                     ),
                     array(
                         'dropdown' => [
@@ -88,6 +88,7 @@ echo $this->Box->header([
                                 array(
                                     'text' => 'Excluir Cardápio',
                                     'icon' => 'excluir',
+                                    'confirm' => 'Deseja excluir este cardápio?',
                                     'url' => [
                                         'action' => 'excluir',
                                         h($cardapio->id),
