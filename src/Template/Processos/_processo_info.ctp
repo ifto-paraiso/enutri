@@ -19,9 +19,9 @@
         <?= $this->Data->display('Público', h($processo->publico), ['class' => 'number']) ?>
     </div>
     <div class="col-md-2">
-        <?= $this->Data->display('Período', h($processo->periodoText)) ?>
+        <?= $this->Data->display('Período', h($processo->periodoText), ['class' => 'number']) ?>
     </div>
     <div class="col-md-4">
-        <?= $this->Data->display('Observações', h($processo->observacoes)) ?>
+        <?= $this->Data->display('Observações do Processo', h($processo->observacoes)) ?>
     </div>
 </div>

@@ -20,6 +20,7 @@ return [
         'centralizacao' => 'fa fa-fw fa-sitemap fa-rotate-180',
         'editar'        => 'fa fa-fw fa-pencil',
         'eex'           => 'fa fa-fw fa-building',
+        'estatistica'   => 'fa fa-fw fa-bar-chart',
         'excluir'       => 'fa fa-fw fa-trash-o',
         'exercicio'     => 'fa fa-fw fa-circle-o-notch',
         'form'          => 'fa fa-fw fa-edit',
