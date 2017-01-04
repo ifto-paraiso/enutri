@@ -83,4 +83,33 @@ class CardapiosController extends AppController
             ]);
         }
     }
+    
+    /**
+     * Edição das informações do cardápio especificado
+     * 
+     * @param int $cardapioId
+     */
+    public function editar ($cardapioId = null)
+    {
+        try {
+            $cardapio = $this->Cardapios->localizar($cardapioId);
+            if ($this->request->is(['post', 'put'])) {
+                $this->Cardapios->patchEntity($cardapio, $this->request->data);
+                if ($this->Cardapios->save($cardapio)) {
+                    $this->Flash->success('As informações do cardápio foram atualizadas.');
+                    return $this->redirect(['action' => 'visualizar', $cardapio->id]);
+                }
+                $this->Flash->error('Não foi possível salvar as alterações.');
+            }
+            $this->loadModel('CardapioTipos');
+            $this->set('cardapioTipos', $this->CardapioTipos->getList());
+            $this->set(compact('cardapio'));
+        } catch (RecordNotFoundException $ex) {
+            $this->Flash->error('Cardápio inválido.');
+            return $this->redirect([
+                'controller' => 'Processos',
+                'action' => 'selecionarUex',
+            ]);
+        }
+    }
 }
