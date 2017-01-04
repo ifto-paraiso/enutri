@@ -93,6 +93,7 @@ class CardapiosController extends AppController
     {
         try {
             $cardapio = $this->Cardapios->localizar($cardapioId);
+            $this->verificarPermissao($cardapio->processo->participante->uex);
             if ($this->request->is(['post', 'put'])) {
                 $this->Cardapios->patchEntity($cardapio, $this->request->data);
                 if ($this->Cardapios->save($cardapio)) {
@@ -104,6 +105,37 @@ class CardapiosController extends AppController
             $this->loadModel('CardapioTipos');
             $this->set('cardapioTipos', $this->CardapioTipos->getList());
             $this->set(compact('cardapio'));
+        } catch (RecordNotFoundException $ex) {
+            $this->Flash->error('Cardápio inválido.');
+            return $this->redirect([
+                'controller' => 'Processos',
+                'action' => 'selecionarUex',
+            ]);
+        }
+    }
+    
+    /**
+     * Exclusão do cardápio especificado
+     * 
+     * @param int $cardapioId
+     */
+    public function excluir ($cardapioId = null) 
+    {
+        try {
+            $cardapio = $this->Cardapios->localizar($cardapioId);
+            $this->verificarPermissao($cardapio->processo->participante->uex);
+            $processoId = $cardapio->processo->id;
+            if ($this->Cardapios->delete($cardapio)) {
+                $this->Flash->success('As informações do cardápio foram atualizadas.');
+                return $this->redirect([
+                    'controller' => 'Processos',
+                    'action' => 'visualizar',
+                    $processoId,
+                ]);
+            } else {
+                $this->Flash->error('Não foi possível excluir este cardápio.');
+                return $this->redirect(['action' => 'visualizar', $cardapio->id]);
+            }
         } catch (RecordNotFoundException $ex) {
             $this->Flash->error('Cardápio inválido.');
             return $this->redirect([
