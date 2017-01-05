@@ -22,7 +22,7 @@ echo $this->Box->create();
 
 echo $this->Box->header([
     'icon' => 'info',
-    'text' => 'Informações do Processo',
+    'text' => 'Informações do Cardápio',
     'toolbar' => [
         'groups' => [
             array(

@@ -1,4 +1,15 @@
 
+<?php
+
+$aprovadoLabel = '';
+if ($processo->aprovado) {
+    $aprovadoLabel = $this->Label->success('Aprovado');
+} else {
+    $aprovadoLabel = $this->Label->default('Não avaliado');
+}
+
+?>
+
 <div class="row">
     <div class="col-md-6">
         <?= $this->Data->display('Unidade Executora', h($processo->participante->uex->nome_reduzido)) ?>
@@ -7,7 +18,7 @@
         <?= $this->Data->display('Exercício', h($processo->participante->exercicio->ano)) ?>
     </div>
     <div class="col-md-4">
-        <?= $this->Data->display('Processo', h($processo->nome)) ?>
+        <?= $this->Data->display('Processo', h($processo->nome) . ' ' . $aprovadoLabel) ?>
     </div>
 </div>
 

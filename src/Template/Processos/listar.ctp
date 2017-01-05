@@ -68,6 +68,9 @@ echo $this->Box->body();
                 <th>
                     Processo
                 </th>
+                <th style="text-align: center;">
+                    Situação
+                </th>
                 <th>
                     Modalidades
                 </th>
@@ -94,7 +97,16 @@ echo $this->Box->body();
                                 h($processo->nome),
                                 ['action' => 'visualizar', h($processo->id)],
                                 ['title' => 'Visualizar as informações deste processo']
-                            )
+                            );
+                        ?>
+                    </td>
+                    <td style="text-align: center;">
+                        <?php
+                            if ($processo->aprovado) {
+                                echo $this->Label->success('Aprovado');
+                            } else {
+                                echo $this->Label->default('Não avaliado');
+                            }
                         ?>
                     </td>
                     <td>

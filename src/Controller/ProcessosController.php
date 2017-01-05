@@ -230,6 +230,7 @@ class ProcessosController extends AppController
             if ($this->request->is(['post', 'put'])) {
                 $this->Processos->patchEntity($processo, $this->request->data);
                 if ($this->Processos->save($processo)) {
+                    $this->Processos->reprovar($processo);
                     $this->Flash->success('As informações do processo foram atualizadas.');
                     return $this->redirect(['action' => 'visualizar', $processo->id]);
                 }
@@ -292,6 +293,7 @@ class ProcessosController extends AppController
                 $this->ProcessoModalidades->patchEntity($processoModalidade, $this->request->data);
                 $processoModalidade->processo_id = $processo->id;
                 if ($this->ProcessoModalidades->save($processoModalidade)) {
+                    $this->Processos->reprovar($processo);
                     $this->Flash->success('A modalidade de ensino foi inserida no processo.');
                     return $this->redirect(['action' => 'visualizar', $processo->id]);
                 }
@@ -327,6 +329,7 @@ class ProcessosController extends AppController
             if ($this->request->is(['post', 'put'])) {
                 $this->ProcessoModalidades->patchEntity($processoModalidade, $this->request->data);
                 if ($this->ProcessoModalidades->save($processoModalidade)) {
+                    $this->Processos->reprovar($processo);
                     $this->Flash->success('As alterações foram salvas com sucesso.');
                     return $this->redirect(['action' => 'visualizar', $processoModalidade->processo->id]);
                 }
@@ -352,13 +355,49 @@ class ProcessosController extends AppController
             $this->loadModel('ProcessoModalidades');
             $processoModalidade = $this->ProcessoModalidades->localizar($processoModalidadeId);
             $this->verificarPermissao($processoModalidade->processo->participante->uex);
-            $processoId = $processoModalidade->processo_id;
+            $processo = clone($processoModalidade->processo);
             if ($this->ProcessoModalidades->delete($processoModalidade)) {
+                $this->Processos->reprovar($processo);
                 $this->Flash->success('A modalidade foi removida deste processo.');
             } else {
                 $this->Flash->error('Não foi possível remover a modalidade deste processo.');
             }
-            return $this->redirect(['action' => 'visualizar', $processoId]);
+            return $this->redirect(['action' => 'visualizar', $processo->id]);
+        } catch (RecordNotFoundException $e) {
+            $this->Flash->error('Processo inválido.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
+    
+    public function aprovar ($processoId = null)
+    {
+        $this->avaliar($processoId, 'aprovado');
+    }
+    
+    public function reprovar ($processoId = null)
+    {
+        $this->avaliar($processoId, 'reprovado');
+    }
+    
+    private function avaliar ($processoId, $avaliacao)
+    {
+        try {
+            $processo = $this->Processos->localizar($processoId);
+            $this->verificarPermissao($processo->participante->uex);
+            if ($avaliacao === 'aprovado') {
+                if ($this->Processos->aprovar($processo, $this->usuarioLogado)) {
+                    $this->Flash->success('O processo foi aprovado.');
+                } else {
+                    $this->Flash->error('Não foi possível aprovar o processo.');
+                }
+            } else {
+                if ($this->Processos->reprovar($processo)) {
+                    $this->Flash->success('O processo agora está aguardando avaliação.');
+                } else {
+                    $this->Flash->error('Não foi possível reprovar o processo.');
+                }
+            }
+            return $this->redirect(['action' => 'visualizar', h($processoId)]);
         } catch (RecordNotFoundException $e) {
             $this->Flash->error('Processo inválido.');
             return $this->redirect(['action' => 'selecionarUex']);

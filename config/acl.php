@@ -78,7 +78,11 @@ $eexNutri = [
         'cadastrar'  => 'allow',
         'editar'     => 'allow',
         'excluir'    => 'allow',
-    ]
+    ],
+    'Processos' => [
+        'aprovar'    => 'allow',
+        'reprovar'   => 'allow',
+    ],
 ];
 
 /**
