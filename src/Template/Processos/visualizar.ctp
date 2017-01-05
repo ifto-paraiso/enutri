@@ -16,9 +16,16 @@ $this->Html->addCrumb(h($processo->nomeFull));
 
 echo $this->Box->create();
 
+$aprovadoLabel = '';
+if ($processo->aprovado) {
+    $aprovadoLabel = $this->Label->success('Aprovado');
+} else {
+    $aprovadoLabel = $this->Label->default('Não avaliado');
+}
+
 echo $this->Box->header([
     'icon' => 'info',
-    'text' => 'Informações do Processo',
+    'text' => 'Informações do Processo ' . $aprovadoLabel,
     'toolbar' => [
         'groups' => [
             array(
@@ -81,6 +88,34 @@ echo $this->Box->header([
             ),
             array(
                 'buttons' => [
+                    array (
+                        'text'  => 'Avaliar',
+                        'icon'  => 'avaliar',
+                        'dropdown' => [
+                            'items' => [
+                                array(
+                                    'text'  => 'Aprovar',
+                                    'icon'  => 'aprovar',
+                                    'url'   => [
+                                        'action' => 'aprovar',
+                                        h($processo->id)
+                                    ],
+                                ),
+                                array(
+                                    'text'  => 'Reprovar',
+                                    'icon'  => 'reprovar',
+                                    'url'   => [
+                                        'action' => 'reprovar',
+                                        h($processo->id)
+                                    ],
+                                )
+                            ],
+                        ],
+                    ),
+                ],
+            ),
+            array(
+                'buttons' => [
                     array(
                         'icon' => 'imprimir',
                         'title' => 'Relatórios',
@@ -129,7 +164,7 @@ echo $this->Box->header([
 
 echo $this->Box->body();
 
-require_once '_processo_info.ctp';
+echo $this->element('../Processos/_processo_info', ['processo' => $processo]);
 
 ?>
 

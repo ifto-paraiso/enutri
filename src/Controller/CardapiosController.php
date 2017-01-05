@@ -66,6 +66,9 @@ class CardapiosController extends AppController
                 $this->Cardapios->patchEntity($cardapio, $this->request->data);
                 $cardapio->processo_id = $processo->id;
                 if ($this->Cardapios->save($cardapio)) {
+                    $this->loadModel('Processos');
+                    $processo = $this->Processos->localizar($cardapio->processo_id);
+                    $this->Processos->reprovar($processo);
                     $this->Flash->success('Cardápio cadastrado com sucesso.');
                     return $this->redirect(['action' => 'visualizar', $cardapio->id]);
                 }
@@ -97,6 +100,8 @@ class CardapiosController extends AppController
             if ($this->request->is(['post', 'put'])) {
                 $this->Cardapios->patchEntity($cardapio, $this->request->data);
                 if ($this->Cardapios->save($cardapio)) {
+                    $this->loadModel('Processos');
+                    $this->Processos->reprovar($cardapio->processo);
                     $this->Flash->success('As informações do cardápio foram atualizadas.');
                     return $this->redirect(['action' => 'visualizar', $cardapio->id]);
                 }
@@ -124,13 +129,15 @@ class CardapiosController extends AppController
         try {
             $cardapio = $this->Cardapios->localizar($cardapioId);
             $this->verificarPermissao($cardapio->processo->participante->uex);
-            $processoId = $cardapio->processo->id;
+            $processo = clone($cardapio->processo);
             if ($this->Cardapios->delete($cardapio)) {
+                $this->loadModel('Processos');
+                $this->Processos->reprovar($processo);
                 $this->Flash->success('As informações do cardápio foram atualizadas.');
                 return $this->redirect([
                     'controller' => 'Processos',
                     'action' => 'visualizar',
-                    $processoId,
+                    $processo->id,
                 ]);
             } else {
                 $this->Flash->error('Não foi possível excluir este cardápio.');
@@ -157,12 +164,14 @@ class CardapiosController extends AppController
             $this->loadModel('Ingredientes');
             $ingrediente = $this->Ingredientes->localizar($ingredienteId);
             $this->verificarPermissao($ingrediente->cardapio->processo->participante->uex);
-            $cardapioId = $ingrediente->cardapio->id;
+            $cardapio = clone($ingrediente->cardapio);
             if ($this->Ingredientes->delete($ingrediente)) {
+                $this->loadModel('Processos');
+                $this->Processos->reprovar($cardapio->processo);
                 $this->Flash->success('O ingrediente foi removido do cardápio.');
                 return $this->redirect([
                     'action' => 'visualizar',
-                    $cardapioId,
+                    $cardapio->id,
                 ]);
             } else {
                 $this->Flash->error('Não foi possível excluir o ingrediente.');
@@ -189,12 +198,14 @@ class CardapiosController extends AppController
             $this->loadModel('Atendimentos');
             $atendimento = $this->Atendimentos->localizar($atendimentoId);
             $this->verificarPermissao($atendimento->cardapio->processo->participante->uex);
-            $cardapioId = $atendimento->cardapio->id;
+            $cardapio = clone($atendimento->cardapio);
             if ($this->Atendimentos->delete($atendimento)) {
+                $this->loadModel('Processos');
+                $this->Processos->reprovar($cardapio->processo);
                 $this->Flash->success('A data de atendimento foi removida do cardápio.');
                 return $this->redirect([
                     'action' => 'visualizar',
-                    $cardapioId,
+                    $cardapio->id,
                 ]);
             } else {
                 $this->Flash->error('Não foi possível excluir a data de atendimento.');
