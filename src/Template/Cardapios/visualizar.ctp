@@ -194,6 +194,11 @@ echo $this->element('../Cardapios/_info', ['cardapio' => $cardapio]);
                         <tr>
                             <td>
                                 <?= h($ingrediente->alimento->nome) ?>
+                                <?php
+                                    if ($ingrediente->observacoes != '') {
+                                        echo sprintf('(%s)', h($ingrediente->observacoes));
+                                    }
+                                ?>
                             </td>
                             <td class="number">
                                 <?= h($this->Formatter->float($ingrediente->quantidade)) ?>
