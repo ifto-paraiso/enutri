@@ -82,7 +82,7 @@ class Cardapio extends Entity
     {
         $total = 0;
         foreach ($this->ingredientes as $ingrediente) {
-            $total += $ingrediente->alimento->{$nutriente};
+            $total += $ingrediente->alimento->{$nutriente} / 100 * $ingrediente->quantidade;
         }
         return $total;
     }
