@@ -219,4 +219,40 @@ class CardapiosController extends AppController
             ]);
         }
     }
+    
+    /**
+     * Edição da relação de ingredientes do cardpápio especificado
+     * 
+     * @param type $cardapioId
+     */
+    public function ingredientesEditar ($cardapioId = null) 
+    {
+        try {
+            $cardapio = $this->Cardapios->localizar($cardapioId);
+            $this->verificarPermissao($cardapio->processo->participante->uex);
+            if ($this->request->is(['post', 'put'])) {
+                $this->loadModel('Ingredientes');
+                $ingredientes = [];
+                if (isset($this->request->data['ingredientes'])) {
+                    $ingredientes = $this->request->data['ingredientes'];
+                }
+                if ($this->Ingredientes->atualizar($cardapio, $ingredientes) === 0) {
+                    $this->Flash->success('Os ingredientes foram atualizados.');
+                } else {
+                    $this->Flash->warning('Não foi possível salvar todas as edições. Por favor, confira a lista de ingredientes do cardápio.');
+                }
+                return $this->redirect(['action' => 'visualizar', h($cardapio->id)]);
+            }
+            $this->loadModel('Alimentos');
+            $this->set('alimentos', $this->Alimentos->getList());
+            $this->set(compact('cardapio'));
+        } catch (RecordNotFoundException $ex) {
+            $this->Flash->error('Cardápio inválido.');
+            return $this->redirect([
+                'controller' => 'Processos',
+                'action' => 'selecionarUex',
+            ]);
+        }
+    }
+    
 }
