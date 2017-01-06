@@ -29,6 +29,9 @@
     <?= $this->Html->css('../adminlte/dist/css/skins/skin-red-light.min.css') ?>
 
     <?= $this->Html->css('enutri') ?>
+    
+    <!-- jQuery 2.2.3 -->
+    <?= $this->Html->script('../adminlte/plugins/jQuery/jquery-2.2.3.min.js') ?>
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -86,9 +89,6 @@ desired effect
 <!-- ./wrapper -->
 
 <!-- REQUIRED JS SCRIPTS -->
-
-<!-- jQuery 2.2.3 -->
-<?= $this->Html->script('../adminlte/plugins/jQuery/jquery-2.2.3.min.js') ?>
 
 <!-- Bootstrap 3.3.6 -->
 <?= $this->Html->script('../adminlte/bootstrap/js/bootstrap.min.js') ?>
