@@ -18,4 +18,9 @@ class FormatterHelper extends Helper
     {
         return $this->Number->format($value, $this->numberFormat);
     }
+    
+    public function date(\DateTimeInterface $date)
+    {
+        return $date->i18nFormat('dd/MM/YYYY');
+    }
 }
