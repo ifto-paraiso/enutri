@@ -86,4 +86,19 @@ class Cardapio extends Entity
         }
         return $total;
     }
+    
+    /**
+     * Obtém o total do nutriente especificado
+     * 
+     * @param string $nutrienteAlias
+     * @return int
+     */
+    public function getTotalNutriente($nutrienteAlias)
+    {
+        $kcal = 0;
+        foreach ($this->ingredientes as $ingrediente) {
+            $kcal += $ingrediente->getNutriente($nutrienteAlias);
+        }
+        return $kcal;
+    }
 }

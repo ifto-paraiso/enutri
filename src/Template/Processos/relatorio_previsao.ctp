@@ -41,10 +41,11 @@ $this->assign('titulo', 'Previsão de Aquisição de Alimentos');
         </tr>
     </thead>
     <tbody>
+        <?php $count = 1; ?>
         <?php foreach($processo->previsao as $alimento): ?>
         <tr>
             <td style="text-align: center;">
-                
+                <?= h($count++) ?>
             </td>
             <td>
                 <?= h($alimento['nome']) ?>
@@ -62,7 +63,7 @@ $this->assign('titulo', 'Previsão de Aquisição de Alimentos');
                 </span>
             </td>
             <td class="number">
-                <?= h($this->Formatter->float($alimento['total'], ['places' => 3])) ?>
+                <?= h($this->Formatter->float($alimento['total'], ['places' => 3, 'precision' => 3])) ?>
                 <span class="medida">
                     <?= h($alimento['compraMedida']) ?>
                 </span>
