@@ -112,7 +112,7 @@ class Processo extends Entity
         foreach ($alimentos as $alimentoId => $alimento) {
             $alimentos[$alimentoId]['percapitaGeral'] = 0;
             foreach ($alimento['percapitas'] as $percapita => $frequencia) {
-                $alimentos[$alimentoId]['percapitaGeral'] = $percapita * $frequencia;
+                $alimentos[$alimentoId]['percapitaGeral'] += $percapita * $frequencia;
             }
             $alimentos[$alimentoId]['total'] = $alimentos[$alimentoId]['percapitaGeral'] * $publico;
             $alimentos[$alimentoId]['total'] /= $alimentos[$alimentoId]['fator'];
