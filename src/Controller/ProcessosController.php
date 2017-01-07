@@ -369,16 +369,56 @@ class ProcessosController extends AppController
         }
     }
     
+    /**
+     * Aprovação do processo especificado
+     * 
+     * @param int $processoId
+     */
     public function aprovar ($processoId = null)
     {
         $this->avaliar($processoId, 'aprovado');
     }
     
+    /**
+     * Reprovação do processo especificado
+     * 
+     * @param int $processoId
+     */
     public function reprovar ($processoId = null)
     {
         $this->avaliar($processoId, 'reprovado');
     }
     
+    /**
+     * Previsão de aquisição de alimentos para o processo especificado
+     * 
+     * @param int $processoId
+     */
+    public function relatorioPrevisao ($processoId = null)
+    {
+        try {
+            $processo = $this->Processos->localizar($processoId);
+            $this->verificarPermissao($processo->participante->uex);
+            if (!$processo->aprovado) {
+                $this->Flash->error('O processo ainda não foi aprovado.');
+                return $this->redirect(['action' => 'visualizar', $processo->id]);
+            }
+            $this->viewBuilder()->layout('relatorio');
+            $this->set(compact('processo'));
+        } catch (Exception $ex) {
+            $this->Flash->error('Processo inválido.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
+    
+    /**
+     * Método genérico utilizado pelas actions para aprovar/reprovar um
+     * processo
+     * 
+     * @param int $processoId
+     * @param string $avaliacao
+     * @return void
+     */
     private function avaliar ($processoId, $avaliacao)
     {
         try {

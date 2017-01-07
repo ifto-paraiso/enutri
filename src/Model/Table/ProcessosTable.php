@@ -19,6 +19,10 @@ class ProcessosTable extends EnutriTable
         $this->belongsTo('Participantes');
         $this->hasMany('ProcessoModalidades');
         $this->hasMany('Cardapios');
+        $this->belongsTo('AprovadorUsuario', [
+            'foreignKey' => 'aprovador_usuario_id',
+            'className'  => 'Usuarios',
+        ]);
     }
     
     public function validationDefault(Validator $validator)
@@ -46,7 +50,7 @@ class ProcessosTable extends EnutriTable
     {
         $defaultOptions = [
             'contain' => [
-                'Participantes.Uexs',
+                'Participantes.Uexs.Ufs',
                 'Participantes.Exercicios',
                 'ProcessoModalidades.Modalidades',
                 'Cardapios.CardapioTipos',
@@ -77,11 +81,14 @@ class ProcessosTable extends EnutriTable
     {
         $defaultOptions = [
             'contain' => [
-                'Participantes.Uexs',
+                'Participantes.Uexs.Ufs',
                 'Participantes.Exercicios',
                 'ProcessoModalidades.Modalidades',
                 'Cardapios.CardapioTipos',
                 'Cardapios.Atendimentos',
+                'Cardapios.Ingredientes.Alimentos.ConsumoMedida',
+                'Cardapios.Ingredientes.Alimentos.CompraMedida',
+                'AprovadorUsuario',
             ],
         ];
         $options = array_merge_recursive($defaultOptions, $options);

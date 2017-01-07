@@ -30,16 +30,20 @@ $uexCoord = [
         'uex-coord' => 'allow',
     ],
     'Processos' => [
-        'index'             => 'allow',
-        'selecionarUex'     => 'allow',
-        'listar'            => 'allow',
-        'visualizar'        => 'allow',
-        'cadastrar'         => 'allow',
-        'editar'            => 'allow',
-        'excluir'           => 'allow',
-        'modalidadeInserir' => 'allow',
-        'modalidadeEditar'  => 'allow',
-        'modalidadeRemover' => 'allow',
+        'index'               => 'allow',
+        'selecionarUex'       => 'allow',
+        'listar'              => 'allow',
+        'visualizar'          => 'allow',
+        'cadastrar'           => 'allow',
+        'editar'              => 'allow',
+        'excluir'             => 'allow',
+        'modalidadeInserir'   => 'allow',
+        'modalidadeEditar'    => 'allow',
+        'modalidadeRemover'   => 'allow',
+        'relatorioPrevisao'   => 'allow',
+        'relatorioResumo'     => 'allow',
+        'relatorioCardapios'  => 'allow',
+        'relatorioCalendario' => 'allow',
     ],
     'Cardapios' => [
         'visualizar'         => 'allow',
@@ -122,7 +126,7 @@ $eexCoord = [
         'participanteInserir' => 'allow',
         'participanteRemover' => 'allow',
         'participanteEditar'  => 'allow',
-    ]
+    ],
 ];
 
 // Configuração das heranças de permissões

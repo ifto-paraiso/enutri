@@ -10,17 +10,23 @@ class FormatterHelper extends Helper
     
     protected $numberFormat = [
         'places' => 2,
-        'precision' => 2,
+        'precision' => 3,
         'locale' => 'pt_BR',
     ];
     
-    public function float($value)
+    public function float($value, array $options = [])
     {
-        return $this->Number->format($value, $this->numberFormat);
+        $options = array_merge($this->numberFormat, $options);
+        return $this->Number->format($value, $options);
     }
     
     public function date(\DateTimeInterface $date)
     {
         return $date->i18nFormat('dd/MM/YYYY');
+    }
+    
+    public function dateFull(\DateTimeInterface $date)
+    {
+        return $date->i18nFormat("dd 'de' MMMM 'de' y");
     }
 }
