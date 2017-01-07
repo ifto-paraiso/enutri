@@ -255,4 +255,37 @@ class CardapiosController extends AppController
         }
     }
     
+    /**
+     * Edição da relação de atendimentos do cardpápio especificado
+     * 
+     * @param type $cardapioId
+     */
+    public function atendimentosEditar ($cardapioId = null) 
+    {
+        try {
+            $cardapio = $this->Cardapios->localizar($cardapioId);
+            $this->verificarPermissao($cardapio->processo->participante->uex);
+            if ($this->request->is(['post', 'put'])) {
+                $this->loadModel('Atendimentos');
+                $atendimentos = [];
+                if (isset($this->request->data['atendimentos'])) {
+                    $atendimentos = $this->request->data['atendimentos'];
+                }
+                if ($this->Atendimentos->atualizar($cardapio, $atendimentos) === 0) {
+                    $this->Flash->success('As datas dos atendimentos foram atualizadas.');
+                } else {
+                    $this->Flash->warning('Não foi possível salvar todas as edições. Por favor, confira o calendário do cardápio.');
+                }
+                return $this->redirect(['action' => 'visualizar', h($cardapio->id)]);
+            }
+            $this->set(compact('cardapio'));
+        } catch (RecordNotFoundException $ex) {
+            $this->Flash->error('Cardápio inválido.');
+            return $this->redirect([
+                'controller' => 'Processos',
+                'action' => 'selecionarUex',
+            ]);
+        }
+    }
+    
 }
