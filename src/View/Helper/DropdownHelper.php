@@ -27,6 +27,7 @@ class DropdownHelper extends Helper
                 'icon'    => null,
                 'escape'  => false,
                 'confirm' => null,
+                'target'  => null,
             ];
             $item = array_merge($defaultItemOptions, $item);
             
@@ -41,6 +42,9 @@ class DropdownHelper extends Helper
             
             $confirm = $item['confirm'];
             unset($item['confirm']);
+            
+            $target = $item['target'];
+            unset($item['target']);
             
             $type = $item['type'];
             unset($item['type']);
@@ -57,6 +61,9 @@ class DropdownHelper extends Helper
                 ];
                 if (null !== $confirm) {
                     $linkOptions['confirm'] = $confirm;
+                }
+                if (null !== $target) {
+                    $linkOptions['target'] = $target;
                 }
                 $itemsHtml .= $this->Html->tag(
                     'li',

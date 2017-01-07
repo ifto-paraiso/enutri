@@ -124,6 +124,7 @@ echo $this->Box->header([
                                 array(
                                     'text' => 'Resumo do Processo',
                                     'icon' => 'relatorio',
+                                    'target' => '_blank',
                                     'url'  => [
                                         'action' => 'relatorioResumo',
                                         h($processo->id),
@@ -132,6 +133,7 @@ echo $this->Box->header([
                                 array(
                                     'text' => 'Cardápios',
                                     'icon' => 'relatorio',
+                                    'target' => '_blank',
                                     'url'  => [
                                         'action' => 'relatorioCardapios',
                                         h($processo->id),
@@ -140,6 +142,7 @@ echo $this->Box->header([
                                 array(
                                     'text' => 'Previsão de Aquisição',
                                     'icon' => 'relatorio',
+                                    'target' => '_blank',
                                     'url'  => [
                                         'action' => 'relatorioPrevisao',
                                         h($processo->id),
@@ -148,6 +151,7 @@ echo $this->Box->header([
                                 array(
                                     'text' => 'Calendário do Lanche',
                                     'icon' => 'relatorio',
+                                    'target' => '_blank',
                                     'url'  => [
                                         'action' => 'relatorioCalendario',
                                         h($processo->id),

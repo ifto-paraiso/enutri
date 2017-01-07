@@ -140,10 +140,10 @@ class AlimentosTable extends EnutriTable
                 'Alimentos.deleted' => false,
             ],
             'order' => [
-                'Alimentos.nome',
+                'Alimentos.nome ASC',
             ],
         ];
         $options = array_merge_recursive($defaultOptions, $options);
-        return $this->find('list')->toArray();
+        return $this->find('list', $options)->toArray();
     }
 }
