@@ -74,15 +74,9 @@ class Processo extends Entity
     }
     
     /**
+     * Obtém a relação de alimentos previstos no processo
      * 
      * @return array
-     * 
-     * [
-     *      'alimento_id' => [
-     *          'nome' => 'Abacaxi'
-     *      ]
-     * ]
-     * 
      */
     protected function _getPrevisao ()
     {
@@ -128,6 +122,12 @@ class Processo extends Entity
         return $alimentos;
     }
     
+    /**
+     * Obtém a relação de cardápios do processo relacionados, agrupados e
+     * ordenados pela data de atendimento
+     * 
+     * @return array
+     */
     protected function _getCalendario()
     {
         $datas = [];
@@ -148,5 +148,47 @@ class Processo extends Entity
         ksort($datas);
         
         return $datas;
+    }
+    
+    /**
+     * Obtém o total de refeições previstas no processo
+     * 
+     * @return int
+     */
+    protected function _getTotalRefeicoes()
+    {
+        $total = 0;
+        $publico = $this->publico;
+        foreach ($this->cardapios as $cardapio) {
+            $total += $cardapio->frequencia * $publico;
+        }
+        return $total;
+    }
+    
+    /**
+     * Obtém a quantidade média diária de cada nutriente servido por dia 
+     * no processo
+     * 
+     * @return array
+     */
+    protected function _getNutrientes()
+    {
+        $nutrientesProcesso = [];
+        foreach ($this->cardapios as $cardapio) {
+            $nutrientesCardapio = $cardapio->nutrientes;
+            foreach ($nutrientesCardapio as $nutrienteAlias => $quantidade) {
+                $totalNutriente = $quantidade * $cardapio->frequencia;
+                if (!isset($nutrientesProcesso[$nutrienteAlias])) {
+                    $nutrientesProcesso[$nutrienteAlias] = $totalNutriente;
+                } else {
+                    $nutrientesProcesso[$nutrienteAlias] += $totalNutriente;
+                }
+            }
+        }
+        $periodo = $this->periodo;
+        foreach ($nutrientesProcesso as $nutrienteAlias => $quantidade) {
+            $nutrientesProcesso[$nutrienteAlias] /= $periodo;
+        }
+        return $nutrientesProcesso;
     }
 }

@@ -7,7 +7,7 @@ Configure::load('vdr');
 
 ?>
 
-<table class="table table-bordered table-hover">
+<table class="table table-bordered table-hover data">
     <thead>
         <tr>
             <th rowspan="2">
@@ -22,7 +22,7 @@ Configure::load('vdr');
         </tr>
         <tr>
             <?php foreach (Configure::read('faixas') as $faixa): ?>
-                <th style="width: 75px;">
+                <th class="col-faixa">
                     <?= h($faixa['titulo']) ?>
                 </th>
             <?php endforeach; ?>
@@ -35,9 +35,9 @@ Configure::load('vdr');
                     <?= h($nutriente['titulo']) ?>
                 </td>
                 <td class="number">
-                    <b>
+                    <strong>
                         <?= $this->Formatter->float($nutrientes[$nutriente['alias']]) ?>
-                    </b>
+                    </strong>
                     <span class="medida">
                         <?= $nutriente['medida'] ?>
                     </span>
