@@ -237,6 +237,8 @@ class CardapiosController extends AppController
                     $ingredientes = $this->request->data['ingredientes'];
                 }
                 if ($this->Ingredientes->atualizar($cardapio, $ingredientes) === 0) {
+                    $this->loadModel('Processos');
+                    $this->Processos->reprovar($cardapio->processo);
                     $this->Flash->success('Os ingredientes foram atualizados.');
                 } else {
                     $this->Flash->warning('Não foi possível salvar todas as edições. Por favor, confira a lista de ingredientes do cardápio.');
@@ -272,6 +274,8 @@ class CardapiosController extends AppController
                     $atendimentos = $this->request->data['atendimentos'];
                 }
                 if ($this->Atendimentos->atualizar($cardapio, $atendimentos) === 0) {
+                    $this->loadModel('Processos');
+                    $this->Processos->reprovar($cardapio->processo);
                     $this->Flash->success('As datas dos atendimentos foram atualizadas.');
                 } else {
                     $this->Flash->warning('Não foi possível salvar todas as edições. Por favor, confira o calendário do cardápio.');
