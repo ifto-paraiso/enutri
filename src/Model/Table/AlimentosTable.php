@@ -17,6 +17,9 @@ class AlimentosTable extends EnutriTable
     public function initialize(array $config)
     {
         parent::initialize($config);
+        
+        $this->displayField('nome');
+        
         $this->belongsTo('ConsumoMedida', [
             'foreignKey' => 'consumo_medida_id',
             'className'  => 'Medidas',
@@ -121,5 +124,26 @@ class AlimentosTable extends EnutriTable
     {
         $alimento->deleted = true;
         return $this->save($alimento);
+    }
+    
+    /**
+     * Obtém um array com a relação de alimentos para popular selects
+     * 
+     * @param array $options
+     * 
+     * @return array
+     */
+    public function getList (array $options = [])
+    {
+        $defaultOptions = [
+            'conditions' => [
+                'Alimentos.deleted' => false,
+            ],
+            'order' => [
+                'Alimentos.nome ASC',
+            ],
+        ];
+        $options = array_merge_recursive($defaultOptions, $options);
+        return $this->find('list', $options)->toArray();
     }
 }

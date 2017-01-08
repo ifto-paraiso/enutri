@@ -79,15 +79,26 @@ class UsuariosTable extends EnutriTable
         ]);
     }
     
-    public function localizar($usuarioId)
+    /**
+     * Retorna as informaçoes do usuário especificado
+     * 
+     * @param int $usuarioId
+     * @param array $options
+     * 
+     * @return 
+     */
+    public function localizar($usuarioId, array $options = [])
     {
-        return $this->get($usuarioId, [
+        $defaultOptions = [
             'contain' => [
                 'Grupos',
                 'Ufs',
                 'Lotacoes.Uexs'
             ],
-        ]);
+        ];
+        $options = array_merge_recursive($defaultOptions, $options);
+        
+        return $this->get($usuarioId, $options);
     }
     
     /**

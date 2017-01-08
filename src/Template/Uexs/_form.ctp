@@ -1,5 +1,5 @@
 
-<?= $this->Form->create($uex, ['novalidate' => true]) ?>
+<?= $this->Form->create($uex) ?>
 
 <div class="row">
     <div class="col-md-7">

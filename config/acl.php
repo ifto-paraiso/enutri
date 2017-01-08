@@ -28,7 +28,33 @@ $usuario = [
 $uexCoord = [
     'Painel' => [
         'uex-coord' => 'allow',
-    ]
+    ],
+    'Processos' => [
+        'index'               => 'allow',
+        'selecionarUex'       => 'allow',
+        'listar'              => 'allow',
+        'visualizar'          => 'allow',
+        'cadastrar'           => 'allow',
+        'editar'              => 'allow',
+        'excluir'             => 'allow',
+        'modalidadeInserir'   => 'allow',
+        'modalidadeEditar'    => 'allow',
+        'modalidadeRemover'   => 'allow',
+        'relatorioPrevisao'   => 'allow',
+        'relatorioResumo'     => 'allow',
+        'relatorioCardapios'  => 'allow',
+        'relatorioCalendario' => 'allow',
+    ],
+    'Cardapios' => [
+        'visualizar'         => 'allow',
+        'cadastrar'          => 'allow',
+        'editar'             => 'allow',
+        'excluir'            => 'allow',
+        'ingredientesEditar' => 'allow',
+        'ingredienteRemover' => 'allow',
+        'atendimentosEditar' => 'allow',
+        'atendimentoRemover' => 'allow',
+    ],
 ];
 
 /**
@@ -56,7 +82,11 @@ $eexNutri = [
         'cadastrar'  => 'allow',
         'editar'     => 'allow',
         'excluir'    => 'allow',
-    ]
+    ],
+    'Processos' => [
+        'aprovar'    => 'allow',
+        'reprovar'   => 'allow',
+    ],
 ];
 
 /**
@@ -85,7 +115,18 @@ $eexCoord = [
         'cadastrar'  => 'allow',
         'editar'     => 'allow',
         'excluir'    => 'allow'
-    ]
+    ],
+    'Exercicios' => [
+        'index'               => 'allow',
+        'listar'              => 'allow',
+        'cadastrar'           => 'allow',
+        'visualizar'          => 'allow',
+        'editar'              => 'allow',
+        'excluir'             => 'allow',
+        'participanteInserir' => 'allow',
+        'participanteRemover' => 'allow',
+        'participanteEditar'  => 'allow',
+    ],
 ];
 
 // Configuração das heranças de permissões
