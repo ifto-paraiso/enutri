@@ -64,7 +64,20 @@ $eexAssist = [
     'Painel' => [
         'uex-coord'  => 'deny',
         'eex-assist' => 'allow',
-    ],    
+    ],
+    'Centralizacoes' => [
+        'index'              => 'allow',
+        'listar'             => 'allow',
+        'visualizar'         => 'allow',
+        'cadastrar'          => 'allow',
+        'editar'             => 'allow',
+        'excluir'            => 'allow',
+        'processo-incluir'   => 'allow',
+        'processo-remover'   => 'allow',
+        'relatorio-resumo'   => 'allow',
+        'relatorio-previsao' => 'allow',
+        'relatorio-mapa'     => 'allow',
+    ],
 ];
 
 /**
