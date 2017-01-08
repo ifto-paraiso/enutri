@@ -36,6 +36,9 @@ table .medida{
     text-align: left;
     width: 25px;
 }
+table .col-faixa {
+    width: 75px;
+}
 
 /* Formatação do enutri-data */
 

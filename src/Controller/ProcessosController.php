@@ -456,6 +456,28 @@ class ProcessosController extends AppController
     }
     
     /**
+     * Relatório: Resumo das informações do processo especificado
+     * 
+     * @param int $processoId
+     */
+    public function relatorioResumo ($processoId = null)
+    {
+        try {
+            $processo = $this->Processos->localizar($processoId);
+            $this->verificarPermissao($processo->participante->uex);
+            if (!$processo->aprovado) {
+                $this->Flash->error('O processo ainda não foi aprovado.');
+                return $this->redirect(['action' => 'visualizar', $processo->id]);
+            }
+            $this->viewBuilder()->layout('relatorio');
+            $this->set(compact('processo'));
+        } catch (Exception $ex) {
+            $this->Flash->error('Processo inválido.');
+            return $this->redirect(['action' => 'selecionarUex']);
+        }
+    }
+    
+    /**
      * Método genérico utilizado pelas actions para aprovar/reprovar um
      * processo
      * 
