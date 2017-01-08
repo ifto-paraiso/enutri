@@ -127,4 +127,26 @@ class Processo extends Entity
         
         return $alimentos;
     }
+    
+    protected function _getCalendario()
+    {
+        $datas = [];
+        
+        foreach ($this->cardapios as $cardapio) {
+            foreach ($cardapio->atendimentos as $atendimento) {
+                $data = $atendimento->data->i18nFormat('y-MM-DD');
+                if (!isset($datas[$data])) {
+                    $datas[$data]['data'] = $atendimento->data;
+                }
+                $datas[$data]['cardapios'][] = [
+                    'tipo' => $cardapio->cardapio_tipo->nome,
+                    'nome' => $cardapio->nome,
+                ];
+            }
+        }
+        
+        ksort($datas);
+        
+        return $datas;
+    }
 }

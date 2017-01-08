@@ -125,5 +125,5 @@ $this->assign('titulo', 'Relação de Cardápios');
 <strong>Legenda:</strong>
 <strong>VE:</strong> Valor Energético;
 <strong>CHO:</strong> Carboidrato;
-<strong>PTN:</strong> Proteína
-<strong>LIP:</strong> Lipídeo
+<strong>PTN:</strong> Proteína;
+<strong>LIP:</strong> Lipídeo.
