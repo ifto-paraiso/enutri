@@ -161,7 +161,7 @@ echo $this->Box->header([
                         ]
                     )
                 ]
-            )
+            ),
         ],
     ],
 ]);
