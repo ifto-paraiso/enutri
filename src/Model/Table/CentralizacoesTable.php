@@ -19,11 +19,19 @@ class CentralizacoesTable extends EnutriTable
         ]);
     }
     
+    /**
+     * Obtém a lista de centralizações cadastradas
+     * 
+     * @param array $options
+     * @return \Cake\ORM\Query
+     */
     public function listar(array $options = [])
     {
         $defaultOptions = [
             'contain' => [
-                'CentralizacaoProcessos.Processos',
+                'CentralizacaoProcessos' => [
+                    'Processos',
+                ],
                 'Exercicios',
             ],
             'order' => [
@@ -33,5 +41,39 @@ class CentralizacoesTable extends EnutriTable
         ];
         $options = array_merge_recursive($defaultOptions, $options);
         return $this->find('all', $options);
+    }
+    
+    /**
+     * Obtém uma entidade com as informações da centralização especificada
+     * 
+     * @param int $centralizacaoId
+     * @param array $options
+     * @return \Enutri\Model\Entity\Centralizacao
+     */
+    public function localizar($centralizacaoId, array $options = [])
+    {
+        $defaultOptions = [
+            'contain' => [
+                'Exercicios',
+                'CentralizacaoProcessos' => [
+                    'Processos' => [
+                        'ProcessoModalidades' => [
+                            'Modalidades',
+                        ],
+                        'Cardapios' => [
+                            'Atendimentos',
+                            'Ingredientes' => [
+                                'Alimentos',
+                            ],
+                        ],
+                        'Participantes' => [
+                            'Uexs',
+                        ],
+                    ],
+                ],
+            ],
+        ];
+        $options = array_merge_recursive($defaultOptions, $options);
+        return $this->get($centralizacaoId, $options);
     }
 }
