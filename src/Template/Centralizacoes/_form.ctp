@@ -3,12 +3,16 @@
 
 <div class="row">
     <div class="col-md-2">
-        <?=
-            $this->Form->input('exercicio_id', [
+        <?php
+            if ($this->request->params['action'] === 'cadastrar') {
+            echo $this->Form->input('exercicio_id', [
                 'type'  => 'select',
                 'label' => 'Exercício',
                 'autofocus'
             ]);
+            } else {
+                echo $this->Data->display('Exercício', h($centralizacao->exercicio->ano));
+            }
         ?>
     </div>
     <div class="col-md-6">

@@ -69,6 +69,34 @@ class CentralizacoesController extends AppController
     }
     
     /**
+     * Edição das informações da centralização especificada
+     * 
+     * @param int $centralizacaoId
+     * @return void
+     */
+    public function editar ($centralizacaoId = null)
+    {
+        try {
+            $centralizacao = $this->Centralizacoes->localizar($centralizacaoId);
+            if ($this->request->is(['post', 'put'])) {
+                $this->Centralizacoes->patchEntity($centralizacao, $this->request->data);
+                if ($this->Centralizacoes->save($centralizacao)) {
+                    $this->Flash->success('As informações da centralização foram atualizadas.');
+                    return $this->redirect([
+                        'action' => 'visualizar',
+                        $centralizacao->id,
+                    ]);
+                }
+                $this->Flash->error('Não foi possível salvar a alterações.');
+            }
+            $this->set(compact('centralizacao'));
+        } catch (Exception $ex) {
+            $this->Flash->error('Centralização inválida.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
+    
+    /**
      * Exclusão da centralização especificada
      * 
      * @param int $centralizacaoId
