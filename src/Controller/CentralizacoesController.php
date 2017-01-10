@@ -121,6 +121,71 @@ class CentralizacoesController extends AppController
     }
     
     /**
+     * Inclusão de processos na centralização especificada
+     * 
+     * @param  int $centralizacaoId
+     * @return void
+     */
+    public function processoIncluir ($centralizacaoId = null) 
+    {
+        try {
+            $centralizacao = $this->Centralizacoes->localizar($centralizacaoId);
+            if ($this->request->is(['post', 'put'])) {
+                $processos = $this->request->data['processos'];
+                if ($this->Centralizacoes->incluirProcessos($centralizacao, $processos) === 0) {
+                    $this->Flash->success('Os processos foram incluídos com sucesso.');
+                } else {
+                    $this->Flash->warning('Ocorreu(ram) erro(s) durante a inclusão do(s) processo(s). Por favor, confira a relação de Processos.');
+                }
+                return $this->redirect(['action' => 'visualizar', $centralizacao->id]);
+            }
+            
+            /*
+             * Obtém a lista de todos os processos referentes ao exercício
+             * da centralização especificada
+             */
+            $this->loadModel('Processos');
+            $processos = $this->Processos->listarPorExercicio($centralizacao->exercicio);
+            
+            /*
+             * Constroi a lista de processsos a serem incluídos, eliminando
+             * os processos já inclusos na centralização
+             */
+            $processosList = [];
+            foreach ($processos as $key => $processo) {
+                $incluso = false;
+                foreach ($centralizacao->centralizacao_processos as $cProcesso) {
+                    if ($cProcesso->processo_id == $processo->id) {
+                        $incluso = true;
+                        break;
+                    }
+                }
+                if (!$incluso) {
+                    $processosList[] = $processo;
+                }
+            }
+            
+            /*
+             * Verifica se sobrou algum processo a ser incluído na centralização
+             */
+            if (count($processosList) < 1) {
+                $this->Flash->warning('Não há processos a serem incluídos nesta centralização.');
+                return $this->redirect(['action' => 'visualizar', $centralizacao->id]);
+            }
+            
+            /*
+             * Envia para a view a lista de processos e as informações da centralização
+             */
+            $this->set('processos', $processosList);
+            $this->set(compact('centralizacao'));
+            
+        } catch (RuntimeException $e) {
+            $this->Flash->error('Centralização inválida.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
+    
+    /**
      * Remoção do processo especificado da centralização da qual ele faz parte
      * 
      * @param  int $centralizacaoProcessoId
@@ -147,4 +212,3 @@ class CentralizacoesController extends AppController
         }
     }
 }
- 
