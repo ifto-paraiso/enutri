@@ -45,6 +45,30 @@ class CentralizacoesController extends AppController
     }
     
     /**
+     * Cadastro de nova Centralização
+     * 
+     * @return void
+     */
+    public function cadastrar ()
+    {
+        $centralizacao = $this->Centralizacoes->newEntity();
+        if ($this->request->is(['post', 'put'])) {
+            $this->Centralizacoes->patchEntity($centralizacao, $this->request->data);
+            if ($this->Centralizacoes->save($centralizacao)) {
+                $this->Flash->success('Centralização cadastrada com sucesso.');
+                return $this->redirect([
+                    'action' => 'visualizar',
+                    $centralizacao->id,
+                ]);
+            }
+            $this->Flash->error('Não foi possível salvar a centralização.');
+        }
+        $this->loadModel('Exercicios');
+        $this->set('exercicios', $this->Exercicios->getList());
+        $this->set(compact('centralizacao'));
+    }
+    
+    /**
      * Exclusão da centralização especificada
      * 
      * @param int $centralizacaoId
