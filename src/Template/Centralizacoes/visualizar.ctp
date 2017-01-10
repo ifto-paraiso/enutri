@@ -5,7 +5,7 @@ $this->extend('_centralizacoes');
 $this->assign('content-description', 'Informações da Centralização');
 
 $this->Html->addCrumb('Centralizações', ['action' => 'listar']);
-$this->Html->addCrumb(h($centralizacao->nome));
+$this->Html->addCrumb(h($centralizacao->nomeFull));
 
 echo $this->Box->create();
 
