@@ -2,8 +2,7 @@
 
 namespace Enutri\Controller;
 
-use Cake\Datasource\Exception\RecordNotFoundException;
-use Cake\Datasource\Exception\InvalidPrimaryKeyException;
+use RuntimeException;
 
 class CentralizacoesController extends AppController
 {
@@ -39,12 +38,34 @@ class CentralizacoesController extends AppController
         try {
             $centralizacao = $this->Centralizacoes->localizar($centralizacaoId);
             $this->set(compact('centralizacao'));
-        } catch (RecordNotFoundException $e) {
+        } catch (RuntimeException $e) {
             $this->Flash->error('Centralização inválida.');
             return $this->redirect(['action' => 'listar']);
-        } catch (InvalidPrimaryKeyException $e) {
+        }
+    }
+    
+    /**
+     * Exclusão da centralização especificada
+     * 
+     * @param int $centralizacaoId
+     * @return void
+     */
+    public function excluir ($centralizacaoId = null)
+    {
+        try {
+            $centralizacao = $this->Centralizacoes->localizar($centralizacaoId);
+            if ($this->request->is(['post', 'put'])) {
+                if ($this->Centralizacoes->delete($centralizacao)) {
+                    $this->Flash->success('Centralização excluída com sucesso.');
+                    return $this->redirect(['action' => 'listar']);
+                }
+                $this->Flash->error('Não foi possível excluir a centralização.');
+            }
+            $this->set(compact('centralizacao'));
+        } catch (RuntimeException $e) {
             $this->Flash->error('Centralização inválida.');
             return $this->redirect(['action' => 'listar']);
         }
     }
 }
+ 

@@ -64,4 +64,14 @@ class Centralizacao extends Entity
         $periodo = $this->periodo;
         return sprintf('%d %s', $periodo, $periodo == 1 ? 'dia' : 'dias');
     }
+    
+    /**
+     * Obtém o nome da centralização junto com o ano do exercício
+     * 
+     * @return string
+     */
+    protected function _getNomeFull ()
+    {
+        return sprintf('%s (%s)', $this->nome, $this->exercicio->ano);
+    }
 }
