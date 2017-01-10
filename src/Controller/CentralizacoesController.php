@@ -119,5 +119,32 @@ class CentralizacoesController extends AppController
             return $this->redirect(['action' => 'listar']);
         }
     }
+    
+    /**
+     * Remoção do processo especificado da centralização da qual ele faz parte
+     * 
+     * @param  int $centralizacaoProcessoId
+     * @return void
+     */
+    public function processoRemover ($centralizacaoProcessoId = null) 
+    {
+        try {
+            $this->loadModel('CentralizacaoProcessos');
+            $cp = $this->CentralizacaoProcessos->localizar($centralizacaoProcessoId);
+            $centralizacaoId = $cp->centralizacao_id;
+            if ($this->CentralizacaoProcessos->delete($cp)) {
+                $this->Flash->success('O processo foi removido com sucesso.');
+            } else {
+                $this->Flash->error('Não foi possível remover o proocesso.');
+            }
+            return $this->redirect([
+                'action' => 'visualizar',
+                $centralizacaoId,
+            ]);
+        } catch (RuntimeException $ex) {
+            $this->Flash->error('Centralização inválida.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
 }
  
