@@ -19,7 +19,11 @@ class ExerciciosTable extends EnutriTable
     public function initialize(array $config)
     {
         parent::initialize($config);
+        
+        $this->displayField('ano');
+        
         $this->hasMany('Participantes');
+        
         return $config;
     }
     
@@ -107,5 +111,23 @@ class ExerciciosTable extends EnutriTable
         ];
         $options = array_merge_recursive($defaultOptions, $options);
         return $this->get($exercicioId, $options);
+    }
+    
+    /**
+     * Obtém um array associativo (id => Ano) com a relação de Exercícios 
+     * cadastrados. Util para ser usado em selects
+     * 
+     * @param array $options
+     * @return array
+     */
+    public function getList (array $options = [])
+    {
+        $defaultOptions = [
+            'order' => [
+                'Exercicios.created DESC',
+            ],
+        ];
+        $options = array_merge_recursive($defaultOptions, $options);
+        return $this->find('list', $options)->toArray();
     }
 }

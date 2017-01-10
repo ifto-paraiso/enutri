@@ -2,6 +2,10 @@
 
 namespace Enutri\Model\Table;
 
+use ArrayObject;
+use Cake\Event\Event;
+use Cake\Validation\Validator;
+
 class CentralizacoesTable extends EnutriTable
 {
     /**
@@ -19,6 +23,40 @@ class CentralizacoesTable extends EnutriTable
         ]);
     }
     
+    /**
+     * Regras de validação default
+     * 
+     * @param Validator $validator
+     * @return Validator
+     */
+    public function validationDefault(Validator $validator)
+    {
+        parent::validationDefault($validator);
+        
+        $validator->requirePresence('exercicio_id', 'create', 'Informe o Exercício');
+        $validator->requirePresence('nome',         'create', 'Informe nome');
+        
+        $validator->notEmpty('exercicio_id', 'Informe o Exercício');
+        $validator->notEmpty('nome',         'Informe nome');
+        
+        $validator->notBlank('nome',         'Informe nome');
+        
+        return $validator;
+    }
+    
+    /**
+     * Operações realizadas antes da validação dos dados
+     * 
+     * @param Event $event
+     * @param ArrayObject $data
+     * @param ArrayObject $options
+     * 
+     * @return void
+     */
+    public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
+    {
+        \Enutri\Model\Util\Sanitize::trimFields($data, ['nome']);
+    }    
     /**
      * Obtém a lista de centralizações cadastradas
      * 

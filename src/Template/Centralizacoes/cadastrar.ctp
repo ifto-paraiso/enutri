@@ -1,17 +1,17 @@
 <?php
 
-$this->extend('_uexs');
+$this->extend('_centralizacoes');
 
-$this->assign('content-description', 'Cadastro de Unidade Executora');
+$this->assign('content-description', 'Cadastro de nova Centralização');
 
-$this->Html->addCrumb('UExs', ['action' => 'listar']);
+$this->Html->addCrumb('Centralizações', ['action' => 'listar']);
 $this->Html->addCrumb('Cadastro');
 
 echo $this->Box->create();
 
 echo $this->Box->header([
     'icon' => 'form',
-    'text' => 'Cadastro de Unidade Executora',
+    'text' => 'Cadastro de nova Centralização',
     'toolbar' => [
         'groups' => [
             array(
@@ -29,6 +29,6 @@ echo $this->Box->header([
 
 echo $this->Box->body();
 
-require_once('_form.ctp');
+echo $this->element('../Centralizacoes/_form', ['centralizacao' => $centralizacao]);
 
 echo $this->Box->end();
