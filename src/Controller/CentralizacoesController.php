@@ -227,6 +227,17 @@ class CentralizacoesController extends AppController
     }
     
     /**
+     * Emissão do relatório "Mapa de Distribuição de Alimentos"
+     * 
+     * @param int $centralizacaoId
+     * @return void
+     */
+    public function relatorioMapa ($centralizacaoId = null)
+    {
+        $this->relatorio($centralizacaoId);
+    }
+    
+    /**
      * Método auxiliar para buscar as informações da centralização
      * 
      * @param int $centralizacaoId

@@ -111,7 +111,10 @@ class CentralizacoesTable extends EnutriTable
                         'Cardapios' => [
                             'Atendimentos',
                             'Ingredientes' => [
-                                'Alimentos',
+                                'Alimentos' => [
+                                    'CompraMedida',
+                                    'ConsumoMedida',
+                                ],
                             ],
                         ],
                         'Participantes' => [

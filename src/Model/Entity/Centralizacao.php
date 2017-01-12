@@ -141,4 +141,36 @@ class Centralizacao extends Entity
         }
         return $uexs;
     }
+    
+    /**
+     * Obtém os dados do mapa de distribuição de alimentos
+     * 
+     * @return array
+     */
+    protected function _getMapa ()
+    {
+        $mapa = [];
+        foreach ($this->centralizacao_processos as $cp) {
+            $uex = $cp->processo->participante->uex;
+            foreach ($cp->processo->previsao as $alimentoId => $alimento) {
+                if (!isset($mapa[$alimentoId])) {
+                    $mapa[$alimentoId] = [
+                        'nome'   => $alimento['nome'],
+                        'medida' => $alimento['compraMedida'],
+                        'total'  => 0,
+                        'uexs'   => [],
+                    ];
+                }
+                if (!isset($mapa[$alimentoId]['uexs'][$uex->id])) {
+                    $mapa[$alimentoId]['uexs'][$uex->id] = [
+                        'nome'       => $uex->nome,
+                        'quantidade' => 0,
+                    ];
+                }
+                $mapa[$alimentoId]['uexs'][$uex->id]['quantidade'] += $alimento['total'];
+                $mapa[$alimentoId]['total'] += $alimento['total'];
+            }
+        }
+        return $mapa;
+    }
 }
