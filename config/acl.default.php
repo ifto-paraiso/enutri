@@ -158,7 +158,7 @@ $super     = array_merge($super, $eexCoord);
 
 // Finaliza e retorna o array de permissões
 return [
-    'permissions' => [
+    'Permissions' => [
         'public'        => $public,
         'usuario'       => $usuario,
         'uex_coord'     => $uexCoord,
