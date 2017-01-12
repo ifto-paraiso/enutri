@@ -3,6 +3,7 @@
 namespace Enutri\Model\Entity;
 
 use Cake\ORM\Entity;
+use Enutri\Model\Util\Sanitize;
 
 /**
  * Entidade "Centralização"
@@ -172,5 +173,34 @@ class Centralizacao extends Entity
             }
         }
         return $mapa;
+    }
+    
+    /**
+     * Obtém os dados para a previsão de aquisição centralizada
+     * 
+     * @return array
+     */
+    protected function _getPrevisao ()
+    {
+        $alimentos = [];
+        foreach ($this->centralizacao_processos as $cp) {
+            foreach ($cp->processo->previsao as $alimentoId => $alimento) {
+                if (!isset($alimentos[$alimentoId])) {
+                    $alimentos[$alimentoId] = [
+                        'nome'   => $alimento['nome'],
+                        'medida' => $alimento['compraMedida'],
+                        'total'  => 0,
+                    ];
+                }
+                $alimentos[$alimentoId]['total'] += $alimento['total'];
+            }
+        }
+        usort($alimentos, function($a , $b){
+            return strcmp(
+                Sanitize::removerAcentos($a['nome']),
+                Sanitize::removerAcentos($b['nome'])
+            );
+        });
+        return $alimentos;
     }
 }
