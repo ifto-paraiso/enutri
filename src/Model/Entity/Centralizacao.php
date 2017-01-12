@@ -6,8 +6,6 @@ use Cake\ORM\Entity;
 
 /**
  * Entidade "Centralização"
- * 
- * @author Renato Uchôa <contato@renatouchoa.com.br>
  */
 class Centralizacao extends Entity
 {
@@ -73,5 +71,74 @@ class Centralizacao extends Entity
     protected function _getNomeFull ()
     {
         return sprintf('%s (%s)', $this->nome, $this->exercicio->ano);
+    }
+    
+    /**
+     * Verifica se todos os processsos da centralização estão aprovados
+     * 
+     * @return boolean true, se todos os processos da centralização estiverem
+     *                 aprovados.
+     */
+    protected function _getAprovada ()
+    {
+        foreach ($this->centralizacao_processos as $cp) {
+            if (!$cp->processo->aprovado) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    /**
+     * Obtém a totalização do público da centralização agrupada por modalidade
+     * de ensino
+     * 
+     * @return array
+     */
+    protected function _getPublicoPorModalidade ()
+    {
+        $modalidades = [];
+        foreach ($this->centralizacao_processos as $cp) {
+            foreach ($cp->processo->processo_modalidades as $pm) {
+                if (!isset($modalidades[$pm->modalidade->id])) {
+                    $modalidades[$pm->modalidade->id] = [
+                        'nome'    => $pm->modalidade->nome,
+                        'publico' => 0,
+                    ];
+                }
+                $modalidades[$pm->modalidade->id]['publico'] += $pm->publico;
+            }
+        }
+        return $modalidades;
+    }
+    
+    /**
+     * Obtém a totalização do público da centralização agrupada por unidade
+     * executora e por modalidade de ensino
+     * 
+     * @return array
+     */
+    protected function _getPublicoPorUexModalidade ()
+    {
+        $uexs= [];
+        foreach ($this->centralizacao_processos as $cp) {
+            $uexId = $cp->processo->participante->uex->id;
+            if (!isset($uexs[$uexId])) {
+                $uexs[$uexId]['nome'] = $cp->processo->participante->uex->nome;
+                $uexs[$uexId]['publicoTotal'] = 0;
+            }
+            foreach ($cp->processo->processo_modalidades as $pm) {
+                $modalidadeId = $pm->modalidade->id;
+                if (!isset($uexs[$uexId]['modalidades'][$modalidadeId])) {                    
+                    $uexs[$uexId]['modalidades'][$modalidadeId] = [
+                        'nome'    => $pm->modalidade->nome,
+                        'publico' => 0,
+                    ];
+                }
+                $uexs[$uexId]['modalidades'][$modalidadeId]['publico'] += $pm->publico;
+                $uexs[$uexId]['publicoTotal'] += $pm->publico;
+            }
+        }
+        return $uexs;
     }
 }

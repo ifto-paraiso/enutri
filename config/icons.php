@@ -25,6 +25,7 @@ return [
         'estatistica'   => 'fa fa-fw fa-bar-chart',
         'excluir'       => 'fa fa-fw fa-trash-o',
         'exercicio'     => 'fa fa-fw fa-circle-o-notch',
+        'externo'       => 'fa fa-fw fa-external-link mini',
         'form'          => 'fa fa-fw fa-edit',
         'imprimir'      => 'fa fa-fw fa-print',
         'info'          => 'fa fa-fw fa-info-circle',

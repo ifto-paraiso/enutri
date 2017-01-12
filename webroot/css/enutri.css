@@ -50,6 +50,10 @@ table .td-checkbox .form-group {
 table .td-checkbox input[type="checkbox"] {
     margin: 11px 0 0 -8px;
 }
+td.center,
+th.center{
+    text-align: center;
+}
 
 /* Formatação do enutri-data */
 
@@ -95,4 +99,12 @@ table .td-checkbox input[type="checkbox"] {
 section .flash {
     margin-top: 15px;
     margin-bottom: 0;
+}
+
+/* Icons */
+
+a i.mini {
+    color: #999;
+    font-size: 10px;
+    margin-left: 3px;
 }
