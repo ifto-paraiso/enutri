@@ -39,6 +39,21 @@ table .medida{
 table .col-faixa {
     width: 75px;
 }
+table .td-checkbox {
+    padding: 0 !important;
+    text-align: center;
+    width: 40px;
+}
+table .td-checkbox .form-group {
+    margin: 0;
+}
+table .td-checkbox input[type="checkbox"] {
+    margin: 11px 0 0 -8px;
+}
+td.center,
+th.center{
+    text-align: center;
+}
 
 /* Formatação do enutri-data */
 
@@ -84,4 +99,12 @@ table .col-faixa {
 section .flash {
     margin-top: 15px;
     margin-bottom: 0;
+}
+
+/* Icons */
+
+a i.mini {
+    color: #999;
+    font-size: 10px;
+    margin-left: 3px;
 }

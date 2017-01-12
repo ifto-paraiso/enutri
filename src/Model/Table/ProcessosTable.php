@@ -8,6 +8,7 @@ use Cake\Event\Event;
 use Enutri\Model\Entity\Uex;
 use Enutri\Model\Entity\Usuario;
 use Enutri\Model\Entity\Processo;
+use Enutri\Model\Entity\Exercicio;
 use Enutri\Model\Util\Sanitize;
 
 class ProcessosTable extends EnutriTable
@@ -95,6 +96,13 @@ class ProcessosTable extends EnutriTable
         return $this->get($processoId, $options);
     }
     
+    /**
+     * Aprova um Processo
+     * 
+     * @param Processo $processo Processo a ser aprovado
+     * @param Usuario $usuario Usuário responsável por "assinar" o Processo
+     * @return \Enutri\Model\Entity\Processo
+     */
     public function aprovar (Processo $processo, Usuario $usuario)
     {
         $processo->aprovado = true;
@@ -103,11 +111,32 @@ class ProcessosTable extends EnutriTable
         return $this->save($processo);
     }
     
+    /**
+     * Reprova um processo (define-o como "aguardando avaliação")
+     * 
+     * @param Processo $processo
+     * @return \Cake\Datasource\EntityInterface
+     */
     public function reprovar (Processo $processo)
     {
         $processo->aprovado = false;
         $processo->aprovador_id = null;
         $processo->aprovacao_data = null;
         return $this->save($processo);
+    }
+    
+    /**
+     * Obtém a relação de Processos referentes ao Exercício especificado
+     * 
+     * @param Exercicio $exercicio
+     * @return \Cake\ORM\Query
+     */
+    public function listarPorExercicio (Exercicio $exercicio)
+    {
+        return $this->listar(null, [
+            'conditions' => [
+                'Participantes.exercicio_id' => $exercicio->id,
+            ]
+        ]);
     }
 }

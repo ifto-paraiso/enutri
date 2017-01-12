@@ -18,10 +18,13 @@
                 ?>
             </li>
             <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-sitemap fa-rotate-180"></i>
-                    Centralizações
-                </a>
+                <?=
+                    $this->Html->link(
+                        $this->Icon->make('centralizacao') . ' Centralizações',
+                        ['controller' => 'centralizacoes'],
+                        ['escape' => false]
+                    );
+                ?>
             </li>
         </ul>
     </li>

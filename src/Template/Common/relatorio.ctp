@@ -1,8 +1,6 @@
 <?php
 
-\Cake\Core\Configure::load('eex');
-
-$relatoriosConfig = \Cake\Core\Configure::read('Relatorios');
+$relatoriosConfig = \Cake\Core\Configure::read('EEx.Relatorios');
 
 $cabecalho = implode('<br />', $relatoriosConfig['cabecalho']);
 
