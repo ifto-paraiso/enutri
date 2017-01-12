@@ -4,6 +4,9 @@ namespace Enutri\Controller;
 
 use RuntimeException;
 
+/**
+ * Controller da gestão de centralizações
+ */
 class CentralizacoesController extends AppController
 {
     /**
@@ -206,6 +209,39 @@ class CentralizacoesController extends AppController
                 'action' => 'visualizar',
                 $centralizacaoId,
             ]);
+        } catch (RuntimeException $ex) {
+            $this->Flash->error('Centralização inválida.');
+            return $this->redirect(['action' => 'listar']);
+        }
+    }
+    
+    /**
+     * Emissão do relatório "Resumo da Centralização"
+     * 
+     * @param int $centralizacaoId
+     * @return void
+     */
+    public function relatorioResumo ($centralizacaoId = null)
+    {
+        $this->relatorio($centralizacaoId);
+    }
+    
+    /**
+     * Método auxiliar para buscar as informações da centralização
+     * 
+     * @param int $centralizacaoId
+     * @return void
+     */
+    private function relatorio ($centralizacaoId)
+    {
+        $this->viewBuilder()->layout('relatorio');
+        try {
+            $centralizacao = $this->Centralizacoes->localizar($centralizacaoId);
+            if (!$centralizacao->aprovada) {
+                $this->Flash->error('A centralização possui processo(s) não aprovado(s).');
+                return $this->redirect(['action' => 'visualizar', $centralizacao->id]);
+            }
+            $this->set(compact('centralizacao'));
         } catch (RuntimeException $ex) {
             $this->Flash->error('Centralização inválida.');
             return $this->redirect(['action' => 'listar']);

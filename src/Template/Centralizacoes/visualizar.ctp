@@ -123,8 +123,11 @@ echo $this->element('../Centralizacoes/_centralizacao_info', ['centralizacao' =>
                 <th>
                     Unidade Executora
                 </th>
-                <th>
+                <th class="center">
                     Processo
+                </th>
+                <th style="text-align: center;">
+                    Situação
                 </th>
                 <th>
                     Modalidades
@@ -146,8 +149,31 @@ echo $this->element('../Centralizacoes/_centralizacao_info', ['centralizacao' =>
                     <td>
                         <?= h($cp->processo->participante->uex->nome_reduzido) ?>
                     </td>
-                    <td>
-                        <?= h($cp->processo->nome) ?>
+                    <td class="center">
+                        <?=
+                            $this->Html->link(
+                                h($cp->processo->nome) . $this->Icon->make('externo'),
+                                array(
+                                    'controller' => 'processos',
+                                    'action'     => 'visualizar',
+                                    h($cp->processo->id),
+                                ),
+                                array(
+                                    'target' => '_blank',
+                                    'title'  => 'Visualizar as informações deste processo',
+                                    'escape' => false,
+                                )
+                            );
+                        ?>
+                    </td>
+                    <td style="text-align: center;">
+                        <?php
+                            if ($cp->processo->aprovado) {
+                                echo $this->Label->success('Aprovado');
+                            } else {
+                                echo $this->Label->default('Não avaliado');
+                            }
+                        ?>
                     </td>
                     <td>
                         <?= h($cp->processo->modalidades) ?>

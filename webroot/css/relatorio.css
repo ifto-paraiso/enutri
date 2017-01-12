@@ -43,6 +43,9 @@ h2 {
     border-collapse: collapse;
     width: 100%;
 }
+.data-container{
+    width: 100%;
+}
 .data td,
 .data th,
 .data-container-header th{
