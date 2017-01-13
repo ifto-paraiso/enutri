@@ -99,8 +99,9 @@ $this->assign('titulo', 'Resumo do Processo');
                 <strong>
                     Refeições/Dia (Média):
                 </strong>
-                <?php 
-                    $mediaDiaria = $totalRefeicoes / $processo->periodo;
+                <?php
+                    $periodo = $processo->periodo;
+                    $mediaDiaria = ($periodo == 0) ? (0) : ($totalRefeicoes / $periodo);
                     echo h(number_format($mediaDiaria, 2, ',', '.'));
                 ?>
             </td>
@@ -109,7 +110,8 @@ $this->assign('titulo', 'Resumo do Processo');
                     Refeições/Dia/Aluno (Média):
                 </strong>
                 <?php 
-                    $mediaAluno = $mediaDiaria / $processo->publico;
+                    $publico = $processo->publico;
+                    $mediaAluno = ($publico == 0) ? (0) : ($mediaDiaria / $publico);
                     echo h(number_format($mediaAluno, 2, ',', '.'));
                 ?>
             </td>
