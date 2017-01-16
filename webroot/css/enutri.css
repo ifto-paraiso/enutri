@@ -108,3 +108,18 @@ a i.mini {
     font-size: 10px;
     margin-left: 3px;
 }
+
+/* Mensagens Flash */
+
+.flash-wrapper {
+    float: right;
+    position: relative;
+}
+.flash-wrapper .flash-float {
+    float: right;
+    position: absolute;
+    right: 5px;
+    width: 400px;
+    top: -10px;
+    z-index: 9999;
+}
