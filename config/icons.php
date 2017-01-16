@@ -48,7 +48,7 @@ return [
         'reprovar'      => 'fa fa-fw fa-thumbs-o-down',
         'salvar'        => 'fa fa-fw fa-check-circle',
         'senha'         => 'fa fa-fw fa-asterisk',
-        'sobre'         => 'fa fa-fw fa-file',
+        'sobre'         => 'fa fa-fw fa-info-circle',
         'uex'           => 'fa fa-fw fa-home',
         'usuario'       => 'fa fa-fw fa-user',
         'usuarios'      => 'fa fa-fw fa-users',
