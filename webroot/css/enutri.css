@@ -1,0 +1,131 @@
+/* Ajustes nos buttons */
+
+.btn i {
+    margin-right: 5px;
+}
+.btn .caret {
+    margin-left: 5px;
+}
+
+/* Ajustes na toolbar de opções das tabelas */
+
+table thead tr th.options,
+table thead tr th.options-compact{
+    text-align: center;
+    width: 140px;
+}
+table tbody tr td.options,
+table tbody tr td.options-compact{
+    padding-top:    6px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.options-compact{
+    width: 70px !important;
+}
+table .number{
+    text-align: right;
+}
+table .options .btn i {
+    margin: 0;
+}
+table .medida{
+    display: inline-block;
+    line-height: 1;
+    padding: 0;
+    text-align: left;
+    width: 25px;
+}
+table .col-faixa {
+    width: 75px;
+}
+table .td-checkbox {
+    padding: 0 !important;
+    text-align: center;
+    width: 40px;
+}
+table .td-checkbox .form-group {
+    margin: 0;
+}
+table .td-checkbox input[type="checkbox"] {
+    margin: 11px 0 0 -8px;
+}
+td.center,
+th.center{
+    text-align: center;
+}
+
+/* Formatação do enutri-data */
+
+.enutri-data {
+    margin-bottom: 15px;
+}
+.enutri-data .enutri-data-key {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.enutri-data .enutri-data-value {
+    background-color: #F0F0F0;
+    border: 1px solid #D2D6DE;
+    min-height: 34px;
+    overflow-x: hidden;
+    padding: 6px 12px;
+}
+.enutri-data.number .enutri-data-value {
+    text-align: right;
+}
+
+/* Ajustes nos forms */
+
+.required label:after {
+    content: '*';
+    color: #DD4B39;
+    font-weight: normal;
+    margin-left: 2px;
+}
+.form-group .error-message {
+    color: #DD4B39;
+    font-size: 12px;
+}
+.number input[type="text"]{
+    text-align: right;
+}
+.number input[type="text"]:focus{
+    text-align: left;
+}
+
+/* Flash */
+
+section .flash {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* Icons */
+
+a i.mini {
+    color: #999;
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+/* Mensagens Flash */
+
+.flash-wrapper {
+    float: right;
+    position: relative;
+}
+.flash-wrapper .flash-float {
+    float: right;
+    position: absolute;
+    right: 5px;
+    width: 400px;
+    top: -10px;
+    z-index: 9999;
+}
+
+/* Ajustes no Box */
+
+.box-title i {
+    margin-right: 5px; 
+}

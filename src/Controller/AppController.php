@@ -27,6 +27,12 @@ use Cake\Event\Event;
  */
 class AppController extends Controller
 {
+    /**
+     * Usuário atualmente logado no sistema
+     * 
+     * @var \Enutri\Model\Entity\Usuario;
+     */
+    protected $usuarioLogado;
 
     /**
      * Initialization hook method.
@@ -43,6 +49,45 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        
+        // Carregamento do componente de autenticação
+        $this->loadComponent('Auth', [
+            'loginAction' => [
+                'controller' => 'Acesso',
+                'action'     => 'login',
+            ],
+            'authenticate' => [
+                'Form' => [
+                    'fields' => [
+                        'username' => 'email',
+                        'password' => 'senha',
+                    ],
+                    'userModel' => 'Usuarios',
+                    'finder'    => 'auth',
+                ],
+            ]
+        ]);
+
+        // Carregamento do componente de controle de acesso
+        $this->loadComponent('Acl');
+        
+        /*
+         * Carrega as informações do usuário que está atualmente logado no
+         * sistema
+         */
+        $this->usuarioLogado = $this->usuarioLogado();
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+        $user = $this->Auth->user();
+        $grupo = $user ? $user['grupo']['alias'] : null;
+        if (!$this->Acl->check($this->request->params, $grupo)) {
+            $this->Flash->error('Você não possui permissão para acessar o recurso solicitado.');
+            return $this->redirect(['controller' => 'acesso', 'action' => 'login']);
+        }
+        $this->set(compact('user'));
     }
 
     /**
@@ -58,5 +103,15 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+    }
+    
+    protected function usuarioLogado()
+    {
+        $usuario = $this->Auth->user();
+        if ($usuario === null) {
+            return null;
+        }
+        $this->loadModel('Usuarios');
+        return $this->Usuarios->localizar($usuario['id']);
     }
 }

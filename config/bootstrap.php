@@ -76,7 +76,10 @@ use Cake\Utility\Security;
  */
 try {
     Configure::config('default', new PhpConfig());
-    Configure::load('app', 'default', false);
+    Configure::load('app',     'default', false);
+    Configure::load('eex',     'default', false);
+    Configure::load('acl',     'default', false);
+    Configure::load('version', 'default', false);
 } catch (\Exception $e) {
     exit($e->getMessage() . "\n");
 }
@@ -203,6 +206,9 @@ Type::build('datetime')
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
+Inflector::rules('irregular', [
+    'centralizacao' => 'centralizacoes',
+]);
 
 /*
  * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call
@@ -219,7 +225,15 @@ Type::build('datetime')
  * Debug Kit should not be installed on a production system
  */
 if (Configure::read('debug')) {
-    Plugin::load('DebugKit', ['bootstrap' => true]);
+    //Plugin::load('DebugKit', ['bootstrap' => true]);
 }
 
 Plugin::load('Migrations');
+
+/*
+ * Configuração do formato de números decimais
+ */
+Configure::write('numberFormat', [
+    'places' => 2,
+    'locale' => 'pt_BR',
+]);

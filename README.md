@@ -1,5 +1,8 @@
 # Enutri
 
+[![Build Status](https://scrutinizer-ci.com/g/renatouchoa/enutri/badges/build.png?b=master)](https://scrutinizer-ci.com/g/renatouchoa/enutri/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/renatouchoa/enutri/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/renatouchoa/enutri/?branch=master)
+
 O Enutri é sistema *web* concebido para auxiliar a gestão da alimentação escolar dos estados e municípios. O sistema está sendo desenvolvido a partir de um projeto de pesquisa do curso Superior de Tecnologia em Gestão da Tecnologia da Informação do Campus Paraíso do Tocantins do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins-IFTO.
 
 ### Versão atual

@@ -12,9 +12,9 @@
  * @since         3.3.0
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace App\Test\TestCase;
+namespace Enutri\Test\TestCase;
 
-use App\Application;
+use Enutri\Application;
 use Cake\Error\Middleware\ErrorHandlerMiddleware;
 use Cake\Http\MiddlewareQueue;
 use Cake\Routing\Middleware\AssetMiddleware;
