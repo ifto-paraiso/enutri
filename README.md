@@ -1,28 +1,30 @@
 # Enutri
 
-O Enutri é sistema *web* (em fase de desenvolvimento) concebido para auxiliar a gestão da alimentação escolar dos estados e municípios.
-
-O sistema está sendo desenvolvido a partir de um projeto de pesquisa do curso Superior de Tecnologia em Gestão da Tecnologia da Informação do Campus Paraíso do Tocantins do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins-IFTO.
+O Enutri é sistema *web* concebido para auxiliar a gestão da alimentação escolar dos estados e municípios. O sistema está sendo desenvolvido a partir de um projeto de pesquisa do curso Superior de Tecnologia em Gestão da Tecnologia da Informação do Campus Paraíso do Tocantins do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins-IFTO.
 
 ### Versão atual
 
-Em fase de análise de requisitos.
+1.0.0 (Beta 1)
 
 ### Histórico de versões
 
-Consulte o arquivo [CHANGELOG.md](CHANGELOG.md)
+Consulte o arquivo [CHANGELOG.md](CHANGELOG.md).
 
 ## Instalação
 
-Para consultar os requisitos do sistema e o passo a passo para instalação, consulte o arquivo [INSTALL.md](INSTALL.md)
+Para consultar os requisitos do sistema e o passo a passo para instalação, consulte o arquivo [INSTALL.md](INSTALL.md).
 
 ## Funcionalidades
 
+* Gestão de usuários, exercícios e escolas (unidades executoras);
+* Gestão da base alimentos;
+* Elaboração de processos escolarizados e centralizados;
+* Elaboração de cardápios;
+* Emissão de relatórios (previsão de aquisição, informações nutricionais, etc.).
+
 ## Ajude
 
-### Dê a sua opinião
-
-### Contribua
+Envie crticas e sugestões através do [sistema de issues do GitHub](https://github.com/renatouchoa/enutri/issues).
 
 ## Autoria
 
@@ -33,3 +35,5 @@ Acadêmico do Curso Superior de Tecnologia em Gestão da Tecnologia da Informaç
 [contato@renatouchoa.com.br](mailto:contato@renatouchoa.com.br)
 
 ## Licença
+
+[General Public Licence Version 3.0](LICENCE.md)
