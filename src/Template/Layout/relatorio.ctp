@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>
+            ENUTRI -
+            <?= $this->fetch('title') ?>
+        </title>
         <?= $this->Html->css('relatorio') ?>
     </head>
     <body>
