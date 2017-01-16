@@ -19,7 +19,10 @@ $usuario = [
     ],
     'Painel' => [
         'index' => 'allow',
-    ]
+    ],
+    'Ajuda'  => [
+        'sobre' => 'allow',
+    ],
 ];
 
 /**
