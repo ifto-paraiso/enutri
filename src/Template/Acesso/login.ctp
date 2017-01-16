@@ -30,6 +30,9 @@
     </form>
 
   </div>
+  
+  <br />
+  
   <?= $this->Flash->render() ?>
   <!-- /.login-box-body -->
 </div>

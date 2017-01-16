@@ -58,7 +58,16 @@
   
   
     <div class="content-wrapper">
-        <?= $this->Flash->render() ?>
+        
+        <section class="container-fluid">
+            <div class="flash-wrapper">
+                <div class="flash-float">
+                    <?= $this->Flash->render() ?>
+                </div>
+            </div>
+        </section>
+        
+        
         <?= $this->fetch('content') ?>
     </div>
   
