@@ -2,7 +2,7 @@
 
 namespace Enutri\Controller;
 
-use Cake\Datasource\Exception\RecordNotFoundException;
+use RuntimeException;
 
 class AlimentosController extends AppController
 {
@@ -37,7 +37,7 @@ class AlimentosController extends AppController
         try {
             $alimento = $this->Alimentos->localizar($alimentoId);
             $this->set(compact('alimento'));
-        } catch (RecordNotFoundException $e) {
+        } catch (RuntimeException $e) {
             $this->Flash->error('Alimento não encontrado.');
             return $this->redirect(['action' => 'listar']);
         }
@@ -85,7 +85,7 @@ class AlimentosController extends AppController
             $this->loadModel('Medidas');
             $this->set('medidas', $this->Medidas->getList());
             $this->set(compact('alimento'));
-        } catch (RecordNotFoundException $e) {
+        } catch (RuntimeException $e) {
             $this->Flash->error('Alimento não encontrado.');
             return $this->redirect(['action' => 'listar']);
         }
@@ -103,7 +103,7 @@ class AlimentosController extends AppController
                 $this->Flash->error('Ocorreu um erro ao excluir o alimento.');
             }
             $this->set(compact('alimento'));
-        } catch (RecordNotFoundException $e) {
+        } catch (RuntimeException $e) {
             $this->Flash->error('Alimento não encontrado.');
             return $this->redirect(['action' => 'listar']);
         }
