@@ -33,26 +33,6 @@
     <!-- jQuery 2.2.3 -->
     <?= $this->Html->script('../adminlte/plugins/jQuery/jquery-2.2.3.min.js') ?>
 </head>
-<!--
-BODY TAG OPTIONS:
-=================
-Apply one or more of the following classes to get the
-desired effect
-|---------------------------------------------------------|
-| SKINS         | skin-blue                               |
-|               | skin-black                              |
-|               | skin-purple                             |
-|               | skin-yellow                             |
-|               | skin-red                                |
-|               | skin-green                              |
-|---------------------------------------------------------|
-|LAYOUT OPTIONS | fixed                                   |
-|               | layout-boxed                            |
-|               | layout-top-nav                          |
-|               | sidebar-collapse                        |
-|               | sidebar-mini                            |
-|---------------------------------------------------------|
--->
 <body class="hold-transition sidebar-mini sidebar-collapse skin-red-light">
 <div class="wrapper">
 
@@ -78,7 +58,16 @@ desired effect
   
   
     <div class="content-wrapper">
-        <?= $this->Flash->render() ?>
+        
+        <section class="container-fluid">
+            <div class="flash-wrapper">
+                <div class="flash-float">
+                    <?= $this->Flash->render() ?>
+                </div>
+            </div>
+        </section>
+        
+        
         <?= $this->fetch('content') ?>
     </div>
   
@@ -95,6 +84,8 @@ desired effect
 
 <!-- AdminLTE App -->
 <?= $this->Html->script('../adminlte/dist/js/app.min.js') ?>
+
+<?= $this->Html->script('enutri') ?>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

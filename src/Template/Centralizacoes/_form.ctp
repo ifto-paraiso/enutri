@@ -27,6 +27,20 @@
 </div>
 
 <div class="row">
+    <div class="col-md-2">
+        
+    </div>
+    <div class="col-md-10">
+        <?=
+            $this->Form->input('observacoes', [
+                'type'  => 'text',
+                'label' => 'Observações',
+            ]);
+        ?>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-md-12">
         <?= $this->Form->salvar() ?>
     </div>

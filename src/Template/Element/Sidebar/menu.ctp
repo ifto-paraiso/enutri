@@ -102,10 +102,13 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fa fa-fw fa-info-circle"></i>
-                    Sobre o Enutri
-                </a>
+                <?=
+                    $this->Html->link(
+                        $this->Icon->make('sobre') . ' Sobre o ENUTRI',
+                        ['controller' => 'ajuda', 'action' => 'sobre'],
+                        ['escape' => false]
+                    );
+                ?>
             </li>
         </ul>
     </li>

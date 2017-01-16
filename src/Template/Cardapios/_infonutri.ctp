@@ -36,7 +36,13 @@ Configure::load('vdr');
                 </td>
                 <td class="number">
                     <strong>
-                        <?= $this->Formatter->float($nutrientes[$nutriente['alias']]) ?>
+                        <?php
+                            if (isset($nutrientes[$nutriente['alias']])) {
+                                echo $this->Formatter->float($nutrientes[$nutriente['alias']]);
+                            } else {
+                                echo $this->Formatter->float(0);
+                            }
+                        ?>
                     </strong>
                     <span class="medida">
                         <?= $nutriente['medida'] ?>
@@ -44,7 +50,13 @@ Configure::load('vdr');
                 </td>
                 <?php foreach (Configure::read('faixas') as $faixa): ?>
                     <td class="number">
-                        <?= $this->Formatter->float($nutrientes[$nutriente['alias']] * 100.0 / $faixa['nutrientes'][$nutriente['alias']]) ?>
+                        <?php
+                            if (isset($nutrientes[$nutriente['alias']])) {
+                                echo $this->Formatter->float($nutrientes[$nutriente['alias']] * 100.0 / $faixa['nutrientes'][$nutriente['alias']]);
+                            } else {
+                                echo $this->Formatter->float(0);
+                            }
+                        ?>
                         %
                     </td>
                 <?php endforeach; ?>

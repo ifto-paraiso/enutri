@@ -27,8 +27,7 @@ class AclComponent extends Component
     public function initialize(array $config)
     {
         parent::initialize($config);
-        Configure::load('acl');
-        $this->permissions = Configure::read('permissions');
+        $this->permissions = Configure::read('Permissions');
     }
     
     /**

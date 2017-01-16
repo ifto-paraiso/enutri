@@ -7,7 +7,7 @@
  */
 return [
     'Icons' => [
-        'ajuda'         => 'fa fa-fw fa-file',
+        'ajuda'         => 'fa fa-fw fa-question-circle',
         'alert-danger'  => 'fa fa-fw fa-ban',
         'alert-warning' => 'fa fa-fw fa-warning',
         'alert-info'    => 'fa fa-fw fa-info',
@@ -37,7 +37,7 @@ return [
         'novo'          => 'fa fa-fw fa-plus',
         'nutriente'     => 'fa fa-fw fa-heartbeat',
         'painel'        => 'fa fa-fw fa-th-large',
-        'planejamento'  => 'fa fa-fw fa-file',
+        'planejamento'  => 'fa fa-fw fa-clock-o',
         'preparacao'    => 'fa fa-fw fa-cutlery',
         'processo'      => 'fa fa-fw fa-folder',
         'processos'     => 'fa fa-fw fa-folder',
@@ -48,7 +48,7 @@ return [
         'reprovar'      => 'fa fa-fw fa-thumbs-o-down',
         'salvar'        => 'fa fa-fw fa-check-circle',
         'senha'         => 'fa fa-fw fa-asterisk',
-        'sobre'         => 'fa fa-fw fa-file',
+        'sobre'         => 'fa fa-fw fa-info-circle',
         'uex'           => 'fa fa-fw fa-home',
         'usuario'       => 'fa fa-fw fa-user',
         'usuarios'      => 'fa fa-fw fa-users',

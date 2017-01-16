@@ -1,6 +1,7 @@
 vendor/
 config/app.php
 config/eex.php
+config/acl.php
 webroot/img/logo.png
 tmp/
 logs/
