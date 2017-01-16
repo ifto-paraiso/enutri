@@ -9,7 +9,7 @@ $cabecalho = implode('<br />', $relatoriosConfig['cabecalho']);
 <table style="width: 100%;">
     <thead style="display: table-header-group;">
         <tr>
-            <td>
+            <td colspan="2">
                 <table>
                     <tbody>
                         <tr>
@@ -30,9 +30,20 @@ $cabecalho = implode('<br />', $relatoriosConfig['cabecalho']);
     </thead>
     <tbody>
         <tr>
-            <td>
+            <td colspan="2">
                 <?= $this->fetch('content') ?>
             </td>
         </tr>
     </tbody>
+    <tfoot style="display: table-footer-group">
+        <tr>
+            <td style="width: 50%;">
+                ENUTRI - Versão
+                <?= h(\Cake\Core\Configure::read('Version')) ?>
+            </td>
+            <td style="text-align: right">
+                <?= h(\Cake\Routing\Router::url('/', true)) ?> 
+            </td>
+        </tr>
+    </tfoot>
 </table>
