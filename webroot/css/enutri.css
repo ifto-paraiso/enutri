@@ -123,3 +123,9 @@ a i.mini {
     top: -10px;
     z-index: 9999;
 }
+
+/* Ajustes no Box */
+
+.box-title i {
+    margin-right: 5px; 
+}
