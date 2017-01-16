@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 16-Jan-2017 às 16:54
+-- Generation Time: 16-Jan-2017 às 17:16
 -- Versão do servidor: 5.5.53-0+deb8u1
 -- PHP Version: 5.6.29-0+deb8u1
 
@@ -17,10 +17,35 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `enutri`
+-- Database: `enutri-clear`
 --
-CREATE DATABASE IF NOT EXISTS `enutri` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `enutri`;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `alimentos`
+--
+
+CREATE TABLE IF NOT EXISTS `alimentos` (
+`id` int(11) NOT NULL,
+  `nome` varchar(60) NOT NULL,
+  `consumo_medida_id` int(11) NOT NULL,
+  `compra_medida_id` int(11) NOT NULL,
+  `fator` float NOT NULL DEFAULT '1000',
+  `kcal` float DEFAULT '0',
+  `cho` float DEFAULT '0',
+  `ptn` float DEFAULT '0',
+  `lip` float DEFAULT '0',
+  `ca` float DEFAULT '0',
+  `fe` float DEFAULT '0',
+  `mg` float DEFAULT '0',
+  `zn` float DEFAULT '0',
+  `vita` float DEFAULT '0',
+  `vitc` float DEFAULT '0',
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  `deleted` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB AUTO_INCREMENT=674 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `alimentos`
@@ -194,14 +219,565 @@ INSERT INTO `alimentos` (`id`, `nome`, `consumo_medida_id`, `compra_medida_id`, 
 (672, 'Iogurte Zero Lactose', 4, 3, 1000, 39, 5.2, 4.5, 0, 175, 0, 0, 0, 0, 0, '2016-12-27 00:00:00', '2016-12-27 00:00:00', 0),
 (673, 'asdfsdfdddd', 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2017-01-16 17:35:33', '2017-01-16 17:35:39', 1);
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `atendimentos`
+--
+
+CREATE TABLE IF NOT EXISTS `atendimentos` (
+`id` int(11) NOT NULL,
+  `cardapio_id` int(11) NOT NULL,
+  `data` date NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `cardapios`
+--
+
+CREATE TABLE IF NOT EXISTS `cardapios` (
+`id` int(11) NOT NULL,
+  `processo_id` int(11) NOT NULL,
+  `cardapio_tipo_id` int(11) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `observacoes` varchar(200) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `cardapio_tipos`
+--
+
+CREATE TABLE IF NOT EXISTS `cardapio_tipos` (
+`id` int(11) NOT NULL,
+  `nome` varchar(60) NOT NULL,
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `cardapio_tipos`
+--
+
+INSERT INTO `cardapio_tipos` (`id`, `nome`, `deleted`, `created`, `modified`) VALUES
+(1, 'Lanche', 0, '2016-12-29 20:55:22', '2016-12-29 20:55:22'),
+(2, 'Café da Manhã', 0, '2016-12-29 20:55:22', '2016-12-29 20:55:22'),
+(3, 'Almoço', 0, '2016-12-29 20:55:22', '2016-12-29 20:55:22'),
+(4, 'Jantar', 0, '2016-12-29 20:55:22', '2016-12-29 20:55:22'),
+(5, 'Lanche da Tarde', 0, '2016-12-29 20:55:22', '2016-12-29 20:55:22'),
+(6, 'Lanche Especial', 0, '2016-12-29 20:55:22', '2016-12-29 20:55:22'),
+(7, 'Outro', 0, '2016-12-29 20:55:22', '2016-12-29 20:55:22');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `centralizacao_processos`
+--
+
+CREATE TABLE IF NOT EXISTS `centralizacao_processos` (
+`id` int(11) NOT NULL,
+  `centralizacao_id` int(11) NOT NULL,
+  `processo_id` int(11) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `centralizacoes`
+--
+
+CREATE TABLE IF NOT EXISTS `centralizacoes` (
+`id` int(11) NOT NULL,
+  `exercicio_id` int(11) NOT NULL,
+  `nome` varchar(20) NOT NULL,
+  `observacoes` text,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `exercicios`
+--
+
+CREATE TABLE IF NOT EXISTS `exercicios` (
+`id` int(11) NOT NULL,
+  `ano` year(4) NOT NULL,
+  `responsavel_nome` varchar(100) DEFAULT NULL,
+  `responsavel_funcao` varchar(100) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  `exercicioscol` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `grupos`
+--
+
+CREATE TABLE IF NOT EXISTS `grupos` (
+`id` int(11) NOT NULL,
+  `alias` varchar(30) NOT NULL,
+  `nome` varchar(60) NOT NULL,
+  `descricao` text,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `grupos`
+--
+
+INSERT INTO `grupos` (`id`, `alias`, `nome`, `descricao`, `created`, `modified`) VALUES
+(1, 'eex_coord', 'Coordenação da Alimentação Escolar', NULL, NULL, NULL),
+(2, 'eex_nutri', 'Nutricionista', NULL, NULL, NULL),
+(3, 'uex_coord', 'Coordenação de Apoio Escolar', NULL, NULL, NULL),
+(4, 'eex_assist', 'Técnico Administrativo', NULL, NULL, NULL),
+(5, 'super', 'Super Usuário', NULL, '2017-01-12 14:47:34', '2017-01-12 14:47:34');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `ingredientes`
+--
+
+CREATE TABLE IF NOT EXISTS `ingredientes` (
+`id` int(11) NOT NULL,
+  `cardapio_id` int(11) NOT NULL,
+  `alimento_id` int(11) NOT NULL,
+  `quantidade` float NOT NULL DEFAULT '0',
+  `observacoes` varchar(60) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=90 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `lotacoes`
+--
+
+CREATE TABLE IF NOT EXISTS `lotacoes` (
+`id` int(11) NOT NULL,
+  `usuario_id` int(11) NOT NULL,
+  `uex_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `medidas`
+--
+
+CREATE TABLE IF NOT EXISTS `medidas` (
+`id` int(11) NOT NULL,
+  `nome` varchar(20) NOT NULL,
+  `sigla` varchar(10) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `medidas`
+--
+
+INSERT INTO `medidas` (`id`, `nome`, `sigla`, `created`, `modified`) VALUES
+(1, 'Grama', 'g', NULL, NULL),
+(2, 'Quilograma', 'kg', NULL, NULL),
+(3, 'Litro', 'l', NULL, NULL),
+(4, 'Mililitro', 'ml', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `modalidades`
+--
+
+CREATE TABLE IF NOT EXISTS `modalidades` (
+`id` int(11) NOT NULL,
+  `nome` varchar(60) NOT NULL,
+  `nome_reduzido` varchar(20) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `modalidades`
+--
+
+INSERT INTO `modalidades` (`id`, `nome`, `nome_reduzido`, `created`, `modified`) VALUES
+(1, 'Ensino Fundamental', 'Ens. Fund.', NULL, NULL),
+(2, 'Educação Infantil', 'Educ. Infantil', NULL, NULL),
+(3, 'Educação de Jovens e Adultos', 'EJA', NULL, NULL),
+(4, 'Mais Educação', 'Mais Educ.', NULL, NULL),
+(5, 'Atendimento Educacional Especializado', 'AEE', NULL, NULL),
+(6, 'Ensino Médio', 'Ens. Médio', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `participantes`
+--
+
+CREATE TABLE IF NOT EXISTS `participantes` (
+`id` int(11) NOT NULL,
+  `uex_id` int(11) NOT NULL,
+  `exercicio_id` int(11) NOT NULL,
+  `responsavel_nome` varchar(100) DEFAULT NULL,
+  `responsavel_funcao` varchar(100) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `processos`
+--
+
+CREATE TABLE IF NOT EXISTS `processos` (
+`id` int(11) NOT NULL,
+  `participante_id` int(11) NOT NULL,
+  `nome` varchar(60) NOT NULL,
+  `observacoes` varchar(200) DEFAULT NULL,
+  `aprovado` tinyint(1) NOT NULL DEFAULT '0',
+  `aprovador_usuario_id` int(11) DEFAULT NULL,
+  `aprovacao_data` datetime DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `processo_modalidades`
+--
+
+CREATE TABLE IF NOT EXISTS `processo_modalidades` (
+`id` int(11) NOT NULL,
+  `processo_id` int(11) NOT NULL,
+  `modalidade_id` int(11) NOT NULL,
+  `publico` int(11) NOT NULL DEFAULT '0',
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `uexs`
+--
+
+CREATE TABLE IF NOT EXISTS `uexs` (
+`id` int(11) NOT NULL,
+  `nome` varchar(200) NOT NULL,
+  `nome_reduzido` varchar(60) NOT NULL,
+  `bairro` varchar(60) DEFAULT NULL,
+  `endereco` varchar(60) DEFAULT NULL,
+  `uf_id` int(11) NOT NULL,
+  `municipio` varchar(100) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `telefone1` varchar(20) DEFAULT NULL,
+  `telefone2` varchar(20) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `ufs`
+--
+
+CREATE TABLE IF NOT EXISTS `ufs` (
+`id` int(11) NOT NULL,
+  `nome` varchar(60) NOT NULL,
+  `sigla` varchar(2) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `ufs`
+--
+
+INSERT INTO `ufs` (`id`, `nome`, `sigla`, `created`, `modified`) VALUES
+(1, 'Acre', 'AC', NULL, NULL),
+(2, 'Amazonas', 'AM', NULL, NULL),
+(3, 'Amapá', 'AP', NULL, NULL),
+(4, 'Roraima', 'RR', NULL, NULL),
+(5, 'Rondônia', 'RO', NULL, NULL),
+(6, 'Pará', 'PA', NULL, NULL),
+(7, 'Tocantins', 'TO', NULL, NULL),
+(8, 'Maranhão', 'MA', NULL, NULL),
+(9, 'Piauí', 'PI', NULL, NULL),
+(10, 'Ceará', 'CE', NULL, NULL),
+(11, 'Rio Grande do Norte', 'RN', NULL, NULL),
+(12, 'Paraíba', 'PB', NULL, NULL),
+(13, 'Pernambuco', 'PE', NULL, NULL),
+(14, 'Alagoas', 'AL', NULL, NULL),
+(15, 'Sergipe', 'SE', NULL, NULL),
+(16, 'Bahia', 'BA', NULL, NULL),
+(17, 'Espírito Santo', 'ES', NULL, NULL),
+(18, 'Rio de Janeiro', 'RJ', NULL, NULL),
+(19, 'São Paulo', 'SP', NULL, NULL),
+(20, 'Minas Gerais', 'MG', NULL, NULL),
+(21, 'Santa Catarina', 'SC', NULL, NULL),
+(22, 'Paraná', 'PR', NULL, NULL),
+(23, 'Rio Grande do Sul', 'RS', NULL, NULL),
+(24, 'Goiás', 'GO', NULL, NULL),
+(25, 'Distrito Federal', 'DF', NULL, NULL),
+(26, 'Mato Grosso', 'MT', NULL, NULL),
+(27, 'Mato Grosso do Sul', 'MS', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+`id` int(11) NOT NULL,
+  `grupo_id` int(11) NOT NULL,
+  `nome` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `crn` varchar(20) DEFAULT NULL,
+  `endereco` varchar(60) DEFAULT NULL,
+  `bairro` varchar(60) DEFAULT NULL,
+  `uf_id` int(11) NOT NULL,
+  `municipio` varchar(100) DEFAULT NULL,
+  `telefone1` varchar(20) DEFAULT NULL,
+  `telefone2` varchar(20) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `grupo_id`, `nome`, `email`, `senha`, `crn`, `endereco`, `bairro`, `uf_id`, `municipio`, `telefone1`, `telefone2`, `created`, `modified`) VALUES
-(1, 1, 'Renato Uchôa Brandão', 'renatoubra@gmail.com', '$2y$10$j2Pnb6kB3GtF5Zej/dVdGelEmTAO8CtXcNi1avw7WUyvj4ns756m6', '', 'R. Mato Grosso, 1306', 'Setor Oeste', 7, 'Paraíso do Tocantins', '63 9 8446-0462', '', NULL, '2017-01-16 17:39:33'),
 (8, 1, 'Administrador', 'admin@admin.com', '$2y$10$pPSoFt/QWyBfF5IjXwl1lecOnDVPwAseKDOPoC0o0PJWirQrIziJq', '', 'N/a', '', 19, 'São Paulo', '', '', '2017-01-16 18:53:46', '2017-01-16 18:53:46');
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `alimentos`
+--
+ALTER TABLE `alimentos`
+ ADD PRIMARY KEY (`id`), ADD KEY `fk_alimento_consumo_medida_idx` (`consumo_medida_id`), ADD KEY `fk_alimento_compra_medida_idx` (`compra_medida_id`);
+
+--
+-- Indexes for table `atendimentos`
+--
+ALTER TABLE `atendimentos`
+ ADD PRIMARY KEY (`id`), ADD KEY `fk_data_cardapio_idx` (`cardapio_id`);
+
+--
+-- Indexes for table `cardapios`
+--
+ALTER TABLE `cardapios`
+ ADD PRIMARY KEY (`id`), ADD KEY `fk_cardapio_processo_idx` (`processo_id`), ADD KEY `fk_cardapio_cardapio_tipo_idx` (`cardapio_tipo_id`);
+
+--
+-- Indexes for table `cardapio_tipos`
+--
+ALTER TABLE `cardapio_tipos`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `centralizacao_processos`
+--
+ALTER TABLE `centralizacao_processos`
+ ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `unique_centralizacao_processo` (`centralizacao_id`,`processo_id`), ADD KEY `fk_centralizacao_processo_centralizacao_idx` (`centralizacao_id`), ADD KEY `fk_centralizacao_processo_processo_idx` (`processo_id`);
+
+--
+-- Indexes for table `centralizacoes`
+--
+ALTER TABLE `centralizacoes`
+ ADD PRIMARY KEY (`id`), ADD KEY `fk_centralizacao_exercicio_idx` (`exercicio_id`);
+
+--
+-- Indexes for table `exercicios`
+--
+ALTER TABLE `exercicios`
+ ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `ano_UNIQUE` (`ano`);
+
+--
+-- Indexes for table `grupos`
+--
+ALTER TABLE `grupos`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ingredientes`
+--
+ALTER TABLE `ingredientes`
+ ADD PRIMARY KEY (`id`), ADD KEY `fk_ingrediente_cardapio_idx` (`cardapio_id`), ADD KEY `fk_ingrediente_alimento_idx` (`alimento_id`);
+
+--
+-- Indexes for table `lotacoes`
+--
+ALTER TABLE `lotacoes`
+ ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `unique_usuaro_uex` (`usuario_id`,`uex_id`), ADD KEY `fk_lotacao_usuario_idx` (`usuario_id`), ADD KEY `fk_lotacao_uex_idx` (`uex_id`);
+
+--
+-- Indexes for table `medidas`
+--
+ALTER TABLE `medidas`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `modalidades`
+--
+ALTER TABLE `modalidades`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `participantes`
+--
+ALTER TABLE `participantes`
+ ADD PRIMARY KEY (`id`), ADD KEY `fk_participante_uex_idx` (`uex_id`), ADD KEY `fk_participante_exercicio_idx` (`exercicio_id`);
+
+--
+-- Indexes for table `processos`
+--
+ALTER TABLE `processos`
+ ADD PRIMARY KEY (`id`), ADD KEY `fk_processo_participante_idx` (`participante_id`), ADD KEY `fk_processo_aprovador_usuario_idx` (`aprovador_usuario_id`);
+
+--
+-- Indexes for table `processo_modalidades`
+--
+ALTER TABLE `processo_modalidades`
+ ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `unique_processo_modalidade` (`processo_id`,`modalidade_id`), ADD KEY `fk_processo_modalidade_processo_idx` (`processo_id`), ADD KEY `fk_processo_modalidade_modalidade_idx` (`modalidade_id`);
+
+--
+-- Indexes for table `uexs`
+--
+ALTER TABLE `uexs`
+ ADD PRIMARY KEY (`id`), ADD KEY `fk_uex_uf_idx` (`uf_id`);
+
+--
+-- Indexes for table `ufs`
+--
+ALTER TABLE `ufs`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `usuarios`
+--
+ALTER TABLE `usuarios`
+ ADD PRIMARY KEY (`id`), ADD KEY `fk_usuario_grupo_idx` (`grupo_id`), ADD KEY `fk_usuario_uf_idx` (`uf_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `alimentos`
+--
+ALTER TABLE `alimentos`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=674;
+--
+-- AUTO_INCREMENT for table `atendimentos`
+--
+ALTER TABLE `atendimentos`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=100;
+--
+-- AUTO_INCREMENT for table `cardapios`
+--
+ALTER TABLE `cardapios`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
+--
+-- AUTO_INCREMENT for table `cardapio_tipos`
+--
+ALTER TABLE `cardapio_tipos`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `centralizacao_processos`
+--
+ALTER TABLE `centralizacao_processos`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
+--
+-- AUTO_INCREMENT for table `centralizacoes`
+--
+ALTER TABLE `centralizacoes`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT for table `exercicios`
+--
+ALTER TABLE `exercicios`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `grupos`
+--
+ALTER TABLE `grupos`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `ingredientes`
+--
+ALTER TABLE `ingredientes`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=90;
+--
+-- AUTO_INCREMENT for table `lotacoes`
+--
+ALTER TABLE `lotacoes`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `medidas`
+--
+ALTER TABLE `medidas`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `modalidades`
+--
+ALTER TABLE `modalidades`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `participantes`
+--
+ALTER TABLE `participantes`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT for table `processos`
+--
+ALTER TABLE `processos`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT for table `processo_modalidades`
+--
+ALTER TABLE `processo_modalidades`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=35;
+--
+-- AUTO_INCREMENT for table `uexs`
+--
+ALTER TABLE `uexs`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT for table `ufs`
+--
+ALTER TABLE `ufs`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
