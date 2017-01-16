@@ -5,6 +5,7 @@ namespace Enutri\Model\Table;
 use Cake\Validation\Validator;
 use Cake\Event\Event;
 use Enutri\Model\Formatting\Number;
+use Enutri\Model\Entity\Alimento;
 use ArrayObject;
 
 class AlimentosTable extends EnutriTable
