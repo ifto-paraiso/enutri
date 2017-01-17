@@ -1,5 +1,11 @@
 # Enutri - Histórico de versões
 
+## 1.0.0-b2
+
+* Data: 16/01/2016;
+* Correção de bugs;
+* Melhorias internas no código.
+
 ## 1.0.0-b1
 
 * Data: 16/01/2016;
