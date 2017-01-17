@@ -23,5 +23,5 @@
  */
 
 return [
-    'Version' => '1.0.0-b1',
+    'Version' => '1.0.0-b2',
 ];
