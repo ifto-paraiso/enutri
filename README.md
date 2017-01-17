@@ -39,4 +39,4 @@ Acadêmico do Curso Superior de Tecnologia em Gestão da Tecnologia da Informaç
 
 ## Licença
 
-[General Public Licence Version 3.0](LICENCE.md)
+[General Public Licence Version 3.0](LICENCE)
