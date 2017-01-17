@@ -22,35 +22,15 @@
  * @license         https://www.gnu.org/licenses/gpl-3.0.html GPL v.3
  */
 
-namespace Enutri\Utility\Formatting;
+namespace Enutri\Model\Entity;
+
+use Cake\ORM\Entity;
 
 /**
- * Formatação de valores numéricos
+ * Entidade "Alimento"
  * 
- * @author Renato Uchoa <contato@renatouchoa.com.br>
  */
-class Number
+class Alimento extends Entity
 {
-    /**
-     * Transforma um valor em formato brasileiro em float
-     * 
-     * @param string $value
-     * @return string
-     */
-    public static function brToFloat($value)
-    {
-        return str_replace(['.', ','], ['', '.'], $value);
-    }
     
-    /**
-     * Transforma um valor float para o formato brasileiro
-     * 
-     * @param string $value
-     * @return string
-     */
-    public static function floatToBr($value)
-    {
-        var_dump($value);die();
-        return number_format($value, 2, ',', '.');
-    }
 }

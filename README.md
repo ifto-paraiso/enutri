@@ -7,7 +7,7 @@ O Enutri é sistema *web* concebido para auxiliar a gestão da alimentação esc
 
 ### Versão atual
 
-1.0.0 (Beta 1)
+1.0.0 (Beta 2)
 
 ### Histórico de versões
 
@@ -39,4 +39,4 @@ Acadêmico do Curso Superior de Tecnologia em Gestão da Tecnologia da Informaç
 
 ## Licença
 
-[General Public Licence Version 3.0](LICENCE.md)
+[General Public Licence Version 3.0](LICENCE)
