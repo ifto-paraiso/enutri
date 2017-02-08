@@ -58,7 +58,7 @@
     <?= $this->Html->css('enutri') ?>
     
     <!-- jQuery 2.2.3 -->
-    <?= $this->Html->script('../adminlte/plugins/jQuery/jquery-2.2.3.min.js') ?>
+    <?= $this->Html->script('jquery') ?>
 </head>
 <body class="hold-transition sidebar-mini sidebar-collapse skin-red-light">
 <div class="wrapper">
