@@ -7,11 +7,9 @@ O Enutri é sistema *web* concebido para auxiliar a gestão da alimentação esc
 
 ### Versão atual
 
-1.0.0 (Beta 2)
+1.0.1
 
-### Histórico de versões
-
-Consulte o arquivo [CHANGELOG.md](CHANGELOG.md).
+[Histórico de versões](https://github.com/renatouchoa/enutri/releases)
 
 ## Instalação
 
